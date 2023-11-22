@@ -1,0 +1,261 @@
+#   Legion Controller for Windows 
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x06,                    // Usage (Keyboard)                    2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x85, 0x03,                    //  Report ID (3)                      6
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              8
+# 0x19, 0xe0,                    //  Usage Minimum (224)                10
+# 0x29, 0xe7,                    //  Usage Maximum (231)                12
+# 0x15, 0x00,                    //  Logical Minimum (0)                14
+# 0x25, 0x01,                    //  Logical Maximum (1)                16
+# 0x75, 0x01,                    //  Report Size (1)                    18
+# 0x95, 0x08,                    //  Report Count (8)                   20
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               22
+# 0x75, 0x08,                    //  Report Size (8)                    24
+# 0x95, 0x01,                    //  Report Count (1)                   26
+# 0x81, 0x01,                    //  Input (Cnst,Arr,Abs)               28
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              30
+# 0x19, 0x00,                    //  Usage Minimum (0)                  32
+# 0x2a, 0xff, 0x00,              //  Usage Maximum (255)                34
+# 0x15, 0x00,                    //  Logical Minimum (0)                37
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              39
+# 0x75, 0x08,                    //  Report Size (8)                    42
+# 0x95, 0x06,                    //  Report Count (6)                   44
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               46
+# 0x05, 0x08,                    //  Usage Page (LEDs)                  48
+# 0x19, 0x01,                    //  Usage Minimum (1)                  50
+# 0x29, 0x03,                    //  Usage Maximum (3)                  52
+# 0x25, 0x01,                    //  Logical Maximum (1)                54
+# 0x75, 0x01,                    //  Report Size (1)                    56
+# 0x95, 0x03,                    //  Report Count (3)                   58
+# 0x91, 0x02,                    //  Output (Data,Var,Abs)              60
+# 0x95, 0x05,                    //  Report Count (5)                   62
+# 0x91, 0x01,                    //  Output (Cnst,Arr,Abs)              64
+# 0xc0,                          // End Collection                      66
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        67
+# 0x09, 0x02,                    // Usage (Mouse)                       69
+# 0xa1, 0x01,                    // Collection (Application)            71
+# 0x85, 0x09,                    //  Report ID (9)                      73
+# 0x09, 0x01,                    //  Usage (Pointer)                    75
+# 0xa1, 0x00,                    //  Collection (Physical)              77
+# 0x05, 0x09,                    //   Usage Page (Button)               79
+# 0x19, 0x01,                    //   Usage Minimum (1)                 81
+# 0x29, 0x05,                    //   Usage Maximum (5)                 83
+# 0x15, 0x00,                    //   Logical Minimum (0)               85
+# 0x25, 0x01,                    //   Logical Maximum (1)               87
+# 0x95, 0x05,                    //   Report Count (5)                  89
+# 0x75, 0x01,                    //   Report Size (1)                   91
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              93
+# 0x95, 0x01,                    //   Report Count (1)                  95
+# 0x75, 0x03,                    //   Report Size (3)                   97
+# 0x81, 0x01,                    //   Input (Cnst,Arr,Abs)              99
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      101
+# 0x09, 0x30,                    //   Usage (X)                         103
+# 0x09, 0x31,                    //   Usage (Y)                         105
+# 0x16, 0x01, 0xf8,              //   Logical Minimum (-2047)           107
+# 0x26, 0xff, 0x07,              //   Logical Maximum (2047)            110
+# 0x75, 0x0c,                    //   Report Size (12)                  113
+# 0x95, 0x02,                    //   Report Count (2)                  115
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              117
+# 0x09, 0x38,                    //   Usage (Wheel)                     119
+# 0x15, 0x81,                    //   Logical Minimum (-127)            121
+# 0x25, 0x7f,                    //   Logical Maximum (127)             123
+# 0x75, 0x08,                    //   Report Size (8)                   125
+# 0x95, 0x01,                    //   Report Count (1)                  127
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              129
+# 0x95, 0x01,                    //   Report Count (1)                  131
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              133
+# 0xc0,                          //  End Collection                     135
+# 0xc0,                          // End Collection                      136
+# 
+R: 137 05 01 09 06 a1 01 85 03 05 07 19 e0 29 e7 15 00 25 01 75 01 95 08 81 02 75 08 95 01 81 01 05 07 19 00 2a ff 00 15 00 26 ff 00 75 08 95 06 81 00 05 08 19 01 29 03 25 01 75 01 95 03 91 02 95 05 91 01 c0 05 01 09 02 a1 01 85 09 09 01 a1 00 05 09 19 01 29 05 15 00 25 01 95 05 75 01 81 02 95 01 75 03 81 01 05 01 09 30 09 31 16 01 f8 26 ff 07 75 0c 95 02 81 06 09 38 15 81 25 7f 75 08 95 01 81 06 95 01 81 03 c0 c0
+N:   Legion Controller for Windows 
+I: 3 17ef 6182
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.000000 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.006837 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.014768 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.022789 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.030731 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.038736 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.046773 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.054733 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.062774 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.070744 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.078768 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.086737 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.094755 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['PrintScreen', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.102737 9 03 00 00 46 00 00 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.110813 9 03 00 00 00 00 00 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.343019 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.350720 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.358744 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.366792 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.374789 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.382808 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.390732 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.398783 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.406840 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.414733 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.422738 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.430758 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.438727 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.446750 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.454725 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 1 | LeftShift: 0 | LeftAlt: 1 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', 'Delete Forward', '0x70000', '0x70000', '0x70000'] 
+E: 000000.462759 9 03 05 00 00 00 4c 00 00 00
+# ReportID: 3 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.470717 9 03 00 00 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000004.478796 7 09 00 00 00 00 ff 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.486751 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.494730 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000004.510979 7 09 00 00 00 00 ff 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.518728 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.526756 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000004.550770 7 09 00 00 00 00 ff 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.558927 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.566710 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.574679 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000004.654809 7 09 00 00 00 00 ff 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.662682 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.670694 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.678693 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000004.934838 7 09 00 00 00 00 01 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.942647 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.950650 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.958683 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000004.982978 7 09 00 00 00 00 01 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.990653 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.998686 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.006718 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000005.022749 7 09 00 00 00 00 01 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.030714 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.038699 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.046678 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000005.086721 7 09 00 00 00 00 01 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.094754 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.102774 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.110734 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000005.558784 7 09 00 00 00 00 ff 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.566737 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000005.574659 7 09 00 00 00 00 ff 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.582647 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.590692 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000005.854780 7 09 00 00 00 00 01 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.862705 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000005.870667 7 09 00 00 00 00 01 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.878659 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.886654 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.894722 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.902651 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000005.910680 7 09 00 00 00 00 01 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.918656 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.926671 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000006.086739 7 09 00 00 00 00 ff 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.094662 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.102658 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.110613 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.118650 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.126645 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.134670 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000006.326736 7 09 00 00 00 00 01 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.334734 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.342727 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.350723 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.358688 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.366692 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.374710 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.382634 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.390652 7 09 00 00 00 00 00 00
+# ReportID: 9 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000006.398621 7 09 00 00 00 00 00 00

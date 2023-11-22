@@ -1,0 +1,854 @@
+# Legion-Controller 1-23
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x02,                    // Usage (Mouse)                       2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x85, 0x02,                    //  Report ID (2)                      6
+# 0x09, 0x01,                    //  Usage (Pointer)                    8
+# 0xa1, 0x00,                    //  Collection (Physical)              10
+# 0x05, 0x09,                    //   Usage Page (Button)               12
+# 0x19, 0x01,                    //   Usage Minimum (1)                 14
+# 0x29, 0x05,                    //   Usage Maximum (5)                 16
+# 0x15, 0x00,                    //   Logical Minimum (0)               18
+# 0x25, 0x01,                    //   Logical Maximum (1)               20
+# 0x95, 0x05,                    //   Report Count (5)                  22
+# 0x75, 0x01,                    //   Report Size (1)                   24
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              26
+# 0x95, 0x01,                    //   Report Count (1)                  28
+# 0x75, 0x03,                    //   Report Size (3)                   30
+# 0x81, 0x01,                    //   Input (Cnst,Arr,Abs)              32
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      34
+# 0x09, 0x30,                    //   Usage (X)                         36
+# 0x09, 0x31,                    //   Usage (Y)                         38
+# 0x16, 0x01, 0xf8,              //   Logical Minimum (-2047)           40
+# 0x26, 0xff, 0x07,              //   Logical Maximum (2047)            43
+# 0x75, 0x0c,                    //   Report Size (12)                  46
+# 0x95, 0x02,                    //   Report Count (2)                  48
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              50
+# 0x09, 0x38,                    //   Usage (Wheel)                     52
+# 0x15, 0x81,                    //   Logical Minimum (-127)            54
+# 0x25, 0x7f,                    //   Logical Maximum (127)             56
+# 0x75, 0x08,                    //   Report Size (8)                   58
+# 0x95, 0x01,                    //   Report Count (1)                  60
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              62
+# 0x95, 0x01,                    //   Report Count (1)                  64
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              66
+# 0xc0,                          //  End Collection                     68
+# 0xc0,                          // End Collection                      69
+# 
+R: 70 05 01 09 02 a1 01 85 02 09 01 a1 00 05 09 19 01 29 05 15 00 25 01 95 05 75 01 81 02 95 01 75 03 81 01 05 01 09 30 09 31 16 01 f8 26 ff 07 75 0c 95 02 81 06 09 38 15 81 25 7f 75 08 95 01 81 06 95 01 81 03 c0 c0
+N: Legion-Controller 1-23
+I: 3 17ef 6185
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     2 | Y:    12 | Wheel:    0 | # 
+E: 000000.000000 7 02 00 02 c0 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.003991 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     2 | Y:    22 | Wheel:    0 | # 
+E: 000000.007924 7 02 00 02 60 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.011929 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     2 | Y:    12 | Wheel:    0 | # 
+E: 000000.015945 7 02 00 02 c0 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     7 | Wheel:    0 | # 
+E: 000000.019936 7 02 00 00 70 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.023905 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     3 | Wheel:    0 | # 
+E: 000000.035936 7 02 00 00 30 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.039945 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -7 | Y:     4 | Wheel:    0 | # 
+E: 000000.043957 7 02 00 f9 4f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.047917 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -8 | Y:     3 | Wheel:    0 | # 
+E: 000000.051939 7 02 00 f8 3f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.055910 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -14 | Y:     3 | Wheel:    0 | # 
+E: 000000.059910 7 02 00 f2 3f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.063902 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -15 | Y:     5 | Wheel:    0 | # 
+E: 000000.075946 7 02 00 f1 5f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -17 | Y:     4 | Wheel:    0 | # 
+E: 000000.079923 7 02 00 ef 4f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.083939 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -25 | Y:     2 | Wheel:    0 | # 
+E: 000000.087906 7 02 00 e7 2f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.091913 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -33 | Y:     3 | Wheel:    0 | # 
+E: 000000.095891 7 02 00 df 3f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.099978 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -47 | Y:     2 | Wheel:    0 | # 
+E: 000000.103910 7 02 00 d1 2f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.107904 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -62 | Y:    -3 | Wheel:    0 | # 
+E: 000000.111896 7 02 00 c2 df ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.115955 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -74 | Y:   -10 | Wheel:    0 | # 
+E: 000000.119924 7 02 00 b6 6f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.123909 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -83 | Y:   -12 | Wheel:    0 | # 
+E: 000000.127900 7 02 00 ad 4f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.131929 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -82 | Y:   -12 | Wheel:    0 | # 
+E: 000000.139944 7 02 00 ae 4f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.143914 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -154 | Y:   -35 | Wheel:    0 | # 
+E: 000000.147940 7 02 00 66 df fd 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.151941 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -58 | Y:   -20 | Wheel:    0 | # 
+E: 000000.155937 7 02 00 c6 cf fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.159931 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -44 | Y:   -18 | Wheel:    0 | # 
+E: 000000.163915 7 02 00 d4 ef fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.167922 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -32 | Y:   -15 | Wheel:    0 | # 
+E: 000000.171902 7 02 00 e0 1f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.175912 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -21 | Y:   -16 | Wheel:    0 | # 
+E: 000000.179983 7 02 00 eb 0f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.183927 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -11 | Y:   -14 | Wheel:    0 | # 
+E: 000000.187952 7 02 00 f5 2f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.191928 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -3 | Y:   -12 | Wheel:    0 | # 
+E: 000000.195962 7 02 00 fd 4f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -3 | Y:   -12 | Wheel:    0 | # 
+E: 000000.199937 7 02 00 fd 4f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.203925 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:   -11 | Wheel:    0 | # 
+E: 000000.215932 7 02 00 00 50 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.219929 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     7 | Y:   -35 | Wheel:    0 | # 
+E: 000000.223920 7 02 00 07 d0 fd 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.227920 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     6 | Y:   -22 | Wheel:    0 | # 
+E: 000000.231927 7 02 00 06 a0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.235944 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     4 | Y:   -18 | Wheel:    0 | # 
+E: 000000.239905 7 02 00 04 e0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.243920 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     7 | Y:   -22 | Wheel:    0 | # 
+E: 000000.247913 7 02 00 07 a0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     8 | Y:   -21 | Wheel:    0 | # 
+E: 000000.251924 7 02 00 08 b0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.255922 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    15 | Y:   -22 | Wheel:    0 | # 
+E: 000000.259905 7 02 00 0f a0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.263917 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    20 | Y:   -22 | Wheel:    0 | # 
+E: 000000.275964 7 02 00 14 a0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.279919 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    57 | Y:   -34 | Wheel:    0 | # 
+E: 000000.283926 7 02 00 39 e0 fd 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.287912 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    48 | Y:   -16 | Wheel:    0 | # 
+E: 000000.291936 7 02 00 30 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.295915 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    58 | Y:   -12 | Wheel:    0 | # 
+E: 000000.299931 7 02 00 3a 40 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.303939 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    68 | Y:    -8 | Wheel:    0 | # 
+E: 000000.307928 7 02 00 44 80 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.311968 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    76 | Y:    -4 | Wheel:    0 | # 
+E: 000000.315921 7 02 00 4c c0 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    76 | Y:    -4 | Wheel:    0 | # 
+E: 000000.319920 7 02 00 4c c0 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.323912 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    81 | Y:     1 | Wheel:    0 | # 
+E: 000000.327908 7 02 00 51 10 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.331926 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    74 | Y:     9 | Wheel:    0 | # 
+E: 000000.335998 7 02 00 4a 90 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.339925 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    71 | Y:    12 | Wheel:    0 | # 
+E: 000000.343901 7 02 00 47 c0 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.347915 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    65 | Y:    19 | Wheel:    0 | # 
+E: 000000.351941 7 02 00 41 30 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.355918 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    45 | Y:    24 | Wheel:    0 | # 
+E: 000000.359923 7 02 00 2d 80 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.363922 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    30 | Y:    23 | Wheel:    0 | # 
+E: 000000.371948 7 02 00 1e 70 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.375908 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    19 | Y:    41 | Wheel:    0 | # 
+E: 000000.379926 7 02 00 13 90 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.383931 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -1 | Y:    18 | Wheel:    0 | # 
+E: 000000.387915 7 02 00 ff 2f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.391903 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -4 | Y:    20 | Wheel:    0 | # 
+E: 000000.404033 7 02 00 fc 4f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.407905 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -16 | Y:    45 | Wheel:    0 | # 
+E: 000000.411910 7 02 00 f0 df 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -11 | Y:    22 | Wheel:    0 | # 
+E: 000000.415923 7 02 00 f5 6f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.419968 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -11 | Y:    22 | Wheel:    0 | # 
+E: 000000.423908 7 02 00 f5 6f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.427909 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -16 | Y:    26 | Wheel:    0 | # 
+E: 000000.431924 7 02 00 f0 af 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.435927 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -23 | Y:    30 | Wheel:    0 | # 
+E: 000000.439917 7 02 00 e9 ef 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.443908 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -24 | Y:    25 | Wheel:    0 | # 
+E: 000000.447916 7 02 00 e8 9f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.451959 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -27 | Y:    21 | Wheel:    0 | # 
+E: 000000.455915 7 02 00 e5 5f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.459922 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -33 | Y:    21 | Wheel:    0 | # 
+E: 000000.463902 7 02 00 df 5f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.467914 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -37 | Y:    18 | Wheel:    0 | # 
+E: 000000.471903 7 02 00 db 2f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.475906 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -40 | Y:    10 | Wheel:    0 | # 
+E: 000000.479895 7 02 00 d8 af 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.483952 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -45 | Y:     7 | Wheel:    0 | # 
+E: 000000.487937 7 02 00 d3 7f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -44 | Y:     1 | Wheel:    0 | # 
+E: 000000.491910 7 02 00 d4 1f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.495926 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -47 | Y:    -1 | Wheel:    0 | # 
+E: 000000.499923 7 02 00 d1 ff ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.504015 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -49 | Y:    -5 | Wheel:    0 | # 
+E: 000000.515941 7 02 00 cf bf ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.519944 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -108 | Y:   -12 | Wheel:    0 | # 
+E: 000000.531922 7 02 00 94 4f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.535937 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -92 | Y:   -30 | Wheel:    0 | # 
+E: 000000.543931 7 02 00 a4 2f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.547904 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -38 | Y:   -21 | Wheel:    0 | # 
+E: 000000.551938 7 02 00 da bf fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.555912 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -35 | Y:   -26 | Wheel:    0 | # 
+E: 000000.559910 7 02 00 dd 6f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.563884 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -27 | Y:   -25 | Wheel:    0 | # 
+E: 000000.567928 7 02 00 e5 7f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.571926 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -24 | Y:   -24 | Wheel:    0 | # 
+E: 000000.575914 7 02 00 e8 8f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.579898 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -17 | Y:   -23 | Wheel:    0 | # 
+E: 000000.583934 7 02 00 ef 9f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.587918 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -12 | Y:   -24 | Wheel:    0 | # 
+E: 000000.591918 7 02 00 f4 8f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -8 | Y:   -24 | Wheel:    0 | # 
+E: 000000.595896 7 02 00 f8 8f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.599907 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -3 | Y:   -22 | Wheel:    0 | # 
+E: 000000.603927 7 02 00 fd af fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.607916 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     1 | Y:   -22 | Wheel:    0 | # 
+E: 000000.611906 7 02 00 01 a0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.615915 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     3 | Y:   -22 | Wheel:    0 | # 
+E: 000000.619923 7 02 00 03 a0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.623912 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     5 | Y:   -22 | Wheel:    0 | # 
+E: 000000.627916 7 02 00 05 a0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.631916 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     8 | Y:   -23 | Wheel:    0 | # 
+E: 000000.635924 7 02 00 08 90 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.639922 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     6 | Y:   -18 | Wheel:    0 | # 
+E: 000000.651916 7 02 00 06 e0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.655914 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    27 | Y:   -34 | Wheel:    0 | # 
+E: 000000.659913 7 02 00 1b e0 fd 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.663908 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    21 | Y:   -16 | Wheel:    0 | # 
+E: 000000.667926 7 02 00 15 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    27 | Y:   -16 | Wheel:    0 | # 
+E: 000000.671900 7 02 00 1b 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.675909 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    27 | Y:   -16 | Wheel:    0 | # 
+E: 000000.679903 7 02 00 1b 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.683916 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    30 | Y:   -14 | Wheel:    0 | # 
+E: 000000.687923 7 02 00 1e 20 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.691905 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    32 | Y:   -10 | Wheel:    0 | # 
+E: 000000.695905 7 02 00 20 60 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.699920 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    40 | Y:    -7 | Wheel:    0 | # 
+E: 000000.703910 7 02 00 28 90 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.707904 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    40 | Y:    -2 | Wheel:    0 | # 
+E: 000000.711930 7 02 00 28 e0 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.715920 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    45 | Y:     1 | Wheel:    0 | # 
+E: 000000.719916 7 02 00 2d 10 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.723915 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    45 | Y:     3 | Wheel:    0 | # 
+E: 000000.727891 7 02 00 2d 30 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    46 | Y:     3 | Wheel:    0 | # 
+E: 000000.731920 7 02 00 2e 30 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.735936 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    49 | Y:     7 | Wheel:    0 | # 
+E: 000000.739930 7 02 00 31 70 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.743900 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    41 | Y:    12 | Wheel:    0 | # 
+E: 000000.755934 7 02 00 29 c0 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.759926 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    67 | Y:    38 | Wheel:    0 | # 
+E: 000000.771937 7 02 00 43 60 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.775899 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    46 | Y:    47 | Wheel:    0 | # 
+E: 000000.779901 7 02 00 2e f0 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.783904 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    15 | Y:    22 | Wheel:    0 | # 
+E: 000000.787933 7 02 00 0f 60 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.791897 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    10 | Y:    26 | Wheel:    0 | # 
+E: 000000.795906 7 02 00 0a a0 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    10 | Y:    26 | Wheel:    0 | # 
+E: 000000.800001 7 02 00 0a a0 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.803934 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     5 | Y:    27 | Wheel:    0 | # 
+E: 000000.815934 7 02 00 05 b0 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.819927 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:    56 | Wheel:    0 | # 
+E: 000000.823893 7 02 00 00 80 03 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.827898 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -3 | Y:    32 | Wheel:    0 | # 
+E: 000000.831898 7 02 00 fd 0f 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -3 | Y:    31 | Wheel:    0 | # 
+E: 000000.835913 7 02 00 fd ff 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.839907 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -2 | Y:    28 | Wheel:    0 | # 
+E: 000000.843906 7 02 00 fe cf 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.847901 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -3 | Y:    26 | Wheel:    0 | # 
+E: 000000.851920 7 02 00 fd af 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.855944 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -9 | Y:    29 | Wheel:    0 | # 
+E: 000000.859906 7 02 00 f7 df 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.863905 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -12 | Y:    29 | Wheel:    0 | # 
+E: 000000.867956 7 02 00 f4 df 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.871930 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -17 | Y:    26 | Wheel:    0 | # 
+E: 000000.875895 7 02 00 ef af 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.879914 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -18 | Y:    23 | Wheel:    0 | # 
+E: 000000.891934 7 02 00 ee 7f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.895907 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -23 | Y:    23 | Wheel:    0 | # 
+E: 000000.899941 7 02 00 e9 7f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.903949 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -35 | Y:    28 | Wheel:    0 | # 
+E: 000000.907909 7 02 00 dd cf 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.911902 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -24 | Y:    13 | Wheel:    0 | # 
+E: 000000.915906 7 02 00 e8 df 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.919907 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -24 | Y:    13 | Wheel:    0 | # 
+E: 000000.927944 7 02 00 e8 df 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.931932 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -54 | Y:    20 | Wheel:    0 | # 
+E: 000000.935938 7 02 00 ca 4f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.939888 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -26 | Y:     6 | Wheel:    0 | # 
+E: 000000.943896 7 02 00 e6 6f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.947901 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -27 | Y:     4 | Wheel:    0 | # 
+E: 000000.951913 7 02 00 e5 4f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -28 | Y:     3 | Wheel:    0 | # 
+E: 000000.955911 7 02 00 e4 3f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.959894 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -27 | Y:     0 | Wheel:    0 | # 
+E: 000000.963894 7 02 00 e5 0f 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.967963 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -27 | Y:    -2 | Wheel:    0 | # 
+E: 000000.971887 7 02 00 e5 ef ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.975900 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -27 | Y:    -5 | Wheel:    0 | # 
+E: 000000.979898 7 02 00 e5 bf ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.983890 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -28 | Y:    -5 | Wheel:    0 | # 
+E: 000000.987913 7 02 00 e4 bf ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000000.991903 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -25 | Y:   -13 | Wheel:    0 | # 
+E: 000001.003928 7 02 00 e7 3f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.007899 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -51 | Y:   -31 | Wheel:    0 | # 
+E: 000001.015935 7 02 00 cd 1f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.019917 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -22 | Y:   -16 | Wheel:    0 | # 
+E: 000001.023965 7 02 00 ea 0f ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.027898 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -19 | Y:   -18 | Wheel:    0 | # 
+E: 000001.031882 7 02 00 ed ef fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.035965 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -17 | Y:   -24 | Wheel:    0 | # 
+E: 000001.039899 7 02 00 ef 8f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.043891 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -14 | Y:   -22 | Wheel:    0 | # 
+E: 000001.047901 7 02 00 f2 af fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.051900 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -11 | Y:   -23 | Wheel:    0 | # 
+E: 000001.055912 7 02 00 f5 9f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.059920 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -10 | Y:   -27 | Wheel:    0 | # 
+E: 000001.063905 7 02 00 f6 5f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.067903 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -6 | Y:   -24 | Wheel:    0 | # 
+E: 000001.071928 7 02 00 fa 8f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.075899 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -5 | Y:   -24 | Wheel:    0 | # 
+E: 000001.079896 7 02 00 fb 8f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.083930 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -2 | Y:   -23 | Wheel:    0 | # 
+E: 000001.087918 7 02 00 fe 9f fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:   -23 | Wheel:    0 | # 
+E: 000001.091904 7 02 00 00 90 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.095903 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:   -20 | Wheel:    0 | # 
+E: 000001.099918 7 02 00 00 c0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.103895 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     3 | Y:   -21 | Wheel:    0 | # 
+E: 000001.107908 7 02 00 03 b0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.111902 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     2 | Y:   -21 | Wheel:    0 | # 
+E: 000001.123929 7 02 00 02 b0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.127904 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    11 | Y:   -41 | Wheel:    0 | # 
+E: 000001.139910 7 02 00 0b 70 fd 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.143905 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    22 | Y:   -41 | Wheel:    0 | # 
+E: 000001.147910 7 02 00 16 70 fd 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    14 | Y:   -19 | Wheel:    0 | # 
+E: 000001.151955 7 02 00 0e d0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.155900 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    14 | Y:   -19 | Wheel:    0 | # 
+E: 000001.159909 7 02 00 0e d0 fe 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.163901 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    14 | Y:   -13 | Wheel:    0 | # 
+E: 000001.167897 7 02 00 0e 30 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.171905 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    18 | Y:   -11 | Wheel:    0 | # 
+E: 000001.175894 7 02 00 12 50 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.179906 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    22 | Y:   -11 | Wheel:    0 | # 
+E: 000001.183967 7 02 00 16 50 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.187895 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    22 | Y:    -9 | Wheel:    0 | # 
+E: 000001.195923 7 02 00 16 70 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.199899 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    56 | Y:    -9 | Wheel:    0 | # 
+E: 000001.203905 7 02 00 38 70 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.207910 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    32 | Y:    -3 | Wheel:    0 | # 
+E: 000001.211912 7 02 00 20 d0 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.215893 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    31 | Y:     0 | Wheel:    0 | # 
+E: 000001.219908 7 02 00 1f 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.223903 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    33 | Y:     2 | Wheel:    0 | # 
+E: 000001.227927 7 02 00 21 20 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.231896 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    30 | Y:     6 | Wheel:    0 | # 
+E: 000001.235922 7 02 00 1e 60 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.239911 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    27 | Y:    10 | Wheel:    0 | # 
+E: 000001.243911 7 02 00 1b a0 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.247907 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    29 | Y:    13 | Wheel:    0 | # 
+E: 000001.251912 7 02 00 1d d0 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.255924 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    25 | Y:    16 | Wheel:    0 | # 
+E: 000001.259909 7 02 00 19 00 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.263898 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    24 | Y:    19 | Wheel:    0 | # 
+E: 000001.267982 7 02 00 18 30 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    24 | Y:    24 | Wheel:    0 | # 
+E: 000001.271917 7 02 00 18 80 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.275932 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    24 | Y:    24 | Wheel:    0 | # 
+E: 000001.279894 7 02 00 18 80 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.283946 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    19 | Y:    25 | Wheel:    0 | # 
+E: 000001.295920 7 02 00 13 90 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.299898 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    33 | Y:    56 | Wheel:    0 | # 
+E: 000001.303963 7 02 00 21 80 03 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.307891 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    11 | Y:    24 | Wheel:    0 | # 
+E: 000001.311914 7 02 00 0b 80 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.315895 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     8 | Y:    24 | Wheel:    0 | # 
+E: 000001.320008 7 02 00 08 80 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.323907 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     3 | Y:    31 | Wheel:    0 | # 
+E: 000001.327890 7 02 00 03 f0 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     2 | Y:    30 | Wheel:    0 | # 
+E: 000001.331894 7 02 00 02 e0 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.335924 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -1 | Y:    59 | Wheel:    0 | # 
+E: 000001.348041 7 02 00 ff bf 03 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.351930 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -3 | Y:    29 | Wheel:    0 | # 
+E: 000001.355904 7 02 00 fd df 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.359886 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -7 | Y:    26 | Wheel:    0 | # 
+E: 000001.363898 7 02 00 f9 af 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.367890 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -8 | Y:    23 | Wheel:    0 | # 
+E: 000001.371925 7 02 00 f8 7f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.375896 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    -9 | Y:    23 | Wheel:    0 | # 
+E: 000001.379905 7 02 00 f7 7f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.383896 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -10 | Y:    19 | Wheel:    0 | # 
+E: 000001.387911 7 02 00 f6 3f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -12 | Y:    19 | Wheel:    0 | # 
+E: 000001.391892 7 02 00 f4 3f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.395887 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -12 | Y:    19 | Wheel:    0 | # 
+E: 000001.399899 7 02 00 f4 3f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.403991 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -15 | Y:    20 | Wheel:    0 | # 
+E: 000001.407904 7 02 00 f1 4f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.411900 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -18 | Y:    21 | Wheel:    0 | # 
+E: 000001.415892 7 02 00 ee 5f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.419927 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -22 | Y:    21 | Wheel:    0 | # 
+E: 000001.423879 7 02 00 ea 5f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.427890 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -22 | Y:    19 | Wheel:    0 | # 
+E: 000001.431922 7 02 00 ea 3f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.435901 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -25 | Y:    17 | Wheel:    0 | # 
+E: 000001.439901 7 02 00 e7 1f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.443890 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -28 | Y:    17 | Wheel:    0 | # 
+E: 000001.447882 7 02 00 e4 1f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -29 | Y:    16 | Wheel:    0 | # 
+E: 000001.451874 7 02 00 e3 0f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.455903 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -27 | Y:    14 | Wheel:    0 | # 
+E: 000001.459891 7 02 00 e5 ef 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.463878 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -30 | Y:    14 | Wheel:    0 | # 
+E: 000001.467912 7 02 00 e2 ef 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.471896 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -30 | Y:    10 | Wheel:    0 | # 
+E: 000001.483910 7 02 00 e2 af 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.487918 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -41 | Y:    23 | Wheel:    0 | # 
+E: 000001.491891 7 02 00 d7 7f 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.495880 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -19 | Y:    12 | Wheel:    0 | # 
+E: 000001.503898 7 02 00 ed cf 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.507888 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -18 | Y:    10 | Wheel:    0 | # 
+E: 000001.511899 7 02 00 ee af 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.515900 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     1 | Wheel:    0 | # 
+E: 000001.519902 7 02 00 00 10 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.523883 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     1 | Wheel:    0 | # 
+E: 000001.527893 7 02 00 00 10 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.531898 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     1 | Wheel:    0 | # 
+E: 000001.535933 7 02 00 00 10 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000001.539917 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000002.651913 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000002.655889 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000002.691961 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000002.695917 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000002.719924 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000002.723875 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000002.735875 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000002.739924 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000002.767939 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000002.771952 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000002.803894 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000002.807890 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000002.952320 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000002.955966 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000002.959976 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000002.963885 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000002.995915 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000002.999868 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000003.055940 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.059869 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000003.087940 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.091911 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000003.119920 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.123923 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000003.183942 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.187923 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000003.456348 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.459916 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000003.515935 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.519856 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000003.535954 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.539988 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000003.559886 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.563854 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000003.583931 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.587864 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000003.764196 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.767849 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000003.771895 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.775922 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000003.807972 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.811855 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000003.867943 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.871882 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000003.891929 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.895870 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000003.935948 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000003.939908 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000004.168202 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.171882 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000004.187914 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.191864 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000004.219906 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.223860 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000004.263888 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.267899 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000004.548174 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.551861 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000004.588127 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.591857 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    1 | # 
+E: 000004.631914 7 02 00 00 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000004.635870 7 02 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:   -1 | # 
+E: 000005.511939 7 02 00 00 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:     0 | Y:     0 | Wheel:    0 | # 
+E: 000005.515927 7 02 00 00 00 00 00 00
