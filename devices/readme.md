@@ -10,6 +10,7 @@ mkdir -p raw; cd raw
 sudo acpidump -b
 ```
 
+# ACPI Decoding
 Then, to decode them type:
 ```bash
 cd ..
@@ -18,6 +19,38 @@ for f in ./encoded/*.dat; do
 iasl -p decoded/$(basename "$f" .dat) -d $f
 done
 ```
+
+# WMI Methods
+The ACPI tables contain collections of methods that allow an OS to interact with
+core devices that do not have a handshake protocol, such as USB does.
+For Windows specifically, some of those methods will contain encoded metadata
+with method descriptions, and Windows drivers will hook on those descriptions.
+This is called the WMI interface.
+
+To dump the WMI interfaces, start by compiling a tool that can decode them.
+```bash
+git clone https://github.com/pali/bmfdec
+cd bmfdec
+make
+cd ..
+```
+
+Then, load the wmi-bmof module to load the interfaces (this module will be unloaded
+after rebooting).
+```bash
+sudo modprobe bmf2mon
+```
+
+You can now dump the WMI interfaces
+```bash
+mkdir -p wmi
+for bmof in /sys/bus/wmi/devices/*/bmof
+do
+    sudo ./bmfdec/bmf2mof $bmof | tee ./wmi/"${${bmof%\/bmof}##*/}".txt
+done
+```
+
+
 
 ## Controller Mappings
 Most peripheral devices communicate with the computer using an event protocol named `HID`.
