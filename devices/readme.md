@@ -1,3 +1,6 @@
+# HW Dump Instructions
+Below you will find the commands for performing a hardware dump for a device.
+
 ## ACPI Collection
 The tools required to dump the ACPI tables of a computer can be found in the
 packages `acpica-tools` in Debian and `acpica` in Arch.
@@ -10,7 +13,7 @@ mkdir -p raw; cd raw
 sudo acpidump -b
 ```
 
-# ACPI Decoding
+### ACPI Decoding
 Then, to decode them type:
 ```bash
 cd ..
@@ -20,7 +23,7 @@ iasl -p decoded/$(basename "$f" .dat) -d $f
 done
 ```
 
-# WMI Methods
+### WMI Methods
 The ACPI tables contain collections of methods that allow an OS to interact with
 core devices that do not have a handshake protocol, such as USB does.
 For Windows specifically, some of those methods will contain encoded metadata
