@@ -19,6 +19,12 @@ While a proper design would include multiple output reports, Lenovo's choice
 is understandable, as it limits the complexity of the HID descriptor and
 firmware of the controllers.
 
+The following Wireshark filter might prove useful:
+```
+(usb.endpoint_address == 0x03) && (usb.dst == "1.1.3")
+(((usb.endpoint_address == 0x03) || usb.endpoint_address == 0x83) && !(frame.len == 27)) && !(usbhid.data contains 04:19:74)
+```
+
 ## Output Report (ID 5, Usage page `0x05`)
 The first byte of the report is `0x05`, indicating this is a report with ID 5
 and the second byte is the length, which varies from 6-12.
@@ -119,7 +125,7 @@ There are two extra commands: 6a and 71, that appear during setting the LEDs.
 It is unknown what they do.
 
 ### Switch On/Off
-To turn the leds on/off the following is used:
+To turn the LEDs on/off the following is used:
 ```
 0506 70 02 <controller> <on/off> 01
 ```
@@ -185,7 +191,7 @@ The following command sets the dpi:
 ```
 DPI is a four byte value referring to the dpi the mouse should be set to.
 04 probably refers to the controller, but only the right controller has
-a mouse.
+a mouse. `03` might refer to the fps profile.
 
 ## Vibration
 Legion go allows controlling the vibration of the controllers.
@@ -195,10 +201,19 @@ Legion go allows controlling the vibration of the controllers.
 Where the controller is `03`, `04`, and for vibration `00`, `01`, `02`, `03` for
 `Off`, `Weak`, `Medium`, `Strong`.
 
-## Unknown Commands
-These commands also appeared when setting the DPI and vibrations.
-Probably as a result of navigating the menus.
+## Configuration request commands
+These commands appear while navigating the menus and elicit a different response
+from the raw interface.
 ```
 0505 79 01 <01-04> 01
 0505 67 01 04 01
+```
+
+Examples:
+```
+050567010401
+040667010403f66f0000000000000000008080808000000000000080800000000000000064800000000000008080000000000000006400000000000000000000
+
+050579010301
+041579010300750100000300000231016b000101a0fa0a5400000000008432800000000000800000000000008080000000000000006400000000000000000000
 ```
