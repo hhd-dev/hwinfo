@@ -97,3 +97,42 @@ As for the actions:
 | 23   | View              |
 | 24   | Menu              |
 
+## RGB Remapping
+The legion go controllers contain 2 RGB LEDs below the joysticks.
+They can be controlled individually.
+They support 3 configuration profiles, and the user
+can select between them or disable them.
+
+For each profile, the user can specify a mode and parameters for the mode:
+ - Solid (RGB Color, Brightness)
+ - Dynamic Color (Brightness, Speed)
+ - Blinking (RGB Color, Speed)
+
+There are two extra commands: 6a and 71, that appear during setting the LEDs.
+It is unknown what they do.
+
+### Switch On/Off
+To turn the leds on/off the following is used:
+```
+0506 70 02 <controller> <on/off> 01
+```
+Where controller is either `03`, `04` and on/off is `01`/`00`.
+
+
+### Set profile (1-3)
+To set the profile, the following command is used:
+```
+0506 73 02 <controller> <profile> 01
+```
+Where controller is either `03`, `04` and profile goes from `01`, `02`, `03`.
+
+### Set profile settings
+The profile settings can be set as follows:
+```
+050c 72 01 <controller> <mode> <color:3b> <brightness> <profile> 01
+```
+- Mode can be `01`, `02`, `03` for Solid, Blinking, Dynamic Color.
+- Brightness is a single byte from `00` to `ff`.
+- Controller is either `03` or `04`.
+- Color is a hex RGB value.
+- Profile is `01`, `02`, `03`.
