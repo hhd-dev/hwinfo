@@ -55,8 +55,8 @@ The `.py` script uses `xrandr` to change the resolutions of an X11 desktop insta
 You select a range of framerates you want to test for and for each it loads the
 modeline and waits for input.
 If you press enter, the modeline is discarded.
-If you enter a character, the modeline is considered valid and you enter verification
-mode.
+If you input a character plus enter, the modeline is considered valid and you 
+enter verification mode.
 In this mode, every time you press enter, the script will reset the resolution
 to the monitor's native one and switch to the new one.
 Press enter if the change was applied correctly, and a character plus enter to
@@ -81,7 +81,8 @@ should be output and generate the modelines file.
 You should already have a feeling for which modelines work, so that you can
 write a function that will generate them without having to test them.
 
-The only requirement of the notebooks script is 
+The only requirement of the notebooks script is the pypi package `jupyterlab`
+for jupyter. You can use VS Code over ssh to edit the script.
 
 This script will use the information you entered to generate a file that looks
 like the following:
