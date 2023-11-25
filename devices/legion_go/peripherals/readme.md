@@ -35,7 +35,9 @@ Let's dissect them one by one.
 #### Gyro remapping
 The gyro command that can be used to remap the joysticks is as follows:
 
-```0508 6a 060101 <gyro><joystick> 01```
+```
+0508 6a 060101 <gyro><joystick> 01
+```
 
 The command only varies the gyro byte to `01`, `02`, which map to left, right,
 and the joystick value from `00`, `01`, `02`, which means disabled, left, right joystick
@@ -44,7 +46,9 @@ respectively.
 #### Touchpad enable/disable
 The touchpad can be enabled/disabled with the following command:
 
-```0506 6b 0204 <enable> 01```
+```
+0506 6b 0204 <enable> 01
+```
 
 Where enable is either `00` or `01`.
 
@@ -54,7 +58,9 @@ which can be used to set the back buttons to any of the options shown [here](./w
 However, there is plenty of space both on the byte specifying the button and
 the byte specifying the action, so there is potential.
 
-```0507 6c 02 <controller> <button> <action> 01```
+```
+0507 6c 02 <controller> <button> <action> 01
+```
 
 Where button is either `03` or `04` referencing the left, right controllers,
 and button `1c`, `1d`, `1e`, `21`, `22`, referring to Y1, Y2, Y3, M2, M3.
