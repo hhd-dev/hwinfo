@@ -25,6 +25,7 @@ and the second byte is the length, which varies from 6-12.
 The third byte is the command, structured as two nibbles: the first is the mode
 of the controller the command refers to (6 for controller, 7 for fps) and the
 second nibble refers to the command.
+Most commands are followed with a forth byte, which is fixed.
 
 ### Xinput + DInput Remapping
 All xinput remapping commands begin with nibble 6.
@@ -142,3 +143,62 @@ The profile settings can be set as follows:
 - Controller is either `03` or `04`.
 - Color is a hex RGB value.
 - Profile is `01`, `02`, `03`.
+
+## FPS Remapping
+FPS remapping is the most difficult set of commands,
+because it supports 4 modes and it allows remapping
+all buttons to all keyboard, mouse, keypad buttons.
+In addition, there are DPI settings.
+
+### General Remapping Command
+```
+0508 6c 04 <controller> <profile> <button> <action> 01
+```
+Where button is any of the buttons of the controller, and action is any button
+on the keyboard, mouse, or keypad. Decoding those will take a while.
+
+### Switching modes.
+```
+0506 6e 02 <controller> <profile> 01
+```
+Controller is `03`, `04`. Profile is from `01` - `04`.
+
+There's also a secondary form of this command:
+```
+0505 6e 01 04 01
+```
+It is smaller, uses 01 as the param bit and is always like this.
+
+### Unknown command
+The following command appeared while navigating the interface for switching modes:
+```
+0506 6a 02 <controller> <on/off> 01
+```
+It is unclear what it does. 
+It appears to be from the gyro command subspace.
+But that command has a different structure and size.
+
+### DPI
+The following command sets the dpi:
+```
+0509 68 03 04 <DPI:4b> 01
+```
+DPI is a four byte value referring to the dpi the mouse should be set to.
+04 probably refers to the controller, but only the right controller has
+a mouse.
+
+## Vibration
+Legion go allows controlling the vibration of the controllers.
+```
+0506 67 02 <controller> <vibration> 01
+```
+Where the controller is `03`, `04`, and for vibration `00`, `01`, `02`, `03` for
+`Off`, `Weak`, `Medium`, `Strong`.
+
+## Unknown Commands
+These commands also appeared when setting the DPI and vibrations.
+Probably as a result of navigating the menus.
+```
+0505 79 01 <01-04> 01
+0505 67 01 04 01
+```
