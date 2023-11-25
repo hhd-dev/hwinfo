@@ -115,6 +115,24 @@ respectively.
 OLEDs and LED displays with zones will have different avg and max values, since 
 the display can get brighter in parts of it. For others, just leave avg empty.
 
+> At the time of this writing, it is unclear if the legion go display/ROG ally
+> support hdr.
+> Windows reports that `HDR Video Streaming` is supported, and with the built-in
+> media player, the display switches to full brightness.
+> Either Windows could be raising the brightness of the display or the display is
+> reacting to HDR Metadata. 
+> 
+> It is unclear which is the case. SteamOS patched in Linux (with the proper kernel etc) 
+> and VLC media player in Windows using OpenGL output with the proper PQ 
+> transfer function have colors that appear washed out and do not affect 
+> display brightness.
+>
+> `Use HDR` in Windows is unsupported, but that is expected for an
+> 8-bit panel. Confusingly, the steam deck OLED display is also 8bit according to
+> its EDID file.
+>
+> If you know more about HDR, test and get in touch!
+
 ## Controller Mappings
 Most peripheral devices communicate with the computer using an event protocol named `HID`.
 The main exception to this is xbox or xbox-like controllers, which use a proprietary
