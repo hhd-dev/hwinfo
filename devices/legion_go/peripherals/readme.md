@@ -70,8 +70,7 @@ the byte specifying the action, so there is potential.
 ```
 
 Where button is either `03` or `04` referencing the left, right controllers,
-and button `1c`, `1d`, `1e`, `21`, `22`, referring to Y1, Y2, Y3, M2, M3.
-The Y buttons use `03`, and the M buttons `04` as the controller.
+and button `03 1c`, `03 1d`, `04 1e`, `04 21`, `04 22`, referring to Y1, Y2, Y3, M2, M3.
 The button numbers do not start from 0, indicating that the command is valid
 for other buttons as well.
 
