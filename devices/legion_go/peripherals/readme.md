@@ -144,7 +144,7 @@ The profile settings can be set as follows:
 050c 72 01 <controller> <mode> <color:3b> <brightness> <profile> 01
 ```
 - Mode can be `01`, `02`, `03` for Solid, Blinking, Dynamic Color.
-- Brightness is a single byte from `00` to `ff`.
+- Brightness is a single byte from `00` to `64`. So is speed.
 - Controller is either `03` or `04`.
 - Color is a hex RGB value.
 - Profile is `01`, `02`, `03`.
