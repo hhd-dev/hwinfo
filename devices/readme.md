@@ -9,7 +9,7 @@ Save them in a directory named `./acpi` in the device folder.
 To dump the raw tables, create a directory for them and `cd` into it to use
 the `acpidump` command.
 ```bash
-mkdir -p raw; cd raw
+mkdir -p encoded; cd encoded
 sudo acpidump -b
 ```
 
@@ -41,6 +41,7 @@ cd ..
 Then, load the wmi-bmof module to load the interfaces (this module will be unloaded
 after rebooting).
 ```bash
+# May not be needed (?)
 sudo modprobe bmf2mon
 ```
 
