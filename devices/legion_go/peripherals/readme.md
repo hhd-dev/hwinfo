@@ -19,7 +19,7 @@ While a proper design would include multiple output reports, Lenovo's choice
 is understandable, as it limits the complexity of the HID descriptor and
 firmware of the controllers.
 
-The following Wireshark filter might prove useful:
+The following Wireshark filters might prove useful:
 ```
 (usb.endpoint_address == 0x03) && (usb.dst == "1.1.3")
 (((usb.endpoint_address == 0x03) || usb.endpoint_address == 0x83) && !(frame.len == 27)) && !(usbhid.data contains 04:19:74)
@@ -43,7 +43,7 @@ Let's dissect them one by one.
 The gyro command that can be used to remap the joysticks is as follows:
 
 ```
-0508 6a 060101 <gyro><joystick> 01
+0508 6a 060101 <gyro> <joystick> 01
 ```
 
 The command only varies the gyro byte to `01`, `02`, which map to left, right,
@@ -141,7 +141,7 @@ Where controller is either `03`, `04` and profile goes from `01`, `02`, `03`.
 ### Set profile settings
 The profile settings can be set as follows:
 ```
-050c 72 01 <controller> <mode> <color:3b> <brightness> <profile> 01
+050c 72 01 <controller> <mode> <color:3b> <brightness> <speed> <profile> 01
 ```
 - Mode can be `01`, `02`, `03` for Solid, Blinking, Dynamic Color.
 - Brightness is a single byte from `00` to `64`. So is speed.
