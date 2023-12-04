@@ -1,0 +1,565 @@
+# Valve Software Steam Controller
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x06,                    // Usage (Keyboard)                    2
+# 0x95, 0x01,                    // Report Count (1)                    4
+# 0xa1, 0x01,                    // Collection (Application)            6
+# 0x85, 0x01,                    //  Report ID (1)                      8
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              10
+# 0x19, 0xe0,                    //  Usage Minimum (224)                12
+# 0x29, 0xe7,                    //  Usage Maximum (231)                14
+# 0x15, 0x00,                    //  Logical Minimum (0)                16
+# 0x25, 0x01,                    //  Logical Maximum (1)                18
+# 0x75, 0x01,                    //  Report Size (1)                    20
+# 0x95, 0x08,                    //  Report Count (8)                   22
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               24
+# 0x95, 0x01,                    //  Report Count (1)                   26
+# 0x75, 0x08,                    //  Report Size (8)                    28
+# 0x81, 0x01,                    //  Input (Cnst,Arr,Abs)               30
+# 0x95, 0x05,                    //  Report Count (5)                   32
+# 0x75, 0x01,                    //  Report Size (1)                    34
+# 0x05, 0x08,                    //  Usage Page (LEDs)                  36
+# 0x19, 0x01,                    //  Usage Minimum (1)                  38
+# 0x29, 0x05,                    //  Usage Maximum (5)                  40
+# 0x91, 0x02,                    //  Output (Data,Var,Abs)              42
+# 0x95, 0x01,                    //  Report Count (1)                   44
+# 0x75, 0x03,                    //  Report Size (3)                    46
+# 0x91, 0x01,                    //  Output (Cnst,Arr,Abs)              48
+# 0x95, 0x06,                    //  Report Count (6)                   50
+# 0x75, 0x08,                    //  Report Size (8)                    52
+# 0x15, 0x00,                    //  Logical Minimum (0)                54
+# 0x25, 0x65,                    //  Logical Maximum (101)              56
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              58
+# 0x19, 0x00,                    //  Usage Minimum (0)                  60
+# 0x29, 0x65,                    //  Usage Maximum (101)                62
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               64
+# 0xc0,                          // End Collection                      66
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        67
+# 0x09, 0x02,                    // Usage (Mouse)                       69
+# 0xa1, 0x01,                    // Collection (Application)            71
+# 0x85, 0x02,                    //  Report ID (2)                      73
+# 0x09, 0x01,                    //  Usage (Pointer)                    75
+# 0xa1, 0x00,                    //  Collection (Physical)              77
+# 0x05, 0x09,                    //   Usage Page (Button)               79
+# 0x19, 0x01,                    //   Usage Minimum (1)                 81
+# 0x29, 0x05,                    //   Usage Maximum (5)                 83
+# 0x15, 0x00,                    //   Logical Minimum (0)               85
+# 0x25, 0x01,                    //   Logical Maximum (1)               87
+# 0x95, 0x05,                    //   Report Count (5)                  89
+# 0x75, 0x01,                    //   Report Size (1)                   91
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              93
+# 0x95, 0x01,                    //   Report Count (1)                  95
+# 0x75, 0x03,                    //   Report Size (3)                   97
+# 0x81, 0x01,                    //   Input (Cnst,Arr,Abs)              99
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      101
+# 0x09, 0x30,                    //   Usage (X)                         103
+# 0x09, 0x31,                    //   Usage (Y)                         105
+# 0x09, 0x38,                    //   Usage (Wheel)                     107
+# 0x15, 0x81,                    //   Logical Minimum (-127)            109
+# 0x25, 0x7f,                    //   Logical Maximum (127)             111
+# 0x75, 0x08,                    //   Report Size (8)                   113
+# 0x95, 0x03,                    //   Report Count (3)                  115
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              117
+# 0xc0,                          //  End Collection                     119
+# 0xc0,                          // End Collection                      120
+# 
+R: 121 05 01 09 06 95 01 a1 01 85 01 05 07 19 e0 29 e7 15 00 25 01 75 01 95 08 81 02 95 01 75 08 81 01 95 05 75 01 05 08 19 01 29 05 91 02 95 01 75 03 91 01 95 06 75 08 15 00 25 65 05 07 19 00 29 65 81 00 c0 05 01 09 02 a1 01 85 02 09 01 a1 00 05 09 19 01 29 05 15 00 25 01 95 05 75 01 81 02 95 01 75 03 81 01 05 01 09 30 09 31 09 38 15 81 25 7f 75 08 95 03 81 06 c0 c0
+N: Valve Software Steam Controller
+I: 3 28de 1142
+# ReportID: 2 / Button: 0  1  0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.000000 5 02 02 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.143826 5 02 00 00 00 00
+# ReportID: 2 / Button: 1  0  0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.331990 5 02 01 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.486202 5 02 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['Spacebar', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.925854 9 01 00 00 2c 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.115851 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['F9', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.321979 9 01 00 00 42 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.475996 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['LeftArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.150249 9 01 00 00 50 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.293868 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['UpArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.483984 9 01 00 00 52 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.663858 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['RightArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.869857 9 01 00 00 4f 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.023844 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['DownArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.293859 9 01 00 00 51 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.463863 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['Tab', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000004.931875 9 01 00 00 2b 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000005.111984 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['ESCAPE', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000005.831995 9 01 00 00 29 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000006.029963 9 01 00 00 00 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    3 | Wheel:    0 
+E: 000006.849993 5 02 00 01 03 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    2 | Wheel:    0 
+E: 000006.857815 5 02 00 01 02 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    2 | Wheel:    0 
+E: 000006.867829 5 02 00 01 02 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    1 | Wheel:    0 
+E: 000006.887971 5 02 00 01 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    2 | Wheel:    0 
+E: 000006.893812 5 02 00 01 02 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    1 | Wheel:    0 
+E: 000006.911825 5 02 00 01 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    2 | Wheel:    0 
+E: 000006.929967 5 02 00 00 02 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    2 | Wheel:    0 
+E: 000006.983987 5 02 00 00 02 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000006.993833 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    0 | Wheel:    0 
+E: 000007.001974 5 02 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -2 | Y:    1 | Wheel:    0 
+E: 000007.011979 5 02 00 fe 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    0 | Wheel:    0 
+E: 000007.019976 5 02 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:   16 | Wheel:    0 
+E: 000007.191831 5 02 00 ff 10 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -6 | Y:    0 | Wheel:    0 
+E: 000007.199982 5 02 00 fa 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -3 | Y:    2 | Wheel:    0 
+E: 000007.209829 5 02 00 fd 02 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    3 | Wheel:    0 
+E: 000007.217985 5 02 00 ff 03 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    3 | Wheel:    0 
+E: 000007.229958 5 02 00 ff 03 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -2 | Y:    1 | Wheel:    0 
+E: 000007.235985 5 02 00 fe 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -2 | Y:    1 | Wheel:    0 
+E: 000007.245966 5 02 00 fe 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.254237 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    1 | Wheel:    0 
+E: 000007.263988 5 02 00 ff 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    3 | Wheel:    0 
+E: 000007.273986 5 02 00 00 03 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 
+E: 000007.281985 5 02 00 ff ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.291837 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.299975 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.325819 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.334277 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    1 | Wheel:    0 
+E: 000007.362278 5 02 00 01 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    0 | Wheel:    0 
+E: 000007.370286 5 02 00 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    2 | Y:    0 | Wheel:    0 
+E: 000007.379980 5 02 00 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    2 | Y:    0 | Wheel:    0 
+E: 000007.389819 5 02 00 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    2 | Wheel:    0 
+E: 000007.399978 5 02 00 00 02 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -3 | Y:    6 | Wheel:    0 
+E: 000007.523846 5 02 00 fd 06 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    8 | Wheel:    0 
+E: 000007.533959 5 02 00 00 08 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    3 | Wheel:    0 
+E: 000007.541821 5 02 00 ff 03 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    0 | Wheel:    0 
+E: 000007.551836 5 02 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    2 | Wheel:    0 
+E: 000007.560216 5 02 00 ff 02 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    3 | Wheel:    0 
+E: 000007.571848 5 02 00 00 03 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.586081 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    1 | Wheel:    0 
+E: 000007.595975 5 02 00 ff 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.606134 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.613806 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.623825 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.641836 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    0 | Wheel:    0 
+E: 000007.649960 5 02 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.667979 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    1 | Wheel:    0 
+E: 000007.677822 5 02 00 ff 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.695851 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    0 | Wheel:    0 
+E: 000007.703881 5 02 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.713847 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    0 | Wheel:    0 
+E: 000007.722269 5 02 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.732153 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    0 | Wheel:    0 
+E: 000007.739848 5 02 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    1 | Wheel:    0 
+E: 000007.749848 5 02 00 ff 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    0 | Wheel:    0 
+E: 000007.757825 5 02 00 ff 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:    1 | Wheel:    0 
+E: 000007.775832 5 02 00 00 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    0 | Wheel:    0 
+E: 000007.839985 5 02 00 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    0 | Wheel:    0 
+E: 000007.847844 5 02 00 01 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    2 | Y:   -1 | Wheel:    0 
+E: 000007.857845 5 02 00 02 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    7 | Y:   -3 | Wheel:    0 
+E: 000007.865849 5 02 00 07 fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    8 | Y:   -2 | Wheel:    0 
+E: 000007.875843 5 02 00 08 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -1 | Wheel:    0 
+E: 000007.883849 5 02 00 06 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    7 | Y:   -2 | Wheel:    0 
+E: 000007.893925 5 02 00 07 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -1 | Wheel:    0 
+E: 000007.901822 5 02 00 06 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    7 | Y:   -2 | Wheel:    0 
+E: 000007.912132 5 02 00 07 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -1 | Wheel:    0 
+E: 000007.919844 5 02 00 06 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -1 | Wheel:    0 
+E: 000007.929845 5 02 00 06 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -2 | Wheel:    0 
+E: 000007.937843 5 02 00 06 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -1 | Wheel:    0 
+E: 000007.947843 5 02 00 06 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:   -1 | Wheel:    0 
+E: 000007.955848 5 02 00 05 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -2 | Wheel:    0 
+E: 000007.965966 5 02 00 06 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -1 | Wheel:    0 
+E: 000007.973844 5 02 00 06 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:   -1 | Wheel:    0 
+E: 000007.983845 5 02 00 05 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:   -1 | Wheel:    0 
+E: 000007.992128 5 02 00 05 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:   -1 | Wheel:    0 
+E: 000008.001840 5 02 00 05 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -2 | Wheel:    0 
+E: 000008.010144 5 02 00 06 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:   -1 | Wheel:    0 
+E: 000008.019981 5 02 00 05 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    4 | Y:   -1 | Wheel:    0 
+E: 000008.027839 5 02 00 04 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -2 | Y:   -6 | Wheel:    0 
+E: 000008.045823 5 02 00 fe fa 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:   -1 | Wheel:    0 
+E: 000008.055847 5 02 00 00 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:   -2 | Wheel:    0 
+E: 000008.063849 5 02 00 00 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    3 | Y:   -9 | Wheel:    0 
+E: 000008.073996 5 02 00 03 f7 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    2 | Y:   -7 | Wheel:    0 
+E: 000008.083812 5 02 00 02 f9 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:  -10 | Wheel:    0 
+E: 000008.092281 5 02 00 01 f6 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    3 | Y:  -16 | Wheel:    0 
+E: 000008.101845 5 02 00 03 f0 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    3 | Y:  -13 | Wheel:    0 
+E: 000008.110253 5 02 00 03 f3 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    0 | Y:  -32 | Wheel:    0 
+E: 000008.119868 5 02 00 00 e0 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:  -20 | Wheel:    0 
+E: 000008.125827 5 02 00 01 ec 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:  -20 | Wheel:    0 
+E: 000008.135864 5 02 00 ff ec 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -4 | Y:  -17 | Wheel:    0 
+E: 000008.143810 5 02 00 fc ef 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -11 | Y:  -31 | Wheel:    0 
+E: 000008.153827 5 02 00 f5 e1 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -8 | Y:  -18 | Wheel:    0 
+E: 000008.162340 5 02 00 f8 ee 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -28 | Y:  -10 | Wheel:    0 
+E: 000008.171822 5 02 00 e4 f6 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -9 | Y:   -6 | Wheel:    0 
+E: 000008.179828 5 02 00 f7 fa 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -13 | Y:    0 | Wheel:    0 
+E: 000008.189965 5 02 00 f3 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -16 | Y:    1 | Wheel:    0 
+E: 000008.198295 5 02 00 f0 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -18 | Y:    4 | Wheel:    0 
+E: 000008.207841 5 02 00 ee 04 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -17 | Y:    5 | Wheel:    0 
+E: 000008.217828 5 02 00 ef 05 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -30 | Y:   14 | Wheel:    0 
+E: 000008.225828 5 02 00 e2 0e 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -26 | Y:   19 | Wheel:    0 
+E: 000008.234293 5 02 00 e6 13 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -32 | Y:   32 | Wheel:    0 
+E: 000008.244287 5 02 00 e0 20 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -30 | Y:   32 | Wheel:    0 
+E: 000008.251848 5 02 00 e2 20 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -24 | Y:   32 | Wheel:    0 
+E: 000008.262272 5 02 00 e8 20 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -27 | Y:   32 | Wheel:    0 
+E: 000008.269819 5 02 00 e5 20 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -11 | Y:   32 | Wheel:    0 
+E: 000008.279845 5 02 00 f5 20 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -7 | Y:   25 | Wheel:    0 
+E: 000008.289849 5 02 00 f9 19 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -6 | Y:   24 | Wheel:    0 
+E: 000008.297977 5 02 00 fa 18 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    2 | Y:   32 | Wheel:    0 
+E: 000008.308280 5 02 00 02 20 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    7 | Y:   23 | Wheel:    0 
+E: 000008.315971 5 02 00 07 17 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   10 | Y:   17 | Wheel:    0 
+E: 000008.326256 5 02 00 0a 11 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   14 | Y:   17 | Wheel:    0 
+E: 000008.333817 5 02 00 0e 11 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   10 | Y:   16 | Wheel:    0 
+E: 000008.343850 5 02 00 0a 10 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   26 | Y:   17 | Wheel:    0 
+E: 000008.351973 5 02 00 1a 11 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   32 | Y:    6 | Wheel:    0 
+E: 000008.361848 5 02 00 20 06 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   32 | Y:    4 | Wheel:    0 
+E: 000008.370288 5 02 00 20 04 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   32 | Y:   -6 | Wheel:    0 
+E: 000008.379845 5 02 00 20 fa 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   32 | Y:   -8 | Wheel:    0 
+E: 000008.388258 5 02 00 20 f8 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   32 | Y:   -8 | Wheel:    0 
+E: 000008.397819 5 02 00 20 f8 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   32 | Y:   -9 | Wheel:    0 
+E: 000008.405852 5 02 00 20 f7 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   27 | Y:   -7 | Wheel:    0 
+E: 000008.415836 5 02 00 1b f9 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   18 | Y:   -8 | Wheel:    0 
+E: 000008.423976 5 02 00 12 f8 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   10 | Y:   -3 | Wheel:    0 
+E: 000008.433844 5 02 00 0a fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    9 | Y:   -6 | Wheel:    0 
+E: 000008.442279 5 02 00 09 fa 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   11 | Y:   -5 | Wheel:    0 
+E: 000008.451974 5 02 00 0b fb 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   15 | Y:   -7 | Wheel:    0 
+E: 000008.459840 5 02 00 0f f9 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    4 | Y:  -25 | Wheel:    0 
+E: 000008.470264 5 02 00 04 e7 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:  -12 | Wheel:    0 
+E: 000008.478248 5 02 00 06 f4 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    4 | Y:  -14 | Wheel:    0 
+E: 000008.487842 5 02 00 04 f2 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    4 | Y:  -19 | Wheel:    0 
+E: 000008.495843 5 02 00 04 ed 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:  -15 | Wheel:    0 
+E: 000008.505844 5 02 00 05 f1 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:  -18 | Wheel:    0 
+E: 000008.513844 5 02 00 06 ee 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:  -21 | Wheel:    0 
+E: 000008.523847 5 02 00 05 eb 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:  -20 | Wheel:    0 
+E: 000008.532280 5 02 00 01 ec 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -3 | Y:  -32 | Wheel:    0 
+E: 000008.541888 5 02 00 fd e0 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -7 | Y:  -22 | Wheel:    0 
+E: 000008.550263 5 02 00 f9 ea 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -7 | Y:  -13 | Wheel:    0 
+E: 000008.559835 5 02 00 f9 f3 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -8 | Y:  -13 | Wheel:    0 
+E: 000008.567842 5 02 00 f8 f3 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -32 | Y:  -16 | Wheel:    0 
+E: 000008.577842 5 02 00 e0 f0 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -24 | Y:  -14 | Wheel:    0 
+E: 000008.586286 5 02 00 e8 f2 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -32 | Y:    4 | Wheel:    0 
+E: 000008.603848 5 02 00 e0 04 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -24 | Y:    2 | Wheel:    0 
+E: 000008.613849 5 02 00 e8 02 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -23 | Y:    5 | Wheel:    0 
+E: 000008.621817 5 02 00 e9 05 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:  -14 | Y:    3 | Wheel:    0 
+E: 000008.631831 5 02 00 f2 03 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -5 | Y:    3 | Wheel:    0 
+E: 000008.639977 5 02 00 fb 03 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -5 | Y:    2 | Wheel:    0 
+E: 000008.649953 5 02 00 fb 02 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -4 | Y:    1 | Wheel:    0 
+E: 000008.658146 5 02 00 fc 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   -1 | Y:    1 | Wheel:    0 
+E: 000008.667863 5 02 00 ff 01 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:    0 | Wheel:    0 
+E: 000008.685812 5 02 00 06 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    2 | Y:   -1 | Wheel:    0 
+E: 000008.693812 5 02 00 02 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    3 | Y:   -1 | Wheel:    0 
+E: 000008.703839 5 02 00 03 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    4 | Y:    0 | Wheel:    0 
+E: 000008.712108 5 02 00 04 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   24 | Y:   -7 | Wheel:    0 
+E: 000008.721829 5 02 00 18 f9 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   24 | Y:   -3 | Wheel:    0 
+E: 000008.729970 5 02 00 18 fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   22 | Y:   -3 | Wheel:    0 
+E: 000008.739839 5 02 00 16 fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   21 | Y:   -3 | Wheel:    0 
+E: 000008.747835 5 02 00 15 fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   21 | Y:   -2 | Wheel:    0 
+E: 000008.757834 5 02 00 15 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   20 | Y:   -3 | Wheel:    0 
+E: 000008.765813 5 02 00 14 fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   20 | Y:   -3 | Wheel:    0 
+E: 000008.775824 5 02 00 14 fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   20 | Y:   -2 | Wheel:    0 
+E: 000008.785838 5 02 00 14 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   19 | Y:   -3 | Wheel:    0 
+E: 000008.793823 5 02 00 13 fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   19 | Y:   -3 | Wheel:    0 
+E: 000008.801850 5 02 00 13 fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   19 | Y:   -2 | Wheel:    0 
+E: 000008.811850 5 02 00 13 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   18 | Y:   -2 | Wheel:    0 
+E: 000008.819978 5 02 00 12 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   18 | Y:   -3 | Wheel:    0 
+E: 000008.829966 5 02 00 12 fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   18 | Y:   -2 | Wheel:    0 
+E: 000008.837852 5 02 00 12 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   17 | Y:   -2 | Wheel:    0 
+E: 000008.848293 5 02 00 11 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   17 | Y:   -3 | Wheel:    0 
+E: 000008.855982 5 02 00 11 fd 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   17 | Y:   -2 | Wheel:    0 
+E: 000008.865846 5 02 00 11 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   16 | Y:   -2 | Wheel:    0 
+E: 000008.874076 5 02 00 10 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   16 | Y:   -2 | Wheel:    0 
+E: 000008.883847 5 02 00 10 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   16 | Y:   -2 | Wheel:    0 
+E: 000008.893818 5 02 00 10 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   15 | Y:   -2 | Wheel:    0 
+E: 000008.901846 5 02 00 0f fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   15 | Y:   -2 | Wheel:    0 
+E: 000008.911842 5 02 00 0f fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   15 | Y:   -2 | Wheel:    0 
+E: 000008.919835 5 02 00 0f fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   14 | Y:   -2 | Wheel:    0 
+E: 000008.929848 5 02 00 0e fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   14 | Y:   -2 | Wheel:    0 
+E: 000008.939847 5 02 00 0e fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   13 | Y:   -2 | Wheel:    0 
+E: 000008.945850 5 02 00 0d fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   14 | Y:   -1 | Wheel:    0 
+E: 000008.953852 5 02 00 0e ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   13 | Y:   -2 | Wheel:    0 
+E: 000008.963839 5 02 00 0d fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   12 | Y:   -2 | Wheel:    0 
+E: 000008.971979 5 02 00 0c fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   13 | Y:   -1 | Wheel:    0 
+E: 000008.981842 5 02 00 0d ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   11 | Y:   -2 | Wheel:    0 
+E: 000008.989822 5 02 00 0b fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   12 | Y:   -2 | Wheel:    0 
+E: 000008.999848 5 02 00 0c fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   11 | Y:   -1 | Wheel:    0 
+E: 000009.007843 5 02 00 0b ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   11 | Y:   -1 | Wheel:    0 
+E: 000009.017974 5 02 00 0b ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   11 | Y:   -2 | Wheel:    0 
+E: 000009.025830 5 02 00 0b fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   10 | Y:   -1 | Wheel:    0 
+E: 000009.035847 5 02 00 0a ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   10 | Y:   -1 | Wheel:    0 
+E: 000009.043831 5 02 00 0a ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    9 | Y:   -2 | Wheel:    0 
+E: 000009.053821 5 02 00 09 fe 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:   10 | Y:   -1 | Wheel:    0 
+E: 000009.061846 5 02 00 0a ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    8 | Y:   -1 | Wheel:    0 
+E: 000009.071972 5 02 00 08 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    9 | Y:   -1 | Wheel:    0 
+E: 000009.079848 5 02 00 09 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    8 | Y:   -1 | Wheel:    0 
+E: 000009.089837 5 02 00 08 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    8 | Y:   -1 | Wheel:    0 
+E: 000009.098283 5 02 00 08 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    7 | Y:   -1 | Wheel:    0 
+E: 000009.107972 5 02 00 07 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    8 | Y:   -1 | Wheel:    0 
+E: 000009.115842 5 02 00 08 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -1 | Wheel:    0 
+E: 000009.126182 5 02 00 06 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    7 | Y:   -1 | Wheel:    0 
+E: 000009.133820 5 02 00 07 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:   -1 | Wheel:    0 
+E: 000009.143814 5 02 00 06 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    6 | Y:    0 | Wheel:    0 
+E: 000009.152253 5 02 00 06 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:   -1 | Wheel:    0 
+E: 000009.162316 5 02 00 05 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:   -1 | Wheel:    0 
+E: 000009.172303 5 02 00 05 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:    0 | Wheel:    0 
+E: 000009.179826 5 02 00 05 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['UpArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000009.181822 9 01 00 00 52 00 00 00 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    5 | Y:   -1 | Wheel:    0 
+E: 000009.189839 5 02 00 05 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    4 | Y:    0 | Wheel:    0 
+E: 000009.197808 5 02 00 04 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    4 | Y:   -1 | Wheel:    0 
+E: 000009.207838 5 02 00 04 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    3 | Y:    0 | Wheel:    0 
+E: 000009.216229 5 02 00 03 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    3 | Y:    0 | Wheel:    0 
+E: 000009.225826 5 02 00 03 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    3 | Y:   -1 | Wheel:    0 
+E: 000009.233834 5 02 00 03 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    2 | Y:    0 | Wheel:    0 
+E: 000009.243826 5 02 00 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    2 | Y:    0 | Wheel:    0 
+E: 000009.252363 5 02 00 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    2 | Y:    0 | Wheel:    0 
+E: 000009.261809 5 02 00 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    2 | Y:    0 | Wheel:    0 
+E: 000009.269839 5 02 00 02 00 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:   -1 | Wheel:    0 
+E: 000009.279967 5 02 00 01 ff 00
+# ReportID: 2 / Button: 0  0  0  0  0 | # | X:    1 | Y:    0 | Wheel:    0 
+E: 000009.297851 5 02 00 01 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000009.421820 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['DownArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000009.601981 9 01 00 00 51 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000009.791841 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['RightArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000009.981817 9 01 00 00 4f 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000010.151842 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['LeftArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000010.367989 9 01 00 00 50 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000010.550223 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['F4', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000010.879840 9 01 00 00 3d 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000011.015978 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['ESCAPE', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000012.050002 9 01 00 00 29 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000012.221962 9 01 00 00 00 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['Return (ENTER)', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000012.347974 9 01 00 00 28 00 00 00 00 00
+# ReportID: 1 / LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000012.527826 9 01 00 00 00 00 00 00 00 00
