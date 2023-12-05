@@ -336,16 +336,16 @@ retrieve the feature, either in windows or with `acpi_call`
 | ------ | ------- | ------ | ---------- | ------------------------------------------ | -------------------------------- |
 | 0      | 0x01    |        |            | 1                                          |                                  |
 | 0      | 0x02    |        |            | 0                                          |                                  |
-| 0      | 0x03    |        | 0x00030000 | EC0.FPTB                                   |                                  |
+| 0      | 0x03    |        | 0x00030000 | EC0.FPTB                                   | Flip to Start (0) No Screen      |
 | 0      | 0x06    |        |            | 0                                          |                                  |
-| 0      | 0x07    |        |            | GSTM / Bit Mask                            |                                  |
-| 0      | 0x08    |        |            | HWTP / Bit Mask                            |                                  |
-| 0      | 0x0C    |        |            | 1                                          |                                  |
+| 0      | 0x07    |        |            | GSTM / Bit Mask                            | Supported Power Modes            |
+| 0      | 0x08    |        |            | HWTP / Bit Mask                            | ?                                |
+| 0      | 0x0C    |        |            | 1                                          | ?                                |
 | 0      | 0x0D    |        |            | 0                                          |                                  |
-| 0      | 0x0E    |        |            | 0                                          |                                  |
-| 0      | 0x0F    |        |            | 0 if DGST == 1 else 1                      |                                  |
+| 0      | 0x0E    |        |            | 0                                          | No AI Chip :(                    |
+| 0      | 0x0F    |        |            | 0 if DGST == 1 else 1                      | iGPU status (rev. of Disc.GPU)   |
 | 0      | 0x10    |        |            | 0                                          |                                  |
-| 0      | 0x12    |        |            | 1                                          |                                  |
+| 0      | 0x12    |        |            | 1                                          | ?                                |
 |        |         |        |            |                                            |                                  |
 | 1      | 0x01    | 0x0100 | 0x01010100 | 0x0F if ADPT else 0x08                     | Slow TDP pre power mode          |
 | 1      | 0x01    | 0x0200 | 0x01010200 | 0x19 if ADPT else 0x0F                     | //                               |
@@ -382,70 +382,70 @@ retrieve the feature, either in windows or with `acpi_call`
 | 2      | 0x0A    |        |            | 0                                          |                                  |
 | 2      | 0x0B    |        |            | 0                                          |                                  |
 |        |         |        |            |                                            |                                  |
-| 3      | 0x01    | 0x01   | 0x03010001 | EC0.IBAC                                   |                                  |
-| 3      | 0x01    | 0x02   | 0x03010002 | EC0.IBPD                                   |                                  |
-| 3      | 0x02    |        |            | ~(EC0.B1ST & 0x08) && ADPT                 | Is powered and 3rd B1ST bit is 0 |
-| 3      | 0x03    |        |            | GAPS / Bit Mask                            |                                  |
+| 3      | 0x01    | 0x01   | 0x03010001 | EC0.IBAC                                   | Boot if AC is connected          |
+| 3      | 0x01    | 0x02   | 0x03010002 | EC0.IBPD                                   | Boot if Power Delivery connected |
+| 3      | 0x02    |        | 0x03020000 | ~(EC0.B1ST & 0x08) && ADPT                 | Is powered and 3rd B1ST bit is 0 |
+| 3      | 0x03    |        |            | GAPS / Bit Mask                            | ?                                |
 |        |         |        |            |                                            |                                  |
 | 4      | 0x01    |        |            | 1                                          |                                  |
 | 4      | 0x02    |        | 0x04020000 | FFSS                                       | Is in full fan speed  mode       |
 | 4      | 0x03    | 0x01   | 0x04030001 | {FANL, FANH} or int16 val for fan          | Fan Speed (RPM ?)                |
 | 4      | 0x03    | 0x02   |            | 0                                          | No fan 2 (?)                     |
 |        |         |        |            |                                            |                                  |
-| 5      | 0x01    |        | 0x05010000 | EC0, CRTS                                  |                                  |
+| 5      | 0x01    |        | 0x05010000 | EC0.CRTS                                   |                                  |
 | 5      | 0x02    |        |            | 0                                          |                                  |
 | 5      | 0x03    |        | 0x05030000 | EC0.AMTS                                   |                                  |
-| 5      | 0x04    |        | 0x05040000 | EC0.CPTS                                   |                                  |
-| 5      | 0x05    |        |            | 0                                          |                                  |
+| 5      | 0x04    |        | 0x05040000 | EC0.CPTS                                   | CPU Temperature                  |
+| 5      | 0x05    |        |            | 0                                          | GPU Temperature                  |
 | 5      | 0x06    |        |            | 0                                          |                                  |
 | 5      | 0x07    |        |            | 0                                          |                                  |
-| 5      | 0x08    |        | 0x05080000 | EC0.CHTS                                   |                                  |
+| 5      | 0x08    |        | 0x05080000 | EC0.CHTS                                   | Temperature (>)                  |
 | 5      | 0x09    |        |            | 0                                          |                                  |
-| 5      | 0x0A    |        | 0x050A0000 | EC0.CRTS                                   |                                  |
-| 5      | 0x0B    |        | 0x050B0000 | EC0.CTTS                                   |                                  |
+| 5      | 0x0A    |        | 0x050A0000 | EC0.CRTS                                   | Temperature (?)                  |
+| 5      | 0x0B    |        | 0x050B0000 | EC0.CTTS                                   | Temperature (?)                  |
 
 #### Set Feature Command
 Below are the set features in BIOS v28.
 
-| Device | Feature | Type   | Int32      | Sets                                        | Explanation                    |
-| ------ | ------- | ------ | ---------- | ------------------------------------------- | ------------------------------ |
-| 0      | 0x01    |        |            | ret 0                                       |                                |
-| 0      | 0x02    |        |            | ret 0                                       |                                |
-| 0      | 0x03    |        |            | CUST = arg, SMID = 0x03, SMIC = 0x0C5       | Unsure, CUST is external       |
-| 0      | 0x06    |        |            | ret 0                                       |                                |
-| 0      | 0x0D    |        |            | ret 0                                       |                                |
-| 0      | 0x0E    |        |            | ret 0                                       |                                |
-| 0      | 0x10    |        |            | ret 1                                       |                                |
-| 0      | 0x12    |        |            | ret 0                                       |                                |
-|        |         |        |            |                                             |                                |
-| 1      | 0x01    | 0xFF00 | 0x0101FF00 | sets CSTP = arg, EC0.SCUM = 0x03            | Slow TDP Set                   |
-| 1      | 0x02    | 0xFF00 | 0x0102FF00 | sets CTDP = arg, EC0.SCUM = 0x01            | Steady TDP Set                 |
-| 1      | 0x03    | 0xFF00 | 0x0103FF00 | sets CFTP = arg, EC0.SCUM = 0x01            | Fast TDP set                   |
-| 1      | 0x04    |        |            | ret 0                                       | /\ Only in custom mode!!       |
-| 1      | 0x05    |        |            | ret 0                                       |                                |
-| 1      | 0x06    |        |            | ret 0                                       |                                |
-| 1      | 0x07    |        |            | ret 0                                       |                                |
-| 1      | 0x08    |        |            | ret 0                                       |                                |
-|        |         |        |            |                                             |                                |
-| 2      | 0x01    |        |            | ret 0                                       | Not implemented                |
-| 2      | 0x02    |        |            | ret 0                                       | //                             |
-| 2      | 0x03    |        |            | ret 0                                       | //                             |
-| 2      | 0x04    |        |            | ret 0                                       | //                             |
-| 2      | 0x05    |        |            | ret 0                                       | //                             |
-| 2      | 0x06    |        |            | ret 0                                       | //                             |
-| 2      | 0x07    |        |            | ret 0                                       | //                             |
-| 2      | 0x08    |        |            | ret 0                                       | //                             |
-| 2      | 0x09    |        |            | ret 0                                       | //                             |
-| 2      | 0x0B    |        |            | ret 0                                       | //                             |
-|        |         |        |            |                                             |                                |
-| 3      | 0x01    |        | -          | SMID = 0x02, SMIC = 0x0C5                   | Always runs with below         |
-| 3      | 0x01    | 0x01   | 0X03010001 | IBAC = 1 if arg = 1 else IBAC = 0           | ?                              |
-| 3      | 0x01    | 0x02   | 0X03010001 | IBPD = 1 if arg = 1 else IBPD = 0           | ?                              |
-| 3      | 0x02    |        | 0x03020000 | If ~ADPT, manipulate B1ST dep. on arg 0/1   |                                |
-|        |         |        |            |                                             |                                |
-| 4      | 0x02    |        |            | if arg = 1, FFSS = 1 elif arg = 0, FFSS = 0 | Sets Full Fan speed            |
-| 4      | 0x03    | 0x01   | 0X04010001 | {FANL, FANH} = arg or int16 val for fan     | Sets fan speed? Does not work. |
-| 4      | 0x03    | 0x02   |            | ret 0                                       |                                |
+| Device | Feature | Type   | Int32      | Sets                                        | Explanation                          |
+| ------ | ------- | ------ | ---------- | ------------------------------------------- | ------------------------------------ |
+| 0      | 0x01    |        |            | ret 0                                       |                                      |
+| 0      | 0x02    |        |            | ret 0                                       |                                      |
+| 0      | 0x03    |        | 0x00030000 | CUST = arg, SMID = 0x03, SMIC = 0x0C5       | Flip lid to open (FlipToStart) (?)   |
+| 0      | 0x06    |        |            | ret 0                                       |                                      |
+| 0      | 0x0D    |        |            | ret 0                                       |                                      |
+| 0      | 0x0E    |        |            | ret 0                                       |                                      |
+| 0      | 0x10    |        |            | ret 1                                       |                                      |
+| 0      | 0x12    |        |            | ret 0                                       |                                      |
+|        |         |        |            |                                             |                                      |
+| 1      | 0x01    | 0xFF00 | 0x0101FF00 | sets CSTP = arg, EC0.SCUM = 0x03            | Slow TDP Set                         |
+| 1      | 0x02    | 0xFF00 | 0x0102FF00 | sets CTDP = arg, EC0.SCUM = 0x01            | Steady TDP Set                       |
+| 1      | 0x03    | 0xFF00 | 0x0103FF00 | sets CFTP = arg, EC0.SCUM = 0x01            | Fast TDP set (Only in custom mode!!) |
+| 1      | 0x04    |        |            | ret 0                                       | CPU temp limit                       |
+| 1      | 0x05    |        |            | ret 0                                       | APU PPT Power Limit                  |
+| 1      | 0x06    |        |            | ret 0                                       | CPU Cross Loading Power Limit        |
+| 1      | 0x07    |        |            | ret 0                                       | CPU L1 Tau                           |
+| 1      | 0x08    |        |            | ret 0                                       | ?                                    |
+|        |         |        |            |                                             |                                      |
+| 2      | 0x01    |        |            | ret 0                                       | GPU Parameters (No GPU)              |
+| 2      | 0x02    |        |            | ret 0                                       | //                                   |
+| 2      | 0x03    |        |            | ret 0                                       | //                                   |
+| 2      | 0x04    |        |            | ret 0                                       | //                                   |
+| 2      | 0x05    |        |            | ret 0                                       | //                                   |
+| 2      | 0x06    |        |            | ret 0                                       | //                                   |
+| 2      | 0x07    |        |            | ret 0                                       | //                                   |
+| 2      | 0x08    |        |            | ret 0                                       | //                                   |
+| 2      | 0x09    |        |            | ret 0                                       | //                                   |
+| 2      | 0x0B    |        |            | ret 0                                       | //                                   |
+|        |         |        |            |                                             |                                      |
+| 3      | 0x01    |        | -          | SMID = 0x02, SMIC = 0x0C5                   | Always runs with below               |
+| 3      | 0x01    | 0x01   | 0X03010001 | IBAC = 1 if arg = 1 else IBAC = 0           | Set boot on AC Power (?)             |
+| 3      | 0x01    | 0x02   | 0X03010001 | IBPD = 1 if arg = 1 else IBPD = 0           | Set boot on PD (?)                   |
+| 3      | 0x02    |        | 0x03020000 | If ~ADPT, manipulate B1ST dep. on arg 0/1   |                                      |
+|        |         |        |            |                                             |                                      |
+| 4      | 0x02    |        |            | if arg = 1, FFSS = 1 elif arg = 0, FFSS = 0 | Sets Full Fan speed                  |
+| 4      | 0x03    | 0x01   | 0X04010001 | {FANL, FANH} = arg or int16 val for fan     | Sets fan speed? Does not work.       |
+| 4      | 0x03    | 0x02   |            | ret 0                                       |                                      |
 
 ### Turn power led on off (WMAF)
 Legion go has the following interface for turning the power LED on/off:
