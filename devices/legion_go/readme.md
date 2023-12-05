@@ -441,7 +441,7 @@ Below are the set features in BIOS v28.
 | 3      | 0x01    |        | -          | SMID = 0x02, SMIC = 0x0C5                   | Always runs with below         |
 | 3      | 0x01    | 0x01   | 0X03010001 | IBAC = 1 if arg = 1 else IBAC = 0           | ?                              |
 | 3      | 0x01    | 0x02   | 0X03010001 | IBPD = 1 if arg = 1 else IBPD = 0           | ?                              |
-| 3      | 0x02    |        |            | If ~ADPT, manipulate B1ST dep. on arg 0/1   |                                |
+| 3      | 0x02    |        | 0x03020000 | If ~ADPT, manipulate B1ST dep. on arg 0/1   |                                |
 |        |         |        |            |                                             |                                |
 | 4      | 0x02    |        |            | if arg = 1, FFSS = 1 elif arg = 0, FFSS = 0 | Sets Full Fan speed            |
 | 4      | 0x03    | 0x01   | 0X04010001 | {FANL, FANH} = arg or int16 val for fan     | Sets fan speed? Does not work. |
