@@ -287,8 +287,8 @@ echo '\_SB.GZFD.WMAE 0 0x11 {<TYP0:2b>, <FEA0>, <DEV0>}' | sudo tee /proc/acpi/c
 echo '\_SB.GZFD.WMAE 0 0x12 {<TYP0:2b>, <FEA0>, <DEV0>, <ARG:4b>}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
 
 # Big Endian
-echo '\_SB.GZFD.WMAE 0 0x11 0x<ARG:4b><DEV0><FEA0><TYP0:2b>' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call 
-echo '\_SB.GZFD.WMAE 0 0x12 0x<DEV0><FEA0><TYP0:2b>' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call 
+echo '\_SB.GZFD.WMAE 0 0x11 0x<DEV0><FEA0><TYP0:2b>' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call 
+echo '\_SB.GZFD.WMAE 0 0x12 0x<ARG:4b><DEV0><FEA0><TYP0:2b>' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call 
 
 # Examples
 
