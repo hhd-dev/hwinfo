@@ -1,5 +1,9 @@
 # Legion Go Internals
 ## ACPI Documentation
+You can find the documentation of the WMI interfaces below.
+A WMI interface is an ACPI method where: Arg0 is the index the call
+refers to (almost never used), Arg1 is the method number, and Arg2 is a buffer
+with all parameters.
 
 ### Setting the fan curve
 The WMI interface WMAB exposes two functions, 5, and 6 which can be used to
@@ -276,125 +280,172 @@ This integer is destructured like this:
 ```
 The internal implementation branches on device, then feature, and finally type.
 
+#### How to call
+```bash
+# Little Endian
+echo '\_SB.GZFD.WMAE 0 0x11 {<TYP0:2b>, <FEA0>, <DEV0>}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call 
+echo '\_SB.GZFD.WMAE 0 0x12 {<TYP0:2b>, <FEA0>, <DEV0>, <ARG:4b>}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+
+# Big Endian
+echo '\_SB.GZFD.WMAE 0 0x11 0x<ARG:4b><DEV0><FEA0><TYP0:2b>' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call 
+echo '\_SB.GZFD.WMAE 0 0x12 0x<DEV0><FEA0><TYP0:2b>' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call 
+
+# Examples
+
+# Get TDP
+# Steady TDP
+echo '\_SB.GZFD.WMAE 0 0x11 {0x00, 0xFF, 0x02, 0x01}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+echo '\_SB.GZFD.WMAE 0 0x11 0x0102FF00' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+# Slow TDP
+echo '\_SB.GZFD.WMAE 0 0x11 {0x00, 0xFF, 0x01, 0x01}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+echo '\_SB.GZFD.WMAE 0 0x11 0x0101FF00' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+# Fast TDP
+echo '\_SB.GZFD.WMAE 0 0x11 {0x00, 0xFF, 0x03, 0x01}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+echo '\_SB.GZFD.WMAE 0 0x11 0x0103FF00' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+
+# Set Steady TDP to 16W
+echo '\_SB.GZFD.WMAE 0 0x12 {0x00, 0xFF, 0x02, 0x01, 0x10, 0x00, 0x00, 0x00}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+echo '\_SB.GZFD.WMAE 0 0x12 0x000000100102FF00' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+# Set Slow TDP to 16W (v28+)
+echo '\_SB.GZFD.WMAE 0 0x12 {0x00, 0xFF, 0x01, 0x01, 0x10, 0x00, 0x00, 0x00}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+echo '\_SB.GZFD.WMAE 0 0x12 0x000000100101FF00' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+# Set Fast TDP to 16W (v28+)
+echo '\_SB.GZFD.WMAE 0 0x12 {0x00, 0xFF, 0x03, 0x01, 0x10, 0x00, 0x00, 0x00}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+echo '\_SB.GZFD.WMAE 0 0x12 0x000000100103FF00' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+# Only work in Custom Mode /\
+
+# FFSS Full speed mode get
+echo '\_SB.GZFD.WMAE 0 0x11 0x04020000' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+# FFSS Full speed mode set on /off
+echo '\_SB.GZFD.WMAE 0 0x12 0x0104020000' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+echo '\_SB.GZFD.WMAE 0 0x12 0x0004020000' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+
+# Fan speed get (max around 0x1cf1, typical 0x0fb6)
+echo '\_SB.GZFD.WMAE 0 0x11 0x04030001' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+# Fan speed set (does not appear to work)
+echo '\_SB.GZFD.WMAE 0 0x12 0x200004030001' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+```
+
 #### Get Feature Command
-Here are all the features and what they return:
+Here are all the features and what they return. The int32 code can be used to
+retrieve the feature, either in windows or with `acpi_call`
 
 > `ADPT` becomes one if the device is plugged in.
 
-| Device | Feature | Type   | Int32 | Returns                                    | Explanation                      |
-| ------ | ------- | ------ | ----- | ------------------------------------------ | -------------------------------- |
-| 0      | 0x01    |        |       | 1                                          |                                  |
-| 0      | 0x02    |        |       | 0                                          |                                  |
-| 0      | 0x03    |        |       | EC0.FPTB                                   |                                  |
-| 0      | 0x06    |        |       | 0                                          |                                  |
-| 0      | 0x07    |        |       | GSTM / Bit Mask                            |                                  |
-| 0      | 0x08    |        |       | HWTP / Bit Mask                            |                                  |
-| 0      | 0x0C    |        |       | 1                                          |                                  |
-| 0      | 0x0D    |        |       | 0                                          |                                  |
-| 0      | 0x0E    |        |       | 0                                          |                                  |
-| 0      | 0x0F    |        |       | 0 if DGST == 1 else 1                      |                                  |
-| 0      | 0x10    |        |       | 0                                          |                                  |
-| 0      | 0x12    |        |       | 1                                          |                                  |
-|        |         |        |       |                                            |                                  |
-| 1      | 0x01    | 0x0100 |       | 0x0F if ADPT else 0x08                     | Slow TDP pre power mode          |
-| 1      | 0x01    | 0x0200 |       | 0x19 if ADPT else 0x0F                     | //                               |
-| 1      | 0x01    | 0x0300 |       | 0x1E if ADPT else 0x14                     | //                               |
-| 1      | 0x01    | 0xFF00 |       | CSTP if CSTP else 0x20                     | //                               |
-| 1      | 0x02    | 0x0100 |       | 0x08                                       | Steady TDP for power mode        |
-| 1      | 0x02    | 0x0200 |       | 0x0F                                       | //                               |
-| 1      | 0x02    | 0x0300 |       | 0x14                                       | //                               |
-| 1      | 0x02    | 0xFF00 |       | CTDP if CTDP else (0x1E if ADPT else 0x19) | //                               |
-| 1      | 0x03    | 0x0100 |       | 0x14                                       | Fast TDP for power mode          |
-| 1      | 0x03    | 0x0200 |       | 0x1E                                       | //                               |
-| 1      | 0x03    | 0x0300 |       | 0x23                                       | //                               |
-| 1      | 0x03    | 0xFF00 |       | CFTP if CFTP else 0x29                     | //                               |
-| 1      | 0x04    |        |       | 0                                          |                                  |
-| 1      | 0x05    |        |       | 0                                          |                                  |
-| 1      | 0x06    | 0x0100 |       | 0x08                                       | Max steady TDP for power mode    |
-| 1      | 0x06    | 0x0200 |       | 0x0F                                       | //                               |
-| 1      | 0x06    | 0x0300 |       | 0x14                                       | //                               |
-| 1      | 0x06    | 0xFF00 |       | 0x1E if ADPT else 0x19                     | //                               |
-| 1      | 0x07    |        |       | 0                                          |                                  |
-| 1      | 0x08    |        |       | 0                                          |                                  |
-|        |         |        |       |                                            |                                  |
-| 2      | 0x01    |        |       |                                            |                                  |
-| 2      | 0x02    |        |       |                                            |                                  |
-| 2      | 0x03    |        |       |                                            |                                  |
-| 2      | 0x04    |        |       |                                            |                                  |
-| 2      | 0x06    | 0x0100 |       | 0                                          | ? Something with power mode      |
-| 2      | 0x06    | 0x0200 |       | `\_SB_.GZFD.BGPS`                          | //                               |
-| 2      | 0x06    | 0x0300 |       | `\_SB_.GZFD.PGPS`                          | //                               |
-| 2      | 0x06    | 0xFF00 |       | `\_SB_.GZFD.MGPS`                          | //                               |
-| 2      | 0x06    |        |       | 0                                          |                                  |
-| 2      | 0x08    |        |       | 0                                          |                                  |
-| 2      | 0x09    |        |       | 0                                          |                                  |
-| 2      | 0x0A    |        |       | 0                                          |                                  |
-| 2      | 0x0B    |        |       | 0                                          |                                  |
-|        |         |        |       |                                            |                                  |
-| 3      | 0x01    | 0x01   |       | EC0.IBAC                                   |                                  |
-| 3      | 0x01    | 0x02   |       | EC0.IBPD                                   |                                  |
-| 3      | 0x02    |        |       | ~(EC0.B1ST & 0x08) && ADPT                 | Is powered and 3rd B1ST bit is 0 |
-| 3      | 0x03    |        |       | GAPS / Bit Mask                            |                                  |
-|        |         |        |       |                                            |                                  |
-| 4      | 0x01    |        |       | 1                                          |                                  |
-| 4      | 0x02    |        |       | FFSS                                       | Is in full fan speed  mode       |
-| 4      | 0x03    | 0x01   |       | {FANL, FANH}                               | Fan Speed (RPM ?)                |
-| 4      | 0x03    | 0x02   |       | 0                                          | No fan 2 (?)                     |
-|        |         |        |       |                                            |                                  |
-| 5      | 0x01    |        |       | EC0, CRTS                                  |                                  |
-| 5      | 0x02    |        |       | 0                                          |                                  |
-| 5      | 0x03    |        |       | EC0.AMTS                                   |                                  |
-| 5      | 0x04    |        |       | EC0.CPTS                                   |                                  |
-| 5      | 0x05    |        |       | 0                                          |                                  |
-| 5      | 0x06    |        |       | 0                                          |                                  |
-| 5      | 0x07    |        |       | 0                                          |                                  |
-| 5      | 0x08    |        |       | EC0.CHTS                                   |                                  |
-| 5      | 0x09    |        |       | 0                                          |                                  |
-| 5      | 0x0A    |        |       | EC0.CRTS                                   |                                  |
-| 5      | 0x0B    |        |       | EC0.CTTS                                   |                                  |
+| Device | Feature | Type   | Int32 Feat | Returns                                    | Explanation                      |
+| ------ | ------- | ------ | ---------- | ------------------------------------------ | -------------------------------- |
+| 0      | 0x01    |        |            | 1                                          |                                  |
+| 0      | 0x02    |        |            | 0                                          |                                  |
+| 0      | 0x03    |        | 0x00030000 | EC0.FPTB                                   |                                  |
+| 0      | 0x06    |        |            | 0                                          |                                  |
+| 0      | 0x07    |        |            | GSTM / Bit Mask                            |                                  |
+| 0      | 0x08    |        |            | HWTP / Bit Mask                            |                                  |
+| 0      | 0x0C    |        |            | 1                                          |                                  |
+| 0      | 0x0D    |        |            | 0                                          |                                  |
+| 0      | 0x0E    |        |            | 0                                          |                                  |
+| 0      | 0x0F    |        |            | 0 if DGST == 1 else 1                      |                                  |
+| 0      | 0x10    |        |            | 0                                          |                                  |
+| 0      | 0x12    |        |            | 1                                          |                                  |
+|        |         |        |            |                                            |                                  |
+| 1      | 0x01    | 0x0100 | 0x01010100 | 0x0F if ADPT else 0x08                     | Slow TDP pre power mode          |
+| 1      | 0x01    | 0x0200 | 0x01010200 | 0x19 if ADPT else 0x0F                     | //                               |
+| 1      | 0x01    | 0x0300 | 0x01010300 | 0x1E if ADPT else 0x14                     | //                               |
+| 1      | 0x01    | 0xFF00 | 0x0101FF00 | CSTP if CSTP else 0x20                     | //                               |
+| 1      | 0x02    | 0x0100 | 0x01020100 | 0x08                                       | Steady TDP for power mode        |
+| 1      | 0x02    | 0x0200 | 0x01020200 | 0x0F                                       | //                               |
+| 1      | 0x02    | 0x0300 | 0x01020300 | 0x14                                       | //                               |
+| 1      | 0x02    | 0xFF00 | 0x0102FF00 | CTDP if CTDP else (0x1E if ADPT else 0x19) | //                               |
+| 1      | 0x03    | 0x0100 | 0x01030100 | 0x14                                       | Fast TDP for power mode          |
+| 1      | 0x03    | 0x0200 | 0x01030200 | 0x1E                                       | //                               |
+| 1      | 0x03    | 0x0300 | 0x01030300 | 0x23                                       | //                               |
+| 1      | 0x03    | 0xFF00 | 0x0103FF00 | CFTP if CFTP else 0x29                     | //                               |
+| 1      | 0x04    |        |            | 0                                          |                                  |
+| 1      | 0x05    |        |            | 0                                          |                                  |
+| 1      | 0x06    | 0x0100 | 0x01060100 | 0x08                                       | Max steady TDP for power mode    |
+| 1      | 0x06    | 0x0200 | 0x01060200 | 0x0F                                       | //                               |
+| 1      | 0x06    | 0x0300 | 0x01060300 | 0x14                                       | //                               |
+| 1      | 0x06    | 0xFF00 | 0x0106FF00 | 0x1E if ADPT else 0x19                     | //                               |
+| 1      | 0x07    |        |            | 0                                          |                                  |
+| 1      | 0x08    |        |            | 0                                          |                                  |
+|        |         |        |            |                                            |                                  |
+| 2      | 0x01    |        |            |                                            |                                  |
+| 2      | 0x02    |        |            |                                            |                                  |
+| 2      | 0x03    |        |            |                                            |                                  |
+| 2      | 0x04    |        |            |                                            |                                  |
+| 2      | 0x06    | 0x0100 | 0x02060100 | 0                                          | ? Something with power mode      |
+| 2      | 0x06    | 0x0200 | 0x02060200 | `\_SB_.GZFD.BGPS`                          | //                               |
+| 2      | 0x06    | 0x0300 | 0x02060300 | `\_SB_.GZFD.PGPS`                          | //                               |
+| 2      | 0x06    | 0xFF00 | 0x0206FF00 | `\_SB_.GZFD.MGPS`                          | //                               |
+| 2      | 0x06    |        |            | 0                                          |                                  |
+| 2      | 0x08    |        |            | 0                                          |                                  |
+| 2      | 0x09    |        |            | 0                                          |                                  |
+| 2      | 0x0A    |        |            | 0                                          |                                  |
+| 2      | 0x0B    |        |            | 0                                          |                                  |
+|        |         |        |            |                                            |                                  |
+| 3      | 0x01    | 0x01   | 0x03010001 | EC0.IBAC                                   |                                  |
+| 3      | 0x01    | 0x02   | 0x03010002 | EC0.IBPD                                   |                                  |
+| 3      | 0x02    |        |            | ~(EC0.B1ST & 0x08) && ADPT                 | Is powered and 3rd B1ST bit is 0 |
+| 3      | 0x03    |        |            | GAPS / Bit Mask                            |                                  |
+|        |         |        |            |                                            |                                  |
+| 4      | 0x01    |        |            | 1                                          |                                  |
+| 4      | 0x02    |        | 0x04020000 | FFSS                                       | Is in full fan speed  mode       |
+| 4      | 0x03    | 0x01   | 0x04030001 | {FANL, FANH} or int16 val for fan          | Fan Speed (RPM ?)                |
+| 4      | 0x03    | 0x02   |            | 0                                          | No fan 2 (?)                     |
+|        |         |        |            |                                            |                                  |
+| 5      | 0x01    |        | 0x05010000 | EC0, CRTS                                  |                                  |
+| 5      | 0x02    |        |            | 0                                          |                                  |
+| 5      | 0x03    |        | 0x05030000 | EC0.AMTS                                   |                                  |
+| 5      | 0x04    |        | 0x05040000 | EC0.CPTS                                   |                                  |
+| 5      | 0x05    |        |            | 0                                          |                                  |
+| 5      | 0x06    |        |            | 0                                          |                                  |
+| 5      | 0x07    |        |            | 0                                          |                                  |
+| 5      | 0x08    |        | 0x05080000 | EC0.CHTS                                   |                                  |
+| 5      | 0x09    |        |            | 0                                          |                                  |
+| 5      | 0x0A    |        | 0x050A0000 | EC0.CRTS                                   |                                  |
+| 5      | 0x0B    |        | 0x050B0000 | EC0.CTTS                                   |                                  |
 
 #### Set Feature Command
 Below are the set features in BIOS v28.
 
-| Device | Feature | Type   | Int32 | Sets                                        | Explanation              |
-| ------ | ------- | ------ | ----- | ------------------------------------------- | ------------------------ |
-| 0      | 0x01    |        |       | ret 0                                       |                          |
-| 0      | 0x02    |        |       | ret 0                                       |                          |
-| 0      | 0x03    |        |       | CUST = arg, SMID = 0x03, SMIC = 0x0C5       | Unsure, CUST is external |
-| 0      | 0x06    |        |       | ret 0                                       |                          |
-| 0      | 0x0D    |        |       | ret 0                                       |                          |
-| 0      | 0x0E    |        |       | ret 0                                       |                          |
-| 0      | 0x10    |        |       | ret 1                                       |                          |
-| 0      | 0x12    |        |       | ret 0                                       |                          |
-|        |         |        |       |                                             |                          |
-| 1      | 0x01    | 0xFF00 |       | sets CSTP = arg, EC0.SCUM = 0x03            | Slow TDP Set             |
-| 1      | 0x02    | 0xFF00 |       | sets CTDP = arg, EC0.SCUM = 0x01            | Steady TDP Set           |
-| 1      | 0x03    | 0xFF00 |       | sets CFTP = arg, EC0.SCUM = 0x01            | Fast TDP set             |
-| 1      | 0x04    |        |       | ret 0                                       | /\ Only in custom mode!! |
-| 1      | 0x05    |        |       | ret 0                                       |                          |
-| 1      | 0x06    |        |       | ret 0                                       |                          |
-| 1      | 0x07    |        |       | ret 0                                       |                          |
-| 1      | 0x08    |        |       | ret 0                                       |                          |
-|        |         |        |       |                                             |                          |
-| 2      | 0x01    |        |       | ret 0                                       | Not implemented          |
-| 2      | 0x02    |        |       | ret 0                                       | //                       |
-| 2      | 0x03    |        |       | ret 0                                       | //                       |
-| 2      | 0x04    |        |       | ret 0                                       | //                       |
-| 2      | 0x05    |        |       | ret 0                                       | //                       |
-| 2      | 0x06    |        |       | ret 0                                       | //                       |
-| 2      | 0x07    |        |       | ret 0                                       | //                       |
-| 2      | 0x08    |        |       | ret 0                                       | //                       |
-| 2      | 0x09    |        |       | ret 0                                       | //                       |
-| 2      | 0x0B    |        |       | ret 0                                       | //                       |
-|        |         |        |       |                                             |                          |
-| 3      | 0x01    |        |       | SMID = 0x02, SMIC = 0x0C5                   | Always runs with below   |
-| 3      | 0x01    | 0x01   |       | IBAC = 1 if arg = 1 else IBAC = 0           | ?                        |
-| 3      | 0x01    | 0x02   |       | IBPD = 1 if arg = 1 else IBPD = 0           | ?                        |
-| 3      | 0x02    |        |       | If ~ADPT, manipulate B1ST dep. on arg 0/1   |                          |
-|        |         |        |       |                                             |                          |
-| 4      | 0x02    |        |       | if arg = 1, FFSS = 1 elif arg = 0, FFSS = 0 | Sets Full Fan speed      |
-| 4      | 0x03    | 0x01   |       | {FANL, FANH} = arg                          | Sets Fan speed (?)       |
-| 4      | 0x03    | 0x02   |       | ret 0                                       |                          |
+| Device | Feature | Type   | Int32      | Sets                                        | Explanation                    |
+| ------ | ------- | ------ | ---------- | ------------------------------------------- | ------------------------------ |
+| 0      | 0x01    |        |            | ret 0                                       |                                |
+| 0      | 0x02    |        |            | ret 0                                       |                                |
+| 0      | 0x03    |        |            | CUST = arg, SMID = 0x03, SMIC = 0x0C5       | Unsure, CUST is external       |
+| 0      | 0x06    |        |            | ret 0                                       |                                |
+| 0      | 0x0D    |        |            | ret 0                                       |                                |
+| 0      | 0x0E    |        |            | ret 0                                       |                                |
+| 0      | 0x10    |        |            | ret 1                                       |                                |
+| 0      | 0x12    |        |            | ret 0                                       |                                |
+|        |         |        |            |                                             |                                |
+| 1      | 0x01    | 0xFF00 | 0x0101FF00 | sets CSTP = arg, EC0.SCUM = 0x03            | Slow TDP Set                   |
+| 1      | 0x02    | 0xFF00 | 0x0102FF00 | sets CTDP = arg, EC0.SCUM = 0x01            | Steady TDP Set                 |
+| 1      | 0x03    | 0xFF00 | 0x0103FF00 | sets CFTP = arg, EC0.SCUM = 0x01            | Fast TDP set                   |
+| 1      | 0x04    |        |            | ret 0                                       | /\ Only in custom mode!!       |
+| 1      | 0x05    |        |            | ret 0                                       |                                |
+| 1      | 0x06    |        |            | ret 0                                       |                                |
+| 1      | 0x07    |        |            | ret 0                                       |                                |
+| 1      | 0x08    |        |            | ret 0                                       |                                |
+|        |         |        |            |                                             |                                |
+| 2      | 0x01    |        |            | ret 0                                       | Not implemented                |
+| 2      | 0x02    |        |            | ret 0                                       | //                             |
+| 2      | 0x03    |        |            | ret 0                                       | //                             |
+| 2      | 0x04    |        |            | ret 0                                       | //                             |
+| 2      | 0x05    |        |            | ret 0                                       | //                             |
+| 2      | 0x06    |        |            | ret 0                                       | //                             |
+| 2      | 0x07    |        |            | ret 0                                       | //                             |
+| 2      | 0x08    |        |            | ret 0                                       | //                             |
+| 2      | 0x09    |        |            | ret 0                                       | //                             |
+| 2      | 0x0B    |        |            | ret 0                                       | //                             |
+|        |         |        |            |                                             |                                |
+| 3      | 0x01    |        | -          | SMID = 0x02, SMIC = 0x0C5                   | Always runs with below         |
+| 3      | 0x01    | 0x01   | 0X03010001 | IBAC = 1 if arg = 1 else IBAC = 0           | ?                              |
+| 3      | 0x01    | 0x02   | 0X03010001 | IBPD = 1 if arg = 1 else IBPD = 0           | ?                              |
+| 3      | 0x02    |        |            | If ~ADPT, manipulate B1ST dep. on arg 0/1   |                                |
+|        |         |        |            |                                             |                                |
+| 4      | 0x02    |        |            | if arg = 1, FFSS = 1 elif arg = 0, FFSS = 0 | Sets Full Fan speed            |
+| 4      | 0x03    | 0x01   | 0X04010001 | {FANL, FANH} = arg or int16 val for fan     | Sets fan speed? Does not work. |
+| 4      | 0x03    | 0x02   |            | ret 0                                       |                                |
 
 ### Turn power led on off (WMAF)
 Legion go has the following interface for turning the power LED on/off:
