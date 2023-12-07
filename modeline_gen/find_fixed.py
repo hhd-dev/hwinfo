@@ -2,9 +2,9 @@ import subprocess
 import os
 from time import sleep
 
-GAMESCOPE_FN = os.path.expanduser(
-    "~/Projects/gamescope-custom-fps/build/src/gamescope"
-)
+DEBUG = True
+
+GAMESCOPE_FN = os.path.expanduser("~/Projects/gamescope-custom-fps/build/src/gamescope")
 OUT_FN = "./legion_go.txt"
 
 VERIFY_ATTEMPTS = True
@@ -32,7 +32,31 @@ HEIGHT = 2560
 START = 2690
 END = 6456
 
-TARGET_FPS = list(range(110, 145))
+# TARGET_FPS = [
+#     78,
+#     84,
+#     90,
+#     96,
+#     100,
+#     102,
+#     104,
+#     108,
+#     112,
+#     114,
+#     116,
+#     120,
+#     124,
+#     126,
+#     128,
+#     130,
+#     132,
+#     135,
+#     136,
+#     138,
+#     140,
+#     144,
+# ]
+TARGET_FPS = list(range(73, 144))
 TOTAL_ATTEMPTS = 5
 
 FRAMES_DIR = "./tmp"
@@ -68,19 +92,23 @@ def get_vsyncs(fps: int):
     htotal = WIDTH + HFRONT_PORCH + HSYNC_WIDTH + HBACK_PORCH
     vtotal = int(1e6 * PXCLK / htotal / fps) + 1
 
-    for i in range(1000):
-        yield vtotal + i
+    # for bp in range(93, 96):
+    for bp in range(96,97):
+        yield bp, vtotal
+        for i in range(1, 4):
+            for flip in (-1, 1):
+                yield bp, vtotal + flip * i
 
 
-def get_modeline(vsync: int, target_hz: int):
+def get_modeline(bp: int, vsync: int, target_hz: int):
     htotal = WIDTH + HFRONT_PORCH + HSYNC_WIDTH + HBACK_PORCH
     new_hz = 1e6 * PXCLK / htotal / vsync
-    fb = vsync - (VBACK_PORCH + VSYNC_WIDTH + HEIGHT)
-    desc = f"Target {target_hz}hz: VSYNC {vsync} (fp: {fb} syn: {VSYNC_WIDTH} bp: {VBACK_PORCH}), {new_hz:.2f}hz."
+    fb = vsync - (bp + VSYNC_WIDTH + HEIGHT)
+    desc = f"Target {target_hz}hz: VSYNC {vsync} (fp: {fb} syn: {VSYNC_WIDTH} bp: {bp}), {new_hz:.2f}hz."
 
     md = f"{PXCLK_STR}"
     md += f" {WIDTH} {WIDTH + HFRONT_PORCH} {WIDTH + HFRONT_PORCH + HSYNC_WIDTH} {WIDTH + HFRONT_PORCH + HSYNC_WIDTH + HBACK_PORCH}"
-    md += f" {HEIGHT} {HEIGHT + fb} {HEIGHT + fb + VSYNC_WIDTH} {HEIGHT + fb + VSYNC_WIDTH + VBACK_PORCH}"
+    md += f" {HEIGHT} {HEIGHT + fb} {HEIGHT + fb + VSYNC_WIDTH} {HEIGHT + fb + VSYNC_WIDTH + bp}"
     md += " +HSync +VSync"
 
     name = f"{WIDTH}x{HEIGHT}_{target_hz}"
@@ -96,9 +124,12 @@ def execute_gamescope(s: str, target_hz: int, hint: str):
     with open(FRAMES_FN, "w") as f:
         f.write(s)
 
-    with subprocess.Popen(
-        GAMESCOPE_CMD(target_hz), stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
-    ) as proc:
+    if DEBUG:
+        kwargs = {}
+    else:
+        kwargs = {"stdout": subprocess.DEVNULL, "stderr": subprocess.STDOUT}
+
+    with subprocess.Popen(GAMESCOPE_CMD(target_hz), **kwargs) as proc:
         out = input(hint + ": ")
         proc.kill()
 
@@ -106,24 +137,24 @@ def execute_gamescope(s: str, target_hz: int, hint: str):
 
 
 def find():
-    s = input(f"Start at fps: ")
+    sfps = input(f"Start at fps: ")
 
-    with open("results.txt", "a") as f:
+    with open(OUT_FN, "a") as f:
         try:
             for fps in TARGET_FPS:
-                if s and int(s) > fps:
+                if sfps and int(sfps) > fps:
                     continue
 
                 print(f"Targeting FPS {fps}hz.")
-                for i in get_vsyncs(fps):
-                    name, md, desc = get_modeline(i, fps)
+                for bp, v in get_vsyncs(fps):
+                    name, md, desc = get_modeline(bp, v, fps)
                     s = get_modeline_string(name, md, desc, fps)
                     works = execute_gamescope(s, fps, desc)
 
                     if works:
                         for j in range(TOTAL_ATTEMPTS):
                             broke = execute_gamescope(
-                                s, fps, f"Verify {j}/{TOTAL_ATTEMPTS}"
+                                s, fps, f"Verify {j+1}/{TOTAL_ATTEMPTS}"
                             )
                             if broke:
                                 break
