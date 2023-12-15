@@ -1,0 +1,311 @@
+# AYANEO AYANEO COMPOSITE DEVICE
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x06,                    // Usage (Keyboard)                    2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              6
+# 0x19, 0xe0,                    //  Usage Minimum (224)                8
+# 0x29, 0xe7,                    //  Usage Maximum (231)                10
+# 0x15, 0x00,                    //  Logical Minimum (0)                12
+# 0x25, 0x01,                    //  Logical Maximum (1)                14
+# 0x75, 0x01,                    //  Report Size (1)                    16
+# 0x95, 0x08,                    //  Report Count (8)                   18
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               20
+# 0x95, 0x01,                    //  Report Count (1)                   22
+# 0x75, 0x08,                    //  Report Size (8)                    24
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               26
+# 0x95, 0x05,                    //  Report Count (5)                   28
+# 0x75, 0x01,                    //  Report Size (1)                    30
+# 0x05, 0x08,                    //  Usage Page (LEDs)                  32
+# 0x19, 0x01,                    //  Usage Minimum (1)                  34
+# 0x29, 0x05,                    //  Usage Maximum (5)                  36
+# 0x91, 0x02,                    //  Output (Data,Var,Abs)              38
+# 0x95, 0x01,                    //  Report Count (1)                   40
+# 0x75, 0x03,                    //  Report Size (3)                    42
+# 0x91, 0x03,                    //  Output (Cnst,Var,Abs)              44
+# 0x95, 0x06,                    //  Report Count (6)                   46
+# 0x75, 0x08,                    //  Report Size (8)                    48
+# 0x15, 0x00,                    //  Logical Minimum (0)                50
+# 0x25, 0xff,                    //  Logical Maximum (255)              52
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              54
+# 0x19, 0x00,                    //  Usage Minimum (0)                  56
+# 0x29, 0x65,                    //  Usage Maximum (101)                58
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               60
+# 0xc0,                          // End Collection                      62
+# 
+R: 63 05 01 09 06 a1 01 05 07 19 e0 29 e7 15 00 25 01 75 01 95 08 81 02 95 01 75 08 81 03 95 05 75 01 05 08 19 01 29 05 91 02 95 01 75 03 91 03 95 06 75 08 15 00 25 ff 05 07 19 00 29 65 81 00 c0
+N: AYANEO AYANEO COMPOSITE DEVICE
+I: 3 0483 52a4
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.000000 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.007927 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.024550 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.041812 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.048588 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.064954 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.080816 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.097526 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.104761 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.121220 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.137119 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['UpArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.152079 8 00 00 52 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.306593 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.312132 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.328814 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.344225 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.352093 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.368231 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.384073 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.393112 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.408166 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.418260 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.432744 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.448019 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.456526 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.472529 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.480290 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.496022 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.514274 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.521660 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.537549 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.552687 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.560079 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.568114 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.593261 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.608015 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.616515 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.624539 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.640558 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['RightArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.658713 8 00 00 4f 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.800612 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.816070 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.833394 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.848161 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.864710 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.880084 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.904510 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.912524 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.929026 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.936009 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.954027 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.968099 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.976529 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.992645 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.008154 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.018277 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.032756 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.048019 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.064720 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.074295 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.090399 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.097229 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.112680 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.120340 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.128080 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.256039 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.274173 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.281224 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.297547 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.304724 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.320101 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.336524 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.353042 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.368004 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.384092 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.402523 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.416744 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.432149 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.450416 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.465063 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.479990 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.498437 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.512824 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.530478 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.545121 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.560488 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.577668 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.592003 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.608277 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.624561 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.640867 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.656651 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.672633 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.688149 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.704082 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.721048 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.728817 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.744253 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.760337 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.776347 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.792451 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.808007 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.824221 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.840082 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.857883 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.873411 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.888905 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.904441 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.919992 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.936597 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.952484 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.968104 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.984106 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.000568 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.016843 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.032002 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.048547 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.064341 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.080676 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.096062 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.112039 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.128062 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.143972 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.160097 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.168857 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.184244 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.200546 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.216769 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.233139 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.248045 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.264696 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.280131 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.296049 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.312047 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.328183 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.345122 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.360006 8 00 00 00 00 00 00 00 00

@@ -1,0 +1,193 @@
+# AYANEO AYANEO COMPOSITE DEVICE
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x02,                    // Usage (Mouse)                       2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x09, 0x01,                    //  Usage (Pointer)                    6
+# 0xa1, 0x00,                    //  Collection (Physical)              8
+# 0x05, 0x09,                    //   Usage Page (Button)               10
+# 0x19, 0x01,                    //   Usage Minimum (1)                 12
+# 0x29, 0x03,                    //   Usage Maximum (3)                 14
+# 0x15, 0x00,                    //   Logical Minimum (0)               16
+# 0x25, 0x01,                    //   Logical Maximum (1)               18
+# 0x95, 0x03,                    //   Report Count (3)                  20
+# 0x75, 0x01,                    //   Report Size (1)                   22
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              24
+# 0x95, 0x01,                    //   Report Count (1)                  26
+# 0x75, 0x05,                    //   Report Size (5)                   28
+# 0x81, 0x01,                    //   Input (Cnst,Arr,Abs)              30
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      32
+# 0x09, 0x30,                    //   Usage (X)                         34
+# 0x09, 0x31,                    //   Usage (Y)                         36
+# 0x09, 0x38,                    //   Usage (Wheel)                     38
+# 0x15, 0x81,                    //   Logical Minimum (-127)            40
+# 0x25, 0x7f,                    //   Logical Maximum (127)             42
+# 0x75, 0x08,                    //   Report Size (8)                   44
+# 0x95, 0x03,                    //   Report Count (3)                  46
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              48
+# 0xc0,                          //  End Collection                     50
+# 0x09, 0x3c,                    //  Usage (Motion)                     51
+# 0x05, 0xff,                    //  Usage Page (Vendor Usage Page 0xff) 53
+# 0x09, 0x01,                    //  Usage (Vendor Usage 0x01)          55
+# 0x15, 0x00,                    //  Logical Minimum (0)                57
+# 0x25, 0x01,                    //  Logical Maximum (1)                59
+# 0x75, 0x01,                    //  Report Size (1)                    61
+# 0x95, 0x02,                    //  Report Count (2)                   63
+# 0xb1, 0x22,                    //  Feature (Data,Var,Abs,NoPref)      65
+# 0x75, 0x06,                    //  Report Size (6)                    67
+# 0x95, 0x01,                    //  Report Count (1)                   69
+# 0xb1, 0x01,                    //  Feature (Cnst,Arr,Abs)             71
+# 0xc0,                          // End Collection                      73
+# 
+R: 74 05 01 09 02 a1 01 09 01 a1 00 05 09 19 01 29 03 15 00 25 01 95 03 75 01 81 02 95 01 75 05 81 01 05 01 09 30 09 31 09 38 15 81 25 7f 75 08 95 03 81 06 c0 09 3c 05 ff 09 01 15 00 25 01 75 01 95 02 b1 22 75 06 95 01 b1 01 c0
+N: AYANEO AYANEO COMPOSITE DEVICE
+I: 3 0483 52a4
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.000000 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.006806 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.015107 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.022799 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.038830 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.048403 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.063033 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.071501 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.088724 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.096706 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.103465 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.111239 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.118740 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.134808 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.144862 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.159463 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.169323 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.183272 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.190728 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.207270 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.215108 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.231520 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.241201 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.254813 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.264365 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.271234 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.286783 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.295345 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.302773 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.318838 4 00 00 00 00
+#  Button: 0  0  1 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.678835 4 04 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.688349 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.694864 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.703283 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.711235 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.719255 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.727048 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.735253 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000000.742761 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000004.983276 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000004.991992 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.007554 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.015458 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.031265 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.038781 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.046563 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.062783 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.071317 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.087420 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.094734 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.111414 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.119433 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.135105 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.143130 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.150715 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.167222 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.175126 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.183586 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.190940 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.198787 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.214732 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.224730 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.240989 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.247418 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.254706 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.270854 4 00 00 00 00
+#  Button: 0  1  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.631463 4 02 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.638946 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.647298 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.654796 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.662760 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.670786 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.679282 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.689161 4 00 00 00 00
+#  Button: 0  0  0 | # | X:    0 | Y:    0 | Wheel:    0 
+E: 000005.695549 4 00 00 00 00
