@@ -1,0 +1,89 @@
+# ASUSTeK Computer Inc. N-KEY Device
+# 0x06, 0x31, 0xff,              // Usage Page (Vendor Usage Page 0xff31) 0
+# 0x09, 0x76,                    // Usage (Vendor Usage 0x76)           3
+# 0xa1, 0x01,                    // Collection (Application)            5
+# 0x85, 0x5a,                    //  Report ID (90)                     7
+# 0x19, 0x00,                    //  Usage Minimum (0)                  9
+# 0x2a, 0xff, 0x00,              //  Usage Maximum (255)                11
+# 0x15, 0x00,                    //  Logical Minimum (0)                14
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              16
+# 0x75, 0x08,                    //  Report Size (8)                    19
+# 0x95, 0x05,                    //  Report Count (5)                   21
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               23
+# 0x19, 0x00,                    //  Usage Minimum (0)                  25
+# 0x2a, 0xff, 0x00,              //  Usage Maximum (255)                27
+# 0x15, 0x00,                    //  Logical Minimum (0)                30
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              32
+# 0x75, 0x08,                    //  Report Size (8)                    35
+# 0x95, 0x3f,                    //  Report Count (63)                  37
+# 0xb1, 0x00,                    //  Feature (Data,Arr,Abs)             39
+# 0xc0,                          // End Collection                      41
+# 0x05, 0x0c,                    // Usage Page (Consumer Devices)       42
+# 0x09, 0x01,                    // Usage (Consumer Control)            44
+# 0xa1, 0x01,                    // Collection (Application)            46
+# 0x85, 0x02,                    //  Report ID (2)                      48
+# 0x19, 0x00,                    //  Usage Minimum (0)                  50
+# 0x2a, 0x3c, 0x02,              //  Usage Maximum (572)                52
+# 0x15, 0x00,                    //  Logical Minimum (0)                55
+# 0x26, 0x3c, 0x02,              //  Logical Maximum (572)              57
+# 0x75, 0x10,                    //  Report Size (16)                   60
+# 0x95, 0x02,                    //  Report Count (2)                   62
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               64
+# 0xc0,                          // End Collection                      66
+# 0x06, 0x31, 0xff,              // Usage Page (Vendor Usage Page 0xff31) 67
+# 0x09, 0x79,                    // Usage (Vendor Usage 0x79)           70
+# 0xa1, 0x01,                    // Collection (Application)            72
+# 0x85, 0x5d,                    //  Report ID (93)                     74
+# 0x19, 0x00,                    //  Usage Minimum (0)                  76
+# 0x2a, 0xff, 0x00,              //  Usage Maximum (255)                78
+# 0x15, 0x00,                    //  Logical Minimum (0)                81
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              83
+# 0x75, 0x08,                    //  Report Size (8)                    86
+# 0x95, 0x1f,                    //  Report Count (31)                  88
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               90
+# 0x19, 0x00,                    //  Usage Minimum (0)                  92
+# 0x2a, 0xff, 0x00,              //  Usage Maximum (255)                94
+# 0x15, 0x00,                    //  Logical Minimum (0)                97
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              99
+# 0x75, 0x08,                    //  Report Size (8)                    102
+# 0x95, 0x3f,                    //  Report Count (63)                  104
+# 0x91, 0x00,                    //  Output (Data,Arr,Abs)              106
+# 0x19, 0x00,                    //  Usage Minimum (0)                  108
+# 0x2a, 0xff, 0x00,              //  Usage Maximum (255)                110
+# 0x15, 0x00,                    //  Logical Minimum (0)                113
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              115
+# 0x75, 0x08,                    //  Report Size (8)                    118
+# 0x95, 0x3f,                    //  Report Count (63)                  120
+# 0xb1, 0x00,                    //  Feature (Data,Arr,Abs)             122
+# 0xc0,                          // End Collection                      124
+# 0x06, 0x31, 0xff,              // Usage Page (Vendor Usage Page 0xff31) 125
+# 0x09, 0x80,                    // Usage (Vendor Usage 0x80)           128
+# 0xa1, 0x01,                    // Collection (Application)            130
+# 0x85, 0x5e,                    //  Report ID (94)                     132
+# 0x19, 0x00,                    //  Usage Minimum (0)                  134
+# 0x2a, 0xff, 0x00,              //  Usage Maximum (255)                136
+# 0x15, 0x00,                    //  Logical Minimum (0)                139
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              141
+# 0x75, 0x08,                    //  Report Size (8)                    144
+# 0x95, 0x05,                    //  Report Count (5)                   146
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               148
+# 0x19, 0x00,                    //  Usage Minimum (0)                  150
+# 0x2a, 0xff, 0x00,              //  Usage Maximum (255)                152
+# 0x15, 0x00,                    //  Logical Minimum (0)                155
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              157
+# 0x75, 0x08,                    //  Report Size (8)                    160
+# 0x95, 0x3f,                    //  Report Count (63)                  162
+# 0xb1, 0x00,                    //  Feature (Data,Arr,Abs)             164
+# 0xc0,                          // End Collection                      166
+# 
+R: 167 06 31 ff 09 76 a1 01 85 5a 19 00 2a ff 00 15 00 26 ff 00 75 08 95 05 81 00 19 00 2a ff 00 15 00 26 ff 00 75 08 95 3f b1 00 c0 05 0c 09 01 a1 01 85 02 19 00 2a 3c 02 15 00 26 3c 02 75 10 95 02 81 00 c0 06 31 ff 09 79 a1 01 85 5d 19 00 2a ff 00 15 00 26 ff 00 75 08 95 1f 81 00 19 00 2a ff 00 15 00 26 ff 00 75 08 95 3f 91 00 19 00 2a ff 00 15 00 26 ff 00 75 08 95 3f b1 00 c0 06 31 ff 09 80 a1 01 85 5e 19 00 2a ff 00 15 00 26 ff 00 75 08 95 05 81 00 19 00 2a ff 00 15 00 26 ff 00 75 08 95 3f b1 00 c0
+N: ASUSTeK Computer Inc. N-KEY Device
+I: 3 0b05 1abe
+# ReportID: 90 /Array ['0xff3100a5', '0xff310000', '0xff310000', '0xff310000', '0xff310000'] 
+E: 000000.000000 6 5a a5 00 00 00 00
+# ReportID: 90 /Array ['0xff310000', '0xff310000', '0xff310000', '0xff310000', '0xff310000'] 
+E: 000000.095980 6 5a 00 00 00 00 00
+# ReportID: 90 /Array ['0xff3100a5', '0xff310000', '0xff310000', '0xff310000', '0xff310000'] 
+E: 000001.262753 6 5a a5 00 00 00 00
+# ReportID: 90 /Array ['0xff310000', '0xff310000', '0xff310000', '0xff310000', '0xff310000'] 
+E: 000001.397742 6 5a 00 00 00 00 00
