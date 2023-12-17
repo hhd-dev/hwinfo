@@ -1,0 +1,24 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/virtual/thermal/thermal_zone0':
+    KERNEL=="thermal_zone0"
+    SUBSYSTEM=="thermal"
+    DRIVER==""
+    ATTR{available_policies}=="user_space step_wise bang_bang fair_share "
+    ATTR{mode}=="enabled"
+    ATTR{policy}=="step_wise"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{temp}=="57000"
+    ATTR{trip_point_0_hyst}=="0"
+    ATTR{trip_point_0_temp}=="110000"
+    ATTR{trip_point_0_type}=="critical"
+    ATTR{type}=="acpitz"
+

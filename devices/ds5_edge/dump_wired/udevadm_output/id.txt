@@ -1,0 +1,38 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/virtual/dmi/id':
+    KERNEL=="id"
+    SUBSYSTEM=="dmi"
+    DRIVER==""
+    ATTR{bios_date}=="11/24/2023"
+    ATTR{bios_release}=="1.28"
+    ATTR{bios_vendor}=="LENOVO"
+    ATTR{bios_version}=="N3CN28WW"
+    ATTR{board_asset_tag}=="NO Asset Tag"
+    ATTR{board_name}=="LNVNB161216"
+    ATTR{board_serial}=="YM103R34"
+    ATTR{board_vendor}=="LENOVO"
+    ATTR{board_version}=="SDK0T76463 WIN"
+    ATTR{chassis_asset_tag}=="NO Asset Tag"
+    ATTR{chassis_serial}=="YM103R34"
+    ATTR{chassis_type}=="30"
+    ATTR{chassis_vendor}=="LENOVO"
+    ATTR{chassis_version}=="Legion Go 8APU1"
+    ATTR{ec_firmware_release}=="1.28"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{product_family}=="Legion Go 8APU1"
+    ATTR{product_name}=="83E1"
+    ATTR{product_serial}=="YM103R34"
+    ATTR{product_sku}=="LENOVO_MT_83E1_BU_idea_FM_Legion Go 8APU1"
+    ATTR{product_uuid}=="78d6f8c3-821b-2c44-a211-89f9ccd0193b"
+    ATTR{product_version}=="Legion Go 8APU1"
+    ATTR{sys_vendor}=="LENOVO"
+

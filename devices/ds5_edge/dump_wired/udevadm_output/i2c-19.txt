@@ -1,0 +1,65 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/0000:00:14.0/i2c-19/i2c-dev/i2c-19':
+    KERNEL=="i2c-19"
+    SUBSYSTEM=="i2c-dev"
+    DRIVER==""
+    ATTR{name}=="SMBus PIIX4 adapter port 0 at 0b00"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/pci0000:00/0000:00:14.0/i2c-19':
+    KERNELS=="i2c-19"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{delete_device}=="(not readable)"
+    ATTRS{name}=="SMBus PIIX4 adapter port 0 at 0b00"
+    ATTRS{new_device}=="(not readable)"
+
+  looking at parent device '/devices/pci0000:00/0000:00:14.0':
+    KERNELS=="0000:00:14.0"
+    SUBSYSTEMS=="pci"
+    DRIVERS=="piix4_smbus"
+    ATTRS{ari_enabled}=="0"
+    ATTRS{broken_parity_status}=="0"
+    ATTRS{class}=="0x0c0500"
+    ATTRS{consistent_dma_mask_bits}=="32"
+    ATTRS{d3cold_allowed}=="0"
+    ATTRS{device}=="0x790b"
+    ATTRS{dma_mask_bits}=="32"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{enable}=="0"
+    ATTRS{irq}=="0"
+    ATTRS{local_cpulist}=="0-15"
+    ATTRS{local_cpus}=="ffff"
+    ATTRS{msi_bus}=="1"
+    ATTRS{numa_node}=="-1"
+    ATTRS{power/control}=="on"
+    ATTRS{power/runtime_active_time}=="1144655"
+    ATTRS{power/runtime_status}=="active"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power_state}=="unknown"
+    ATTRS{remove}=="(not readable)"
+    ATTRS{rescan}=="(not readable)"
+    ATTRS{revision}=="0x71"
+    ATTRS{subsystem_device}=="0x3812"
+    ATTRS{subsystem_vendor}=="0x17aa"
+    ATTRS{vendor}=="0x1022"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{waiting_for_supplier}=="0"
+

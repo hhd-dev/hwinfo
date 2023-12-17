@@ -1,0 +1,61 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/USBC000:00/typec/port0/port0-partner':
+    KERNEL=="port0-partner"
+    SUBSYSTEM=="typec"
+    DRIVER==""
+    ATTR{accessory_mode}=="none"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{supports_usb_power_delivery}=="yes"
+    ATTR{usb_power_delivery_revision}=="0.0"
+
+  looking at parent device '/devices/platform/USBC000:00/typec/port0':
+    KERNELS=="port0"
+    SUBSYSTEMS=="typec"
+    DRIVERS==""
+    ATTRS{data_role}=="[device]"
+    ATTRS{physical_location/dock}=="no"
+    ATTRS{physical_location/horizontal_position}=="left"
+    ATTRS{physical_location/lid}=="no"
+    ATTRS{physical_location/panel}=="top"
+    ATTRS{physical_location/vertical_position}=="upper"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power_operation_mode}=="usb_power_delivery"
+    ATTRS{power_role}=="[sink]"
+    ATTRS{preferred_role}==""
+    ATTRS{supported_accessory_modes}=="none"
+    ATTRS{usb_power_delivery_revision}=="3.0"
+    ATTRS{usb_typec_revision}=="1.2"
+    ATTRS{vconn_source}=="no"
+    ATTRS{waiting_for_supplier}=="0"
+
+  looking at parent device '/devices/platform/USBC000:00':
+    KERNELS=="USBC000:00"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="ucsi_acpi"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

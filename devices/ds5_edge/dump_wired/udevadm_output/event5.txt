@@ -1,0 +1,107 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:16/LNXVIDEO:00/input/input7/event5':
+    KERNEL=="event5"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:16/LNXVIDEO:00/input/input7':
+    KERNELS=="input7"
+    SUBSYSTEMS=="input"
+    DRIVERS==""
+    ATTRS{capabilities/abs}=="0"
+    ATTRS{capabilities/ev}=="3"
+    ATTRS{capabilities/ff}=="0"
+    ATTRS{capabilities/key}=="3e000b00000000 0 0 0"
+    ATTRS{capabilities/led}=="0"
+    ATTRS{capabilities/msc}=="0"
+    ATTRS{capabilities/rel}=="0"
+    ATTRS{capabilities/snd}=="0"
+    ATTRS{capabilities/sw}=="0"
+    ATTRS{id/bustype}=="0019"
+    ATTRS{id/product}=="0006"
+    ATTRS{id/vendor}=="0000"
+    ATTRS{id/version}=="0000"
+    ATTRS{inhibited}=="0"
+    ATTRS{name}=="Video Bus"
+    ATTRS{phys}=="LNXVIDEO/video/input0"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{properties}=="0"
+    ATTRS{uniq}==""
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:16/LNXVIDEO:00':
+    KERNELS=="LNXVIDEO:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS=="video"
+    ATTRS{adr}=="0x00000000"
+    ATTRS{hid}=="LNXVIDEO"
+    ATTRS{path}=="\_SB_.PCI0.GP17.VGA_"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power_state}=="D0"
+    ATTRS{real_power_state}=="D0"
+    ATTRS{status}=="15"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:16':
+    KERNELS=="device:16"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{adr}=="0x00080001"
+    ATTRS{path}=="\_SB_.PCI0.GP17"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power_state}=="D0"
+    ATTRS{real_power_state}=="D0"
+    ATTRS{status}=="15"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00':
+    KERNELS=="PNP0A08:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{adr}=="0x00000000"
+    ATTRS{hid}=="PNP0A08"
+    ATTRS{path}=="\_SB_.PCI0"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{uid}=="1"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00':
+    KERNELS=="LNXSYBUS:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{hid}=="LNXSYBUS"
+    ATTRS{path}=="\_SB_"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/LNXSYSTM:00':
+    KERNELS=="LNXSYSTM:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{hid}=="LNXSYSTM"
+    ATTRS{path}=="\"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

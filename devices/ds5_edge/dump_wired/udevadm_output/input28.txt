@@ -1,0 +1,34 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/virtual/input/input28':
+    KERNEL=="input28"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{capabilities/abs}=="3003f"
+    ATTR{capabilities/ev}=="20000b"
+    ATTR{capabilities/ff}=="10000 0"
+    ATTR{capabilities/key}=="7cdb000000000000 0 0 0 0"
+    ATTR{capabilities/led}=="0"
+    ATTR{capabilities/msc}=="0"
+    ATTR{capabilities/rel}=="0"
+    ATTR{capabilities/snd}=="0"
+    ATTR{capabilities/sw}=="0"
+    ATTR{id/bustype}=="0003"
+    ATTR{id/product}=="11ff"
+    ATTR{id/vendor}=="28de"
+    ATTR{id/version}=="0001"
+    ATTR{inhibited}=="0"
+    ATTR{name}=="Microsoft X-Box 360 pad 0"
+    ATTR{phys}==""
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{properties}=="0"
+    ATTR{uniq}==""
+

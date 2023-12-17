@@ -1,0 +1,22 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/virtual/nvme-subsystem/nvme-subsys0':
+    KERNEL=="nvme-subsys0"
+    SUBSYSTEM=="nvme-subsystem"
+    DRIVER==""
+    ATTR{firmware_rev}=="1.H.G.35"
+    ATTR{iopolicy}=="numa"
+    ATTR{model}=="Visiontek 2TB DLX4                      "
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{serial}=="VT23101815AF16B78   "
+    ATTR{subsysnqn}=="nqn.2022-11.com.nvmexpress:VT23101815AF16B78"
+    ATTR{subsystype}=="nvm"
+

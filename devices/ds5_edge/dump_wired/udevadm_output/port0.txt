@@ -1,0 +1,49 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/USBC000:00/typec/port0':
+    KERNEL=="port0"
+    SUBSYSTEM=="typec"
+    DRIVER==""
+    ATTR{data_role}=="[device]"
+    ATTR{physical_location/dock}=="no"
+    ATTR{physical_location/horizontal_position}=="left"
+    ATTR{physical_location/lid}=="no"
+    ATTR{physical_location/panel}=="top"
+    ATTR{physical_location/vertical_position}=="upper"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{power_operation_mode}=="usb_power_delivery"
+    ATTR{power_role}=="[sink]"
+    ATTR{preferred_role}==""
+    ATTR{supported_accessory_modes}=="none"
+    ATTR{usb_power_delivery_revision}=="3.0"
+    ATTR{usb_typec_revision}=="1.2"
+    ATTR{vconn_source}=="no"
+    ATTR{waiting_for_supplier}=="0"
+
+  looking at parent device '/devices/platform/USBC000:00':
+    KERNELS=="USBC000:00"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="ucsi_acpi"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
