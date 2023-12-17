@@ -1,0 +1,43 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/virtual/input/input28/js2':
+    KERNEL=="js2"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/virtual/input/input28':
+    KERNELS=="input28"
+    SUBSYSTEMS=="input"
+    DRIVERS==""
+    ATTRS{capabilities/abs}=="3003f"
+    ATTRS{capabilities/ev}=="20000b"
+    ATTRS{capabilities/ff}=="10000 0"
+    ATTRS{capabilities/key}=="7cdb000000000000 0 0 0 0"
+    ATTRS{capabilities/led}=="0"
+    ATTRS{capabilities/msc}=="0"
+    ATTRS{capabilities/rel}=="0"
+    ATTRS{capabilities/snd}=="0"
+    ATTRS{capabilities/sw}=="0"
+    ATTRS{id/bustype}=="0003"
+    ATTRS{id/product}=="11ff"
+    ATTRS{id/vendor}=="28de"
+    ATTRS{id/version}=="0001"
+    ATTRS{inhibited}=="0"
+    ATTRS{name}=="Microsoft X-Box 360 pad 0"
+    ATTRS{phys}==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{properties}=="0"
+    ATTRS{uniq}==""
+

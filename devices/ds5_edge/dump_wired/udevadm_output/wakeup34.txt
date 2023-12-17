@@ -1,0 +1,101 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:41/PNP0C09:00/PNP0C0A:00/wakeup/wakeup34':
+    KERNEL=="wakeup34"
+    SUBSYSTEM=="wakeup"
+    DRIVER==""
+    ATTR{active_count}=="0"
+    ATTR{active_time_ms}=="0"
+    ATTR{event_count}=="0"
+    ATTR{expire_count}=="0"
+    ATTR{last_change_ms}=="0"
+    ATTR{max_time_ms}=="0"
+    ATTR{name}=="PNP0C0A:00"
+    ATTR{prevent_suspend_time_ms}=="0"
+    ATTR{total_time_ms}=="0"
+    ATTR{wakeup_count}=="0"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:41/PNP0C09:00/PNP0C0A:00':
+    KERNELS=="PNP0C0A:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS=="battery"
+    ATTRS{hid}=="PNP0C0A"
+    ATTRS{path}=="\_SB_.PCI0.LPC0.EC0_.BATT"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power/wakeup}=="enabled"
+    ATTRS{power/wakeup_abort_count}=="0"
+    ATTRS{power/wakeup_active}=="0"
+    ATTRS{power/wakeup_active_count}=="0"
+    ATTRS{power/wakeup_count}=="0"
+    ATTRS{power/wakeup_expire_count}=="0"
+    ATTRS{power/wakeup_last_time_ms}=="0"
+    ATTRS{power/wakeup_max_time_ms}=="0"
+    ATTRS{power/wakeup_total_time_ms}=="0"
+    ATTRS{status}=="31"
+    ATTRS{uid}=="0"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:41/PNP0C09:00':
+    KERNELS=="PNP0C09:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS=="ec"
+    ATTRS{hid}=="PNP0C09"
+    ATTRS{path}=="\_SB_.PCI0.LPC0.EC0_"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:41':
+    KERNELS=="device:41"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{adr}=="0x00140003"
+    ATTRS{path}=="\_SB_.PCI0.LPC0"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00':
+    KERNELS=="PNP0A08:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{adr}=="0x00000000"
+    ATTRS{hid}=="PNP0A08"
+    ATTRS{path}=="\_SB_.PCI0"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{uid}=="1"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00':
+    KERNELS=="LNXSYBUS:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{hid}=="LNXSYBUS"
+    ATTRS{path}=="\_SB_"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/LNXSYSTM:00':
+    KERNELS=="LNXSYSTM:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{hid}=="LNXSYSTM"
+    ATTRS{path}=="\"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

@@ -1,0 +1,34 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/virtual/input/input29':
+    KERNEL=="input29"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{capabilities/abs}=="3"
+    ATTR{capabilities/ev}=="f"
+    ATTR{capabilities/ff}=="0"
+    ATTR{capabilities/key}=="10800000 0 70000 8000 1 200effd5018fffbf fffffffffffffffe"
+    ATTR{capabilities/led}=="0"
+    ATTR{capabilities/msc}=="0"
+    ATTR{capabilities/rel}=="103"
+    ATTR{capabilities/snd}=="0"
+    ATTR{capabilities/sw}=="0"
+    ATTR{id/bustype}=="0003"
+    ATTR{id/product}=="5678"
+    ATTR{id/vendor}=="1234"
+    ATTR{id/version}=="0111"
+    ATTR{inhibited}=="0"
+    ATTR{name}=="extest fake device"
+    ATTR{phys}==""
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{properties}=="0"
+    ATTR{uniq}==""
+

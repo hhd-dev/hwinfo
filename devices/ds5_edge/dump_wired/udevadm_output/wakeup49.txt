@@ -1,0 +1,68 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/USBC000:00/power_supply/ucsi-source-psy-USBC000:002/wakeup49':
+    KERNEL=="wakeup49"
+    SUBSYSTEM=="wakeup"
+    DRIVER==""
+    ATTR{active_count}=="11"
+    ATTR{active_time_ms}=="0"
+    ATTR{event_count}=="11"
+    ATTR{expire_count}=="0"
+    ATTR{last_change_ms}=="1054709"
+    ATTR{max_time_ms}=="4"
+    ATTR{name}=="ucsi-source-psy-USBC000:002"
+    ATTR{prevent_suspend_time_ms}=="0"
+    ATTR{total_time_ms}=="10"
+    ATTR{wakeup_count}=="0"
+
+  looking at parent device '/devices/platform/USBC000:00/power_supply/ucsi-source-psy-USBC000:002':
+    KERNELS=="ucsi-source-psy-USBC000:002"
+    SUBSYSTEMS=="power_supply"
+    DRIVERS==""
+    ATTRS{current_max}=="80000"
+    ATTRS{current_now}=="0"
+    ATTRS{online}=="0"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power/wakeup}=="enabled"
+    ATTRS{power/wakeup_abort_count}=="0"
+    ATTRS{power/wakeup_active}=="0"
+    ATTRS{power/wakeup_active_count}=="11"
+    ATTRS{power/wakeup_count}=="0"
+    ATTRS{power/wakeup_expire_count}=="0"
+    ATTRS{power/wakeup_last_time_ms}=="1054709"
+    ATTRS{power/wakeup_max_time_ms}=="4"
+    ATTRS{power/wakeup_total_time_ms}=="10"
+    ATTRS{scope}=="Device"
+    ATTRS{type}=="USB"
+    ATTRS{usb_type}=="C [PD] PD_PPS"
+    ATTRS{voltage_max}=="0"
+    ATTRS{voltage_min}=="3750000"
+    ATTRS{voltage_now}=="0"
+
+  looking at parent device '/devices/platform/USBC000:00':
+    KERNELS=="USBC000:00"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="ucsi_acpi"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

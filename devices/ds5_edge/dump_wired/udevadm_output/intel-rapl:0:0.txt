@@ -1,0 +1,43 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/virtual/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0':
+    KERNEL=="intel-rapl:0:0"
+    SUBSYSTEM=="powercap"
+    DRIVER==""
+    ATTR{enabled}=="0"
+    ATTR{energy_uj}=="1196121996"
+    ATTR{max_energy_range_uj}=="65532610987"
+    ATTR{name}=="core"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/virtual/powercap/intel-rapl/intel-rapl:0':
+    KERNELS=="intel-rapl:0"
+    SUBSYSTEMS=="powercap"
+    DRIVERS==""
+    ATTRS{enabled}=="0"
+    ATTRS{energy_uj}=="16043875420"
+    ATTRS{max_energy_range_uj}=="65532610987"
+    ATTRS{name}=="package-0"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/virtual/powercap/intel-rapl':
+    KERNELS=="intel-rapl"
+    SUBSYSTEMS=="powercap"
+    DRIVERS==""
+    ATTRS{enabled}=="1"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

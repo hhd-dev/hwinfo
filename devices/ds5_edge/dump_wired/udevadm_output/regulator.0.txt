@@ -1,0 +1,42 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/reg-dummy/regulator/regulator.0':
+    KERNEL=="regulator.0"
+    SUBSYSTEM=="regulator"
+    DRIVER==""
+    ATTR{name}=="regulator-dummy"
+    ATTR{num_users}=="1"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{requested_microamps}=="0"
+    ATTR{suspend_disk_state}=="disabled"
+    ATTR{suspend_mem_state}=="disabled"
+    ATTR{suspend_standby_state}=="disabled"
+    ATTR{type}=="voltage"
+
+  looking at parent device '/devices/platform/reg-dummy':
+    KERNELS=="reg-dummy"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="reg-dummy"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

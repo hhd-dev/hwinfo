@@ -1,0 +1,53 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/USBC000:00/power_supply/ucsi-source-psy-USBC000:002':
+    KERNEL=="ucsi-source-psy-USBC000:002"
+    SUBSYSTEM=="power_supply"
+    DRIVER==""
+    ATTR{current_max}=="80000"
+    ATTR{current_now}=="0"
+    ATTR{online}=="0"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{power/wakeup}=="enabled"
+    ATTR{power/wakeup_abort_count}=="0"
+    ATTR{power/wakeup_active}=="0"
+    ATTR{power/wakeup_active_count}=="11"
+    ATTR{power/wakeup_count}=="0"
+    ATTR{power/wakeup_expire_count}=="0"
+    ATTR{power/wakeup_last_time_ms}=="1054709"
+    ATTR{power/wakeup_max_time_ms}=="4"
+    ATTR{power/wakeup_total_time_ms}=="10"
+    ATTR{scope}=="Device"
+    ATTR{type}=="USB"
+    ATTR{usb_type}=="C [PD] PD_PPS"
+    ATTR{voltage_max}=="0"
+    ATTR{voltage_min}=="3750000"
+    ATTR{voltage_now}=="0"
+
+  looking at parent device '/devices/platform/USBC000:00':
+    KERNELS=="USBC000:00"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="ucsi_acpi"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

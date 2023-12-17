@@ -1,0 +1,25 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/virtual/bdi/btrfs-1':
+    KERNEL=="btrfs-1"
+    SUBSYSTEM=="bdi"
+    DRIVER==""
+    ATTR{max_bytes}=="1230102528"
+    ATTR{max_ratio}=="100"
+    ATTR{max_ratio_fine}=="1000000"
+    ATTR{min_bytes}=="0"
+    ATTR{min_ratio}=="0"
+    ATTR{min_ratio_fine}=="0"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{read_ahead_kb}=="4096"
+    ATTR{stable_pages_required}=="0"
+    ATTR{strict_limit}=="0"
+

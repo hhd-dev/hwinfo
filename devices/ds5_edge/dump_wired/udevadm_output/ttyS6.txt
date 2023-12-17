@@ -1,0 +1,58 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/serial8250/tty/ttyS6':
+    KERNEL=="ttyS6"
+    SUBSYSTEM=="tty"
+    DRIVER==""
+    ATTR{close_delay}=="50"
+    ATTR{closing_wait}=="3000"
+    ATTR{console}=="N"
+    ATTR{custom_divisor}=="0"
+    ATTR{flags}=="0x0"
+    ATTR{io_type}=="0"
+    ATTR{iomem_base}=="0x0"
+    ATTR{iomem_reg_shift}=="0"
+    ATTR{irq}=="0"
+    ATTR{line}=="6"
+    ATTR{port}=="0x0"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{power/wakeup}=="disabled"
+    ATTR{power/wakeup_abort_count}==""
+    ATTR{power/wakeup_active}==""
+    ATTR{power/wakeup_active_count}==""
+    ATTR{power/wakeup_count}==""
+    ATTR{power/wakeup_expire_count}==""
+    ATTR{power/wakeup_last_time_ms}==""
+    ATTR{power/wakeup_max_time_ms}==""
+    ATTR{power/wakeup_total_time_ms}==""
+    ATTR{type}=="0"
+    ATTR{uartclk}=="0"
+    ATTR{xmit_fifo_size}=="0"
+
+  looking at parent device '/devices/platform/serial8250':
+    KERNELS=="serial8250"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="serial8250"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

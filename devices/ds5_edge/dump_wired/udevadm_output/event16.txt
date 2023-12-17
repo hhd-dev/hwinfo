@@ -1,0 +1,43 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/virtual/input/input29/event16':
+    KERNEL=="event16"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/virtual/input/input29':
+    KERNELS=="input29"
+    SUBSYSTEMS=="input"
+    DRIVERS==""
+    ATTRS{capabilities/abs}=="3"
+    ATTRS{capabilities/ev}=="f"
+    ATTRS{capabilities/ff}=="0"
+    ATTRS{capabilities/key}=="10800000 0 70000 8000 1 200effd5018fffbf fffffffffffffffe"
+    ATTRS{capabilities/led}=="0"
+    ATTRS{capabilities/msc}=="0"
+    ATTRS{capabilities/rel}=="103"
+    ATTRS{capabilities/snd}=="0"
+    ATTRS{capabilities/sw}=="0"
+    ATTRS{id/bustype}=="0003"
+    ATTRS{id/product}=="5678"
+    ATTRS{id/vendor}=="1234"
+    ATTRS{id/version}=="0111"
+    ATTRS{inhibited}=="0"
+    ATTRS{name}=="extest fake device"
+    ATTRS{phys}==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{properties}=="0"
+    ATTRS{uniq}==""
+

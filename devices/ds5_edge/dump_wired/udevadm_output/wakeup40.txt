@@ -1,0 +1,51 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pnp0/00:01/wakeup/wakeup40':
+    KERNEL=="wakeup40"
+    SUBSYSTEM=="wakeup"
+    DRIVER==""
+    ATTR{active_count}=="0"
+    ATTR{active_time_ms}=="0"
+    ATTR{event_count}=="0"
+    ATTR{expire_count}=="0"
+    ATTR{last_change_ms}=="0"
+    ATTR{max_time_ms}=="0"
+    ATTR{name}=="00:01"
+    ATTR{prevent_suspend_time_ms}=="0"
+    ATTR{total_time_ms}=="0"
+    ATTR{wakeup_count}=="0"
+
+  looking at parent device '/devices/pnp0/00:01':
+    KERNELS=="00:01"
+    SUBSYSTEMS=="pnp"
+    DRIVERS=="rtc_cmos"
+    ATTRS{id}=="PNP0b00"
+    ATTRS{options}==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power/wakeup}=="enabled"
+    ATTRS{power/wakeup_abort_count}=="0"
+    ATTRS{power/wakeup_active}=="0"
+    ATTRS{power/wakeup_active_count}=="0"
+    ATTRS{power/wakeup_count}=="0"
+    ATTRS{power/wakeup_expire_count}=="0"
+    ATTRS{power/wakeup_last_time_ms}=="0"
+    ATTRS{power/wakeup_max_time_ms}=="0"
+    ATTRS{power/wakeup_total_time_ms}=="0"
+
+  looking at parent device '/devices/pnp0':
+    KERNELS=="pnp0"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

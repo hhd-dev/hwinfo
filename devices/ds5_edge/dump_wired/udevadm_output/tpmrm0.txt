@@ -1,0 +1,51 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/LNXSYSTM:00/LNXSYBUS:00/MSFT0101:00/tpmrm/tpmrm0':
+    KERNEL=="tpmrm0"
+    SUBSYSTEM=="tpmrm"
+    DRIVER==""
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/MSFT0101:00':
+    KERNELS=="MSFT0101:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS=="tpm_crb"
+    ATTRS{description}=="TPM 2.0 Device"
+    ATTRS{hid}=="MSFT0101"
+    ATTRS{path}=="\_SB_.TPM2"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{status}=="15"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00':
+    KERNELS=="LNXSYBUS:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{hid}=="LNXSYBUS"
+    ATTRS{path}=="\_SB_"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/LNXSYSTM:00':
+    KERNELS=="LNXSYSTM:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{hid}=="LNXSYSTM"
+    ATTRS{path}=="\"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

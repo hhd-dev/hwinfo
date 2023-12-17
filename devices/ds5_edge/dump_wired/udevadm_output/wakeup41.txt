@@ -1,0 +1,86 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pnp0/00:01/rtc/rtc0/alarmtimer.0.auto/wakeup/wakeup41':
+    KERNEL=="wakeup41"
+    SUBSYSTEM=="wakeup"
+    DRIVER==""
+    ATTR{active_count}=="0"
+    ATTR{active_time_ms}=="0"
+    ATTR{event_count}=="0"
+    ATTR{expire_count}=="0"
+    ATTR{last_change_ms}=="0"
+    ATTR{max_time_ms}=="0"
+    ATTR{name}=="alarmtimer.0.auto"
+    ATTR{prevent_suspend_time_ms}=="0"
+    ATTR{total_time_ms}=="0"
+    ATTR{wakeup_count}=="0"
+
+  looking at parent device '/devices/pnp0/00:01/rtc/rtc0/alarmtimer.0.auto':
+    KERNELS=="alarmtimer.0.auto"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="alarmtimer"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power/wakeup}=="enabled"
+    ATTRS{power/wakeup_abort_count}=="0"
+    ATTRS{power/wakeup_active}=="0"
+    ATTRS{power/wakeup_active_count}=="0"
+    ATTRS{power/wakeup_count}=="0"
+    ATTRS{power/wakeup_expire_count}=="0"
+    ATTRS{power/wakeup_last_time_ms}=="0"
+    ATTRS{power/wakeup_max_time_ms}=="0"
+    ATTRS{power/wakeup_total_time_ms}=="0"
+
+  looking at parent device '/devices/pnp0/00:01/rtc/rtc0':
+    KERNELS=="rtc0"
+    SUBSYSTEMS=="rtc"
+    DRIVERS==""
+    ATTRS{date}=="2023-12-17"
+    ATTRS{hctosys}=="1"
+    ATTRS{max_user_freq}=="64"
+    ATTRS{name}=="rtc_cmos 00:01"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{since_epoch}=="1702832491"
+    ATTRS{time}=="17:01:31"
+    ATTRS{wakealarm}==""
+
+  looking at parent device '/devices/pnp0/00:01':
+    KERNELS=="00:01"
+    SUBSYSTEMS=="pnp"
+    DRIVERS=="rtc_cmos"
+    ATTRS{id}=="PNP0b00"
+    ATTRS{options}==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power/wakeup}=="enabled"
+    ATTRS{power/wakeup_abort_count}=="0"
+    ATTRS{power/wakeup_active}=="0"
+    ATTRS{power/wakeup_active_count}=="0"
+    ATTRS{power/wakeup_count}=="0"
+    ATTRS{power/wakeup_expire_count}=="0"
+    ATTRS{power/wakeup_last_time_ms}=="0"
+    ATTRS{power/wakeup_max_time_ms}=="0"
+    ATTRS{power/wakeup_total_time_ms}=="0"
+
+  looking at parent device '/devices/pnp0':
+    KERNELS=="pnp0"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

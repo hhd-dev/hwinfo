@@ -1,0 +1,62 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/pcspkr/input/input16/event8':
+    KERNEL=="event8"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform/pcspkr/input/input16':
+    KERNELS=="input16"
+    SUBSYSTEMS=="input"
+    DRIVERS==""
+    ATTRS{capabilities/abs}=="0"
+    ATTRS{capabilities/ev}=="40001"
+    ATTRS{capabilities/ff}=="0"
+    ATTRS{capabilities/key}=="0"
+    ATTRS{capabilities/led}=="0"
+    ATTRS{capabilities/msc}=="0"
+    ATTRS{capabilities/rel}=="0"
+    ATTRS{capabilities/snd}=="6"
+    ATTRS{capabilities/sw}=="0"
+    ATTRS{id/bustype}=="0010"
+    ATTRS{id/product}=="0001"
+    ATTRS{id/vendor}=="001f"
+    ATTRS{id/version}=="0100"
+    ATTRS{inhibited}=="0"
+    ATTRS{name}=="PC Speaker"
+    ATTRS{phys}=="isa0061/input0"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{properties}=="0"
+    ATTRS{uniq}==""
+
+  looking at parent device '/devices/platform/pcspkr':
+    KERNELS=="pcspkr"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="pcspkr"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
