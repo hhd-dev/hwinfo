@@ -42,125 +42,125 @@
 058 Modeline "1080x1920_58" 321.750 1080 1170 1230 1350 1920 4073 4079 4109 +HSync +VSync
 # Target 59hz: VSYNC 4039 (fb: 2083 syn: 6 bp: 30), 59.01hz.
 059 Modeline "1080x1920_59" 321.750 1080 1170 1230 1350 1920 4003 4009 4039 +HSync +VSync
-# Target  60hz: VSYNC 3972 (fb: 2016 syn: 6 bp: 30), actual 60.00hz.
+# Target 60hz: VSYNC 3972 (fb: 2016 syn: 6 bp: 30), 60.00hz.
 060 Modeline "1080x1920_60" 321.750 1080 1170 1230 1350 1920 3936 3942 3972 +HSync +VSync
-# Target  61hz: VSYNC 3908 (fb: 1952 syn: 6 bp: 30), actual 60.99hz.
+# Target 61hz: VSYNC 3908 (fb: 1952 syn: 6 bp: 30), 60.99hz.
 061 Modeline "1080x1920_61" 321.750 1080 1170 1230 1350 1920 3871 3877 3907 +HSync +VSync
-# Target  62hz: VSYNC 3844 (fb: 1888 syn: 6 bp: 30), actual 62.00hz.
+# Target 62hz: VSYNC 3844 (fb: 1888 syn: 6 bp: 30), 62.00hz.
 062 Modeline "1080x1920_62" 321.750 1080 1170 1230 1350 1920 3808 3814 3844 +HSync +VSync
-# Target  63hz: VSYNC 3784 (fb: 1828 syn: 6 bp: 30), actual 62.98hz.
+# Target 63hz: VSYNC 3784 (fb: 1828 syn: 6 bp: 30), 62.98hz.
 063 Modeline "1080x1920_63" 321.750 1080 1170 1230 1350 1920 3747 3753 3783 +HSync +VSync
-# Target  64hz: VSYNC 3724 (fb: 1768 syn: 6 bp: 30), actual 64.00hz.
+# Target 64hz: VSYNC 3724 (fb: 1768 syn: 6 bp: 30), 64.00hz.
 064 Modeline "1080x1920_64" 321.750 1080 1170 1230 1350 1920 3687 3693 3723 +HSync +VSync
-# Target  65hz: VSYNC 3664 (fb: 1708 syn: 6 bp: 30), actual 65.05hz.
+# Target 65hz: VSYNC 3664 (fb: 1708 syn: 6 bp: 30), 65.05hz.
 065 Modeline "1080x1920_65" 321.750 1080 1170 1230 1350 1920 3630 3636 3666 +HSync +VSync
-# Target  66hz: VSYNC 3612 (fb: 1656 syn: 6 bp: 30), actual 65.98hz.
+# Target 66hz: VSYNC 3612 (fb: 1656 syn: 6 bp: 30), 65.98hz.
 066 Modeline "1080x1920_66" 321.750 1080 1170 1230 1350 1920 3575 3581 3611 +HSync +VSync
-# Target  67hz: VSYNC 3556 (fb: 1600 syn: 6 bp: 30), actual 67.02hz.
+# Target 67hz: VSYNC 3556 (fb: 1600 syn: 6 bp: 30), 67.02hz.
 067 Modeline "1080x1920_67" 321.750 1080 1170 1230 1350 1920 3521 3527 3557 +HSync +VSync
-# Target  68hz: VSYNC 3504 (fb: 1548 syn: 6 bp: 30), actual 68.02hz.
+# Target 68hz: VSYNC 3504 (fb: 1548 syn: 6 bp: 30), 68.02hz.
 068 Modeline "1080x1920_68" 321.750 1080 1170 1230 1350 1920 3468 3474 3504 +HSync +VSync
-# Target  69hz: VSYNC 3452 (fb: 1496 syn: 6 bp: 30), actual 69.04hz.
+# Target 69hz: VSYNC 3452 (fb: 1496 syn: 6 bp: 30), 69.04hz.
 069 Modeline "1080x1920_69" 321.750 1080 1170 1230 1350 1920 3418 3424 3454 +HSync +VSync
-# Target  70hz: VSYNC 3404 (fb: 1448 syn: 6 bp: 30), actual 70.02hz.
+# Target 70hz: VSYNC 3404 (fb: 1448 syn: 6 bp: 30), 70.02hz.
 070 Modeline "1080x1920_70" 321.750 1080 1170 1230 1350 1920 3368 3374 3404 +HSync +VSync
-# Target  71hz: VSYNC 3356 (fb: 1400 syn: 6 bp: 30), actual 71.02hz.
+# Target 71hz: VSYNC 3356 (fb: 1400 syn: 6 bp: 30), 71.02hz.
 071 Modeline "1080x1920_71" 321.750 1080 1170 1230 1350 1920 3320 3326 3356 +HSync +VSync
-# Target  72hz: VSYNC 3308 (fb: 1352 syn: 6 bp: 30), actual 72.05hz.
+# Target 72hz: VSYNC 3308 (fb: 1352 syn: 6 bp: 30), 72.05hz.
 072 Modeline "1080x1920_72" 321.750 1080 1170 1230 1350 1920 3274 3280 3310 +HSync +VSync
-# Target  73hz: VSYNC 3264 (fb: 1308 syn: 6 bp: 30), actual 73.02hz.
+# Target 73hz: VSYNC 3264 (fb: 1308 syn: 6 bp: 30), 73.02hz.
 073 Modeline "1080x1920_73" 321.750 1080 1170 1230 1350 1920 3228 3234 3264 +HSync +VSync
-# Target  74hz: VSYNC 3220 (fb: 1264 syn: 6 bp: 30), actual 74.02hz.
+# Target 74hz: VSYNC 3220 (fb: 1264 syn: 6 bp: 30), 74.02hz.
 074 Modeline "1080x1920_74" 321.750 1080 1170 1230 1350 1920 3184 3190 3220 +HSync +VSync
-# Target  75hz: VSYNC 3176 (fb: 1220 syn: 6 bp: 30), actual 75.04hz.
+# Target 75hz: VSYNC 3176 (fb: 1220 syn: 6 bp: 30), 75.04hz.
 075 Modeline "1080x1920_75" 321.750 1080 1170 1230 1350 1920 3141 3147 3177 +HSync +VSync
-# Target  76hz: VSYNC 3136 (fb: 1180 syn: 6 bp: 30), actual 76.00hz.
+# Target 76hz: VSYNC 3136 (fb: 1180 syn: 6 bp: 30), 76.00hz.
 076 Modeline "1080x1920_76" 321.750 1080 1170 1230 1350 1920 3099 3105 3135 +HSync +VSync
-# Target  77hz: VSYNC 3096 (fb: 1140 syn: 6 bp: 30), actual 76.98hz.
+# Target 77hz: VSYNC 3096 (fb: 1140 syn: 6 bp: 30), 76.98hz.
 077 Modeline "1080x1920_77" 321.750 1080 1170 1230 1350 1920 3059 3065 3095 +HSync +VSync
-# Target  78hz: VSYNC 3056 (fb: 1100 syn: 6 bp: 30), actual 77.99hz.
+# Target 78hz: VSYNC 3056 (fb: 1100 syn: 6 bp: 30), 77.99hz.
 078 Modeline "1080x1920_78" 321.750 1080 1170 1230 1350 1920 3019 3025 3055 +HSync +VSync
-# Target  79hz: VSYNC 3016 (fb: 1060 syn: 6 bp: 30), actual 79.02hz.
+# Target 79hz: VSYNC 3016 (fb: 1060 syn: 6 bp: 30), 79.02hz.
 079 Modeline "1080x1920_79" 321.750 1080 1170 1230 1350 1920 2980 2986 3016 +HSync +VSync
-# Target  80hz: VSYNC 2980 (fb: 1024 syn: 6 bp: 30), actual 79.98hz.
+# Target 80hz: VSYNC 2980 (fb: 1024 syn: 6 bp: 30), 79.98hz.
 080 Modeline "1080x1920_80" 321.750 1080 1170 1230 1350 1920 2943 2949 2979 +HSync +VSync
-# Target  81hz: VSYNC 2940 (fb: 984 syn: 6 bp: 30), actual 81.07hz.
+# Target 81hz: VSYNC 2940 (fb: 984 syn: 6 bp: 30), 81.07hz.
 081 Modeline "1080x1920_81" 321.750 1080 1170 1230 1350 1920 2906 2912 2942 +HSync +VSync
-# Target  82hz: VSYNC 2904 (fb: 948 syn: 6 bp: 30), actual 82.07hz.
+# Target 82hz: VSYNC 2904 (fb: 948 syn: 6 bp: 30), 82.07hz.
 082 Modeline "1080x1920_82" 321.750 1080 1170 1230 1350 1920 2870 2876 2906 +HSync +VSync
-# Target  83hz: VSYNC 2872 (fb: 916 syn: 6 bp: 30), actual 82.99hz.
+# Target 83hz: VSYNC 2872 (fb: 916 syn: 6 bp: 30), 82.99hz.
 083 Modeline "1080x1920_83" 321.750 1080 1170 1230 1350 1920 2835 2841 2871 +HSync +VSync
-# Target  84hz: VSYNC 2836 (fb: 880 syn: 6 bp: 30), actual 84.04hz.
+# Target 84hz: VSYNC 2836 (fb: 880 syn: 6 bp: 30), 84.04hz.
 084 Modeline "1080x1920_84" 321.750 1080 1170 1230 1350 1920 2801 2807 2837 +HSync +VSync
-# Target  85hz: VSYNC 2804 (fb: 848 syn: 6 bp: 30), actual 85.00hz.
+# Target 85hz: VSYNC 2804 (fb: 848 syn: 6 bp: 30), 85.00hz.
 085 Modeline "1080x1920_85" 321.750 1080 1170 1230 1350 1920 2767 2773 2803 +HSync +VSync
-# Target  86hz: VSYNC 2772 (fb: 816 syn: 6 bp: 30), actual 85.98hz.
+# Target 86hz: VSYNC 2772 (fb: 816 syn: 6 bp: 30), 85.98hz.
 086 Modeline "1080x1920_86" 321.750 1080 1170 1230 1350 1920 2735 2741 2771 +HSync +VSync
-# Target  87hz: VSYNC 2740 (fb: 784 syn: 6 bp: 30), actual 86.98hz.
+# Target 87hz: VSYNC 2740 (fb: 784 syn: 6 bp: 30), 86.98hz.
 087 Modeline "1080x1920_87" 321.750 1080 1170 1230 1350 1920 2703 2709 2739 +HSync +VSync
-# Target  88hz: VSYNC 2708 (fb: 752 syn: 6 bp: 30), actual 88.01hz.
+# Target 88hz: VSYNC 2708 (fb: 752 syn: 6 bp: 30), 88.01hz.
 088 Modeline "1080x1920_88" 321.750 1080 1170 1230 1350 1920 2672 2678 2708 +HSync +VSync
-# Target  89hz: VSYNC 2676 (fb: 720 syn: 6 bp: 30), actual 89.06hz.
+# Target 89hz: VSYNC 2676 (fb: 720 syn: 6 bp: 30), 89.06hz.
 089 Modeline "1080x1920_89" 321.750 1080 1170 1230 1350 1920 2641 2647 2677 +HSync +VSync
-# Target  90hz: VSYNC 2648 (fb: 692 syn: 6 bp: 30), actual 90.01hz.
+# Target 90hz: VSYNC 2648 (fb: 692 syn: 6 bp: 30), 90.01hz.
 090 Modeline "1080x1920_90" 321.750 1080 1170 1230 1350 1920 2612 2618 2648 +HSync +VSync
-# Target  91hz: VSYNC 2620 (fb: 664 syn: 6 bp: 30), actual 90.97hz.
+# Target 91hz: VSYNC 2620 (fb: 664 syn: 6 bp: 30), 90.97hz.
 091 Modeline "1080x1920_91" 321.750 1080 1170 1230 1350 1920 2583 2589 2619 +HSync +VSync
-# Target  92hz: VSYNC 2588 (fb: 632 syn: 6 bp: 30), actual 92.09hz.
+# Target 92hz: VSYNC 2588 (fb: 632 syn: 6 bp: 30), 92.09hz.
 092 Modeline "1080x1920_92" 321.750 1080 1170 1230 1350 1920 2554 2560 2590 +HSync +VSync
-# Target  93hz: VSYNC 2560 (fb: 604 syn: 6 bp: 30), actual 93.10hz.
+# Target 93hz: VSYNC 2560 (fb: 604 syn: 6 bp: 30), 93.10hz.
 093 Modeline "1080x1920_93" 321.750 1080 1170 1230 1350 1920 2526 2532 2562 +HSync +VSync
-# Target  94hz: VSYNC 2536 (fb: 580 syn: 6 bp: 30), actual 93.98hz.
+# Target 94hz: VSYNC 2536 (fb: 580 syn: 6 bp: 30), 93.98hz.
 094 Modeline "1080x1920_94" 321.750 1080 1170 1230 1350 1920 2499 2505 2535 +HSync +VSync
-# Target  95hz: VSYNC 2508 (fb: 552 syn: 6 bp: 30), actual 95.03hz.
+# Target 95hz: VSYNC 2508 (fb: 552 syn: 6 bp: 30), 95.03hz.
 095 Modeline "1080x1920_95" 321.750 1080 1170 1230 1350 1920 2472 2478 2508 +HSync +VSync
-# Target  96hz: VSYNC 2480 (fb: 524 syn: 6 bp: 30), actual 96.10hz.
+# Target 96hz: VSYNC 2480 (fb: 524 syn: 6 bp: 30), 96.10hz.
 096 Modeline "1080x1920_96" 321.750 1080 1170 1230 1350 1920 2446 2452 2482 +HSync +VSync
-# Target  97hz: VSYNC 2456 (fb: 500 syn: 6 bp: 30), actual 97.04hz.
+# Target 97hz: VSYNC 2456 (fb: 500 syn: 6 bp: 30), 97.04hz.
 097 Modeline "1080x1920_97" 321.750 1080 1170 1230 1350 1920 2421 2427 2457 +HSync +VSync
-# Target  98hz: VSYNC 2432 (fb: 476 syn: 6 bp: 30), actual 98.00hz.
+# Target 98hz: VSYNC 2432 (fb: 476 syn: 6 bp: 30), 98.00hz.
 098 Modeline "1080x1920_98" 321.750 1080 1170 1230 1350 1920 2395 2401 2431 +HSync +VSync
-# Target  99hz: VSYNC 2408 (fb: 452 syn: 6 bp: 30), actual 98.98hz.
+# Target 99hz: VSYNC 2408 (fb: 452 syn: 6 bp: 30), 98.98hz.
 099 Modeline "1080x1920_99" 321.750 1080 1170 1230 1350 1920 2371 2377 2407 +HSync +VSync
-# Target 100hz: VSYNC 2384 (fb: 428 syn: 6 bp: 30), actual 99.97hz.
+# Target 100hz: VSYNC 2384 (fb: 428 syn: 6 bp: 30), 99.97hz.
 100 Modeline "1080x1920_100" 321.750 1080 1170 1230 1350 1920 2347 2353 2383 +HSync +VSync
-# Target 101hz: VSYNC 2360 (fb: 404 syn: 6 bp: 30), actual 100.99hz.
+# Target 101hz: VSYNC 2360 (fb: 404 syn: 6 bp: 30), 100.99hz.
 101 Modeline "1080x1920_101" 321.750 1080 1170 1230 1350 1920 2323 2329 2359 +HSync +VSync
-# Target 102hz: VSYNC 2336 (fb: 380 syn: 6 bp: 30), actual 102.03hz.
+# Target 102hz: VSYNC 2336 (fb: 380 syn: 6 bp: 30), 102.03hz.
 102 Modeline "1080x1920_102" 321.750 1080 1170 1230 1350 1920 2300 2306 2336 +HSync +VSync
-# Target 103hz: VSYNC 2312 (fb: 356 syn: 6 bp: 30), actual 103.09hz.
+# Target 103hz: VSYNC 2312 (fb: 356 syn: 6 bp: 30), 103.09hz.
 103 Modeline "1080x1920_103" 321.750 1080 1170 1230 1350 1920 2277 2283 2313 +HSync +VSync
-# Target 104hz: VSYNC 2292 (fb: 336 syn: 6 bp: 30), actual 103.98hz.
+# Target 104hz: VSYNC 2292 (fb: 336 syn: 6 bp: 30), 103.98hz.
 104 Modeline "1080x1920_104" 321.750 1080 1170 1230 1350 1920 2255 2261 2291 +HSync +VSync
-# Target 105hz: VSYNC 2268 (fb: 312 syn: 6 bp: 30), actual 105.09hz.
+# Target 105hz: VSYNC 2268 (fb: 312 syn: 6 bp: 30), 105.09hz.
 105 Modeline "1080x1920_105" 321.750 1080 1170 1230 1350 1920 2233 2239 2269 +HSync +VSync
-# Target 106hz: VSYNC 2248 (fb: 292 syn: 6 bp: 30), actual 106.02hz.
+# Target 106hz: VSYNC 2248 (fb: 292 syn: 6 bp: 30), 106.02hz.
 106 Modeline "1080x1920_106" 321.750 1080 1170 1230 1350 1920 2212 2218 2248 +HSync +VSync
-# Target 107hz: VSYNC 2228 (fb: 272 syn: 6 bp: 30), actual 106.97hz.
+# Target 107hz: VSYNC 2228 (fb: 272 syn: 6 bp: 30), 106.97hz.
 107 Modeline "1080x1920_107" 321.750 1080 1170 1230 1350 1920 2191 2197 2227 +HSync +VSync
-# Target 108hz: VSYNC 2204 (fb: 248 syn: 6 bp: 30), actual 108.14hz.
+# Target 108hz: VSYNC 2204 (fb: 248 syn: 6 bp: 30), 108.14hz.
 108 Modeline "1080x1920_108" 321.750 1080 1170 1230 1350 1920 2170 2176 2206 +HSync +VSync
-# Target 109hz: VSYNC 2184 (fb: 228 syn: 6 bp: 30), actual 109.13hz.
+# Target 109hz: VSYNC 2184 (fb: 228 syn: 6 bp: 30), 109.13hz.
 109 Modeline "1080x1920_109" 321.750 1080 1170 1230 1350 1920 2150 2156 2186 +HSync +VSync
-# Target 110hz: VSYNC 2164 (fb: 208 syn: 6 bp: 30), actual 110.14hz.
+# Target 110hz: VSYNC 2164 (fb: 208 syn: 6 bp: 30), 110.14hz.
 110 Modeline "1080x1920_110" 321.750 1080 1170 1230 1350 1920 2130 2136 2166 +HSync +VSync
-# Target 111hz: VSYNC 2148 (fb: 192 syn: 6 bp: 30), actual 110.96hz.
+# Target 111hz: VSYNC 2148 (fb: 192 syn: 6 bp: 30), 110.96hz.
 111 Modeline "1080x1920_111" 321.750 1080 1170 1230 1350 1920 2111 2117 2147 +HSync +VSync
-# Target 112hz: VSYNC 2128 (fb: 172 syn: 6 bp: 30), actual 112.00hz.
+# Target 112hz: VSYNC 2128 (fb: 172 syn: 6 bp: 30), 112.00hz.
 112 Modeline "1080x1920_112" 321.750 1080 1170 1230 1350 1920 2091 2097 2127 +HSync +VSync
-# Target 113hz: VSYNC 2108 (fb: 152 syn: 6 bp: 30), actual 113.06hz.
+# Target 113hz: VSYNC 2108 (fb: 152 syn: 6 bp: 30), 113.06hz.
 113 Modeline "1080x1920_113" 321.750 1080 1170 1230 1350 1920 2073 2079 2109 +HSync +VSync
-# Target 114hz: VSYNC 2088 (fb: 132 syn: 6 bp: 30), actual 114.14hz.
+# Target 114hz: VSYNC 2088 (fb: 132 syn: 6 bp: 30), 114.14hz.
 114 Modeline "1080x1920_114" 321.750 1080 1170 1230 1350 1920 2054 2060 2090 +HSync +VSync
-# Target 115hz: VSYNC 2072 (fb: 116 syn: 6 bp: 30), actual 115.03hz.
+# Target 115hz: VSYNC 2072 (fb: 116 syn: 6 bp: 30), 115.03hz.
 115 Modeline "1080x1920_115" 321.750 1080 1170 1230 1350 1920 2036 2042 2072 +HSync +VSync
-# Target 116hz: VSYNC 2052 (fb: 96 syn: 6 bp: 30), actual 116.15hz.
+# Target 116hz: VSYNC 2052 (fb: 96 syn: 6 bp: 30), 116.15hz.
 116 Modeline "1080x1920_116" 321.750 1080 1170 1230 1350 1920 2018 2024 2054 +HSync +VSync
-# Target 117hz: VSYNC 2036 (fb: 80 syn: 6 bp: 30), actual 117.06hz.
+# Target 117hz: VSYNC 2036 (fb: 80 syn: 6 bp: 30), 117.06hz.
 117 Modeline "1080x1920_117" 321.750 1080 1170 1230 1350 1920 2001 2007 2037 +HSync +VSync
-# Target 118hz: VSYNC 2020 (fb: 64 syn: 6 bp: 30), actual 117.99hz.
+# Target 118hz: VSYNC 2020 (fb: 64 syn: 6 bp: 30), 117.99hz.
 118 Modeline "1080x1920_118" 321.750 1080 1170 1230 1350 1920 1983 1989 2019 +HSync +VSync
-# Target 119hz: VSYNC 2000 (fb: 44 syn: 6 bp: 30), actual 119.17hz.
+# Target 119hz: VSYNC 2000 (fb: 44 syn: 6 bp: 30), 119.17hz.
 119 Modeline "1080x1920_119" 321.750 1080 1170 1230 1350 1920 1966 1972 2002 +HSync +VSync
-# Target 120hz: VSYNC 1984 (fb: 28 syn: 6 bp: 30), actual 120.13hz.
+# Target 120hz: VSYNC 1984 (fb: 28 syn: 6 bp: 30), 120.13hz.
 120 Modeline "1080x1920_120" 321.750 1080 1170 1230 1350 1920 1950 1956 1986 +HSync +VSync
