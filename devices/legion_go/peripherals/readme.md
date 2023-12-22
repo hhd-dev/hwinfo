@@ -59,6 +59,49 @@ The touchpad can be enabled/disabled with the following command:
 
 Where enable is either `00` or `01`.
 
+#### Touchpad Vibration enable/disable
+The touchpad vibration can be enabled/disabled with the following command:
+
+```
+0506 6b 0404 <enable> 01
+```
+
+Where enable is either `01` or `02`. Enabled is `02`.
+
+#### Swap legion buttons with start, select
+The legion buttons can be swapped with the bottom left buttons.
+
+```
+0506 69 0401 <enable> 01
+```
+Where enable is either `01` or `02`. When `02`, the legion buttons appear at the
+bottom left of the controller.
+
+#### Deadzones
+You can control the deadzones of the sticks.
+By default, they are at 5% (0 indexed).
+```
+0506 3f 06 <controller> <level> 01
+```
+
+Where controller is either `03` or `04` referencing the left, right sticks,
+and level is from `00` to `63` (default is `04`).
+
+#### Sensitivity
+You can control the deadzones of the sticks.
+By default, they are at 5% (0 indexed).
+```
+0509 3f 02 <controller> <tx> <ty> <bx> <by> 01
+```
+
+Where controller is either `03` or `04` referencing the left, right sticks.
+Sensitivity is controlled from two points, as shown in the picture in the windows
+directory.
+The higher point goes first and the lower second.
+`tx > bx` and `ty > by` always.
+The numbers should be from `00` to around `1e` (x) and `23` (y), but there is 
+a chance legion space is limiting them and they can go higher.
+
 #### Button remapping
 The final and most complex command is button remapping,
 which can be used to set the back buttons to any of the options shown [here](./windows/xbox_remap_y1_all_options_ltr_ttb.png.png).
@@ -69,7 +112,7 @@ the byte specifying the action, so there is potential.
 0507 6c 02 <controller> <button> <action> 01
 ```
 
-Where button is either `03` or `04` referencing the left, right controllers,
+Where controller is either `03` or `04` referencing the left, right controllers,
 and button `03 1c`, `03 1d`, `04 1e`, `04 21`, `04 22`, referring to Y1, Y2, Y3, M2, M3.
 The button numbers do not start from 0, indicating that the command is valid
 for other buttons as well.
@@ -204,8 +247,12 @@ Where the controller is `03`, `04`, and for vibration `00`, `01`, `02`, `03` for
 These commands appear while navigating the menus and elicit a different response
 from the raw interface.
 ```
-0505 79 01 <01-04> 01
+0505 3f 07 <03-04> 01 # deadzones
 0505 67 01 04 01
+0505 69 01 04 01
+0505 6a 01 <03-04> 01 # leds
+0505 79 01 <01-04> 01
+0506 83 01 01 02 01 # vibration/legion new as of v25, sensitivity related++
 ```
 
 Examples:
@@ -215,4 +262,7 @@ Examples:
 
 050579010301
 041579010300750100000300000231016b000101a0fa0a5400000000008432800000000000800000000000008080000000000000006400000000000000000000
+
+05068301010201
+04068301010101640401000002028080808000000000000002800000000080808080000000000000000000000000000000000000000000000000000000000000
 ```
