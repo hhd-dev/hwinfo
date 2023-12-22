@@ -1,0 +1,20 @@
+No.     Time           Source                Destination           Protocol Length Info
+  79985 73.823215      host                  1.1.3                 USB      91     URB_INTERRUPT out
+
+Frame 79985: 91 bytes on wire (728 bits), 91 bytes captured (728 bits) on interface \\.\USBPcap1, id 0
+USB URB
+HID Data: 05063301030201cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd
+
+No.     Time           Source                Destination           Protocol Length Info
+  94195 86.936823      host                  1.1.3                 USB      91     URB_INTERRUPT out
+
+Frame 94195: 91 bytes on wire (728 bits), 91 bytes captured (728 bits) on interface \\.\USBPcap1, id 0
+USB URB
+HID Data: 05063301030501cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd
+
+No.     Time           Source                Destination           Protocol Length Info
+  94671 87.373857      host                  1.1.3                 USB      91     URB_INTERRUPT out
+
+Frame 94671: 91 bytes on wire (728 bits), 91 bytes captured (728 bits) on interface \\.\USBPcap1, id 0
+USB URB
+HID Data: 05063301030701cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd

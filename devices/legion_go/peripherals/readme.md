@@ -50,6 +50,12 @@ The command only varies the gyro byte to `01`, `02`, which map to left, right,
 and the joystick value from `00`, `01`, `02`, which means disabled, left, right joystick
 respectively.
 
+```
+0508 6a 02 <controller> <enable> 01
+```
+In addition, you need to enable the gyro with the above command. Where
+the controller is `03`, `04`, and the enable `00`, `01`.
+
 #### Touchpad enable/disable
 The touchpad can be enabled/disabled with the following command:
 
@@ -225,6 +231,13 @@ The following command appeared while navigating the interface for switching mode
 It is unclear what it does. 
 It appears to be from the gyro command subspace.
 But that command has a different structure and size.
+
+### Controller Sleep time
+The controllers can be set to turn off after a certain period when detached.
+```
+0506 33 01 <controller> <time> 01
+```
+Controller is `03`, `04`. Time is a positive number in minutes.
 
 ### DPI
 The following command sets the dpi:
