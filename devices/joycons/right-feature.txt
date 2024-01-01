@@ -1,0 +1,756 @@
+0002: 020a
+0003: 0306000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+000b: 0b1e0000011c04200000fe4f0050fe060050fe0008030601f00001000000000000050d0904a1018501050d0922a1020942750195011500250181020951250a7507950181020501264006750c550d65110930350046462e95018102460a4a093126000a8102050d75089501150026ff00093081020948810209498102c0050d0922a1020942750195011500250181020951250a7507950181020501264006750c550d65110930350046462e95018102460a4a093126000a8102050d75089501150026ff00093081020948810209498102c0050d0922a1020942750195011500250181020951250a7507950181020501264006750c550d65110930350046462e95010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+000c: 0c1e0000011c042000
+000d: 0d1e0000011c04200000fe4f0050fe060050fe0008030601f000
+000e: 0e1e0000011c04200000fe4f0050fe060050fe0008030601f00001000000000000050d0904a1018501050d0922a1020942750195011500250181020951250a7507950181020501264006750c550d65110930350046462e95018102460a4a093126000a8102050d75089501150026ff00093081020948810209498102c0050d0922a1020942750195
+0011: 1100000000000000000000
+0012: 1200a30000000000000000
+Feature | Report | Usage Page                | Usage                                      | Range     | Count | Bits | Value(s)
+--------|--------|---------------------------|--------------------------------------------|-----------|-------|------|---------
+  20000 |      2 | Digitizers                | Contact Max                                | [ 0,  10] |     1 |   8  | 0xa
+  30000 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x6
+  30001 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30002 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30003 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30004 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30005 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30006 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30007 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30008 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30009 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3000a |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3000b |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3000c |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3000d |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3000e |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3000f |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30010 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30011 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30012 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30013 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30014 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30015 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30016 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30017 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30018 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30019 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3001a |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3001b |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3001c |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3001d |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3001e |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3001f |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30020 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30021 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30022 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30023 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30024 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30025 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30026 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30027 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30028 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30029 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3002a |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3002b |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3002c |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3002d |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3002e |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3002f |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30030 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30031 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30032 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30033 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30034 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30035 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30036 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30037 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30038 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30039 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3003a |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3003b |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3003c |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3003d |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3003e |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3003f |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30040 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30041 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30042 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30043 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30044 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30045 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30046 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30047 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30048 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30049 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3004a |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3004b |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3004c |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3004d |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3004e |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3004f |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30050 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30051 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30052 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30053 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30054 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30055 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30056 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30057 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30058 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30059 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3005a |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3005b |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3005c |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3005d |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3005e |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3005f |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30060 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30061 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30062 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30063 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30064 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30065 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30066 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30067 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30068 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30069 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3006a |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3006b |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3006c |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3006d |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3006e |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3006f |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30070 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30071 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30072 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30073 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30074 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30075 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30076 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30077 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30078 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30079 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3007a |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3007b |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3007c |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3007d |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3007e |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3007f |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30080 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30081 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30082 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30083 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30084 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30085 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30086 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30087 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30088 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30089 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3008a |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3008b |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3008c |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3008d |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3008e |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3008f |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30090 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30091 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30092 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30093 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30094 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30095 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30096 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30097 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30098 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  30099 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3009a |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3009b |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3009c |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3009d |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3009e |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  3009f |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300a0 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300a1 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300a2 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300a3 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300a4 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300a5 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300a6 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300a7 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300a8 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300a9 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300aa |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ab |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ac |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ad |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ae |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300af |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300b0 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300b1 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300b2 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300b3 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300b4 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300b5 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300b6 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300b7 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300b8 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300b9 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ba |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300bb |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300bc |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300bd |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300be |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300bf |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300c0 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300c1 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300c2 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300c3 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300c4 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300c5 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300c6 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300c7 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300c8 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300c9 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ca |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300cb |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300cc |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300cd |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ce |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300cf |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300d0 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300d1 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300d2 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300d3 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300d4 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300d5 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300d6 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300d7 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300d8 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300d9 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300da |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300db |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300dc |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300dd |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300de |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300df |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300e0 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300e1 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300e2 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300e3 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300e4 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300e5 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300e6 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300e7 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300e8 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300e9 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ea |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300eb |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ec |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ed |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ee |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ef |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300f0 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300f1 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300f2 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300f3 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300f4 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300f5 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300f6 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300f7 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300f8 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300f9 |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300fa |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300fb |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300fc |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300fd |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300fe |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  300ff |      3 | Vendor Defined Page 1     | 0xff0000c5                                 | [ 0, 255] |     1 |   8  | 0x0
+  b0000 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1e
+  b0001 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0002 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0003 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0004 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1c
+  b0005 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4
+  b0006 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x20
+  b0007 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0008 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0009 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xfe
+  b000a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4f
+  b000b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b000c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x50
+  b000d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xfe
+  b000e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x6
+  b000f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0010 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x50
+  b0011 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xfe
+  b0012 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0013 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x8
+  b0014 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x3
+  b0015 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x6
+  b0016 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0017 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xf0
+  b0018 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0019 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b001a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b001b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b001c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b001d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b001e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b001f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0020 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  b0021 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  b0022 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b0023 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4
+  b0024 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa1
+  b0025 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0026 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x85
+  b0027 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0028 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  b0029 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  b002a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b002b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x22
+  b002c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa1
+  b002d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b002e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b002f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x42
+  b0030 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b0031 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0032 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b0033 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0034 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x15
+  b0035 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0036 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x25
+  b0037 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0038 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b0039 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b003a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b003b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x51
+  b003c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x25
+  b003d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa
+  b003e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b003f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x7
+  b0040 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b0041 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0042 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b0043 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b0044 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  b0045 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0046 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x26
+  b0047 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x40
+  b0048 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x6
+  b0049 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b004a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xc
+  b004b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x55
+  b004c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  b004d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x65
+  b004e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x11
+  b004f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b0050 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x30
+  b0051 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x35
+  b0052 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0053 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  b0054 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  b0055 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2e
+  b0056 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b0057 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0058 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b0059 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b005a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  b005b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa
+  b005c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4a
+  b005d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b005e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x31
+  b005f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x26
+  b0060 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0061 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa
+  b0062 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b0063 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b0064 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  b0065 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  b0066 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b0067 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x8
+  b0068 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b0069 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b006a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x15
+  b006b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b006c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x26
+  b006d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xff
+  b006e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b006f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b0070 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x30
+  b0071 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b0072 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b0073 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b0074 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x48
+  b0075 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b0076 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b0077 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b0078 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x49
+  b0079 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b007a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b007b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xc0
+  b007c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  b007d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  b007e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b007f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x22
+  b0080 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa1
+  b0081 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b0082 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b0083 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x42
+  b0084 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b0085 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0086 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b0087 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0088 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x15
+  b0089 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b008a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x25
+  b008b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b008c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b008d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b008e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b008f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x51
+  b0090 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x25
+  b0091 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa
+  b0092 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b0093 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x7
+  b0094 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b0095 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0096 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b0097 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b0098 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  b0099 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b009a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x26
+  b009b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x40
+  b009c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x6
+  b009d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b009e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xc
+  b009f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x55
+  b00a0 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  b00a1 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x65
+  b00a2 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x11
+  b00a3 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b00a4 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x30
+  b00a5 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x35
+  b00a6 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b00a7 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  b00a8 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  b00a9 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2e
+  b00aa |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b00ab |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b00ac |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b00ad |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b00ae |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  b00af |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa
+  b00b0 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4a
+  b00b1 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b00b2 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x31
+  b00b3 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x26
+  b00b4 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b00b5 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa
+  b00b6 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b00b7 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b00b8 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  b00b9 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  b00ba |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b00bb |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x8
+  b00bc |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b00bd |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b00be |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x15
+  b00bf |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b00c0 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x26
+  b00c1 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xff
+  b00c2 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b00c3 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b00c4 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x30
+  b00c5 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b00c6 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b00c7 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b00c8 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x48
+  b00c9 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b00ca |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b00cb |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b00cc |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x49
+  b00cd |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b00ce |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b00cf |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xc0
+  b00d0 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  b00d1 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  b00d2 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b00d3 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x22
+  b00d4 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa1
+  b00d5 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b00d6 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b00d7 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x42
+  b00d8 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b00d9 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b00da |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b00db |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b00dc |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x15
+  b00dd |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b00de |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x25
+  b00df |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b00e0 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b00e1 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b00e2 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b00e3 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x51
+  b00e4 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x25
+  b00e5 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa
+  b00e6 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b00e7 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x7
+  b00e8 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b00e9 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b00ea |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  b00eb |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  b00ec |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  b00ed |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b00ee |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x26
+  b00ef |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x40
+  b00f0 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x6
+  b00f1 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  b00f2 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xc
+  b00f3 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x55
+  b00f4 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  b00f5 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x65
+  b00f6 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x11
+  b00f7 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  b00f8 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x30
+  b00f9 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x35
+  b00fa |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b00fb |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  b00fc |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  b00fd |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2e
+  b00fe |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  b00ff |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  b0100 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0101 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0102 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0103 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0104 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0105 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0106 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0107 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0108 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0109 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b010a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b010b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b010c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b010d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b010e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b010f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0110 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0111 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0112 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0113 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0114 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0115 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0116 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0117 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0118 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0119 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b011a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b011b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b011c |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b011d |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b011e |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b011f |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0120 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0121 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0122 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0123 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0124 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0125 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0126 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0127 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0128 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b0129 |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b012a |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  b012b |     11 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  c0000 |     12 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1e
+  c0001 |     12 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  c0002 |     12 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  c0003 |     12 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  c0004 |     12 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1c
+  c0005 |     12 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4
+  c0006 |     12 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x20
+  c0007 |     12 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  d0000 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1e
+  d0001 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  d0002 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  d0003 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  d0004 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1c
+  d0005 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4
+  d0006 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x20
+  d0007 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  d0008 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  d0009 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xfe
+  d000a |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4f
+  d000b |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  d000c |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x50
+  d000d |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xfe
+  d000e |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x6
+  d000f |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  d0010 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x50
+  d0011 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xfe
+  d0012 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  d0013 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x8
+  d0014 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x3
+  d0015 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x6
+  d0016 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  d0017 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xf0
+  d0018 |     13 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0000 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1e
+  e0001 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0002 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0003 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0004 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1c
+  e0005 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4
+  e0006 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x20
+  e0007 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0008 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0009 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xfe
+  e000a |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4f
+  e000b |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e000c |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x50
+  e000d |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xfe
+  e000e |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x6
+  e000f |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0010 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x50
+  e0011 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xfe
+  e0012 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0013 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x8
+  e0014 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x3
+  e0015 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x6
+  e0016 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0017 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xf0
+  e0018 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0019 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e001a |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e001b |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e001c |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e001d |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e001e |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e001f |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0020 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  e0021 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  e0022 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e0023 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4
+  e0024 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa1
+  e0025 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0026 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x85
+  e0027 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0028 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  e0029 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  e002a |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e002b |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x22
+  e002c |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa1
+  e002d |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  e002e |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e002f |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x42
+  e0030 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  e0031 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0032 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  e0033 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0034 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x15
+  e0035 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0036 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x25
+  e0037 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0038 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  e0039 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  e003a |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e003b |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x51
+  e003c |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x25
+  e003d |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa
+  e003e |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  e003f |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x7
+  e0040 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  e0041 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0042 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  e0043 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  e0044 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  e0045 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0046 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x26
+  e0047 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x40
+  e0048 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x6
+  e0049 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  e004a |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xc
+  e004b |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x55
+  e004c |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  e004d |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x65
+  e004e |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x11
+  e004f |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e0050 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x30
+  e0051 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x35
+  e0052 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0053 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  e0054 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  e0055 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2e
+  e0056 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  e0057 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0058 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  e0059 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  e005a |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x46
+  e005b |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa
+  e005c |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x4a
+  e005d |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e005e |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x31
+  e005f |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x26
+  e0060 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e0061 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa
+  e0062 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  e0063 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  e0064 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  e0065 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  e0066 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  e0067 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x8
+  e0068 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+  e0069 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e006a |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x15
+  e006b |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e006c |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x26
+  e006d |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xff
+  e006e |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+  e006f |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e0070 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x30
+  e0071 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  e0072 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  e0073 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e0074 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x48
+  e0075 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  e0076 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  e0077 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e0078 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x49
+  e0079 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x81
+  e007a |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  e007b |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xc0
+  e007c |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x5
+  e007d |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xd
+  e007e |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e007f |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x22
+  e0080 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa1
+  e0081 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x2
+  e0082 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x9
+  e0083 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x42
+  e0084 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x75
+  e0085 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x1
+  e0086 |     14 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x95
+ 110000 |     17 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 110001 |     17 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 110002 |     17 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 110003 |     17 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 110004 |     17 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 110005 |     17 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 110006 |     17 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 110007 |     17 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 110008 |     17 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 110009 |     17 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 120000 |     18 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 120001 |     18 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0xa3
+ 120002 |     18 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 120003 |     18 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 120004 |     18 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 120005 |     18 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 120006 |     18 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 120007 |     18 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 120008 |     18 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+ 120009 |     18 | Generic Desktop           | Undefined                                  | [ 0, 255] |     1 |   8  | 0x0
+
