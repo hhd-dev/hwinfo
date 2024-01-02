@@ -1,0 +1,4 @@
+MAJOR=234
+MINOR=0
+DEVNAME=iio:device0
+DEVTYPE=iio_device
