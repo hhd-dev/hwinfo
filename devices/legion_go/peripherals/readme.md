@@ -223,15 +223,6 @@ There's also a secondary form of this command:
 ```
 It is smaller, uses 01 as the param bit and is always like this.
 
-### Unknown command
-The following command appeared while navigating the interface for switching modes:
-```
-0506 6a 02 <controller> <on/off> 01
-```
-It is unclear what it does. 
-It appears to be from the gyro command subspace.
-But that command has a different structure and size.
-
 ### Controller Sleep time
 The controllers can be set to turn off after a certain period when detached.
 ```
@@ -261,7 +252,7 @@ These commands appear while navigating the menus and elicit a different response
 from the raw interface.
 ```
 0505 3f 07 <03-04> 01 # deadzones
-0505 67 01 04 01
+0505 67 <01-02> 04 01
 0505 69 01 04 01
 0505 6a 01 <03-04> 01 # leds
 0505 79 01 <01-04> 01
@@ -278,4 +269,10 @@ Examples:
 
 05068301010201
 04068301010101640401000002028080808000000000000002800000000080808080000000000000000000000000000000000000000000000000000000000000
+```
+
+```python
+# Make controllers vibrate
+C("0505 67 02 04 01")
+
 ```

@@ -1,0 +1,758 @@
+# Xbox Elite Wireless Controller
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x05,                    // Usage (Game Pad)                    2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x85, 0x01,                    //  Report ID (1)                      6
+# 0x09, 0x01,                    //  Usage (Pointer)                    8
+# 0xa1, 0x00,                    //  Collection (Physical)              10
+# 0x09, 0x30,                    //   Usage (X)                         12
+# 0x09, 0x31,                    //   Usage (Y)                         14
+# 0x15, 0x00,                    //   Logical Minimum (0)               16
+# 0x27, 0xff, 0xff, 0x00, 0x00,  //   Logical Maximum (65535)           18
+# 0x95, 0x02,                    //   Report Count (2)                  23
+# 0x75, 0x10,                    //   Report Size (16)                  25
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              27
+# 0xc0,                          //  End Collection                     29
+# 0x09, 0x01,                    //  Usage (Pointer)                    30
+# 0xa1, 0x00,                    //  Collection (Physical)              32
+# 0x09, 0x32,                    //   Usage (Z)                         34
+# 0x09, 0x35,                    //   Usage (Rz)                        36
+# 0x15, 0x00,                    //   Logical Minimum (0)               38
+# 0x27, 0xff, 0xff, 0x00, 0x00,  //   Logical Maximum (65535)           40
+# 0x95, 0x02,                    //   Report Count (2)                  45
+# 0x75, 0x10,                    //   Report Size (16)                  47
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              49
+# 0xc0,                          //  End Collection                     51
+# 0x05, 0x02,                    //  Usage Page (Simulation Controls)   52
+# 0x09, 0xc5,                    //  Usage (Brake)                      54
+# 0x15, 0x00,                    //  Logical Minimum (0)                56
+# 0x26, 0xff, 0x03,              //  Logical Maximum (1023)             58
+# 0x95, 0x01,                    //  Report Count (1)                   61
+# 0x75, 0x0a,                    //  Report Size (10)                   63
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               65
+# 0x15, 0x00,                    //  Logical Minimum (0)                67
+# 0x25, 0x00,                    //  Logical Maximum (0)                69
+# 0x75, 0x06,                    //  Report Size (6)                    71
+# 0x95, 0x01,                    //  Report Count (1)                   73
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               75
+# 0x05, 0x02,                    //  Usage Page (Simulation Controls)   77
+# 0x09, 0xc4,                    //  Usage (Accelerator)                79
+# 0x15, 0x00,                    //  Logical Minimum (0)                81
+# 0x26, 0xff, 0x03,              //  Logical Maximum (1023)             83
+# 0x95, 0x01,                    //  Report Count (1)                   86
+# 0x75, 0x0a,                    //  Report Size (10)                   88
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               90
+# 0x15, 0x00,                    //  Logical Minimum (0)                92
+# 0x25, 0x00,                    //  Logical Maximum (0)                94
+# 0x75, 0x06,                    //  Report Size (6)                    96
+# 0x95, 0x01,                    //  Report Count (1)                   98
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               100
+# 0x05, 0x01,                    //  Usage Page (Generic Desktop)       102
+# 0x09, 0x39,                    //  Usage (Hat switch)                 104
+# 0x15, 0x01,                    //  Logical Minimum (1)                106
+# 0x25, 0x08,                    //  Logical Maximum (8)                108
+# 0x35, 0x00,                    //  Physical Minimum (0)               110
+# 0x46, 0x3b, 0x01,              //  Physical Maximum (315)             112
+# 0x66, 0x14, 0x00,              //  Unit (EnglishRotation: deg)        115
+# 0x75, 0x04,                    //  Report Size (4)                    118
+# 0x95, 0x01,                    //  Report Count (1)                   120
+# 0x81, 0x42,                    //  Input (Data,Var,Abs,Null)          122
+# 0x75, 0x04,                    //  Report Size (4)                    124
+# 0x95, 0x01,                    //  Report Count (1)                   126
+# 0x15, 0x00,                    //  Logical Minimum (0)                128
+# 0x25, 0x00,                    //  Logical Maximum (0)                130
+# 0x35, 0x00,                    //  Physical Minimum (0)               132
+# 0x45, 0x00,                    //  Physical Maximum (0)               134
+# 0x65, 0x00,                    //  Unit (None)                        136
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               138
+# 0x05, 0x09,                    //  Usage Page (Button)                140
+# 0x19, 0x01,                    //  Usage Minimum (1)                  142
+# 0x29, 0x0f,                    //  Usage Maximum (15)                 144
+# 0x15, 0x00,                    //  Logical Minimum (0)                146
+# 0x25, 0x01,                    //  Logical Maximum (1)                148
+# 0x75, 0x01,                    //  Report Size (1)                    150
+# 0x95, 0x0f,                    //  Report Count (15)                  152
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               154
+# 0x15, 0x00,                    //  Logical Minimum (0)                156
+# 0x25, 0x00,                    //  Logical Maximum (0)                158
+# 0x75, 0x01,                    //  Report Size (1)                    160
+# 0x95, 0x01,                    //  Report Count (1)                   162
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               164
+# 0x05, 0x0c,                    //  Usage Page (Consumer Devices)      166
+# 0x0a, 0x24, 0x02,              //  Usage (AC Back)                    168
+# 0x15, 0x00,                    //  Logical Minimum (0)                171
+# 0x25, 0x01,                    //  Logical Maximum (1)                173
+# 0x95, 0x01,                    //  Report Count (1)                   175
+# 0x75, 0x01,                    //  Report Size (1)                    177
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               179
+# 0x15, 0x00,                    //  Logical Minimum (0)                181
+# 0x25, 0x00,                    //  Logical Maximum (0)                183
+# 0x75, 0x07,                    //  Report Size (7)                    185
+# 0x95, 0x01,                    //  Report Count (1)                   187
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               189
+# 0x05, 0x01,                    //  Usage Page (Generic Desktop)       191
+# 0x09, 0x01,                    //  Usage (Pointer)                    193
+# 0xa1, 0x00,                    //  Collection (Physical)              195
+# 0x09, 0x40,                    //   Usage (Vx)                        197
+# 0x09, 0x41,                    //   Usage (Vy)                        199
+# 0x15, 0x00,                    //   Logical Minimum (0)               201
+# 0x27, 0xff, 0xff, 0x00, 0x00,  //   Logical Maximum (65535)           203
+# 0x95, 0x02,                    //   Report Count (2)                  208
+# 0x75, 0x10,                    //   Report Size (16)                  210
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              212
+# 0xc0,                          //  End Collection                     214
+# 0x05, 0x01,                    //  Usage Page (Generic Desktop)       215
+# 0x09, 0x01,                    //  Usage (Pointer)                    217
+# 0xa1, 0x00,                    //  Collection (Physical)              219
+# 0x09, 0x43,                    //   Usage (Vbrx)                      221
+# 0x09, 0x44,                    //   Usage (Vbry)                      223
+# 0x15, 0x00,                    //   Logical Minimum (0)               225
+# 0x27, 0xff, 0xff, 0x00, 0x00,  //   Logical Maximum (65535)           227
+# 0x95, 0x02,                    //   Report Count (2)                  232
+# 0x75, 0x10,                    //   Report Size (16)                  234
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              236
+# 0xc0,                          //  End Collection                     238
+# 0x05, 0x01,                    //  Usage Page (Generic Desktop)       239
+# 0x09, 0x42,                    //  Usage (Vz)                         241
+# 0x15, 0x00,                    //  Logical Minimum (0)                243
+# 0x26, 0xff, 0x03,              //  Logical Maximum (1023)             245
+# 0x95, 0x01,                    //  Report Count (1)                   248
+# 0x75, 0x0a,                    //  Report Size (10)                   250
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               252
+# 0x15, 0x00,                    //  Logical Minimum (0)                254
+# 0x25, 0x00,                    //  Logical Maximum (0)                256
+# 0x75, 0x06,                    //  Report Size (6)                    258
+# 0x95, 0x01,                    //  Report Count (1)                   260
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               262
+# 0x05, 0x01,                    //  Usage Page (Generic Desktop)       264
+# 0x09, 0x45,                    //  Usage (Vbrz)                       266
+# 0x15, 0x00,                    //  Logical Minimum (0)                268
+# 0x26, 0xff, 0x03,              //  Logical Maximum (1023)             270
+# 0x95, 0x01,                    //  Report Count (1)                   273
+# 0x75, 0x0a,                    //  Report Size (10)                   275
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               277
+# 0x15, 0x00,                    //  Logical Minimum (0)                279
+# 0x25, 0x00,                    //  Logical Maximum (0)                281
+# 0x75, 0x06,                    //  Report Size (6)                    283
+# 0x95, 0x01,                    //  Report Count (1)                   285
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               287
+# 0x05, 0x01,                    //  Usage Page (Generic Desktop)       289
+# 0x09, 0x37,                    //  Usage (Dial)                       291
+# 0x15, 0x01,                    //  Logical Minimum (1)                293
+# 0x25, 0x08,                    //  Logical Maximum (8)                295
+# 0x35, 0x00,                    //  Physical Minimum (0)               297
+# 0x46, 0x3b, 0x01,              //  Physical Maximum (315)             299
+# 0x66, 0x14, 0x00,              //  Unit (EnglishRotation: deg)        302
+# 0x75, 0x04,                    //  Report Size (4)                    305
+# 0x95, 0x01,                    //  Report Count (1)                   307
+# 0x81, 0x42,                    //  Input (Data,Var,Abs,Null)          309
+# 0x75, 0x04,                    //  Report Size (4)                    311
+# 0x95, 0x01,                    //  Report Count (1)                   313
+# 0x15, 0x00,                    //  Logical Minimum (0)                315
+# 0x25, 0x00,                    //  Logical Maximum (0)                317
+# 0x35, 0x00,                    //  Physical Minimum (0)               319
+# 0x45, 0x00,                    //  Physical Maximum (0)               321
+# 0x65, 0x00,                    //  Unit (None)                        323
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               325
+# 0x05, 0x09,                    //  Usage Page (Button)                327
+# 0x19, 0x10,                    //  Usage Minimum (16)                 329
+# 0x29, 0x1e,                    //  Usage Maximum (30)                 331
+# 0x15, 0x00,                    //  Logical Minimum (0)                333
+# 0x25, 0x01,                    //  Logical Maximum (1)                335
+# 0x75, 0x01,                    //  Report Size (1)                    337
+# 0x95, 0x0f,                    //  Report Count (15)                  339
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               341
+# 0x15, 0x00,                    //  Logical Minimum (0)                343
+# 0x25, 0x00,                    //  Logical Maximum (0)                345
+# 0x75, 0x01,                    //  Report Size (1)                    347
+# 0x95, 0x01,                    //  Report Count (1)                   349
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               351
+# 0x05, 0x0c,                    //  Usage Page (Consumer Devices)      353
+# 0x0a, 0x82, 0x00,              //  Usage (Mode Step)                  355
+# 0x15, 0x00,                    //  Logical Minimum (0)                358
+# 0x25, 0x01,                    //  Logical Maximum (1)                360
+# 0x95, 0x01,                    //  Report Count (1)                   362
+# 0x75, 0x01,                    //  Report Size (1)                    364
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               366
+# 0x15, 0x00,                    //  Logical Minimum (0)                368
+# 0x25, 0x00,                    //  Logical Maximum (0)                370
+# 0x75, 0x07,                    //  Report Size (7)                    372
+# 0x95, 0x01,                    //  Report Count (1)                   374
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               376
+# 0x05, 0x0c,                    //  Usage Page (Consumer Devices)      378
+# 0x09, 0x01,                    //  Usage (Consumer Control)           380
+# 0xa1, 0x01,                    //  Collection (Application)           382
+# 0x0a, 0x81, 0x00,              //   Usage (Assign Selection)          384
+# 0x15, 0x00,                    //   Logical Minimum (0)               387
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             389
+# 0x95, 0x01,                    //   Report Count (1)                  392
+# 0x75, 0x04,                    //   Report Size (4)                   394
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              396
+# 0x15, 0x00,                    //   Logical Minimum (0)               398
+# 0x25, 0x00,                    //   Logical Maximum (0)               400
+# 0x95, 0x01,                    //   Report Count (1)                  402
+# 0x75, 0x04,                    //   Report Size (4)                   404
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              406
+# 0x0a, 0x84, 0x00,              //   Usage (Enter Channel)             408
+# 0x15, 0x00,                    //   Logical Minimum (0)               411
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             413
+# 0x95, 0x01,                    //   Report Count (1)                  416
+# 0x75, 0x04,                    //   Report Size (4)                   418
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              420
+# 0x15, 0x00,                    //   Logical Minimum (0)               422
+# 0x25, 0x00,                    //   Logical Maximum (0)               424
+# 0x95, 0x01,                    //   Report Count (1)                  426
+# 0x75, 0x04,                    //   Report Size (4)                   428
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              430
+# 0x0a, 0x85, 0x00,              //   Usage (Order Movie)               432
+# 0x15, 0x00,                    //   Logical Minimum (0)               435
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             437
+# 0x95, 0x01,                    //   Report Count (1)                  440
+# 0x75, 0x08,                    //   Report Size (8)                   442
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              444
+# 0x0a, 0x99, 0x00,              //   Usage (Media Select Security)     446
+# 0x15, 0x00,                    //   Logical Minimum (0)               449
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             451
+# 0x95, 0x01,                    //   Report Count (1)                  454
+# 0x75, 0x04,                    //   Report Size (4)                   456
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              458
+# 0x15, 0x00,                    //   Logical Minimum (0)               460
+# 0x25, 0x00,                    //   Logical Maximum (0)               462
+# 0x95, 0x01,                    //   Report Count (1)                  464
+# 0x75, 0x04,                    //   Report Size (4)                   466
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              468
+# 0x0a, 0x9e, 0x00,              //   Usage (Media Select SAP)          470
+# 0x15, 0x00,                    //   Logical Minimum (0)               473
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             475
+# 0x95, 0x01,                    //   Report Count (1)                  478
+# 0x75, 0x08,                    //   Report Size (8)                   480
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              482
+# 0x0a, 0xa1, 0x00,              //   Usage (Once)                      484
+# 0x15, 0x00,                    //   Logical Minimum (0)               487
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             489
+# 0x95, 0x01,                    //   Report Count (1)                  492
+# 0x75, 0x08,                    //   Report Size (8)                   494
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              496
+# 0x0a, 0xa2, 0x00,              //   Usage (Daily)                     498
+# 0x15, 0x00,                    //   Logical Minimum (0)               501
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             503
+# 0x95, 0x01,                    //   Report Count (1)                  506
+# 0x75, 0x08,                    //   Report Size (8)                   508
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              510
+# 0x0a, 0xa3, 0x00,              //   Usage (Weekly)                    512
+# 0x15, 0x00,                    //   Logical Minimum (0)               515
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             517
+# 0x95, 0x01,                    //   Report Count (1)                  520
+# 0x75, 0x08,                    //   Report Size (8)                   522
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              524
+# 0x0a, 0xa4, 0x00,              //   Usage (Monthly)                   526
+# 0x15, 0x00,                    //   Logical Minimum (0)               529
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             531
+# 0x95, 0x01,                    //   Report Count (1)                  534
+# 0x75, 0x08,                    //   Report Size (8)                   536
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              538
+# 0x0a, 0xb9, 0x00,              //   Usage (Random Play)               540
+# 0x15, 0x00,                    //   Logical Minimum (0)               543
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             545
+# 0x95, 0x01,                    //   Report Count (1)                  548
+# 0x75, 0x08,                    //   Report Size (8)                   550
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              552
+# 0x0a, 0xba, 0x00,              //   Usage (Select Disc)               554
+# 0x15, 0x00,                    //   Logical Minimum (0)               557
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             559
+# 0x95, 0x01,                    //   Report Count (1)                  562
+# 0x75, 0x08,                    //   Report Size (8)                   564
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              566
+# 0x0a, 0xbb, 0x00,              //   Usage (Enter Disc)                568
+# 0x15, 0x00,                    //   Logical Minimum (0)               571
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             573
+# 0x95, 0x01,                    //   Report Count (1)                  576
+# 0x75, 0x08,                    //   Report Size (8)                   578
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              580
+# 0x0a, 0xbe, 0x00,              //   Usage (Track Normal)              582
+# 0x15, 0x00,                    //   Logical Minimum (0)               585
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             587
+# 0x95, 0x01,                    //   Report Count (1)                  590
+# 0x75, 0x08,                    //   Report Size (8)                   592
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              594
+# 0x0a, 0xc0, 0x00,              //   Usage (Frame Forward)             596
+# 0x15, 0x00,                    //   Logical Minimum (0)               599
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             601
+# 0x95, 0x01,                    //   Report Count (1)                  604
+# 0x75, 0x08,                    //   Report Size (8)                   606
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              608
+# 0x0a, 0xc1, 0x00,              //   Usage (Frame Back)                610
+# 0x15, 0x00,                    //   Logical Minimum (0)               613
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             615
+# 0x95, 0x01,                    //   Report Count (1)                  618
+# 0x75, 0x08,                    //   Report Size (8)                   620
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              622
+# 0x0a, 0xc2, 0x00,              //   Usage (Mark)                      624
+# 0x15, 0x00,                    //   Logical Minimum (0)               627
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             629
+# 0x95, 0x01,                    //   Report Count (1)                  632
+# 0x75, 0x08,                    //   Report Size (8)                   634
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              636
+# 0x0a, 0xc3, 0x00,              //   Usage (Clear Mark)                638
+# 0x15, 0x00,                    //   Logical Minimum (0)               641
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             643
+# 0x95, 0x01,                    //   Report Count (1)                  646
+# 0x75, 0x08,                    //   Report Size (8)                   648
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              650
+# 0x0a, 0xc4, 0x00,              //   Usage (Repeat From Mark)          652
+# 0x15, 0x00,                    //   Logical Minimum (0)               655
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             657
+# 0x95, 0x01,                    //   Report Count (1)                  660
+# 0x75, 0x08,                    //   Report Size (8)                   662
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              664
+# 0x0a, 0xc5, 0x00,              //   Usage (Return To Mark)            666
+# 0x15, 0x00,                    //   Logical Minimum (0)               669
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             671
+# 0x95, 0x01,                    //   Report Count (1)                  674
+# 0x75, 0x08,                    //   Report Size (8)                   676
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              678
+# 0x0a, 0xc6, 0x00,              //   Usage (Search Mark Forward)       680
+# 0x15, 0x00,                    //   Logical Minimum (0)               683
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             685
+# 0x95, 0x01,                    //   Report Count (1)                  688
+# 0x75, 0x08,                    //   Report Size (8)                   690
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              692
+# 0x0a, 0xc7, 0x00,              //   Usage (Search Mark Backwards)     694
+# 0x15, 0x00,                    //   Logical Minimum (0)               697
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             699
+# 0x95, 0x01,                    //   Report Count (1)                  702
+# 0x75, 0x08,                    //   Report Size (8)                   704
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              706
+# 0x0a, 0xc8, 0x00,              //   Usage (Counter Reset)             708
+# 0x15, 0x00,                    //   Logical Minimum (0)               711
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             713
+# 0x95, 0x01,                    //   Report Count (1)                  716
+# 0x75, 0x08,                    //   Report Size (8)                   718
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              720
+# 0xc0,                          //  End Collection                     722
+# 0x05, 0x0c,                    //  Usage Page (Consumer Devices)      723
+# 0x09, 0x01,                    //  Usage (Consumer Control)           725
+# 0x85, 0x02,                    //  Report ID (2)                      727
+# 0xa1, 0x01,                    //  Collection (Application)           729
+# 0x05, 0x0c,                    //   Usage Page (Consumer Devices)     731
+# 0x0a, 0x23, 0x02,              //   Usage (AC Home)                   733
+# 0x15, 0x00,                    //   Logical Minimum (0)               736
+# 0x25, 0x01,                    //   Logical Maximum (1)               738
+# 0x95, 0x01,                    //   Report Count (1)                  740
+# 0x75, 0x01,                    //   Report Size (1)                   742
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              744
+# 0x15, 0x00,                    //   Logical Minimum (0)               746
+# 0x25, 0x00,                    //   Logical Maximum (0)               748
+# 0x75, 0x07,                    //   Report Size (7)                   750
+# 0x95, 0x01,                    //   Report Count (1)                  752
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              754
+# 0xc0,                          //  End Collection                     756
+# 0x05, 0x0f,                    //  Usage Page (Vendor Usage Page 0x0f) 757
+# 0x09, 0x21,                    //  Usage (Vendor Usage 0x21)          759
+# 0x85, 0x03,                    //  Report ID (3)                      761
+# 0xa1, 0x02,                    //  Collection (Logical)               763
+# 0x09, 0x97,                    //   Usage (Vendor Usage 0x97)         765
+# 0x15, 0x00,                    //   Logical Minimum (0)               767
+# 0x25, 0x01,                    //   Logical Maximum (1)               769
+# 0x75, 0x04,                    //   Report Size (4)                   771
+# 0x95, 0x01,                    //   Report Count (1)                  773
+# 0x91, 0x02,                    //   Output (Data,Var,Abs)             775
+# 0x15, 0x00,                    //   Logical Minimum (0)               777
+# 0x25, 0x00,                    //   Logical Maximum (0)               779
+# 0x75, 0x04,                    //   Report Size (4)                   781
+# 0x95, 0x01,                    //   Report Count (1)                  783
+# 0x91, 0x03,                    //   Output (Cnst,Var,Abs)             785
+# 0x09, 0x70,                    //   Usage (Vendor Usage 0x70)         787
+# 0x15, 0x00,                    //   Logical Minimum (0)               789
+# 0x25, 0x64,                    //   Logical Maximum (100)             791
+# 0x75, 0x08,                    //   Report Size (8)                   793
+# 0x95, 0x04,                    //   Report Count (4)                  795
+# 0x91, 0x02,                    //   Output (Data,Var,Abs)             797
+# 0x09, 0x50,                    //   Usage (Vendor Usage 0x50)         799
+# 0x66, 0x01, 0x10,              //   Unit (SILinear: s)                801
+# 0x55, 0x0e,                    //   Unit Exponent (-2)                804
+# 0x15, 0x00,                    //   Logical Minimum (0)               806
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             808
+# 0x75, 0x08,                    //   Report Size (8)                   811
+# 0x95, 0x01,                    //   Report Count (1)                  813
+# 0x91, 0x02,                    //   Output (Data,Var,Abs)             815
+# 0x09, 0xa7,                    //   Usage (Vendor Usage 0xa7)         817
+# 0x15, 0x00,                    //   Logical Minimum (0)               819
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             821
+# 0x75, 0x08,                    //   Report Size (8)                   824
+# 0x95, 0x01,                    //   Report Count (1)                  826
+# 0x91, 0x02,                    //   Output (Data,Var,Abs)             828
+# 0x65, 0x00,                    //   Unit (None)                       830
+# 0x55, 0x00,                    //   Unit Exponent (0)                 832
+# 0x09, 0x7c,                    //   Usage (Vendor Usage 0x7c)         834
+# 0x15, 0x00,                    //   Logical Minimum (0)               836
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             838
+# 0x75, 0x08,                    //   Report Size (8)                   841
+# 0x95, 0x01,                    //   Report Count (1)                  843
+# 0x91, 0x02,                    //   Output (Data,Var,Abs)             845
+# 0xc0,                          //  End Collection                     847
+# 0x05, 0x06,                    //  Usage Page (Generic Device Controls) 848
+# 0x09, 0x20,                    //  Usage (Battery Strength)           850
+# 0x85, 0x04,                    //  Report ID (4)                      852
+# 0x15, 0x00,                    //  Logical Minimum (0)                854
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              856
+# 0x75, 0x08,                    //  Report Size (8)                    859
+# 0x95, 0x01,                    //  Report Count (1)                   861
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               863
+# 0x06, 0x00, 0xff,              //  Usage Page (Vendor Defined Page 1) 865
+# 0x09, 0x01,                    //  Usage (Vendor Usage 1)             868
+# 0xa1, 0x02,                    //  Collection (Logical)               870
+# 0x85, 0x06,                    //   Report ID (6)                     872
+# 0x09, 0x01,                    //   Usage (Vendor Usage 1)            874
+# 0x15, 0x00,                    //   Logical Minimum (0)               876
+# 0x25, 0x64,                    //   Logical Maximum (100)             878
+# 0x75, 0x08,                    //   Report Size (8)                   880
+# 0x95, 0x01,                    //   Report Count (1)                  882
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            884
+# 0x09, 0x02,                    //   Usage (Vendor Usage 2)            886
+# 0x15, 0x00,                    //   Logical Minimum (0)               888
+# 0x25, 0x64,                    //   Logical Maximum (100)             890
+# 0x75, 0x08,                    //   Report Size (8)                   892
+# 0x95, 0x01,                    //   Report Count (1)                  894
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            896
+# 0x09, 0x03,                    //   Usage (Vendor Usage 0x03)         898
+# 0x15, 0x00,                    //   Logical Minimum (0)               900
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             902
+# 0x75, 0x08,                    //   Report Size (8)                   905
+# 0x95, 0x01,                    //   Report Count (1)                  907
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            909
+# 0x09, 0x04,                    //   Usage (Vendor Usage 0x04)         911
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             913
+# 0x75, 0x08,                    //   Report Size (8)                   916
+# 0x95, 0x3c,                    //   Report Count (60)                 918
+# 0xb2, 0x02, 0x01,              //   Feature (Data,Var,Abs,Buff)       920
+# 0xc0,                          //  End Collection                     923
+# 0x06, 0x00, 0xff,              //  Usage Page (Vendor Defined Page 1) 924
+# 0x09, 0x02,                    //  Usage (Vendor Usage 2)             927
+# 0xa1, 0x02,                    //  Collection (Logical)               929
+# 0x85, 0x07,                    //   Report ID (7)                     931
+# 0x09, 0x05,                    //   Usage (Vendor Usage 0x05)         933
+# 0x15, 0x00,                    //   Logical Minimum (0)               935
+# 0x25, 0x64,                    //   Logical Maximum (100)             937
+# 0x75, 0x08,                    //   Report Size (8)                   939
+# 0x95, 0x01,                    //   Report Count (1)                  941
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            943
+# 0x09, 0x06,                    //   Usage (Vendor Usage 0x06)         945
+# 0x15, 0x00,                    //   Logical Minimum (0)               947
+# 0x25, 0x64,                    //   Logical Maximum (100)             949
+# 0x75, 0x08,                    //   Report Size (8)                   951
+# 0x95, 0x01,                    //   Report Count (1)                  953
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            955
+# 0x09, 0x07,                    //   Usage (Vendor Usage 0x07)         957
+# 0x15, 0x00,                    //   Logical Minimum (0)               959
+# 0x25, 0x64,                    //   Logical Maximum (100)             961
+# 0x75, 0x08,                    //   Report Size (8)                   963
+# 0x95, 0x01,                    //   Report Count (1)                  965
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            967
+# 0xc0,                          //  End Collection                     969
+# 0x06, 0x00, 0xff,              //  Usage Page (Vendor Defined Page 1) 970
+# 0x09, 0x03,                    //  Usage (Vendor Usage 0x03)          973
+# 0xa1, 0x02,                    //  Collection (Logical)               975
+# 0x85, 0x08,                    //   Report ID (8)                     977
+# 0x09, 0x08,                    //   Usage (Vendor Usage 0x08)         979
+# 0x15, 0x00,                    //   Logical Minimum (0)               981
+# 0x25, 0x64,                    //   Logical Maximum (100)             983
+# 0x75, 0x08,                    //   Report Size (8)                   985
+# 0x95, 0x01,                    //   Report Count (1)                  987
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            989
+# 0x09, 0x09,                    //   Usage (Vendor Usage 0x09)         991
+# 0x15, 0x00,                    //   Logical Minimum (0)               993
+# 0x25, 0x64,                    //   Logical Maximum (100)             995
+# 0x75, 0x08,                    //   Report Size (8)                   997
+# 0x95, 0x01,                    //   Report Count (1)                  999
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            1001
+# 0x09, 0x0a,                    //   Usage (Vendor Usage 0x0a)         1003
+# 0x15, 0x00,                    //   Logical Minimum (0)               1005
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             1007
+# 0x75, 0x08,                    //   Report Size (8)                   1010
+# 0x95, 0x01,                    //   Report Count (1)                  1012
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            1014
+# 0xc0,                          //  End Collection                     1016
+# 0x06, 0x00, 0xff,              //  Usage Page (Vendor Defined Page 1) 1017
+# 0x09, 0x04,                    //  Usage (Vendor Usage 0x04)          1020
+# 0xa1, 0x01,                    //  Collection (Application)           1022
+# 0x85, 0x09,                    //   Report ID (9)                     1024
+# 0x09, 0x0b,                    //   Usage (Vendor Usage 0x0b)         1026
+# 0x15, 0x00,                    //   Logical Minimum (0)               1028
+# 0x25, 0x64,                    //   Logical Maximum (100)             1030
+# 0x75, 0x08,                    //   Report Size (8)                   1032
+# 0x95, 0x01,                    //   Report Count (1)                  1034
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            1036
+# 0x09, 0x0c,                    //   Usage (Vendor Usage 0x0c)         1038
+# 0x15, 0x00,                    //   Logical Minimum (0)               1040
+# 0x25, 0x64,                    //   Logical Maximum (100)             1042
+# 0x75, 0x08,                    //   Report Size (8)                   1044
+# 0x95, 0x01,                    //   Report Count (1)                  1046
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            1048
+# 0x09, 0x0d,                    //   Usage (Vendor Usage 0x0d)         1050
+# 0x15, 0x00,                    //   Logical Minimum (0)               1052
+# 0x25, 0x64,                    //   Logical Maximum (100)             1054
+# 0x75, 0x08,                    //   Report Size (8)                   1056
+# 0x95, 0x01,                    //   Report Count (1)                  1058
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            1060
+# 0x09, 0x0e,                    //   Usage (Vendor Usage 0x0e)         1062
+# 0x15, 0x00,                    //   Logical Minimum (0)               1064
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             1066
+# 0x75, 0x08,                    //   Report Size (8)                   1069
+# 0x95, 0x01,                    //   Report Count (1)                  1071
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            1073
+# 0x09, 0x0f,                    //   Usage (Vendor Usage 0x0f)         1075
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             1077
+# 0x75, 0x08,                    //   Report Size (8)                   1080
+# 0x95, 0x3c,                    //   Report Count (60)                 1082
+# 0xb2, 0x02, 0x01,              //   Feature (Data,Var,Abs,Buff)       1084
+# 0xc0,                          //  End Collection                     1087
+# 0x06, 0x00, 0xff,              //  Usage Page (Vendor Defined Page 1) 1088
+# 0x09, 0x05,                    //  Usage (Vendor Usage 0x05)          1091
+# 0xa1, 0x01,                    //  Collection (Application)           1093
+# 0x85, 0x0a,                    //   Report ID (10)                    1095
+# 0x09, 0x10,                    //   Usage (Vendor Usage 0x10)         1097
+# 0x15, 0x00,                    //   Logical Minimum (0)               1099
+# 0x27, 0xff, 0xff, 0xff, 0x7f,  //   Logical Maximum (2147483647)      1101
+# 0x75, 0x20,                    //   Report Size (32)                  1106
+# 0x95, 0x01,                    //   Report Count (1)                  1108
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              1110
+# 0x09, 0x11,                    //   Usage (Vendor Usage 0x11)         1112
+# 0x15, 0x00,                    //   Logical Minimum (0)               1114
+# 0x27, 0xff, 0xff, 0xff, 0x7f,  //   Logical Maximum (2147483647)      1116
+# 0x75, 0x20,                    //   Report Size (32)                  1121
+# 0x95, 0x01,                    //   Report Count (1)                  1123
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              1125
+# 0x09, 0x12,                    //   Usage (Vendor Usage 0x12)         1127
+# 0x15, 0x00,                    //   Logical Minimum (0)               1129
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             1131
+# 0x75, 0x08,                    //   Report Size (8)                   1134
+# 0x95, 0x02,                    //   Report Count (2)                  1136
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              1138
+# 0x09, 0x13,                    //   Usage (Vendor Usage 0x13)         1140
+# 0x15, 0x00,                    //   Logical Minimum (0)               1142
+# 0x26, 0xff, 0x00,              //   Logical Maximum (255)             1144
+# 0x75, 0x08,                    //   Report Size (8)                   1147
+# 0x95, 0x01,                    //   Report Count (1)                  1149
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              1151
+# 0xc0,                          //  End Collection                     1153
+# 0x06, 0x00, 0xff,              //  Usage Page (Vendor Defined Page 1) 1154
+# 0x09, 0x06,                    //  Usage (Vendor Usage 0x06)          1157
+# 0xa1, 0x02,                    //  Collection (Logical)               1159
+# 0x85, 0x0b,                    //   Report ID (11)                    1161
+# 0x09, 0x14,                    //   Usage (Vendor Usage 0x14)         1163
+# 0x15, 0x00,                    //   Logical Minimum (0)               1165
+# 0x25, 0x64,                    //   Logical Maximum (100)             1167
+# 0x75, 0x08,                    //   Report Size (8)                   1169
+# 0x95, 0x01,                    //   Report Count (1)                  1171
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            1173
+# 0xc0,                          //  End Collection                     1175
+# 0xc0,                          // End Collection                      1176
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        1177
+# 0x09, 0x06,                    // Usage (Keyboard)                    1179
+# 0xa1, 0x01,                    // Collection (Application)            1181
+# 0x85, 0x05,                    //  Report ID (5)                      1183
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              1185
+# 0x19, 0xe0,                    //  Usage Minimum (224)                1187
+# 0x29, 0xe7,                    //  Usage Maximum (231)                1189
+# 0x15, 0x00,                    //  Logical Minimum (0)                1191
+# 0x25, 0x01,                    //  Logical Maximum (1)                1193
+# 0x75, 0x01,                    //  Report Size (1)                    1195
+# 0x95, 0x08,                    //  Report Count (8)                   1197
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               1199
+# 0x95, 0x01,                    //  Report Count (1)                   1201
+# 0x75, 0x08,                    //  Report Size (8)                    1203
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               1205
+# 0x95, 0x06,                    //  Report Count (6)                   1207
+# 0x75, 0x08,                    //  Report Size (8)                    1209
+# 0x15, 0x00,                    //  Logical Minimum (0)                1211
+# 0x25, 0x65,                    //  Logical Maximum (101)              1213
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              1215
+# 0x19, 0x00,                    //  Usage Minimum (0)                  1217
+# 0x29, 0x65,                    //  Usage Maximum (101)                1219
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               1221
+# 0xc0,                          // End Collection                      1223
+# 
+R: 1224 05 01 09 05 a1 01 85 01 09 01 a1 00 09 30 09 31 15 00 27 ff ff 00 00 95 02 75 10 81 02 c0 09 01 a1 00 09 32 09 35 15 00 27 ff ff 00 00 95 02 75 10 81 02 c0 05 02 09 c5 15 00 26 ff 03 95 01 75 0a 81 02 15 00 25 00 75 06 95 01 81 03 05 02 09 c4 15 00 26 ff 03 95 01 75 0a 81 02 15 00 25 00 75 06 95 01 81 03 05 01 09 39 15 01 25 08 35 00 46 3b 01 66 14 00 75 04 95 01 81 42 75 04 95 01 15 00 25 00 35 00 45 00 65 00 81 03 05 09 19 01 29 0f 15 00 25 01 75 01 95 0f 81 02 15 00 25 00 75 01 95 01 81 03 05 0c 0a 24 02 15 00 25 01 95 01 75 01 81 02 15 00 25 00 75 07 95 01 81 03 05 01 09 01 a1 00 09 40 09 41 15 00 27 ff ff 00 00 95 02 75 10 81 02 c0 05 01 09 01 a1 00 09 43 09 44 15 00 27 ff ff 00 00 95 02 75 10 81 02 c0 05 01 09 42 15 00 26 ff 03 95 01 75 0a 81 02 15 00 25 00 75 06 95 01 81 03 05 01 09 45 15 00 26 ff 03 95 01 75 0a 81 02 15 00 25 00 75 06 95 01 81 03 05 01 09 37 15 01 25 08 35 00 46 3b 01 66 14 00 75 04 95 01 81 42 75 04 95 01 15 00 25 00 35 00 45 00 65 00 81 03 05 09 19 10 29 1e 15 00 25 01 75 01 95 0f 81 02 15 00 25 00 75 01 95 01 81 03 05 0c 0a 82 00 15 00 25 01 95 01 75 01 81 02 15 00 25 00 75 07 95 01 81 03 05 0c 09 01 a1 01 0a 81 00 15 00 26 ff 00 95 01 75 04 81 02 15 00 25 00 95 01 75 04 81 03 0a 84 00 15 00 26 ff 00 95 01 75 04 81 02 15 00 25 00 95 01 75 04 81 03 0a 85 00 15 00 26 ff 00 95 01 75 08 81 02 0a 99 00 15 00 26 ff 00 95 01 75 04 81 02 15 00 25 00 95 01 75 04 81 03 0a 9e 00 15 00 26 ff 00 95 01 75 08 81 02 0a a1 00 15 00 26 ff 00 95 01 75 08 81 02 0a a2 00 15 00 26 ff 00 95 01 75 08 81 02 0a a3 00 15 00 26 ff 00 95 01 75 08 81 02 0a a4 00 15 00 26 ff 00 95 01 75 08 81 02 0a b9 00 15 00 26 ff 00 95 01 75 08 81 02 0a ba 00 15 00 26 ff 00 95 01 75 08 81 02 0a bb 00 15 00 26 ff 00 95 01 75 08 81 02 0a be 00 15 00 26 ff 00 95 01 75 08 81 02 0a c0 00 15 00 26 ff 00 95 01 75 08 81 02 0a c1 00 15 00 26 ff 00 95 01 75 08 81 02 0a c2 00 15 00 26 ff 00 95 01 75 08 81 02 0a c3 00 15 00 26 ff 00 95 01 75 08 81 02 0a c4 00 15 00 26 ff 00 95 01 75 08 81 02 0a c5 00 15 00 26 ff 00 95 01 75 08 81 02 0a c6 00 15 00 26 ff 00 95 01 75 08 81 02 0a c7 00 15 00 26 ff 00 95 01 75 08 81 02 0a c8 00 15 00 26 ff 00 95 01 75 08 81 02 c0 05 0c 09 01 85 02 a1 01 05 0c 0a 23 02 15 00 25 01 95 01 75 01 81 02 15 00 25 00 75 07 95 01 81 03 c0 05 0f 09 21 85 03 a1 02 09 97 15 00 25 01 75 04 95 01 91 02 15 00 25 00 75 04 95 01 91 03 09 70 15 00 25 64 75 08 95 04 91 02 09 50 66 01 10 55 0e 15 00 26 ff 00 75 08 95 01 91 02 09 a7 15 00 26 ff 00 75 08 95 01 91 02 65 00 55 00 09 7c 15 00 26 ff 00 75 08 95 01 91 02 c0 05 06 09 20 85 04 15 00 26 ff 00 75 08 95 01 81 02 06 00 ff 09 01 a1 02 85 06 09 01 15 00 25 64 75 08 95 01 b1 02 09 02 15 00 25 64 75 08 95 01 b1 02 09 03 15 00 26 ff 00 75 08 95 01 b1 02 09 04 26 ff 00 75 08 95 3c b2 02 01 c0 06 00 ff 09 02 a1 02 85 07 09 05 15 00 25 64 75 08 95 01 b1 02 09 06 15 00 25 64 75 08 95 01 b1 02 09 07 15 00 25 64 75 08 95 01 b1 02 c0 06 00 ff 09 03 a1 02 85 08 09 08 15 00 25 64 75 08 95 01 b1 02 09 09 15 00 25 64 75 08 95 01 b1 02 09 0a 15 00 26 ff 00 75 08 95 01 b1 02 c0 06 00 ff 09 04 a1 01 85 09 09 0b 15 00 25 64 75 08 95 01 b1 02 09 0c 15 00 25 64 75 08 95 01 b1 02 09 0d 15 00 25 64 75 08 95 01 b1 02 09 0e 15 00 26 ff 00 75 08 95 01 b1 02 09 0f 26 ff 00 75 08 95 3c b2 02 01 c0 06 00 ff 09 05 a1 01 85 0a 09 10 15 00 27 ff ff ff 7f 75 20 95 01 81 02 09 11 15 00 27 ff ff ff 7f 75 20 95 01 81 02 09 12 15 00 26 ff 00 75 08 95 02 81 02 09 13 15 00 26 ff 00 75 08 95 01 81 02 c0 06 00 ff 09 06 a1 02 85 0b 09 14 15 00 25 64 75 08 95 01 b1 02 c0 c0 05 01 09 06 a1 01 85 05 05 07 19 e0 29 e7 15 00 25 01 75 01 95 08 81 02 95 01 75 08 81 03 95 06 75 08 15 00 25 65 05 07 19 00 29 65 81 00 c0
+N: Xbox Elite Wireless Controller
+I: 5 045e 0b05
+# ReportID: 1 / X:  31295 | Y:  33893 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33893 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000000.000000 55 01 3f 7a 65 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a 65 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33893 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33893 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000000.000573 55 01 3f 7a 65 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a 65 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33893 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33893 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000000.009778 55 01 3f 7a 65 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a 65 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33893 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  1  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33893 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   1 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000001.181977 55 01 3f 7a 65 84 ef 7d 88 7e 00 00 00 00 00 02 00 00 3f 7a 65 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 01 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33893 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  1  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33893 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   1 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000001.188982 55 01 3f 7a 65 84 ef 7d 88 7e 00 00 00 00 00 02 00 00 3f 7a 65 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 01 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33938 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  1  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33938 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   1 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000001.269172 55 01 3f 7a 92 84 ef 7d 88 7e 00 00 00 00 00 02 00 00 3f 7a 92 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 01 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33938 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33938 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000002.649037 55 01 3f 7a 92 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a 92 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33938 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33938 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000002.650032 55 01 3f 7a 92 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a 92 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33938 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33938 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000002.658919 55 01 3f 7a 92 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a 92 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33989 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33989 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000002.908935 55 01 3f 7a c5 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a c5 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33989 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33989 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000002.909338 55 01 3f 7a c5 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a c5 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33989 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33989 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000002.920075 55 01 3f 7a c5 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a c5 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  33989 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  1  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  33989 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   2 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000002.928907 55 01 3f 7a c5 84 ef 7d 88 7e 00 00 00 00 00 10 00 00 3f 7a c5 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 02 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000004.180929 55 01 3f 7a f2 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a f2 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32392 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32392 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000004.189907 55 01 3f 7a f2 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 3f 7a f2 84 ef 7d 88 7e 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 1  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   4 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000004.449964 55 01 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 01 00 00 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 04 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 1  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   4 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000004.450801 55 01 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 01 00 00 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 04 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 1  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   4 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000004.462968 55 01 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 01 00 00 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 04 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000005.539963 55 01 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000005.540645 55 01 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000005.551078 55 01 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   8 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000005.799039 55 01 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 08 00 00 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 08 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   8 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000005.801168 55 01 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 08 00 00 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 08 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34034 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34034 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   8 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000005.809982 55 01 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 08 00 00 3f 7a f2 84 ef 7d 05 7f 00 00 00 00 00 00 00 00 08 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34089 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34089 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   8 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000006.768995 55 01 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 08 00 00 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 00 00 00 08 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34089 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34089 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   8 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000006.770852 55 01 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 08 00 00 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 00 00 00 08 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34089 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34089 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   8 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000006.778859 55 01 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 08 00 00 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 00 00 00 08 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34089 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34089 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000007.309057 55 01 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 00 00 00 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34089 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34089 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000007.311051 55 01 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 00 00 00 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# ReportID: 1 / X:  31295 | Y:  34089 
+#             | Z:  32239 | Rz:  32517 | Brake:     0 | # | Accelerator:     0 | # | Hat switch:   0 | # | Button: 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | AC Back: 0 | # 
+#             | Vx:  31295 | Vy:  34089 
+#             | Vbrx:  32239 | Vbry:  32517 | Vz:     0 | # | Vbrz:     0 | # | Dial:   0 | #  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | # | Mode Step: 0 | # 
+#             | Assign Selection:   0 | # | Enter Channel:   0 | # | Order Movie:    2 | Media Select Security:  10 | # | Media Select SAP:    0 | Once:    0 | Daily:    0 | Weekly:    0 | Monthly:    0 | Random Play:    0 | Select Disc:    0 | Enter Disc:    0 | Track Normal:    0 | Frame Forward:    0 | Frame Back:    0 | Mark:    0 | Clear Mark:    0 | Repeat From Mark:    0 | Return To Mark:    0 | Search Mark Forward:    0 | Search Mark Backwards:    0 | Counter Reset:    0 
+E: 000007.319916 55 01 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 00 00 00 3f 7a 29 85 ef 7d 05 7f 00 00 00 00 00 00 00 00 00 00 02 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
