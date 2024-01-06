@@ -48,4 +48,59 @@ do
     cat $f > "${f##*/}".txt
 done
 
+ls /sys/bus/iio/devices/iio:device0/buffer
+data_available  direction  enable  hwfifo_enabled  hwfifo_watermark  length  watermark
+
+/sys/bus/iio/devices/iio:device0/scan_elements
+
+for f in /sys/bus/iio/devices/iio:device0/scan_elements
+do
+    echo $f
+    cat $f
+done
+
+/sys/bus/iio/devices/iio:device0/scan_elements/in_accel_x_en
+1
+/sys/bus/iio/devices/iio:device0/scan_elements/in_accel_x_index
+0
+/sys/bus/iio/devices/iio:device0/scan_elements/in_accel_x_type
+le:s16/16>>0
+/sys/bus/iio/devices/iio:device0/scan_elements/in_accel_y_en
+1
+/sys/bus/iio/devices/iio:device0/scan_elements/in_accel_y_index
+1
+/sys/bus/iio/devices/iio:device0/scan_elements/in_accel_y_type
+le:s16/16>>0
+/sys/bus/iio/devices/iio:device0/scan_elements/in_accel_z_en
+1
+/sys/bus/iio/devices/iio:device0/scan_elements/in_accel_z_index
+2
+/sys/bus/iio/devices/iio:device0/scan_elements/in_accel_z_type
+le:s16/16>>0
+/sys/bus/iio/devices/iio:device0/scan_elements/in_anglvel_x_en
+1
+/sys/bus/iio/devices/iio:device0/scan_elements/in_anglvel_x_index
+3
+/sys/bus/iio/devices/iio:device0/scan_elements/in_anglvel_x_type
+le:s16/16>>0
+/sys/bus/iio/devices/iio:device0/scan_elements/in_anglvel_y_en
+1
+/sys/bus/iio/devices/iio:device0/scan_elements/in_anglvel_y_index
+4
+/sys/bus/iio/devices/iio:device0/scan_elements/in_anglvel_y_type
+le:s16/16>>0
+/sys/bus/iio/devices/iio:device0/scan_elements/in_anglvel_z_en
+1
+/sys/bus/iio/devices/iio:device0/scan_elements/in_anglvel_z_index
+5
+/sys/bus/iio/devices/iio:device0/scan_elements/in_anglvel_z_type
+le:s16/16>>0
+/sys/bus/iio/devices/iio:device0/scan_elements/in_timestamp_en
+1
+/sys/bus/iio/devices/iio:device0/scan_elements/in_timestamp_index
+6
+/sys/bus/iio/devices/iio:device0/scan_elements/in_timestamp_type
+le:s64/64>>0
+
+
 ```
