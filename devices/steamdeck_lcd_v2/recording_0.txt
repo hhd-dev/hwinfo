@@ -1,0 +1,700 @@
+# Valve Software Steam Controller
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x02,                    // Usage (Mouse)                       2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x09, 0x01,                    //  Usage (Pointer)                    6
+# 0xa1, 0x00,                    //  Collection (Physical)              8
+# 0x05, 0x09,                    //   Usage Page (Button)               10
+# 0x19, 0x01,                    //   Usage Minimum (1)                 12
+# 0x29, 0x02,                    //   Usage Maximum (2)                 14
+# 0x15, 0x00,                    //   Logical Minimum (0)               16
+# 0x25, 0x01,                    //   Logical Maximum (1)               18
+# 0x75, 0x01,                    //   Report Size (1)                   20
+# 0x95, 0x02,                    //   Report Count (2)                  22
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              24
+# 0x75, 0x06,                    //   Report Size (6)                   26
+# 0x95, 0x01,                    //   Report Count (1)                  28
+# 0x81, 0x01,                    //   Input (Cnst,Arr,Abs)              30
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      32
+# 0x09, 0x30,                    //   Usage (X)                         34
+# 0x09, 0x31,                    //   Usage (Y)                         36
+# 0x15, 0x81,                    //   Logical Minimum (-127)            38
+# 0x25, 0x7f,                    //   Logical Maximum (127)             40
+# 0x75, 0x08,                    //   Report Size (8)                   42
+# 0x95, 0x02,                    //   Report Count (2)                  44
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              46
+# 0x95, 0x01,                    //   Report Count (1)                  48
+# 0x09, 0x38,                    //   Usage (Wheel)                     50
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              52
+# 0x05, 0x0c,                    //   Usage Page (Consumer Devices)     54
+# 0x0a, 0x38, 0x02,              //   Usage (AC Pan)                    56
+# 0x95, 0x01,                    //   Report Count (1)                  59
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              61
+# 0xc0,                          //  End Collection                     63
+# 0xc0,                          // End Collection                      64
+# 
+R: 65 05 01 09 02 a1 01 09 01 a1 00 05 09 19 01 29 02 15 00 25 01 75 01 95 02 81 02 75 06 95 01 81 01 05 01 09 30 09 31 15 81 25 7f 75 08 95 02 81 06 95 01 09 38 81 06 05 0c 0a 38 02 95 01 81 06 c0 c0
+N: Valve Software Steam Controller
+I: 3 28de 1205
+#  Button: 0  0 | # | X:    0 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.000000 5 00 00 fe 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.004010 5 00 00 fd 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -4 | Wheel:    0 | AC Pan:    0 
+E: 000000.007961 5 00 00 fc 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -5 | Wheel:    0 | AC Pan:    0 
+E: 000000.011989 5 00 00 fb 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -7 | Wheel:    0 | AC Pan:    0 
+E: 000000.015970 5 00 00 f9 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -8 | Wheel:    0 | AC Pan:    0 
+E: 000000.019959 5 00 00 f8 00 00
+#  Button: 0  0 | # | X:   -1 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.024023 5 00 ff f6 00 00
+#  Button: 0  0 | # | X:   -1 | Y:  -11 | Wheel:    0 | AC Pan:    0 
+E: 000000.027960 5 00 ff f5 00 00
+#  Button: 0  0 | # | X:   -1 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.031956 5 00 ff f6 00 00
+#  Button: 0  0 | # | X:   -2 | Y:  -11 | Wheel:    0 | AC Pan:    0 
+E: 000000.035956 5 00 fe f5 00 00
+#  Button: 0  0 | # | X:   -3 | Y:  -11 | Wheel:    0 | AC Pan:    0 
+E: 000000.039948 5 00 fd f5 00 00
+#  Button: 0  0 | # | X:   -4 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.043993 5 00 fc f6 00 00
+#  Button: 0  0 | # | X:   -3 | Y:  -11 | Wheel:    0 | AC Pan:    0 
+E: 000000.047909 5 00 fd f5 00 00
+#  Button: 0  0 | # | X:   -5 | Y:  -11 | Wheel:    0 | AC Pan:    0 
+E: 000000.051979 5 00 fb f5 00 00
+#  Button: 0  0 | # | X:   -5 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.055984 5 00 fb f6 00 00
+#  Button: 0  0 | # | X:   -5 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.059952 5 00 fb f6 00 00
+#  Button: 0  0 | # | X:   -6 | Y:   -9 | Wheel:    0 | AC Pan:    0 
+E: 000000.063954 5 00 fa f7 00 00
+#  Button: 0  0 | # | X:   -6 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.067960 5 00 fa f6 00 00
+#  Button: 0  0 | # | X:   -6 | Y:   -8 | Wheel:    0 | AC Pan:    0 
+E: 000000.071962 5 00 fa f8 00 00
+#  Button: 0  0 | # | X:   -6 | Y:   -9 | Wheel:    0 | AC Pan:    0 
+E: 000000.075966 5 00 fa f7 00 00
+#  Button: 0  0 | # | X:   -7 | Y:   -7 | Wheel:    0 | AC Pan:    0 
+E: 000000.079948 5 00 f9 f9 00 00
+#  Button: 0  0 | # | X:   -7 | Y:   -7 | Wheel:    0 | AC Pan:    0 
+E: 000000.083960 5 00 f9 f9 00 00
+#  Button: 0  0 | # | X:   -7 | Y:   -6 | Wheel:    0 | AC Pan:    0 
+E: 000000.087964 5 00 f9 fa 00 00
+#  Button: 0  0 | # | X:   -7 | Y:   -6 | Wheel:    0 | AC Pan:    0 
+E: 000000.091959 5 00 f9 fa 00 00
+#  Button: 0  0 | # | X:   -7 | Y:   -4 | Wheel:    0 | AC Pan:    0 
+E: 000000.095982 5 00 f9 fc 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -4 | Wheel:    0 | AC Pan:    0 
+E: 000000.099939 5 00 f8 fc 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -4 | Wheel:    0 | AC Pan:    0 
+E: 000000.103992 5 00 f8 fc 00 00
+#  Button: 0  0 | # | X:  -11 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.107969 5 00 f5 fd 00 00
+#  Button: 0  0 | # | X:  -10 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.111955 5 00 f6 fe 00 00
+#  Button: 0  0 | # | X:  -11 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.115958 5 00 f5 fe 00 00
+#  Button: 0  0 | # | X:  -11 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000000.119969 5 00 f5 ff 00 00
+#  Button: 0  0 | # | X:  -13 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000000.123961 5 00 f3 ff 00 00
+#  Button: 0  0 | # | X:  -13 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.127962 5 00 f3 00 00 00
+#  Button: 0  0 | # | X:  -14 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.131956 5 00 f2 02 00 00
+#  Button: 0  0 | # | X:  -14 | Y:    4 | Wheel:    0 | AC Pan:    0 
+E: 000000.135959 5 00 f2 04 00 00
+#  Button: 0  0 | # | X:  -14 | Y:    6 | Wheel:    0 | AC Pan:    0 
+E: 000000.139958 5 00 f2 06 00 00
+#  Button: 0  0 | # | X:  -15 | Y:    6 | Wheel:    0 | AC Pan:    0 
+E: 000000.143948 5 00 f1 06 00 00
+#  Button: 0  0 | # | X:  -14 | Y:    7 | Wheel:    0 | AC Pan:    0 
+E: 000000.147984 5 00 f2 07 00 00
+#  Button: 0  0 | # | X:  -15 | Y:    8 | Wheel:    0 | AC Pan:    0 
+E: 000000.151950 5 00 f1 08 00 00
+#  Button: 0  0 | # | X:  -14 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.155959 5 00 f2 0a 00 00
+#  Button: 0  0 | # | X:  -13 | Y:    9 | Wheel:    0 | AC Pan:    0 
+E: 000000.159972 5 00 f3 09 00 00
+#  Button: 0  0 | # | X:  -12 | Y:    9 | Wheel:    0 | AC Pan:    0 
+E: 000000.163959 5 00 f4 09 00 00
+#  Button: 0  0 | # | X:  -12 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.167953 5 00 f4 0a 00 00
+#  Button: 0  0 | # | X:  -10 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.171962 5 00 f6 0a 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.175953 5 00 f8 0a 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.179971 5 00 f8 0a 00 00
+#  Button: 0  0 | # | X:   -6 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.183963 5 00 fa 0b 00 00
+#  Button: 0  0 | # | X:   -5 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.187959 5 00 fb 0a 00 00
+#  Button: 0  0 | # | X:   -4 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.191965 5 00 fc 0b 00 00
+#  Button: 0  0 | # | X:   -4 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.195972 5 00 fc 0b 00 00
+#  Button: 0  0 | # | X:   -3 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.199982 5 00 fd 0b 00 00
+#  Button: 0  0 | # | X:   -2 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.203953 5 00 fe 0b 00 00
+#  Button: 0  0 | # | X:   -2 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.207983 5 00 fe 0b 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   12 | Wheel:    0 | AC Pan:    0 
+E: 000000.211961 5 00 ff 0c 00 00
+#  Button: 0  0 | # | X:   -2 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.215960 5 00 fe 0b 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   12 | Wheel:    0 | AC Pan:    0 
+E: 000000.219957 5 00 ff 0c 00 00
+#  Button: 0  0 | # | X:    0 | Y:   12 | Wheel:    0 | AC Pan:    0 
+E: 000000.223959 5 00 00 0c 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.227969 5 00 ff 0b 00 00
+#  Button: 0  0 | # | X:    0 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.231965 5 00 00 0b 00 00
+#  Button: 0  0 | # | X:    0 | Y:   12 | Wheel:    0 | AC Pan:    0 
+E: 000000.235969 5 00 00 0c 00 00
+#  Button: 0  0 | # | X:    3 | Y:   12 | Wheel:    0 | AC Pan:    0 
+E: 000000.239951 5 00 03 0c 00 00
+#  Button: 0  0 | # | X:    3 | Y:   12 | Wheel:    0 | AC Pan:    0 
+E: 000000.243963 5 00 03 0c 00 00
+#  Button: 0  0 | # | X:    4 | Y:   13 | Wheel:    0 | AC Pan:    0 
+E: 000000.247967 5 00 04 0d 00 00
+#  Button: 0  0 | # | X:    6 | Y:   12 | Wheel:    0 | AC Pan:    0 
+E: 000000.251993 5 00 06 0c 00 00
+#  Button: 0  0 | # | X:    8 | Y:   12 | Wheel:    0 | AC Pan:    0 
+E: 000000.255971 5 00 08 0c 00 00
+#  Button: 0  0 | # | X:    9 | Y:   12 | Wheel:    0 | AC Pan:    0 
+E: 000000.259988 5 00 09 0c 00 00
+#  Button: 0  0 | # | X:   11 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.263970 5 00 0b 0b 00 00
+#  Button: 0  0 | # | X:   10 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.267967 5 00 0a 0a 00 00
+#  Button: 0  0 | # | X:   12 | Y:    9 | Wheel:    0 | AC Pan:    0 
+E: 000000.271955 5 00 0c 09 00 00
+#  Button: 0  0 | # | X:   13 | Y:    7 | Wheel:    0 | AC Pan:    0 
+E: 000000.275965 5 00 0d 07 00 00
+#  Button: 0  0 | # | X:   13 | Y:    7 | Wheel:    0 | AC Pan:    0 
+E: 000000.279962 5 00 0d 07 00 00
+#  Button: 0  0 | # | X:   14 | Y:    5 | Wheel:    0 | AC Pan:    0 
+E: 000000.283958 5 00 0e 05 00 00
+#  Button: 0  0 | # | X:   14 | Y:    5 | Wheel:    0 | AC Pan:    0 
+E: 000000.287960 5 00 0e 05 00 00
+#  Button: 0  0 | # | X:   14 | Y:    4 | Wheel:    0 | AC Pan:    0 
+E: 000000.291966 5 00 0e 04 00 00
+#  Button: 0  0 | # | X:   14 | Y:    4 | Wheel:    0 | AC Pan:    0 
+E: 000000.295958 5 00 0e 04 00 00
+#  Button: 0  0 | # | X:   15 | Y:    3 | Wheel:    0 | AC Pan:    0 
+E: 000000.299964 5 00 0f 03 00 00
+#  Button: 0  0 | # | X:   15 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.303963 5 00 0f 02 00 00
+#  Button: 0  0 | # | X:   14 | Y:    3 | Wheel:    0 | AC Pan:    0 
+E: 000000.307962 5 00 0e 03 00 00
+#  Button: 0  0 | # | X:   13 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.311947 5 00 0d 02 00 00
+#  Button: 0  0 | # | X:   12 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.315964 5 00 0c 02 00 00
+#  Button: 0  0 | # | X:   11 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000000.319961 5 00 0b 01 00 00
+#  Button: 0  0 | # | X:   11 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.323965 5 00 0b 02 00 00
+#  Button: 0  0 | # | X:   11 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000000.327956 5 00 0b 01 00 00
+#  Button: 0  0 | # | X:   10 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.331965 5 00 0a 00 00 00
+#  Button: 0  0 | # | X:    9 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.335929 5 00 09 00 00 00
+#  Button: 0  0 | # | X:    9 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.339959 5 00 09 00 00 00
+#  Button: 0  0 | # | X:   11 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.343964 5 00 0b fe 00 00
+#  Button: 0  0 | # | X:   10 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.347971 5 00 0a fd 00 00
+#  Button: 0  0 | # | X:   10 | Y:   -4 | Wheel:    0 | AC Pan:    0 
+E: 000000.351974 5 00 0a fc 00 00
+#  Button: 0  0 | # | X:    9 | Y:   -5 | Wheel:    0 | AC Pan:    0 
+E: 000000.355962 5 00 09 fb 00 00
+#  Button: 0  0 | # | X:    9 | Y:   -5 | Wheel:    0 | AC Pan:    0 
+E: 000000.359967 5 00 09 fb 00 00
+#  Button: 0  0 | # | X:    9 | Y:   -7 | Wheel:    0 | AC Pan:    0 
+E: 000000.363957 5 00 09 f9 00 00
+#  Button: 0  0 | # | X:    7 | Y:   -8 | Wheel:    0 | AC Pan:    0 
+E: 000000.367953 5 00 07 f8 00 00
+#  Button: 0  0 | # | X:    7 | Y:   -7 | Wheel:    0 | AC Pan:    0 
+E: 000000.371964 5 00 07 f9 00 00
+#  Button: 0  0 | # | X:    6 | Y:   -8 | Wheel:    0 | AC Pan:    0 
+E: 000000.375973 5 00 06 f8 00 00
+#  Button: 0  0 | # | X:    5 | Y:   -9 | Wheel:    0 | AC Pan:    0 
+E: 000000.379966 5 00 05 f7 00 00
+#  Button: 0  0 | # | X:    4 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.383955 5 00 04 f6 00 00
+#  Button: 0  0 | # | X:    4 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.387959 5 00 04 f6 00 00
+#  Button: 0  0 | # | X:    3 | Y:  -12 | Wheel:    0 | AC Pan:    0 
+E: 000000.391960 5 00 03 f4 00 00
+#  Button: 0  0 | # | X:    3 | Y:  -11 | Wheel:    0 | AC Pan:    0 
+E: 000000.395965 5 00 03 f5 00 00
+#  Button: 0  0 | # | X:    3 | Y:  -13 | Wheel:    0 | AC Pan:    0 
+E: 000000.399948 5 00 03 f3 00 00
+#  Button: 0  0 | # | X:    2 | Y:  -14 | Wheel:    0 | AC Pan:    0 
+E: 000000.403982 5 00 02 f2 00 00
+#  Button: 0  0 | # | X:    2 | Y:  -14 | Wheel:    0 | AC Pan:    0 
+E: 000000.407953 5 00 02 f2 00 00
+#  Button: 0  0 | # | X:    2 | Y:  -14 | Wheel:    0 | AC Pan:    0 
+E: 000000.411977 5 00 02 f2 00 00
+#  Button: 0  0 | # | X:    1 | Y:  -14 | Wheel:    0 | AC Pan:    0 
+E: 000000.415972 5 00 01 f2 00 00
+#  Button: 0  0 | # | X:    1 | Y:  -14 | Wheel:    0 | AC Pan:    0 
+E: 000000.419963 5 00 01 f2 00 00
+#  Button: 0  0 | # | X:    1 | Y:  -14 | Wheel:    0 | AC Pan:    0 
+E: 000000.423958 5 00 01 f2 00 00
+#  Button: 0  0 | # | X:    0 | Y:  -14 | Wheel:    0 | AC Pan:    0 
+E: 000000.427977 5 00 00 f2 00 00
+#  Button: 0  0 | # | X:    0 | Y:  -14 | Wheel:    0 | AC Pan:    0 
+E: 000000.431952 5 00 00 f2 00 00
+#  Button: 0  0 | # | X:   -3 | Y:  -13 | Wheel:    0 | AC Pan:    0 
+E: 000000.435969 5 00 fd f3 00 00
+#  Button: 0  0 | # | X:   -2 | Y:  -13 | Wheel:    0 | AC Pan:    0 
+E: 000000.440024 5 00 fe f3 00 00
+#  Button: 0  0 | # | X:   -4 | Y:  -14 | Wheel:    0 | AC Pan:    0 
+E: 000000.443965 5 00 fc f2 00 00
+#  Button: 0  0 | # | X:   -5 | Y:  -12 | Wheel:    0 | AC Pan:    0 
+E: 000000.447961 5 00 fb f4 00 00
+#  Button: 0  0 | # | X:   -6 | Y:  -12 | Wheel:    0 | AC Pan:    0 
+E: 000000.451965 5 00 fa f4 00 00
+#  Button: 0  0 | # | X:   -6 | Y:  -12 | Wheel:    0 | AC Pan:    0 
+E: 000000.455983 5 00 fa f4 00 00
+#  Button: 0  0 | # | X:   -8 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.459947 5 00 f8 f6 00 00
+#  Button: 0  0 | # | X:   -8 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.464004 5 00 f8 f6 00 00
+#  Button: 0  0 | # | X:   -7 | Y:   -8 | Wheel:    0 | AC Pan:    0 
+E: 000000.467970 5 00 f9 f8 00 00
+#  Button: 0  0 | # | X:   -9 | Y:   -7 | Wheel:    0 | AC Pan:    0 
+E: 000000.471961 5 00 f7 f9 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -6 | Wheel:    0 | AC Pan:    0 
+E: 000000.475963 5 00 f8 fa 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -5 | Wheel:    0 | AC Pan:    0 
+E: 000000.479970 5 00 f8 fb 00 00
+#  Button: 0  0 | # | X:   -9 | Y:   -5 | Wheel:    0 | AC Pan:    0 
+E: 000000.483972 5 00 f7 fb 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.487967 5 00 f8 fd 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.491975 5 00 f8 fe 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.495952 5 00 f8 fe 00 00
+#  Button: 0  0 | # | X:   -7 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.499966 5 00 f9 fe 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000000.503973 5 00 f8 ff 00 00
+#  Button: 0  0 | # | X:   -7 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.507982 5 00 f9 00 00 00
+#  Button: 0  0 | # | X:   -9 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.511963 5 00 f7 00 00 00
+#  Button: 0  0 | # | X:   -8 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.516105 5 00 f8 00 00 00
+#  Button: 0  0 | # | X:   -8 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.519971 5 00 f8 00 00 00
+#  Button: 0  0 | # | X:   -9 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.523967 5 00 f7 00 00 00
+#  Button: 0  0 | # | X:   -9 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000000.527953 5 00 f7 01 00 00
+#  Button: 0  0 | # | X:   -9 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.531963 5 00 f7 02 00 00
+#  Button: 0  0 | # | X:   -9 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.535965 5 00 f7 02 00 00
+#  Button: 0  0 | # | X:   -8 | Y:    4 | Wheel:    0 | AC Pan:    0 
+E: 000000.539964 5 00 f8 04 00 00
+#  Button: 0  0 | # | X:   -7 | Y:    4 | Wheel:    0 | AC Pan:    0 
+E: 000000.544020 5 00 f9 04 00 00
+#  Button: 0  0 | # | X:   -7 | Y:    4 | Wheel:    0 | AC Pan:    0 
+E: 000000.547961 5 00 f9 04 00 00
+#  Button: 0  0 | # | X:   -7 | Y:    5 | Wheel:    0 | AC Pan:    0 
+E: 000000.551961 5 00 f9 05 00 00
+#  Button: 0  0 | # | X:   -6 | Y:    4 | Wheel:    0 | AC Pan:    0 
+E: 000000.555968 5 00 fa 04 00 00
+#  Button: 0  0 | # | X:   -7 | Y:    4 | Wheel:    0 | AC Pan:    0 
+E: 000000.559971 5 00 f9 04 00 00
+#  Button: 0  0 | # | X:   -6 | Y:    6 | Wheel:    0 | AC Pan:    0 
+E: 000000.563958 5 00 fa 06 00 00
+#  Button: 0  0 | # | X:   -6 | Y:    5 | Wheel:    0 | AC Pan:    0 
+E: 000000.567954 5 00 fa 05 00 00
+#  Button: 0  0 | # | X:   -6 | Y:    5 | Wheel:    0 | AC Pan:    0 
+E: 000000.571969 5 00 fa 05 00 00
+#  Button: 0  0 | # | X:   -6 | Y:    6 | Wheel:    0 | AC Pan:    0 
+E: 000000.575968 5 00 fa 06 00 00
+#  Button: 0  0 | # | X:   -6 | Y:    7 | Wheel:    0 | AC Pan:    0 
+E: 000000.579974 5 00 fa 07 00 00
+#  Button: 0  0 | # | X:   -5 | Y:    7 | Wheel:    0 | AC Pan:    0 
+E: 000000.583957 5 00 fb 07 00 00
+#  Button: 0  0 | # | X:   -5 | Y:    8 | Wheel:    0 | AC Pan:    0 
+E: 000000.587962 5 00 fb 08 00 00
+#  Button: 0  0 | # | X:   -6 | Y:    9 | Wheel:    0 | AC Pan:    0 
+E: 000000.591955 5 00 fa 09 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    9 | Wheel:    0 | AC Pan:    0 
+E: 000000.595964 5 00 fc 09 00 00
+#  Button: 0  0 | # | X:   -5 | Y:    9 | Wheel:    0 | AC Pan:    0 
+E: 000000.599965 5 00 fb 09 00 00
+#  Button: 0  0 | # | X:   -3 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.603961 5 00 fd 0a 00 00
+#  Button: 0  0 | # | X:   -4 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.607969 5 00 fc 0a 00 00
+#  Button: 0  0 | # | X:   -2 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.611982 5 00 fe 0a 00 00
+#  Button: 0  0 | # | X:   -3 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.615948 5 00 fd 0a 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.620060 5 00 ff 0b 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.623950 5 00 ff 0a 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.627965 5 00 ff 0b 00 00
+#  Button: 0  0 | # | X:    1 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.631949 5 00 01 0b 00 00
+#  Button: 0  0 | # | X:    2 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.635964 5 00 02 0b 00 00
+#  Button: 0  0 | # | X:    3 | Y:   12 | Wheel:    0 | AC Pan:    0 
+E: 000000.639964 5 00 03 0c 00 00
+#  Button: 0  0 | # | X:    5 | Y:   11 | Wheel:    0 | AC Pan:    0 
+E: 000000.643971 5 00 05 0b 00 00
+#  Button: 0  0 | # | X:    6 | Y:   10 | Wheel:    0 | AC Pan:    0 
+E: 000000.647963 5 00 06 0a 00 00
+#  Button: 0  0 | # | X:    7 | Y:    9 | Wheel:    0 | AC Pan:    0 
+E: 000000.651968 5 00 07 09 00 00
+#  Button: 0  0 | # | X:    9 | Y:    9 | Wheel:    0 | AC Pan:    0 
+E: 000000.655968 5 00 09 09 00 00
+#  Button: 0  0 | # | X:   10 | Y:    8 | Wheel:    0 | AC Pan:    0 
+E: 000000.659987 5 00 0a 08 00 00
+#  Button: 0  0 | # | X:   10 | Y:    8 | Wheel:    0 | AC Pan:    0 
+E: 000000.663958 5 00 0a 08 00 00
+#  Button: 0  0 | # | X:   10 | Y:    7 | Wheel:    0 | AC Pan:    0 
+E: 000000.668108 5 00 0a 07 00 00
+#  Button: 0  0 | # | X:   10 | Y:    6 | Wheel:    0 | AC Pan:    0 
+E: 000000.671971 5 00 0a 06 00 00
+#  Button: 0  0 | # | X:    9 | Y:    5 | Wheel:    0 | AC Pan:    0 
+E: 000000.675973 5 00 09 05 00 00
+#  Button: 0  0 | # | X:    9 | Y:    5 | Wheel:    0 | AC Pan:    0 
+E: 000000.679964 5 00 09 05 00 00
+#  Button: 0  0 | # | X:    9 | Y:    4 | Wheel:    0 | AC Pan:    0 
+E: 000000.683953 5 00 09 04 00 00
+#  Button: 0  0 | # | X:   10 | Y:    4 | Wheel:    0 | AC Pan:    0 
+E: 000000.687953 5 00 0a 04 00 00
+#  Button: 0  0 | # | X:    9 | Y:    3 | Wheel:    0 | AC Pan:    0 
+E: 000000.691968 5 00 09 03 00 00
+#  Button: 0  0 | # | X:    9 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.695949 5 00 09 02 00 00
+#  Button: 0  0 | # | X:    9 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.699962 5 00 09 02 00 00
+#  Button: 0  0 | # | X:   11 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000000.703963 5 00 0b 01 00 00
+#  Button: 0  0 | # | X:   10 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.707962 5 00 0a 00 00 00
+#  Button: 0  0 | # | X:   12 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.711984 5 00 0c 00 00 00
+#  Button: 0  0 | # | X:   11 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.715945 5 00 0b 00 00 00
+#  Button: 0  0 | # | X:   10 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.719958 5 00 0a 00 00 00
+#  Button: 0  0 | # | X:   10 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.723975 5 00 0a fe 00 00
+#  Button: 0  0 | # | X:   10 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.727968 5 00 0a fe 00 00
+#  Button: 0  0 | # | X:   10 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.731965 5 00 0a fe 00 00
+#  Button: 0  0 | # | X:    9 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000000.735964 5 00 09 fe 00 00
+#  Button: 0  0 | # | X:    7 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.739967 5 00 07 fd 00 00
+#  Button: 0  0 | # | X:    7 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.743966 5 00 07 fd 00 00
+#  Button: 0  0 | # | X:    6 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.747954 5 00 06 fd 00 00
+#  Button: 0  0 | # | X:    5 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.751954 5 00 05 fd 00 00
+#  Button: 0  0 | # | X:    4 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.755968 5 00 04 fd 00 00
+#  Button: 0  0 | # | X:    4 | Y:   -4 | Wheel:    0 | AC Pan:    0 
+E: 000000.760041 5 00 04 fc 00 00
+#  Button: 0  0 | # | X:    3 | Y:   -5 | Wheel:    0 | AC Pan:    0 
+E: 000000.764002 5 00 03 fb 00 00
+#  Button: 0  0 | # | X:    3 | Y:   -5 | Wheel:    0 | AC Pan:    0 
+E: 000000.767973 5 00 03 fb 00 00
+#  Button: 0  0 | # | X:    2 | Y:   -6 | Wheel:    0 | AC Pan:    0 
+E: 000000.771971 5 00 02 fa 00 00
+#  Button: 0  0 | # | X:    3 | Y:   -7 | Wheel:    0 | AC Pan:    0 
+E: 000000.775949 5 00 03 f9 00 00
+#  Button: 0  0 | # | X:    3 | Y:   -8 | Wheel:    0 | AC Pan:    0 
+E: 000000.779947 5 00 03 f8 00 00
+#  Button: 0  0 | # | X:    2 | Y:   -9 | Wheel:    0 | AC Pan:    0 
+E: 000000.783932 5 00 02 f7 00 00
+#  Button: 0  0 | # | X:    2 | Y:   -9 | Wheel:    0 | AC Pan:    0 
+E: 000000.787951 5 00 02 f7 00 00
+#  Button: 0  0 | # | X:    2 | Y:   -8 | Wheel:    0 | AC Pan:    0 
+E: 000000.791959 5 00 02 f8 00 00
+#  Button: 0  0 | # | X:    2 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.795950 5 00 02 f6 00 00
+#  Button: 0  0 | # | X:    1 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.799957 5 00 01 f6 00 00
+#  Button: 0  0 | # | X:    1 | Y:  -11 | Wheel:    0 | AC Pan:    0 
+E: 000000.803952 5 00 01 f5 00 00
+#  Button: 0  0 | # | X:    0 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.807949 5 00 00 f6 00 00
+#  Button: 0  0 | # | X:    0 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.811976 5 00 00 f6 00 00
+#  Button: 0  0 | # | X:   -1 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.815947 5 00 ff f6 00 00
+#  Button: 0  0 | # | X:   -3 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.820003 5 00 fd f6 00 00
+#  Button: 0  0 | # | X:   -4 | Y:  -10 | Wheel:    0 | AC Pan:    0 
+E: 000000.823965 5 00 fc f6 00 00
+#  Button: 0  0 | # | X:   -5 | Y:   -9 | Wheel:    0 | AC Pan:    0 
+E: 000000.827951 5 00 fb f7 00 00
+#  Button: 0  0 | # | X:   -6 | Y:   -8 | Wheel:    0 | AC Pan:    0 
+E: 000000.831951 5 00 fa f8 00 00
+#  Button: 0  0 | # | X:   -7 | Y:   -8 | Wheel:    0 | AC Pan:    0 
+E: 000000.835952 5 00 f9 f8 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -7 | Wheel:    0 | AC Pan:    0 
+E: 000000.839949 5 00 f8 f9 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -7 | Wheel:    0 | AC Pan:    0 
+E: 000000.843959 5 00 f8 f9 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -6 | Wheel:    0 | AC Pan:    0 
+E: 000000.847938 5 00 f8 fa 00 00
+#  Button: 0  0 | # | X:   -9 | Y:   -7 | Wheel:    0 | AC Pan:    0 
+E: 000000.851955 5 00 f7 f9 00 00
+#  Button: 0  0 | # | X:   -9 | Y:   -5 | Wheel:    0 | AC Pan:    0 
+E: 000000.855955 5 00 f7 fb 00 00
+#  Button: 0  0 | # | X:   -9 | Y:   -5 | Wheel:    0 | AC Pan:    0 
+E: 000000.859959 5 00 f7 fb 00 00
+#  Button: 0  0 | # | X:   -9 | Y:   -4 | Wheel:    0 | AC Pan:    0 
+E: 000000.863992 5 00 f7 fc 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.867954 5 00 f8 fd 00 00
+#  Button: 0  0 | # | X:   -8 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.871971 5 00 f8 fd 00 00
+#  Button: 0  0 | # | X:   -7 | Y:   -3 | Wheel:    0 | AC Pan:    0 
+E: 000000.875953 5 00 f9 fd 00 00
+#  Button: 0  0 | # | X:   -7 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000000.879934 5 00 f9 ff 00 00
+#  Button: 0  0 | # | X:   -6 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000000.883952 5 00 fa ff 00 00
+#  Button: 0  0 | # | X:   -5 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000000.887959 5 00 fb ff 00 00
+#  Button: 0  0 | # | X:   -5 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000000.891951 5 00 fb ff 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.895949 5 00 fc 00 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.899958 5 00 fc 00 00 00
+#  Button: 0  0 | # | X:   -4 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000000.903947 5 00 fc ff 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.907954 5 00 fc 00 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.911954 5 00 fc 00 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.915964 5 00 fc 00 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.919987 5 00 fc 00 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.923961 5 00 fc 00 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000000.927955 5 00 fc 00 00 00
+#  Button: 0  0 | # | X:   -5 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000000.931952 5 00 fb 01 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000000.935965 5 00 fc 01 00 00
+#  Button: 0  0 | # | X:   -3 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.939963 5 00 fd 02 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.943941 5 00 fc 02 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.947958 5 00 fc 02 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.951959 5 00 fc 02 00 00
+#  Button: 0  0 | # | X:   -3 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.955956 5 00 fd 02 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.959966 5 00 fc 02 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.963997 5 00 fc 02 00 00
+#  Button: 0  0 | # | X:   -3 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.967962 5 00 fd 02 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000000.971976 5 00 fc 01 00 00
+#  Button: 0  0 | # | X:   -2 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.975946 5 00 fe 02 00 00
+#  Button: 0  0 | # | X:   -3 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.979964 5 00 fd 02 00 00
+#  Button: 0  0 | # | X:   -3 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.983954 5 00 fd 02 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.987949 5 00 fc 02 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.991952 5 00 fc 02 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000000.995957 5 00 fc 02 00 00
+#  Button: 0  0 | # | X:   -4 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000000.999949 5 00 fc 01 00 00
+#  Button: 1  0 | # | X:    0 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000002.603999 5 01 00 00 00 00
+#  Button: 0  0 | # | X:    0 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000002.816005 5 00 00 00 00 00
+#  Button: 0  0 | # | X:    0 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000014.080077 5 00 00 01 00 00
+#  Button: 0  0 | # | X:    2 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000014.084050 5 00 02 02 00 00
+#  Button: 0  0 | # | X:    1 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000014.088040 5 00 01 01 00 00
+#  Button: 0  0 | # | X:    2 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000014.092041 5 00 02 02 00 00
+#  Button: 0  0 | # | X:    2 | Y:    3 | Wheel:    0 | AC Pan:    0 
+E: 000014.096024 5 00 02 03 00 00
+#  Button: 1  0 | # | X:    3 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000014.100047 5 01 03 02 00 00
+#  Button: 1  0 | # | X:    2 | Y:    3 | Wheel:    0 | AC Pan:    0 
+E: 000014.104038 5 01 02 03 00 00
+#  Button: 1  0 | # | X:    2 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000014.108033 5 01 02 02 00 00
+#  Button: 1  0 | # | X:    2 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000014.112038 5 01 02 02 00 00
+#  Button: 1  0 | # | X:    2 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000014.116046 5 01 02 02 00 00
+#  Button: 1  0 | # | X:    2 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000014.120034 5 01 02 02 00 00
+#  Button: 1  0 | # | X:    1 | Y:    2 | Wheel:    0 | AC Pan:    0 
+E: 000014.124086 5 01 01 02 00 00
+#  Button: 1  0 | # | X:    1 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000014.128038 5 01 01 01 00 00
+#  Button: 1  0 | # | X:    1 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000014.132093 5 01 01 01 00 00
+#  Button: 1  0 | # | X:    1 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000014.136063 5 01 01 01 00 00
+#  Button: 1  0 | # | X:    1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.140032 5 01 01 00 00 00
+#  Button: 1  0 | # | X:    1 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000014.144035 5 01 01 01 00 00
+#  Button: 1  0 | # | X:    1 | Y:    1 | Wheel:    0 | AC Pan:    0 
+E: 000014.152068 5 01 01 01 00 00
+#  Button: 1  0 | # | X:    1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.164058 5 01 01 00 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.176056 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.180016 5 01 ff 00 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.184044 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.188053 5 01 ff ff 00 00
+#  Button: 1  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.192040 5 01 ff 00 00 00
+#  Button: 1  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.196040 5 01 ff ff 00 00
+#  Button: 1  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.200057 5 01 ff 00 00 00
+#  Button: 1  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.208055 5 01 ff ff 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.216064 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.220052 5 01 ff 00 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.224080 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.232062 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.236049 5 01 ff 00 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.240033 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.248054 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.256048 5 01 ff ff 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.268071 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.292179 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.304079 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.308194 5 01 00 ff 00 00
+#  Button: 1  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.312066 5 01 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.316050 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.320024 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.324051 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.328049 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -2 | Wheel:    0 | AC Pan:    0 
+E: 000014.332046 5 00 ff fe 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.336053 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -2 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.340060 5 00 fe ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.344048 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.348074 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.352077 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.356053 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -2 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.360068 5 00 fe ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.364042 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.368038 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.376067 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.380049 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.384027 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.392046 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.396043 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.400102 5 00 00 ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.404089 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.408043 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.416069 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.420057 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.424044 5 00 00 ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.428044 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.436046 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.440044 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.448045 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.460046 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:   -1 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.468086 5 00 ff ff 00 00
+#  Button: 0  0 | # | X:   -1 | Y:    0 | Wheel:    0 | AC Pan:    0 
+E: 000014.488062 5 00 ff 00 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.492046 5 00 00 ff 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.524078 5 00 00 ff 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.556070 5 00 00 ff 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.588077 5 00 00 ff 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.616080 5 00 00 ff 00 00
+#  Button: 0  0 | # | X:    0 | Y:   -1 | Wheel:    0 | AC Pan:    0 
+E: 000014.644086 5 00 00 ff 00 00

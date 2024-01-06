@@ -1,0 +1,61 @@
+# Valve Software Steam Controller
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x06,                    // Usage (Keyboard)                    2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              6
+# 0x19, 0xe0,                    //  Usage Minimum (224)                8
+# 0x29, 0xe7,                    //  Usage Maximum (231)                10
+# 0x15, 0x00,                    //  Logical Minimum (0)                12
+# 0x25, 0x01,                    //  Logical Maximum (1)                14
+# 0x75, 0x01,                    //  Report Size (1)                    16
+# 0x95, 0x08,                    //  Report Count (8)                   18
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               20
+# 0x81, 0x01,                    //  Input (Cnst,Arr,Abs)               22
+# 0x19, 0x00,                    //  Usage Minimum (0)                  24
+# 0x29, 0x65,                    //  Usage Maximum (101)                26
+# 0x15, 0x00,                    //  Logical Minimum (0)                28
+# 0x25, 0x65,                    //  Logical Maximum (101)              30
+# 0x75, 0x08,                    //  Report Size (8)                    32
+# 0x95, 0x06,                    //  Report Count (6)                   34
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               36
+# 0xc0,                          // End Collection                      38
+# 
+R: 39 05 01 09 06 a1 01 05 07 19 e0 29 e7 15 00 25 01 75 01 95 08 81 02 81 01 19 00 29 65 15 00 25 65 75 08 95 06 81 00 c0
+N: Valve Software Steam Controller
+I: 3 28de 1205
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['LeftArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.000000 8 00 00 50 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.108002 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['DownArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.908003 8 00 00 51 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.040009 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['RightArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.852025 8 00 00 4f 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.992029 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['UpArrow', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.732041 8 00 00 52 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.884005 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['Tab', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000022.444073 8 00 00 2b 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000022.668075 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['ESCAPE', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000023.356079 8 00 00 29 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000023.612067 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['Return (ENTER)', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000026.868102 8 00 00 28 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000027.016098 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['ESCAPE', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000027.392092 8 00 00 29 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000027.520096 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['ESCAPE', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000032.172116 8 00 00 29 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000032.304111 8 00 00 00 00 00 00 00 00
