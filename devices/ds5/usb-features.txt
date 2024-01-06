@@ -1,0 +1,810 @@
+0005: 05000000000100a6225cdda62261dd90226bdd1c021c02ff1ffedf971fb2dff61feddf050000000000
+0009: 097d92d0c1bcd0082500a3f8402933bc00000000
+0020: 204a756e203136203230323331373a30383a3136020004001304000002000901501a00000000000000000000020400002a000100030002000600000000000000
+0022: 22020013040000020009010000000000007d92d0c1bcd003000200060000001800000021280100020003020000ca432e1248240b002a00010000000000000000
+0081: 81000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0083: 83ffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0085: 8500ff
+00e0: e013000c010100412000000006000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00f1: f1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00f2: f2000010000000000000000000000000
+00f5: f5000000
+Feature | Report | Usage Page                | Usage                                      | Range     | Count | Bits | Value(s)
+--------|--------|---------------------------|--------------------------------------------|-----------|-------|------|---------
+  50000 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x0
+  50001 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x0
+  50002 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x0
+  50003 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x0
+  50004 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x1
+  50005 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x0
+  50006 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xa6
+  50007 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x22
+  50008 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x5c
+  50009 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xdd
+  5000a |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xa6
+  5000b |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x22
+  5000c |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x61
+  5000d |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xdd
+  5000e |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x90
+  5000f |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x22
+  50010 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x6b
+  50011 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xdd
+  50012 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x1c
+  50013 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x2
+  50014 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x1c
+  50015 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x2
+  50016 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xff
+  50017 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x1f
+  50018 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xfe
+  50019 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xdf
+  5001a |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x97
+  5001b |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x1f
+  5001c |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xb2
+  5001d |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xdf
+  5001e |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xf6
+  5001f |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x1f
+  50020 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xed
+  50021 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0xdf
+  50022 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x5
+  50023 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x0
+  50024 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x0
+  50025 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x0
+  50026 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x0
+  50027 |      5 | Vendor Defined Page 1     | 0xff000033                                 | [ 0, 255] |     1 |   8  | 0x0
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 110] Connection timed out. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 8 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+  90000 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x7d
+  90001 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x92
+  90002 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0xd0
+  90003 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0xc1
+  90004 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0xbc
+  90005 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0xd0
+  90006 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x8
+  90007 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x25
+  90008 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x0
+  90009 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0xa3
+  9000a |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0xf8
+  9000b |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x40
+  9000c |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x29
+  9000d |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x33
+  9000e |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0xbc
+  9000f |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x0
+  90010 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x0
+  90011 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x0
+  90012 |      9 | Vendor Defined Page 1     | 0xff000024                                 | [ 0, 255] |     1 |   8  | 0x0
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 10 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+ 200000 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x4a
+ 200001 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x75
+ 200002 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x6e
+ 200003 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x20
+ 200004 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x31
+ 200005 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x36
+ 200006 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x20
+ 200007 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x32
+ 200008 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x30
+ 200009 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x32
+ 20000a |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x33
+ 20000b |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x31
+ 20000c |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x37
+ 20000d |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x3a
+ 20000e |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x30
+ 20000f |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x38
+ 200010 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x3a
+ 200011 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x31
+ 200012 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x36
+ 200013 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x2
+ 200014 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200015 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x4
+ 200016 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200017 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x13
+ 200018 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x4
+ 200019 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20001a |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20001b |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x2
+ 20001c |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20001d |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x9
+ 20001e |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x1
+ 20001f |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x50
+ 200020 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x1a
+ 200021 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200022 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200023 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200024 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200025 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200026 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200027 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200028 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200029 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20002a |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20002b |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x2
+ 20002c |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x4
+ 20002d |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20002e |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20002f |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x2a
+ 200030 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200031 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x1
+ 200032 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200033 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x3
+ 200034 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200035 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x2
+ 200036 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200037 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x6
+ 200038 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 200039 |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20003a |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20003b |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20003c |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20003d |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+ 20003e |     32 | Vendor Defined Page 1     | 0xff000026                                 | [ 0, 255] |     1 |   8  | 0x0
+Failed to get Feature Report ID 33 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 33 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 33 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 33 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+ 220000 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x2
+ 220001 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220002 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x13
+ 220003 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x4
+ 220004 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220005 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220006 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x2
+ 220007 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220008 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x9
+ 220009 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x1
+ 22000a |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22000b |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22000c |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22000d |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22000e |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22000f |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220010 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x7d
+ 220011 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x92
+ 220012 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0xd0
+ 220013 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0xc1
+ 220014 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0xbc
+ 220015 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0xd0
+ 220016 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x3
+ 220017 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220018 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x2
+ 220019 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22001a |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x6
+ 22001b |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22001c |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22001d |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22001e |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x18
+ 22001f |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220020 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220021 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220022 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x21
+ 220023 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x28
+ 220024 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x1
+ 220025 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220026 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x2
+ 220027 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220028 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x3
+ 220029 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x2
+ 22002a |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22002b |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22002c |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0xca
+ 22002d |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x43
+ 22002e |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x2e
+ 22002f |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x12
+ 220030 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x48
+ 220031 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x24
+ 220032 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0xb
+ 220033 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220034 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x2a
+ 220035 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220036 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x1
+ 220037 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220038 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 220039 |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22003a |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22003b |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22003c |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22003d |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+ 22003e |     34 | Vendor Defined Page 1     | 0xff000040                                 | [ 0, 255] |     1 |   8  | 0x0
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 128 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+ 810000 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810001 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810002 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810003 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810004 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810005 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810006 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810007 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810008 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810009 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81000a |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81000b |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81000c |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81000d |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81000e |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81000f |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810010 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810011 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810012 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810013 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810014 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810015 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810016 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810017 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810018 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810019 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81001a |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81001b |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81001c |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81001d |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81001e |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81001f |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810020 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810021 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810022 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810023 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810024 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810025 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810026 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810027 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810028 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810029 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81002a |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81002b |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81002c |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81002d |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81002e |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81002f |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810030 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810031 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810032 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810033 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810034 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810035 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810036 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810037 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810038 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 810039 |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81003a |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81003b |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81003c |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81003d |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+ 81003e |    129 | Vendor Defined Page 1     | 0xff000029                                 | [ 0, 255] |     1 |   8  | 0x0
+Failed to get Feature Report ID 130 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 130 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 130 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 130 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 130 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 130 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 130 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 130 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 130 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+ 830000 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0xff
+ 830001 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0xff
+ 830002 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0xff
+ 830003 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0xff
+ 830004 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830005 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830006 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830007 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830008 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830009 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83000a |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83000b |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83000c |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83000d |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83000e |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83000f |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830010 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830011 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830012 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830013 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830014 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830015 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830016 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830017 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830018 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830019 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83001a |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83001b |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83001c |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83001d |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83001e |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83001f |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830020 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830021 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830022 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830023 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830024 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830025 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830026 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830027 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830028 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830029 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83002a |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83002b |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83002c |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83002d |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83002e |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83002f |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830030 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830031 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830032 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830033 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830034 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830035 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830036 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830037 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830038 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 830039 |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83003a |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83003b |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83003c |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83003d |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+ 83003e |    131 | Vendor Defined Page 1     | 0xff00002b                                 | [ 0, 255] |     1 |   8  | 0x0
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 132 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+ 850000 |    133 | Vendor Defined Page 1     | 0xff00002d                                 | [ 0, 255] |     1 |   8  | 0x0
+ 850001 |    133 | Vendor Defined Page 1     | 0xff00002d                                 | [ 0, 255] |     1 |   8  | 0xff
+Failed to get Feature Report ID 160 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+ e00000 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x13
+ e00001 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00002 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0xc
+ e00003 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x1
+ e00004 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x1
+ e00005 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00006 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x41
+ e00007 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x20
+ e00008 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00009 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0000a |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0000b |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x6
+ e0000c |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0000d |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0000e |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0000f |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00010 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00011 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00012 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00013 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00014 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00015 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00016 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00017 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00018 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00019 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0001a |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0001b |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0001c |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0001d |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0001e |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0001f |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00020 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00021 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00022 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00023 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00024 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00025 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00026 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00027 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00028 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00029 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0002a |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0002b |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0002c |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0002d |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0002e |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0002f |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00030 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00031 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00032 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00033 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00034 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00035 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00036 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00037 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00038 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e00039 |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0003a |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0003b |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0003c |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0003d |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+ e0003e |    224 | Vendor Defined Page 1     | 0xff00002f                                 | [ 0, 255] |     1 |   8  | 0x0
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 240 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+ f10000 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10001 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10002 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10003 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10004 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10005 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10006 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10007 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10008 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10009 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1000a |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1000b |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1000c |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1000d |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1000e |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1000f |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10010 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10011 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10012 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10013 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10014 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10015 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10016 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10017 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10018 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10019 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1001a |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1001b |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1001c |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1001d |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1001e |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1001f |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10020 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10021 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10022 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10023 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10024 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10025 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10026 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10027 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10028 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10029 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1002a |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1002b |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1002c |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1002d |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1002e |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1002f |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10030 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10031 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10032 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10033 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10034 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10035 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10036 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10037 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10038 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f10039 |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1003a |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1003b |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1003c |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1003d |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f1003e |    241 | Vendor Defined Page 1     | 0xff000031                                 | [ 0, 255] |     1 |   8  | 0x0
+ f20000 |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f20001 |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f20002 |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x10
+ f20003 |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f20004 |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f20005 |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f20006 |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f20007 |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f20008 |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f20009 |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f2000a |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f2000b |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f2000c |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f2000d |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+ f2000e |    242 | Vendor Defined Page 1     | 0xff000032                                 | [ 0, 255] |     1 |   8  | 0x0
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+Failed to get Feature Report ID 244 from device: [Errno 32] Broken pipe. Cannot run with --fetch-values
+ f50000 |    245 | Vendor Defined Page 1     | 0xff000036                                 | [ 0, 255] |     1 |   8  | 0x0
+ f50001 |    245 | Vendor Defined Page 1     | 0xff000036                                 | [ 0, 255] |     1 |   8  | 0x0
+ f50002 |    245 | Vendor Defined Page 1     | 0xff000036                                 | [ 0, 255] |     1 |   8  | 0x0
+

@@ -1,2 +1,2 @@
 # Dualsense 5 (Normal) Information
-Credit to @Aru.
+Credit to @Aru and Adolfo.
