@@ -1,6 +1,13 @@
 # HW Dump Instructions
 Below you will find the commands for performing a hardware dump for a device.
 
+## DMI Checks
+Having the device identification is an important part of creating device drivers,
+the command below will dump the dmi information of the device. 
+```bash
+for f in /sys/class/dmi/id/*; do echo "$f:"; sudo cat $f; done > dmi.txt
+```
+
 ## ACPI Collection
 The tools required to dump the ACPI tables of a computer can be found in the
 packages `acpica-tools` in Debian and `acpica` in Arch.
@@ -156,9 +163,11 @@ with, however.
 Start by creating a `./peripherals` directory.
 By default, most devices (even unsupported ones) will be listed under `/proc/bus/input/devices`,
 so begin by enumerating that.
+In addition, enumerate the usb devices.
 
 ```bash
 cat /proc/bus/input/devices > ./proc_bus_input.txt
+lsusb > lsusb.txt
 ```
 
 ### Getting the raw HID Descriptors

@@ -1,0 +1,50 @@
+/sys/class/dmi/id/bios_date:
+12/19/2023
+/sys/class/dmi/id/bios_release:
+5.29
+/sys/class/dmi/id/bios_vendor:
+American Megatrends International, LLC.
+/sys/class/dmi/id/bios_version:
+RC71L.336
+/sys/class/dmi/id/board_asset_tag:
+ATN12345678901234567
+/sys/class/dmi/id/board_name:
+RC71L
+/sys/class/dmi/id/board_serial:
+C4837M10HZZ
+/sys/class/dmi/id/board_vendor:
+ASUSTeK COMPUTER INC.
+/sys/class/dmi/id/board_version:
+1.0       
+/sys/class/dmi/id/chassis_asset_tag:
+No Asset Tag
+/sys/class/dmi/id/chassis_serial:
+R5NVKD032435180
+/sys/class/dmi/id/chassis_type:
+30
+/sys/class/dmi/id/chassis_vendor:
+ASUSTeK COMPUTER INC.
+/sys/class/dmi/id/chassis_version:
+1.0       
+/sys/class/dmi/id/ec_firmware_release:
+3.25
+/sys/class/dmi/id/modalias:
+dmi:bvnAmericanMegatrendsInternational,LLC.:bvrRC71L.336:bd12/19/2023:br5.29:efr3.25:svnASUSTeKCOMPUTERINC.:pnROGAllyRC71L:pvr1.0:rvnASUSTeKCOMPUTERINC.:rnRC71L:rvr1.0:cvnASUSTeKCOMPUTERINC.:ct30:cvr1.0:sku:
+/sys/class/dmi/id/power:
+/sys/class/dmi/id/product_family:
+ROG Ally
+/sys/class/dmi/id/product_name:
+ROG Ally RC71L
+/sys/class/dmi/id/product_serial:
+R5NVKD032435180
+/sys/class/dmi/id/product_sku:
+
+/sys/class/dmi/id/product_uuid:
+e6924cb5-8d2d-b049-8f0c-d51ca7f5dc4a
+/sys/class/dmi/id/product_version:
+1.0       
+/sys/class/dmi/id/subsystem:
+/sys/class/dmi/id/sys_vendor:
+ASUSTeK COMPUTER INC.
+/sys/class/dmi/id/uevent:
+MODALIAS=dmi:bvnAmericanMegatrendsInternational,LLC.:bvrRC71L.336:bd12/19/2023:br5.29:efr3.25:svnASUSTeKCOMPUTERINC.:pnROGAllyRC71L:pvr1.0:rvnASUSTeKCOMPUTERINC.:rnRC71L:rvr1.0:cvnASUSTeKCOMPUTERINC.:ct30:cvr1.0:sku:
