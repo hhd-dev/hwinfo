@@ -1,0 +1,19 @@
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 002: ID 045e:028e Microsoft Corp. Xbox360 Controller
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 002: ID 8087:0032 Intel Corp. AX210 Bluetooth
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 004 Device 002: ID 0bda:9210 Realtek Semiconductor Corp. RTL9210 M.2 NVME Adapter
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 009 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 009 Device 002: ID 14cd:8601 Super Top 4-Port hub
+Bus 009 Device 003: ID 1ea7:0064 SHARKOON Technologies GmbH 2.4GHz Wireless rechargeable vertical mouse [More&Better]
+Bus 009 Device 004: ID 05e3:0610 Genesys Logic, Inc. Hub
+Bus 009 Device 005: ID 04d9:a0cd Holtek Semiconductor, Inc. USB Keyboard
+Bus 009 Device 006: ID 0bda:9210 Realtek Semiconductor Corp. RTL9210 M.2 NVME Adapter
+Bus 010 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 010 Device 002: ID 0b95:1790 ASIX Electronics Corp. AX88179 Gigabit Ethernet
