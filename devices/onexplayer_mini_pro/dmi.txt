@@ -1,0 +1,50 @@
+/sys/class/dmi/id/bios_date:
+10/28/2022
+/sys/class/dmi/id/bios_release:
+5.24
+/sys/class/dmi/id/bios_vendor:
+American Megatrends International, LLC.
+/sys/class/dmi/id/bios_version:
+1.24
+/sys/class/dmi/id/board_asset_tag:
+Default string
+/sys/class/dmi/id/board_name:
+ONEXPLAYER Mini Pro
+/sys/class/dmi/id/board_serial:
+BB4S0911480654
+/sys/class/dmi/id/board_vendor:
+ONE-NETBOOK
+/sys/class/dmi/id/board_version:
+V03
+/sys/class/dmi/id/chassis_asset_tag:
+Default string
+/sys/class/dmi/id/chassis_serial:
+Default string
+/sys/class/dmi/id/chassis_type:
+30
+/sys/class/dmi/id/chassis_vendor:
+ONE-NETBOOK
+/sys/class/dmi/id/chassis_version:
+Default string
+/sys/class/dmi/id/ec_firmware_release:
+1.68
+/sys/class/dmi/id/modalias:
+dmi:bvnAmericanMegatrendsInternational,LLC.:bvr1.24:bd10/28/2022:br5.24:efr1.68:svnONE-NETBOOK:pnONEXPLAYERMiniPro:pvrDefaultstring:rvnONE-NETBOOK:rnONEXPLAYERMiniPro:rvrV03:cvnONE-NETBOOK:ct30:cvrDefaultstring:sku1:
+/sys/class/dmi/id/power:
+/sys/class/dmi/id/product_family:
+ONEXPLAYER
+/sys/class/dmi/id/product_name:
+ONEXPLAYER Mini Pro
+/sys/class/dmi/id/product_serial:
+2301010500162
+/sys/class/dmi/id/product_sku:
+1
+/sys/class/dmi/id/product_uuid:
+60e6619d-fc0c-254b-908e-34c88dc8e3cc
+/sys/class/dmi/id/product_version:
+Default string
+/sys/class/dmi/id/subsystem:
+/sys/class/dmi/id/sys_vendor:
+ONE-NETBOOK
+/sys/class/dmi/id/uevent:
+MODALIAS=dmi:bvnAmericanMegatrendsInternational,LLC.:bvr1.24:bd10/28/2022:br5.24:efr1.68:svnONE-NETBOOK:pnONEXPLAYERMiniPro:pvrDefaultstring:rvnONE-NETBOOK:rnONEXPLAYERMiniPro:rvrV03:cvnONE-NETBOOK:ct30:cvrDefaultstring:sku1:
