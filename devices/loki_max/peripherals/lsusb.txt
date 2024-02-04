@@ -1,0 +1,19 @@
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 002: ID 222a:0002 ILI Technology Corp. USB HID Touch
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 002: ID 0e8d:0616 MediaTek Inc. Wireless_Device
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 005 Device 002: ID 045e:028e Microsoft Corp. Xbox360 Controller
+Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 007 Device 002: ID 1a40:0801 Terminus Technology Inc. USB 2.0 Hub
+Bus 007 Device 003: ID 2109:2815 VIA Labs, Inc. USB2.0 Hub             
+Bus 007 Device 004: ID 0bda:8152 Realtek Semiconductor Corp. RTL8152 Fast Ethernet Adapter
+Bus 007 Device 005: ID 0e8f:0023 GreenAsia Inc. USB KB V11
+Bus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 008 Device 002: ID 2109:0815 VIA Labs, Inc. USB3.0 Hub             
+Bus 009 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 009 Device 002: ID 0bda:5458 Realtek Semiconductor Corp. BillBoard Device
+Bus 010 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
