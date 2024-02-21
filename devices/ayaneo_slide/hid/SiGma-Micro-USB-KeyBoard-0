@@ -1,0 +1,84 @@
+# SiGma Micro USB KeyBoard
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x06,                    // Usage (Keyboard)                    2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x05, 0x08,                    //  Usage Page (LEDs)                  6
+# 0x19, 0x01,                    //  Usage Minimum (1)                  8
+# 0x29, 0x03,                    //  Usage Maximum (3)                  10
+# 0x15, 0x00,                    //  Logical Minimum (0)                12
+# 0x25, 0x01,                    //  Logical Maximum (1)                14
+# 0x75, 0x01,                    //  Report Size (1)                    16
+# 0x95, 0x03,                    //  Report Count (3)                   18
+# 0x91, 0x02,                    //  Output (Data,Var,Abs)              20
+# 0x95, 0x05,                    //  Report Count (5)                   22
+# 0x91, 0x01,                    //  Output (Cnst,Arr,Abs)              24
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              26
+# 0x19, 0xe0,                    //  Usage Minimum (224)                28
+# 0x29, 0xe7,                    //  Usage Maximum (231)                30
+# 0x95, 0x08,                    //  Report Count (8)                   32
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               34
+# 0x75, 0x08,                    //  Report Size (8)                    36
+# 0x95, 0x01,                    //  Report Count (1)                   38
+# 0x81, 0x01,                    //  Input (Cnst,Arr,Abs)               40
+# 0x19, 0x00,                    //  Usage Minimum (0)                  42
+# 0x29, 0xdd,                    //  Usage Maximum (221)                44
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              46
+# 0x95, 0x06,                    //  Report Count (6)                   49
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               51
+# 0xc0,                          // End Collection                      53
+# 
+R: 54 05 01 09 06 a1 01 05 08 19 01 29 03 15 00 25 01 75 01 95 03 91 02 95 05 91 01 05 07 19 e0 29 e7 95 08 81 02 75 08 95 01 81 01 19 00 29 dd 26 ff 00 95 06 81 00 c0
+N: SiGma Micro USB KeyBoard
+I: 3 1c4f 007c
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', 'DownArrow', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.000000 8 00 00 e8 51 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.129994 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', 'UpArrow', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.602033 8 00 00 e8 52 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000000.731990 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', 'LeftArrow', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000001.894473 8 00 00 e8 50 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000002.001964 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', 'RightArrow', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.230094 8 00 00 e8 4f 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000003.360088 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', 'ESCAPE', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000004.272048 8 00 00 e8 29 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000004.390469 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', 'ESCAPE', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000005.176023 8 00 00 e8 29 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000005.314079 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', 'DELETE (Backspace)', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000007.562121 8 00 00 e8 2a 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000007.634133 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 1 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000008.798150 8 01 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000008.908336 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 1 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000011.614205 8 08 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000011.730200 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['Keypad Num Lock and Clear', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000013.348231 8 00 00 53 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['0x70000', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000013.358254 8 00 00 00 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', 'F22', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000020.808441 8 00 00 e8 71 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000020.938440 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 1 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000025.102529 8 10 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000025.262558 8 00 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 1 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000033.492745 8 08 00 e8 00 00 00 00 00
+#  LeftControl: 0 | LeftShift: 0 | LeftAlt: 0 | Left GUI: 0 | RightControl: 0 | RightShift: 0 | RightAlt: 0 | Right GUI: 0 | # |Keyboard ['e8', '0x70000', '0x70000', '0x70000', '0x70000', '0x70000'] 
+E: 000033.604783 8 00 00 e8 00 00 00 00 00

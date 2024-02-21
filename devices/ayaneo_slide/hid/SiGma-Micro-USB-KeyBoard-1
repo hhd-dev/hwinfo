@@ -1,0 +1,17 @@
+# SiGma Micro USB KeyBoard
+# 0x06, 0x00, 0xff,              // Usage Page (Vendor Defined Page 1)  0
+# 0x09, 0x02,                    // Usage (Vendor Usage 2)              3
+# 0xa1, 0x00,                    // Collection (Physical)               5
+# 0x85, 0x41,                    //  Report ID (65)                     7
+# 0x19, 0x30,                    //  Usage Minimum (48)                 9
+# 0x29, 0x35,                    //  Usage Maximum (53)                 11
+# 0x35, 0x00,                    //  Physical Minimum (0)               13
+# 0x46, 0xff, 0x00,              //  Physical Maximum (255)             15
+# 0x75, 0x08,                    //  Report Size (8)                    18
+# 0x95, 0x07,                    //  Report Count (7)                   20
+# 0xb1, 0x02,                    //  Feature (Data,Var,Abs)             22
+# 0xc0,                          // End Collection                      24
+# 
+R: 25 06 00 ff 09 02 a1 00 85 41 19 30 29 35 35 00 46 ff 00 75 08 95 07 b1 02 c0
+N: SiGma Micro USB KeyBoard
+I: 3 1c4f 007c
