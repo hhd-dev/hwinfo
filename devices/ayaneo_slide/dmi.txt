@@ -1,0 +1,48 @@
+/sys/class/dmi/id/bios_date:
+12/04/2023
+/sys/class/dmi/id/bios_release:
+5.29
+/sys/class/dmi/id/bios_vendor:
+American Megatrends International, LLC.
+/sys/class/dmi/id/bios_version:
+E.AS01_A_V.D32.M3..006
+/sys/class/dmi/id/board_asset_tag:
+Default string
+/sys/class/dmi/id/board_name:
+AS01
+/sys/class/dmi/id/board_serial:
+Default string
+/sys/class/dmi/id/board_vendor:
+AYANEO
+/sys/class/dmi/id/board_version:
+Default string
+/sys/class/dmi/id/chassis_asset_tag:
+Default string
+/sys/class/dmi/id/chassis_serial:
+Default string
+/sys/class/dmi/id/chassis_type:
+3
+/sys/class/dmi/id/chassis_vendor:
+Default string
+/sys/class/dmi/id/chassis_version:
+Default string
+/sys/class/dmi/id/modalias:
+dmi:bvnAmericanMegatrendsInternational,LLC.:bvrE.AS01_A_V.D32.M3..006:bd12/04/2023:br5.29:svnAYANEO:pnSLIDE:pvrDefaultstring:rvnAYANEO:rnAS01:rvrDefaultstring:cvnDefaultstring:ct3:cvrDefaultstring:skuDefaultstring:
+/sys/class/dmi/id/power:
+/sys/class/dmi/id/product_family:
+AYANEO
+/sys/class/dmi/id/product_name:
+SLIDE
+/sys/class/dmi/id/product_serial:
+S010023B0WH0B1003110
+/sys/class/dmi/id/product_sku:
+Default string
+/sys/class/dmi/id/product_uuid:
+03000200-0400-0500-0006-000700080009
+/sys/class/dmi/id/product_version:
+Default string
+/sys/class/dmi/id/subsystem:
+/sys/class/dmi/id/sys_vendor:
+AYANEO
+/sys/class/dmi/id/uevent:
+MODALIAS=dmi:bvnAmericanMegatrendsInternational,LLC.:bvrE.AS01_A_V.D32.M3..006:bd12/04/2023:br5.29:svnAYANEO:pnSLIDE:pvrDefaultstring:rvnAYANEO:rnAS01:rvrDefaultstring:cvnDefaultstring:ct3:cvrDefaultstring:skuDefaultstring:
