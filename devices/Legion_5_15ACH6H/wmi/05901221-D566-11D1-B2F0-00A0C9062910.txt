@@ -1,0 +1,8 @@
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("WMI Function"), guid("{603e9613-ef25-4338-a3d0-c46177516db7}")]
+class WmiBrightnessNotify {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(1), Implemented, read, write, Description("Get/Set EC brightness level status")] void NotifyBrightnessLevel([in] uint32 inArg, [in] uint32 Level, [out] uint32 Result);
+  [WmiMethodId(2), Implemented, read, write, Description("Get/Set Display Brightness Source")] void NotifyBrightnessSource([in] uint32 inArg0, [in] uint32 inArg1, [out] uint32 Result);
+};
