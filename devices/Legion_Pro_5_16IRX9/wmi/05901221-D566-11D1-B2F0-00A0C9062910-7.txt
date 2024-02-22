@@ -1,0 +1,11 @@
+class Lfc_Common_Wmi_Base {
+};
+
+[WMI, Dynamic : ToInstance, Provider("WMIProv"), WmiExpense(1), Description("Lfc Bios WMI Setup Service"), GUID("{82A14BDD-B246-41AB-89E5-6CB41D06C2B3}"), Locale("MS\\0x409")]
+class Lfc_Bios_Setup_Wmi_Service : Lfc_Common_Wmi_Base {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [Implemented, WmiMethodId(1), Description("get setup variable")] void LfcWmiGetSetupVariable([in] string parameter, [out] string return);
+  [Implemented, WmiMethodId(2), Description("set setup variable")] void LfcWmiSetSetupVariable([in] string parameter, [out] string return);
+};

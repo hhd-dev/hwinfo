@@ -1,0 +1,456 @@
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of Game list in intelligent mode"), guid("{93A57CD3-BBC6-46AB-951D-31F17CC968A0}")]
+class LENOVO_INTELLIGENT_OP_LIST {
+  [key] string InstanceName;
+  boolean Active;
+  [WmiDataId(1), read, Description("process name")] string processname;
+  [WmiDataId(2), read, Description("sub mode")] string mode;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of CPU OC parameter list"), guid("{B7F3CA0A-ACDC-42D2-9217-77C6C628FBD2}")]
+class LENOVO_GAMEZONE_CPU_OC_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("OC tune id.")] uint32 Tuneid;
+  [WmiDataId(2), read, Description("Default value.")] uint32 DefaultValue;
+  [WmiDataId(3), read, Description("OC Value.")] uint32 OCValue;
+  [WmiDataId(4), read, Description("Min Value.")] uint32 MinValue;
+  [WmiDataId(5), read, Description("Max Value.")] uint32 MaxValue;
+  [WmiDataId(6), read, Description("Scale Value.")] uint32 ScaleValue;
+  [WmiDataId(7), read, Description("OC Order id.")] uint32 OCOrderid;
+  [WmiDataId(8), read, Description("NON-OC Order id.")] uint32 NOCOrderid;
+  [WmiDataId(9), read, Description("Delay time in ms.")] uint32 Interval;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of GPU OC parameter list"), guid("{887B54E2-DDDC-4B2C-8B88-68A26A8835D0}")]
+class LENOVO_GAMEZONE_GPU_OC_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("P-State ID.")] uint32 PStateID;
+  [WmiDataId(2), read, Description("CLOCK ID.")] uint32 ClockID;
+  [WmiDataId(3), read, Description("Default value.")] uint32 defaultvalue;
+  [WmiDataId(4), read, Description("OC Offset freqency.")] uint32 OCOffsetFreq;
+  [WmiDataId(5), read, Description("OC Min offset value.")] uint32 OCMinOffset;
+  [WmiDataId(6), read, Description("OC Max offset value.")] uint32 OCMaxOffset;
+  [WmiDataId(7), read, Description("OC Offset Scale.")] uint32 OCOffsetScale;
+  [WmiDataId(8), read, Description("OC Order id.")] uint32 OCOrderid;
+  [WmiDataId(9), read, Description("NON-OC Order id.")] uint32 NOCOrderid;
+  [WmiDataId(10), read, Description("Delay time in ms.")] uint32 Interval;
+  [WmiDataId(11), read, Description("Capability")] uint32 Capability;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO_GAMEZONE_DATA class"), guid("{887B54E3-DDDC-4B2C-8B88-68A26A8835D0}")]
+class LENOVO_GAMEZONE_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(1), Implemented, Description("Get IR temp")] void GetIRTemp([out, Description("IR temperature")] uint32 Data);
+  [WmiMethodId(2), Implemented, Description("Get ThermalTable ID")] void GetThermalTableID([out, Description("Get ThermalTable ID")] uint32 Data);
+  [WmiMethodId(3), Implemented, Description("Set ThermalTable ID")] void SetThermalTableID([in, Description("Set ThermalTable ID")] uint32 Data);
+  [WmiMethodId(4), Implemented, Description("Is SupportGpu OverClock")] void IsSupportGpuOC([out, Description("Is SupportGpu OverClock")] uint32 Data);
+  [WmiMethodId(5), Implemented, Description("Get GpuGpsState")] void GetGpuGpsState([out, Description("Get GpuGpsState")] uint32 Data);
+  [WmiMethodId(6), Implemented, Description("Set GpuGpsState")] void SetGpuGpsState([in, Description("Set GpuGpsState")] uint32 Data);
+  [WmiMethodId(7), Implemented, Description("Get Fan Count")] void GetFanCount([out, Description("Fan Count")] uint32 Data);
+  [WmiMethodId(8), Implemented, Description("Get Fan1 Speed")] void GetFan1Speed([out, Description("Fan1 Speed")] uint32 Data);
+  [WmiMethodId(9), Implemented, Description("Get Fan2 Speed")] void GetFan2Speed([out, Description("Fan2 Speed")] uint32 Data);
+  [WmiMethodId(10), Implemented, Description("Get Fan Max Speed")] void GetFanMaxSpeed([out, Description("Fan Max Speed")] uint32 Data);
+  [WmiMethodId(11), Implemented, Description("Get AslCode Version")] void GetVersion([out, Description("AslCode version")] uint32 Data);
+  [WmiMethodId(12), Implemented, Description("Fan cooling capabilty")] void IsSupportFanCooling([out, Description("Fan cooling capablity")] uint32 Data);
+  [WmiMethodId(13), Implemented, Description("Set Fan cooling on/off")] void SetFanCooling([in, Description("Set Fan cooling on/off")] uint32 Data);
+  [WmiMethodId(14), Implemented, Description("cpu oc capability")] void IsSupportCpuOC([out, Description("cpu oc capability")] uint32 Data);
+  [WmiMethodId(15), Implemented, Description("bios has overclock capability")] void IsBIOSSupportOC([out, Description("bios has overclock capability")] uint32 Data);
+  [WmiMethodId(16), Implemented, Description("enble or disable overclock in bios")] void SetBIOSOC([in, Description("enble or disable overclock in bios")] uint32 Data);
+  [WmiMethodId(17), Implemented, Description("Get temperature change trigger temp value")] void GetTriggerTemperatureValue([out, Description("Get temperature change trigger temp value")] uint32 Data);
+  [WmiMethodId(18), Implemented, Description("Get CPU temperature")] void GetCPUTemp([out, Description("Get CPU temperature")] uint32 Data);
+  [WmiMethodId(19), Implemented, Description("Get GPU temperature")] void GetGPUTemp([out, Description("Get GPU temperature")] uint32 Data);
+  [WmiMethodId(20), Implemented, Description("Get Fan cooling on/off status")] void GetFanCoolingStatus([out, Description("Get Fan cooling on/off status")] uint32 Data);
+  [WmiMethodId(21), Implemented, Description("EC support disable windows key capability")] void IsSupportDisableWinKey([out, Description("EC support disable windows key capability")] uint32 Data);
+  [WmiMethodId(22), Implemented, Description("Set windows key disable/enable")] void SetWinKeyStatus([in, Description("Set windows key disable/enable")] uint32 Data);
+  [WmiMethodId(23), Implemented, Description("Get windows key disable/enable status")] void GetWinKeyStatus([out, Description("Get windows key disable/enable status")] uint32 Data);
+  [WmiMethodId(24), Implemented, Description("EC support disable touchpad capability")] void IsSupportDisableTP([out, Description("EC support disable touchpad capability")] uint32 Data);
+  [WmiMethodId(25), Implemented, Description("Set touchpad disable/enable")] void SetTPStatus([in, Description("Set touchpad disable/enable")] uint32 Data);
+  [WmiMethodId(26), Implemented, Description("Get touchpad disable/enable status")] void GetTPStatus([out, Description("Get touchpad disable/enable status")] uint32 Data);
+  [WmiMethodId(27), Implemented, Description("Get GPU normal mode max TDP(W)")] void GetGPUPow([out, Description("Get GPU normal mode max TDP(W)")] uint32 Data);
+  [WmiMethodId(28), Implemented, Description("Get GPU OC mode max TDP(W)")] void GetGPUOCPow([out, Description("Get GPU OC mode max TDP(W)")] uint32 Data);
+  [WmiMethodId(29), Implemented, Description("Get GPU OC type")] void GetGPUOCType([out, Description("Get GPU OC type")] uint32 Data);
+  [WmiMethodId(30), Implemented, Description("Get Keyboard feature list")] void GetKeyboardfeaturelist([out, Description("Get Keyboard feature list")] uint32 Data);
+  [WmiMethodId(31), Implemented, Description("Get Memory OC Information")] void GetMemoryOCInfo([out, Description("Get Memory OC Information")] uint32 Data);
+  [WmiMethodId(32), Implemented, Description("Water Cooling feature capability")] void IsSupportWaterCooling([out, Description("Water Cooling feature capability")] uint32 Data);
+  [WmiMethodId(33), Implemented, Description("Set Water Cooling status")] void SetWaterCoolingStatus([in, Description("Set Water Cooling status")] uint32 Data);
+  [WmiMethodId(34), Implemented, Description("Get Water Cooling status")] void GetWaterCoolingStatus([out, Description("Get Water Cooling status")] uint32 Data);
+  [WmiMethodId(35), Implemented, Description("Lighting feature capability")] void IsSupportLightingFeature([out, Description("Lighting feature capability")] uint32 Data);
+  [WmiMethodId(36), Implemented, Description("Set keyboard light off or on to max")] void SetKeyboardLight([in, Description("keyboard light off or on switch")] uint32 Data);
+  [WmiMethodId(37), Implemented, Description("Get keyboard light on/off status")] void GetKeyboardLight([out, Description("Get keyboard light on/off status")] uint32 Data);
+  [WmiMethodId(38), Implemented, Description("Get Macrokey scan code")] void GetMacrokeyScancode([in, Description("Macrokey index")] uint32 idx, [out, Description("Scan code")] uint32 scancode);
+  [WmiMethodId(39), Implemented, Description("Get Macrokey count")] void GetMacrokeyCount([out, Description("Macrokey count")] uint32 Data);
+  [WmiMethodId(40), Implemented, Description("Support G-Sync feature")] void IsSupportGSync([out, Description("Support G-Sync feature")] uint32 Data);
+  [WmiMethodId(41), Implemented, Description("Get G-Sync Statust")] void GetGSyncStatus([out, Description("Get G-Sync Statust")] uint32 Data);
+  [WmiMethodId(42), Implemented, Description("Set G-Sync Statust")] void SetGSyncStatus([in, Description("Set G-Sync Statust")] uint32 Data);
+  [WmiMethodId(43), Implemented, Description("Support Smart Fan feature")] void IsSupportSmartFan([out, Description("Support Smart Fan feature")] uint32 Data);
+  [WmiMethodId(44), Implemented, Description("Set Smart Fan Mode")] void SetSmartFanMode([in, Description("Set Smart Fan Mode")] uint32 Data);
+  [WmiMethodId(45), Implemented, Description("Get Smart Fan Mode")] void GetSmartFanMode([out, Description("Get Smart Fan Mode")] uint32 Data);
+  [WmiMethodId(46), Implemented, Description("Get Smart Fan Setting Mode")] void GetSmartFanSetting([out, Description("Get Smart Setting Mode")] uint32 Data);
+  [WmiMethodId(47), Implemented, Description("Get Power Charge Mode")] void GetPowerChargeMode([out, Description("Get Power Charge Mode")] uint32 Data);
+  [WmiMethodId(48), Implemented, Description("Get Gaming Product Info")] void GetProductInfo([out, Description("Get Gaming Product Info")] uint32 Data);
+  [WmiMethodId(49), Implemented, Description("Over Drive feature capability")] void IsSupportOD([out, Description("Over Drive feature capability")] uint32 Data);
+  [WmiMethodId(50), Implemented, Description("Get Over Drive status")] void GetODStatus([out, Description("Get Over Drive status")] uint32 Data);
+  [WmiMethodId(51), Implemented, Description("Set Over Drive status")] void SetODStatus([in, Description("Set Over Drive status")] uint32 Data);
+  [WmiMethodId(52), Implemented, Description("Set Light Control Owner")] void SetLightControlOwner([in, Description("Set Light Control Owner")] uint32 Data);
+  [WmiMethodId(53), Implemented, Description("Set DDS Control Owner")] void SetDDSControlOwner([in, Description("Set DDS Control Owner")] uint32 Data);
+  [WmiMethodId(54), Implemented, Description("Get the flag of restore OC value")] void IsRestoreOCValue([in, Description("Clean this flag")] uint32 idx, [out, Description("Resotre oc value flag")] uint32 Data);
+  [WmiMethodId(55), Implemented, Description("Get Real Thremal Mode")] void GetThermalMode([out, Description("Real Thremal Mode")] uint32 Data);
+  [WmiMethodId(56), Implemented, Description("Get the OC switch status in BIOS")] void GetBIOSOCMode([out, Description("OC Mode")] uint32 Data);
+  [WmiMethodId(57), Implemented, Description("Set the current mode in Intelligent Mode")] void SetIntelligentSubMode([in, Description("mode")] uint32 Data);
+  [WmiMethodId(58), Implemented, Description("Get the current mode in Intelligent Mode")] void GetIntelligentSubMode([out, Description("mode")] uint32 Data);
+  [WmiMethodId(59), Implemented, Description("Get hardware info support version")] void GetHardwareInfoSupportVersion([out, Description("version")] uint32 Data);
+  [WmiMethodId(60), Implemented, Description("Get Cpu core 0 max frequency")] void GetCpuFrequency([out, Description("frequency")] uint32 Data);
+  [WmiMethodId(61), Implemented, Description("Get Total count of Learning Profile")] void GetLearningProfileCount([out, Description("profile count")] uint32 Data);
+  [WmiMethodId(62), Implemented, Description("Check the Adapter type fit for OC")] void IsACFitForOC([out, Description("AC check result")] uint32 Data);
+  [WmiMethodId(63), Implemented, Description("Is support IGPU mode")] void IsSupportIGPUMode([out, Description("IGPU modes")] uint32 Data);
+  [WmiMethodId(64), Implemented, Description("Get IGPU Mode Status")] void GetIGPUModeStatus([out, Description("IGPU Mode Status")] uint32 Data);
+  [WmiMethodId(65), Implemented, Description("Set IGPU Mode")] void SetIGPUModeStatus([in, Description("IGPU Mode")] uint32 mode, [out, Description("return code")] uint32 Data);
+  [WmiMethodId(66), Implemented, Description("Notify DGPU Status")] void NotifyDGPUStatus([in, Description("DGPU status")] uint32 status, [out, Description("return code")] uint32 Data);
+  [WmiMethodId(67), Implemented, Description("Is changed Y log")] void IsChangedYLog([out, Description("Is changed Y Log")] uint32 Data);
+  [WmiMethodId(68), Implemented, Description("Get DGPU Hardwawre ID")] void GetDGPUHWId([out, Description("Get DGPU Hardware ID")] string Data);
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Temperature change event "), guid("{BFD42481-AEE3-4501-A107-AFB68425C5F8}")]
+class LENOVO_GAMEZONE_TEMP_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Temperature change eventid")] uint32 TempChangeEventId;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Gpu Temperature change event "), guid("{BFD42481-AEE3-4502-A107-AFB68425C5F8}")]
+class LENOVO_GAMEZONE_GPU_TEMP_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Gpu Temperature change eventid")] uint32 GpuTempChangeEventId;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("OC button pressed event"), guid("{D062906B-12D4-4510-999D-4831EE80E985}")]
+class LENOVO_GAMEZONE_OC_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("OC button event")] uint32 OCButtonValue;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Fancooling finish event"), guid("{BC72A435-E8C1-4275-B3E2-D8B8074ABA59}")]
+class LENOVO_GAMEZONE_FAN_COOLING_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Fancooling clean finish event")] uint32 EventId;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Key lock status change event"), guid("{10AFC6D9-EA8B-4590-A2E7-1CD3C84BB4B1}")]
+class LENOVO_GAMEZONE_KEYLOCK_STATUS_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Key lock status change event")] uint32 KeyLockState;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Smart Fan mode change event"), guid("{D320289E-8FEA-41E0-86F9-611D83151B5F}")]
+class LENOVO_GAMEZONE_SMART_FAN_MODE_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Smart Fan Mode change event")] uint32 mode;
+  [WmiDataId(2), read, Description("version of FN+Q")] uint32 version;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Smart Fan setting mode change event"), guid("{D320289E-8FEA-41E1-86F9-611D83151B5F}")]
+class LENOVO_GAMEZONE_SMART_FAN_SETTING_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Smart Fan Setting mode change event")] uint32 mode;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("POWER CHARGE MODE Change EVENT"), guid("{D320289E-8FEA-41E0-86F9-711D83151B5F}")]
+class LENOVO_GAMEZONE_POWER_CHARGE_MODE_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("POWER CHARGE MODE Change EVENT")] uint32 mode;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Fn+Space click event, light profile change event"), guid("{D320289E-8FEA-41E0-86F9-811D83151B5F}")]
+class LENOVO_GAMEZONE_LIGHT_PROFILE_CHANGE_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Light profile change event")] uint32 EventId;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Thermal Mode Real Mode change event"), guid("{D320289E-8FEA-41E0-86F9-911D83151B5F}")]
+class LENOVO_GAMEZONE_THERMAL_MODE_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Thermal Mode Real Mode")] uint32 mode;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO_PANEL_METHOD class"), guid("{e5edffbf-e822-4bbe-8650-c07b8bae4c54}")]
+class LENOVO_PANEL_METHOD {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(1), Implemented, Description("Get Panel Support Functions")] void Panel_Get_Support_Status([out] uint32 Support_Status);
+  [WmiMethodId(2), Implemented, Description("Get Panel Functions Status")] void Panel_Get_Status([out] uint32 Status);
+  [WmiMethodId(3), Implemented, Description("Set Panel Functions Status")] void Panel_Set_Status([in] uint32 Status);
+  [WmiMethodId(4), Implemented, Description("Get Panel Low Latency Mode")] void Panel_Get_Low_Latency_Mode([out] uint32 mode);
+  [WmiMethodId(5), Implemented, Description("Set Panel Low Latency Mode")] void Panel_Set_Low_Latency_Mode([in] uint32 mode);
+  [WmiMethodId(6), Implemented, Description("Get Panel PIP Info")] void Panel_Get_PIP_Info([out] uint32 PosX, [out] uint32 PosY, [out] uint32 SizeX, [out] uint32 SizeY);
+  [WmiMethodId(7), Implemented, Description("Set Panel PIP Info")] void Panel_Set_PIP_Info([in] uint32 PosX, [in] uint32 PosY, [in] uint32 SizeX, [in] uint32 SizeY);
+  [WmiMethodId(8), Implemented, Description("Get Panel Game Aid FPS Display")] void Panel_Get_Game_Aid_FPS_Display_Pos([out] uint32 PosX, [out] uint32 PosY);
+  [WmiMethodId(9), Implemented, Description("Set Panel Game Aid FPS Display")] void Panel_Set_Game_Aid_FPS_Display_Pos([in] uint32 PosX, [in] uint32 PosY);
+  [WmiMethodId(10), Implemented, Description("Set Panel Game Aid FPS Display")] void Panel_Get_Game_Aid_FPS([out] uint32 CurrentFPS, [out] uint32 AvgFPS, [out] uint32 MaxFPS, [out] uint32 MinFPS);
+  [WmiMethodId(11), Implemented, Description("Get Panel Game Aid Sight Mode")] void Panel_Get_Game_Aid_Sight_Mode([out] uint32 mode);
+  [WmiMethodId(12), Implemented, Description("Set Panel Game Aid Sight Mode")] void Panel_Set_Game_Aid_Sight_Mode([in] uint32 mode);
+  [WmiMethodId(13), Implemented, Description("Get Panel Game Aid Timer Info")] void Panel_Get_Game_Aid_Timer_Info([out] uint32 Start, [out] uint32 End, [out] uint32 Clear);
+  [WmiMethodId(14), Implemented, Description("Set Panel Game Aid Timer Info")] void Panel_Set_Game_Aid_Timer_Info([in] uint32 Start, [in] uint32 End, [in] uint32 Clear);
+  [WmiMethodId(15), Implemented, Description("Get Panel Game Aid Countdown Timer Info")] void Panel_Get_Game_Aid_Countdown_Info([out] uint32 time);
+  [WmiMethodId(16), Implemented, Description("Set Panel Game Aid Countdown Timer Info")] void Panel_Set_Game_Aid_Countdown_Info([in] uint32 time);
+  [WmiMethodId(17), Implemented, Description("Get Panel Display Mode")] void Panel_Get_Display_Mode([out] uint32 mode);
+  [WmiMethodId(18), Implemented, Description("Set Panel Display Mode")] void Panel_Set_Display_Mode([in] uint32 mode);
+  [WmiMethodId(19), Implemented, Description("Get Panel Gamut Switch")] void Panel_Get_Gamut_Switch([out] uint32 mode);
+  [WmiMethodId(20), Implemented, Description("Set Panel Gamut Switch")] void Panel_Set_Gamut_Switch([in] uint32 mode);
+  [WmiMethodId(21), Implemented, Description("Get Panel MPRT info")] void Panel_Get_MPRT([out] uint32 PosX, [out] uint32 PosY, [out] uint32 SizeX, [out] uint32 SizeY);
+  [WmiMethodId(22), Implemented, Description("Set Panel MPRT info")] void Panel_Set_MPRT([in] uint32 PosX, [in] uint32 PosY, [in] uint32 SizeX, [in] uint32 SizeY);
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of Fan Max Speed list"), guid("{c3c7aeb8-4c06-4d40-8f29-212a6ccd74aa}")]
+class LENOVO_FAN_MAX_SPEED_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Fan ID.")] uint8 Fan_Id;
+  [WmiDataId(2), read, Description("Fan Flag.")] uint8 Fan_Flag;
+  [WmiDataId(3), read, Description("Fan Default Max Speed.")] uint16 Fan_DefaultMaxSpeed;
+  [WmiDataId(4), read, Description("Fan Current Max Speed.")] uint16 Fan_CurrentMaxSpeed;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO CAPABILITY DATA 00"), guid("{362a3afe-3d96-4665-8530-96dad5bb300e}")]
+class LENOVO_CAPABILITY_DATA_00 {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description(" IDs.")] uint32 IDs;
+  [WmiDataId(2), read, Description("Capability.")] uint32 Capability;
+  [WmiDataId(3), read, Description("Capability Default Value.")] uint32 DefaultValue;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO CAPABILITY DATA 01"), guid("{7a8f5407-cb67-4d6e-b547-39b3be018154}")]
+class LENOVO_CAPABILITY_DATA_01 {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description(" IDs.")] uint32 IDs;
+  [WmiDataId(2), read, Description("Capability.")] uint32 Capability;
+  [WmiDataId(3), read, Description("Default Value.")] uint32 DefaultValue;
+  [WmiDataId(4), read, Description("Step.")] uint32 Step;
+  [WmiDataId(5), read, Description("Minimum Value.")] uint32 MinValue;
+  [WmiDataId(6), read, Description("Maximum Value.")] uint32 MaxValue;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of Fan Table list"), guid("{87fb2a6d-d802-48e7-9208-4576c5f5c8d8}")]
+class LENOVO_FAN_TABLE_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Mode.")] uint16 Mode;
+  [WmiDataId(2), read, Description("Fan ID.")] uint16 Fan_Id;
+  [WmiDataId(3), read, Description("Fan Table Len.")] uint32 FanTable_Len;
+  [WmiDataId(4), read, Description("Fan Table Data."), WmiSizeIs("FanTable_Len")] uint16 FanTable_Data[];
+  [WmiDataId(5), read, Description("Sensor ID.")] uint32 Sensor_ID;
+  [WmiDataId(6), read, Description("Sensor Table Len.")] uint32 SensorTable_Len;
+  [WmiDataId(7), read, Description("Sensor Table Data."), WmiSizeIs("SensorTable_Len")] uint16 SensorTable_Data[];
+  [WmiDataId(8), read, Description("Start Upwards Adjust Number.")] uint8 StartOnlyUpwardAdjustNumber;
+  [WmiDataId(9), read, Description("End Upwards Adjust Number.")] uint8 EndOnlyUpwardAdjustNumber;
+  [WmiDataId(10), read, Description("Current Fan Max Speed.")] uint16 CurrentFanMaxSpeed;
+  [WmiDataId(11), read, Description("Start Downwards Adjust Number")] uint8 DesignMaxFanSpeedNumber;
+  [WmiDataId(12), read, Description("End Downwards Adjust Number")] uint8 Reserved;
+  [WmiDataId(13), read, Description("Current Fan Min Speed.")] uint16 CurrentFanMinSpeed;
+  [WmiDataId(14), read, Description("Fan Speed Step.")] uint16 FanSpeedStep;
+  [WmiDataId(15), read, Description("Max Sensor Temperature.")] uint16 MaxSensorTemperature;
+  [WmiDataId(16), read, Description("Min Sensor Temperature.")] uint16 MinSensorTemperature;
+  [WmiDataId(17), read, Description("Max Sensor Temperature.")] uint16 SensorTemperatureStep;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO_FAN_METHOD class"), guid("{92549549-4bde-4f06-ac04-ce8bf898dbaa}")]
+class LENOVO_FAN_METHOD {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(5), Implemented, Description("Get Fan Table ")] void Fan_Get_Table([in] uint8 FanID, [in] uint8 SensorID, [out] uint32 FanTableSize, [out, WmiSizeIs("FanTableSize")] uint32 FanTable[], [out] uint32 SensorTableSize, [out, WmiSizeIs("SensorTableSize")] uint32 SensorTable[]);
+  [WmiMethodId(6), Implemented, Description("Set Fan Table ")] void Fan_Set_Table([in, Max(64)] uint8 FanTable[]);
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of CPU OC parameter list"), guid("{4C90256D-44EA-D6A8-7650-63DF4FEB2CFF}")]
+class LENOVO_CPU_OVERCLOCKING_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("OC mode id.")] uint8 mode;
+  [WmiDataId(2), read, Description("OC Cpu type.")] uint8 CpuType;
+  [WmiDataId(3), read, Description("Reserved.")] uint16 Reserved;
+  [WmiDataId(4), read, Description("OC tune id.")] uint32 Tuneid;
+  [WmiDataId(5), read, Description("Default value.")] uint32 DefaultValue;
+  [WmiDataId(6), read, Description("OC Value.")] uint32 OCValue;
+  [WmiDataId(7), read, Description("Min Value.")] uint32 MinValue;
+  [WmiDataId(8), read, Description("Max Value.")] uint32 MaxValue;
+  [WmiDataId(9), read, Description("Scale Value.")] uint32 ScaleValue;
+  [WmiDataId(10), read, Description("OC Order id.")] uint32 OCOrderid;
+  [WmiDataId(11), read, Description("NON-OC Order id.")] uint32 NOCOrderid;
+  [WmiDataId(12), read, Description("Delay time in ms.")] uint32 Interval;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of discrete Data "), guid("{91433b17-b7b7-4640-bb40-34c67349fbec}")]
+class LENOVO_DISCRETE_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("IDs")] uint32 IDs;
+  [WmiDataId(2), read, Description("Discrete Data")] uint32 Value;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO_CPU_METHOD class"), guid("{14afd777-106f-4c9b-b334-d388dc7809be}")]
+class LENOVO_CPU_METHOD {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(14), Implemented, Description("Set CPU Overclock Data ")] void CPU_Set_OC_Data([in] uint8 mode, [in] uint32 TuneID, [in] uint32 value);
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of GPU OC parameter list"), guid("{8A8984E2-228F-685F-B496-DDA5F52CBE5B}")]
+class LENOVO_GPU_OVERCLOCKING_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("OC mode .")] uint8 mode;
+  [WmiDataId(2), read, Description("OC Gpu type.")] uint8 GpuType;
+  [WmiDataId(3), read, Description("P-State ID.")] uint32 PStateID;
+  [WmiDataId(4), read, Description("CLOCK ID.")] uint32 ClockID;
+  [WmiDataId(5), read, Description("Default value.")] uint32 defaultvalue;
+  [WmiDataId(6), read, Description("OC Offset freqency.")] uint32 OCOffsetFreq;
+  [WmiDataId(7), read, Description("OC Min offset value.")] uint32 OCMinOffset;
+  [WmiDataId(8), read, Description("OC Max offset value.")] uint32 OCMaxOffset;
+  [WmiDataId(9), read, Description("OC Offset Scale.")] uint32 OCOffsetScale;
+  [WmiDataId(10), read, Description("OC Order id.")] uint32 OCOrderid;
+  [WmiDataId(11), read, Description("NON-OC Order id.")] uint32 NOCOrderid;
+  [WmiDataId(12), read, Description("Delay time in ms.")] uint32 Interval;
+  [WmiDataId(13), read, Description("Capability")] uint32 Capability;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO_GPU_METHOD class"), guid("{da7547f1-824d-405f-be79-d9903e29ced7}")]
+class LENOVO_GPU_METHOD {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of Memory OC list"), guid("{37d0014b-370c-47ef-bf03-588e8acb2fcd}")]
+class LENOVO_MEMORY_OC_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Memory OC Ability.")] uint8 MEM_OC_Ability;
+  [WmiDataId(2), read, Description("Memory OC Max Frequency.")] uint16 MEM_OC_Max_Frequency;
+  [WmiDataId(3), read, Description("Memory OC Min Frequency.")] uint16 MEM_OC_Min_Frequency;
+  [WmiDataId(4), read, Description("Memory OC Default Frequency.")] uint16 MEM_OC_Default_Frequency;
+  [WmiDataId(5), read, Description("Memory OC Frequency Scaler.")] uint16 MEM_OC_Frequency_Scaler;
+  [WmiDataId(6), read, Description("Memory OC Support XMP Numbers.")] uint8 MEM_OC_XMP_Numbers;
+  [WmiDataId(7), read, Description("Memory OC Customize Data Frequency.")] uint16 MEM_OC_Customize_Frequency;
+  [WmiDataId(8), read, Description("Memory OC Customize Data tCLK.")] uint16 MEM_OC_Customize_tCLK;
+  [WmiDataId(9), read, Description("Memory OC Customize Data tCL.")] uint16 MEM_OC_Customize_tCL;
+  [WmiDataId(10), read, Description("Memory OC Customize Data tRCD_tRP.")] uint16 MEM_OC_Customize_tRCD_tRP;
+  [WmiDataId(11), read, Description("Memory OC Customize Data tRAS.")] uint16 MEM_OC_Customize_tRAS;
+  [WmiDataId(12), read, Description("Memory OC Customize Data tCWL.")] uint16 MEM_OC_Customize_tCWL;
+  [WmiDataId(13), read, Description("Memory OC Customize Data tFAW.")] uint16 MEM_OC_Customize_tFAW;
+  [WmiDataId(14), read, Description("Memory OC Customize Data tREFI.")] uint16 MEM_OC_Customize_tREFI;
+  [WmiDataId(15), read, Description("Memory OC Customize Data tRFC.")] uint16 MEM_OC_Customize_tRFC;
+  [WmiDataId(16), read, Description("Memory OC Customize Data tRRD.")] uint16 MEM_OC_Customize_tRRD;
+  [WmiDataId(17), read, Description("Memory OC Customize Data tRTP.")] uint16 MEM_OC_Customize_tRTP;
+  [WmiDataId(18), read, Description("Memory OC Customize Data tWTR.")] uint16 MEM_OC_Customize_tWTR;
+  [WmiDataId(19), read, Description("Memory OC Customize Data NMode.")] uint16 MEM_OC_Customize_NMode;
+  [WmiDataId(20), read, Description("Memory OC Customize Data VDD.")] uint16 MEM_OC_Customize_VDD;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of default value in different mode list"), guid("{6260ecad-0d7d-4201-a8bd-2552e812501f}")]
+class LENOVO_INTERNAL_PANEL_REFRESH_RATE_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Mode .")] uint16 Mode;
+  [WmiDataId(2), read, Description("Default Refresh Rate .")] uint16 DefaultRefreshRate;
+  [WmiDataId(3), read, Description("Minimum Refresh Rate .")] uint16 MinimumRefreshRate;
+  [WmiDataId(4), read, Description("Maximum Refresh Rate .")] uint16 MaximumRefreshRate;
+  [WmiDataId(5), read, Description("Internal Panel HWID .")] uint32 InternalPanelHwID;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO_MEMORY_METHOD class"), guid("{03607fce-0d83-4612-8a6e-4a4ef0415ea9}")]
+class LENOVO_MEMORY_METHOD {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(1), Implemented, Description("Get Memory OC Status ")] void MEM_Get_OC_Status([in] uint8 mode, [out] uint8 Status);
+  [WmiMethodId(2), Implemented, Description("Set Memory OC Status ")] void MEM_Set_OC_Status([in] uint8 mode, [in] uint8 Status);
+  [WmiMethodId(3), Implemented, Description("Set Memory OC Data ")] void MEM_Set_OC_Data([in, Max(40)] uint8 MEM_OCData[]);
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO_OTHER_METHOD class"), guid("{dc2a8805-3a8c-41ba-a6f7-092e0089cd3b}")]
+class LENOVO_OTHER_METHOD {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(17), Implemented, Description("Get Feature Value ")] void GetFeatureValue([in] uint32 IDs, [out] uint32 value);
+  [WmiMethodId(18), Implemented, Description("Set Feature Value ")] void SetFeatureValue([in] uint32 IDs, [in] uint32 value);
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("AC_PD Status Change Event "), guid("{be1346e5-3a32-4a31-b8b0-2cd195e1f572}")]
+class LENOVO_AC_PD_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("AC_PD Status")] uint16 AC_PD_Status;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Bluetooth Keyboard Status Change Event "), guid("{806bd2a2-177b-481d-bfb5-3ba0bb4a2285}")]
+class LENOVO_BTKBD_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("AC_PD Status")] uint32 Status;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Definition of Lighting List"), guid("{4dd5bd84-15a9-47e2-ad65-cc61a5c62fd0}")]
+class LENOVO_LIGHTING_DATA {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Lighting ID.")] uint8 Lighting_Id;
+  [WmiDataId(2), read, Description("Control interface .")] uint8 Control_Interface;
+  [WmiDataId(3), read, Description("Lighting Type.")] uint8 Lighting_Type;
+  [WmiDataId(4), read, Description("State Type Number.")] uint8 State_Type_Num;
+  [WmiDataId(5), read, Description("Default State.")] uint8 Default_State;
+  [WmiDataId(6), read, Description("Brightness Level.")] uint8 Brightness_Level;
+  [WmiDataId(7), read, Description("Default Brightness Level.")] uint8 Default_Brightness_Level;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO_LIGHTING_METHOD class"), guid("{8c5b9127-ecd4-4657-980f-851019f99ca5}")]
+class LENOVO_LIGHTING_METHOD {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(1), Implemented, Description("Get Current Lighting Status ")] void Get_Lighting_Current_Status([in] uint8 Lighting_ID, [out] uint8 Current_State_Type, [out] uint8 Current_Brightness_Level);
+  [WmiMethodId(2), Implemented, Description("Set Current Lighting Status ")] void Set_Lighting_Current_Status([in] uint8 Lighting_ID, [in] uint8 Current_State_Type, [in] uint8 Current_Brightness_Level);
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Lighting event "), guid("{1e3391a1-2c89-464d-95d9-3028b72e7a33}")]
+class LENOVO_LIGHTING_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Key eventid")] uint8 Key_ID;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Lenovo DISPATCHER AI Mode Event"), guid("{0F7B30EC-AC90-4B34-B62F-87F85115505D}")]
+class LENOVO_DISPATCHER_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Lenovo AI Mode Event")] uint32 PowerLevel;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Lenovo AI Chip Enable Event"), guid("{67a6c6cc-380a-4d25-aa35-a1397d1fbdfb}")]
+class LENOVO_AI_CHIP_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Lenovo AI Mode Event")] uint32 Status;
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Lenovo Scenario Type Event"), guid("{1cc13f2c-ea2c-4197-95a3-060e2285a645}")]
+class LENOVO_AI_SCENARIO_TYPE_EVENT : WMIEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), read, Description("Lenovo Scenario Type")] uint32 Type;
+};
