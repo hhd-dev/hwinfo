@@ -1,0 +1,194 @@
+I: Bus=0019 Vendor=0000 Product=0005 Version=0000
+N: Name="Lid Switch"
+P: Phys=PNP0C0D/button/input0
+S: Sysfs=/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:08/PNP0C09:01/PNP0C0D:01/input/input0
+U: Uniq=
+H: Handlers=event0 
+B: PROP=0
+B: EV=21
+B: SW=1
+
+I: Bus=0019 Vendor=0000 Product=0003 Version=0000
+N: Name="Sleep Button"
+P: Phys=PNP0C0E/button/input0
+S: Sysfs=/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input1
+U: Uniq=
+H: Handlers=kbd event1 
+B: PROP=0
+B: EV=3
+B: KEY=4000 0 0
+
+I: Bus=0019 Vendor=0000 Product=0001 Version=0000
+N: Name="Power Button"
+P: Phys=PNP0C0C/button/input0
+S: Sysfs=/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input2
+U: Uniq=
+H: Handlers=kbd event2 
+B: PROP=0
+B: EV=3
+B: KEY=10000000000000 0
+
+I: Bus=0019 Vendor=0000 Product=0001 Version=0000
+N: Name="Power Button"
+P: Phys=LNXPWRBN/button/input0
+S: Sysfs=/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3
+U: Uniq=
+H: Handlers=kbd event3 
+B: PROP=0
+B: EV=3
+B: KEY=10000000000000 0
+
+I: Bus=0011 Vendor=0001 Product=0001 Version=ab83
+N: Name="AT Translated Set 2 keyboard"
+P: Phys=isa0060/serio0/input0
+S: Sysfs=/devices/platform/i8042/serio0/input/input4
+U: Uniq=
+H: Handlers=sysrq kbd event4 leds 
+B: PROP=0
+B: EV=120013
+B: KEY=402000000 3803078f800d001 feffffdfffefffff fffffffffffffffe
+B: MSC=10
+B: LED=7
+
+I: Bus=0019 Vendor=0000 Product=0006 Version=0000
+N: Name="Video Bus"
+P: Phys=LNXVIDEO/video/input0
+S: Sysfs=/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input7
+U: Uniq=
+H: Handlers=kbd event5 
+B: PROP=0
+B: EV=3
+B: KEY=3e000b00000000 0 0 0
+
+I: Bus=001e Vendor=0000 Product=0000 Version=0001
+N: Name="DP-1"
+P: Phys=DP-1/input0
+S: Sysfs=/devices/pci0000:00/0000:00:02.0/rc/rc0/input8
+U: Uniq=
+H: Handlers=kbd event6 
+B: PROP=20
+B: EV=100017
+B: KEY=ffffc000000000 3ff 0 400000320fc200 40830c900000000 0 210300 49d2c040ec00 1e378000000000 8010000010000000
+B: REL=3
+B: MSC=10
+
+I: Bus=0003 Vendor=046d Product=400a Version=0111
+N: Name="Logitech M325"
+P: Phys=usb-0000:00:14.0-1.1/input2:1
+S: Sysfs=/devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.2/0003:046D:C52B.0003/0003:046D:400A.0004/input/input18
+U: Uniq=4b-42-fa-45
+H: Handlers=mouse0 event7 
+B: PROP=0
+B: EV=17
+B: KEY=ffff0000 0 0 0 0
+B: REL=1943
+B: MSC=10
+
+I: Bus=0003 Vendor=046d Product=404b Version=0111
+N: Name="Logitech K400"
+P: Phys=usb-0000:00:14.0-1.1/input2:2
+S: Sysfs=/devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1.1/3-1.1:1.2/0003:046D:C52B.0003/0003:046D:404B.0005/input/input19
+U: Uniq=aa-b2-6a-b2
+H: Handlers=sysrq kbd mouse1 event8 leds 
+B: PROP=0
+B: EV=12001f
+B: KEY=3f00033fff 0 0 483ffff17aff32d bfd4444600000000 ffff0001 130ff38b17d007 ffff7bfad941dfff ffbeffdfffefffff fffffffffffffffe
+B: REL=1943
+B: ABS=100000000
+B: MSC=10
+B: LED=1f
+
+I: Bus=0019 Vendor=0000 Product=0000 Version=0000
+N: Name="Intel HID events"
+P: Phys=
+S: Sysfs=/devices/platform/INTC1070:00/input/input20
+U: Uniq=
+H: Handlers=rfkill kbd event9 
+B: PROP=0
+B: EV=13
+B: KEY=81000300000000 5000004000 1e294000000020 0
+B: MSC=10
+
+I: Bus=0018 Vendor=0416 Product=038f Version=1062
+N: Name="Goodix Capacitive TouchScreen"
+P: Phys=input/ts
+S: Sysfs=/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-2/i2c-GDIX1002:00/input/input21
+U: Uniq=
+H: Handlers=kbd mouse2 event10 
+B: PROP=2
+B: EV=b
+B: KEY=400 0 0 0 2000000000000001 f800000000000000
+B: ABS=265800000000003
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH Mic"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input25
+U: Uniq=
+H: Handlers=event11 
+B: PROP=0
+B: EV=21
+B: SW=10
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH Headphone"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input26
+U: Uniq=
+H: Handlers=event12 
+B: PROP=0
+B: EV=21
+B: SW=4
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH HDMI/DP,pcm=3"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input27
+U: Uniq=
+H: Handlers=event13 
+B: PROP=0
+B: EV=21
+B: SW=140
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH HDMI/DP,pcm=7"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input28
+U: Uniq=
+H: Handlers=event14 
+B: PROP=0
+B: EV=21
+B: SW=140
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH HDMI/DP,pcm=8"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input29
+U: Uniq=
+H: Handlers=event15 
+B: PROP=0
+B: EV=21
+B: SW=140
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH HDMI/DP,pcm=9"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input30
+U: Uniq=
+H: Handlers=event16 
+B: PROP=0
+B: EV=21
+B: SW=140
+
+I: Bus=0003 Vendor=045e Product=028e Version=0110
+N: Name="Microsoft X-Box 360 pad"
+P: Phys=usb-0000:00:14.0-6/input0
+S: Sysfs=/devices/pci0000:00/0000:00:14.0/usb3/3-6/3-6:1.0/input/input2172
+U: Uniq=
+H: Handlers=event17 js0 
+B: PROP=0
+B: EV=20000b
+B: KEY=7cdb000000000000 0 0 0 0
+B: ABS=3003f
+B: FF=107030000 0
+

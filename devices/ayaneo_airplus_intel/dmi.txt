@@ -1,0 +1,48 @@
+/sys/class/dmi/id/bios_date:
+05/27/2023
+/sys/class/dmi/id/bios_release:
+5.27
+/sys/class/dmi/id/bios_vendor:
+American Megatrends International, LLC.
+/sys/class/dmi/id/bios_version:
+E.AB05_I.D16.E1.001.rom
+/sys/class/dmi/id/board_asset_tag:
+Default string
+/sys/class/dmi/id/board_name:
+AB05-Intel
+/sys/class/dmi/id/board_serial:
+Default string
+/sys/class/dmi/id/board_vendor:
+AYANEO
+/sys/class/dmi/id/board_version:
+Default string
+/sys/class/dmi/id/chassis_asset_tag:
+Default string
+/sys/class/dmi/id/chassis_serial:
+Default string
+/sys/class/dmi/id/chassis_type:
+3
+/sys/class/dmi/id/chassis_vendor:
+Default string
+/sys/class/dmi/id/chassis_version:
+Default string
+/sys/class/dmi/id/modalias:
+dmi:bvnAmericanMegatrendsInternational,LLC.:bvrE.AB05_I.D16.E1.001.rom:bd05/27/2023:br5.27:svnAYANEO:pnAIRPlus:pvrDefaultstring:rvnAYANEO:rnAB05-Intel:rvrDefaultstring:cvnDefaultstring:ct3:cvrDefaultstring:skuDefaultstring:
+/sys/class/dmi/id/power:
+/sys/class/dmi/id/product_family:
+AYANEO
+/sys/class/dmi/id/product_name:
+AIR Plus
+/sys/class/dmi/id/product_serial:
+B05I12305BA010016334
+/sys/class/dmi/id/product_sku:
+Default string
+/sys/class/dmi/id/product_uuid:
+03000200-0400-0500-0006-000700080009
+/sys/class/dmi/id/product_version:
+Default string
+/sys/class/dmi/id/subsystem:
+/sys/class/dmi/id/sys_vendor:
+AYANEO
+/sys/class/dmi/id/uevent:
+MODALIAS=dmi:bvnAmericanMegatrendsInternational,LLC.:bvrE.AB05_I.D16.E1.001.rom:bd05/27/2023:br5.27:svnAYANEO:pnAIRPlus:pvrDefaultstring:rvnAYANEO:rnAB05-Intel:rvrDefaultstring:cvnDefaultstring:ct3:cvrDefaultstring:skuDefaultstring:
