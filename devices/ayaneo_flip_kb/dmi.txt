@@ -1,0 +1,50 @@
+/sys/class/dmi/id/bios_date:
+05/06/2024
+/sys/class/dmi/id/bios_release:
+5.29
+/sys/class/dmi/id/bios_vendor:
+American Megatrends International, LLC.
+/sys/class/dmi/id/bios_version:
+2.13_S20_DS
+/sys/class/dmi/id/board_asset_tag:
+Default string
+/sys/class/dmi/id/board_name:
+FLIP DS
+/sys/class/dmi/id/board_serial:
+D4MS1200610057
+/sys/class/dmi/id/board_vendor:
+AYANEO
+/sys/class/dmi/id/board_version:
+Default string
+/sys/class/dmi/id/chassis_asset_tag:
+Default string
+/sys/class/dmi/id/chassis_serial:
+Default string
+/sys/class/dmi/id/chassis_type:
+30
+/sys/class/dmi/id/chassis_vendor:
+AYANEO
+/sys/class/dmi/id/chassis_version:
+Default string
+/sys/class/dmi/id/ec_firmware_release:
+0.29
+/sys/class/dmi/id/modalias:
+dmi:bvnAmericanMegatrendsInternational,LLC.:bvr2.13_S20_DS:bd05/06/2024:br5.29:efr0.29:svnAYANEO:pnFLIPDS:pvrDefaultstring:rvnAYANEO:rnFLIPDS:rvrDefaultstring:cvnAYANEO:ct30:cvrDefaultstring:sku:
+/sys/class/dmi/id/power:
+/sys/class/dmi/id/product_family:
+AYANEO
+/sys/class/dmi/id/product_name:
+FLIP DS
+/sys/class/dmi/id/product_serial:
+F01D02440WS0B1021922
+/sys/class/dmi/id/product_sku:
+
+/sys/class/dmi/id/product_uuid:
+03000200-0400-0500-0006-000700080009
+/sys/class/dmi/id/product_version:
+Default string
+/sys/class/dmi/id/subsystem:
+/sys/class/dmi/id/sys_vendor:
+AYANEO
+/sys/class/dmi/id/uevent:
+MODALIAS=dmi:bvnAmericanMegatrendsInternational,LLC.:bvr2.13_S20_DS:bd05/06/2024:br5.29:efr0.29:svnAYANEO:pnFLIPDS:pvrDefaultstring:rvnAYANEO:rnFLIPDS:rvrDefaultstring:cvnAYANEO:ct30:cvrDefaultstring:sku:
