@@ -1045,7 +1045,8 @@ static int dualsense_get_calibration_data(struct dualsense *ds)
 	ds->accel_calib_data[2].abs_code = ABS_Z;
 	ds->accel_calib_data[2].bias = acc_z_plus - range_2g / 2;
 	ds->accel_calib_data[2].sens_numer = 2*DS_ACC_RES_PER_G;
-	ds->accel_calib_data[2].sens_denom = range_2g;
+	ds->accel_calib_data[2].sens_denom = 
+	;
 
 	/*
 	 * Sanity check accelerometer calibration data. This is needed to prevent crashes

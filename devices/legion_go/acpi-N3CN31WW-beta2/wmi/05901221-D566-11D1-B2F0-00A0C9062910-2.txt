@@ -1,0 +1,19 @@
+class AcpiSensorEvent : WMIEvent {
+};
+
+[WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("Class used to operate methods on a package"), guid("{B2526ED4-CB45-49FA-9230-8D2FE8AFB8EC}")]
+class QueryModeChange {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(1), Implemented, read, write, Description("Return the version")] void GetVersion([out, Description("Version Data")] uint32 Version);
+  [WmiMethodId(2), Implemented, read, write, Description("Return the Availability")] void GetAvailable([out, Description("Sensor Available")] uint32 Availability);
+  [WmiMethodId(3), Implemented, read, write, Description("Return Sensor mode")] void GetSensorMode([out, Description("WMI requires a parameter")] uint32 SensorMode);
+};
+
+[WMI, Dynamic, Provider("WMIProv"), Locale("MS\\0x409"), Description("Event generated when mode changed"), guid("{1E2A0DA0-2B9E-424F-9C87-B1DAC3F4E9DA}")]
+class ModeChangeEvent : AcpiSensorEvent {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+  [WmiDataId(1), Description("Notify the mode is changed")] uint32 ModeChanged;
+};
