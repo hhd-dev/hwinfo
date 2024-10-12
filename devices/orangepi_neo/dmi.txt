@@ -1,0 +1,50 @@
+/sys/class/dmi/id/bios_date:
+09/14/2024
+/sys/class/dmi/id/bios_release:
+5.29
+/sys/class/dmi/id/bios_vendor:
+American Megatrends International, LLC.
+/sys/class/dmi/id/bios_version:
+1.17
+/sys/class/dmi/id/board_asset_tag:
+Default string
+/sys/class/dmi/id/board_name:
+NEO-01
+/sys/class/dmi/id/board_serial:
+Default string
+/sys/class/dmi/id/board_vendor:
+OrangePi
+/sys/class/dmi/id/board_version:
+Default string
+/sys/class/dmi/id/chassis_asset_tag:
+Default string
+/sys/class/dmi/id/chassis_serial:
+Default string
+/sys/class/dmi/id/chassis_type:
+10
+/sys/class/dmi/id/chassis_vendor:
+Default string
+/sys/class/dmi/id/chassis_version:
+Default string
+/sys/class/dmi/id/ec_firmware_release:
+0.14
+/sys/class/dmi/id/modalias:
+dmi:bvnAmericanMegatrendsInternational,LLC.:bvr1.17:bd09/14/2024:br5.29:efr0.14:svnOrangePi:pnNEO-01:pvrDefaultstring:rvnOrangePi:rnNEO-01:rvrDefaultstring:cvnDefaultstring:ct10:cvrDefaultstring:skuDefaultstring:
+/sys/class/dmi/id/power:
+/sys/class/dmi/id/product_family:
+Default string
+/sys/class/dmi/id/product_name:
+NEO-01
+/sys/class/dmi/id/product_serial:
+Default string
+/sys/class/dmi/id/product_sku:
+Default string
+/sys/class/dmi/id/product_uuid:
+03000200-0400-0500-0006-000700080009
+/sys/class/dmi/id/product_version:
+Default string
+/sys/class/dmi/id/subsystem:
+/sys/class/dmi/id/sys_vendor:
+OrangePi
+/sys/class/dmi/id/uevent:
+MODALIAS=dmi:bvnAmericanMegatrendsInternational,LLC.:bvr1.17:bd09/14/2024:br5.29:efr0.14:svnOrangePi:pnNEO-01:pvrDefaultstring:rvnOrangePi:rnNEO-01:rvrDefaultstring:cvnDefaultstring:ct10:cvrDefaultstring:skuDefaultstring:

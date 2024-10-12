@@ -1,0 +1,856 @@
+# OPI0002:00 0911:5288
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x02,                    // Usage (Mouse)                       2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x85, 0x01,                    //  Report ID (1)                      6
+# 0x09, 0x01,                    //  Usage (Pointer)                    8
+# 0xa1, 0x00,                    //  Collection (Physical)              10
+# 0x05, 0x09,                    //   Usage Page (Button)               12
+# 0x19, 0x01,                    //   Usage Minimum (1)                 14
+# 0x29, 0x03,                    //   Usage Maximum (3)                 16
+# 0x15, 0x00,                    //   Logical Minimum (0)               18
+# 0x25, 0x01,                    //   Logical Maximum (1)               20
+# 0x95, 0x03,                    //   Report Count (3)                  22
+# 0x75, 0x01,                    //   Report Size (1)                   24
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              26
+# 0x95, 0x01,                    //   Report Count (1)                  28
+# 0x75, 0x05,                    //   Report Size (5)                   30
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              32
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      34
+# 0x09, 0x30,                    //   Usage (X)                         36
+# 0x09, 0x31,                    //   Usage (Y)                         38
+# 0x09, 0x38,                    //   Usage (Wheel)                     40
+# 0x15, 0x81,                    //   Logical Minimum (-127)            42
+# 0x25, 0x7f,                    //   Logical Maximum (127)             44
+# 0x75, 0x08,                    //   Report Size (8)                   46
+# 0x95, 0x03,                    //   Report Count (3)                  48
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              50
+# 0xc0,                          //  End Collection                     52
+# 0xc0,                          // End Collection                      53
+# 0x05, 0x0d,                    // Usage Page (Digitizers)             54
+# 0x09, 0x05,                    // Usage (Touch Pad)                   56
+# 0xa1, 0x01,                    // Collection (Application)            58
+# 0x85, 0x04,                    //  Report ID (4)                      60
+# 0x05, 0x0d,                    //  Usage Page (Digitizers)            62
+# 0x09, 0x22,                    //  Usage (Finger)                     64
+# 0xa1, 0x02,                    //  Collection (Logical)               66
+# 0x15, 0x00,                    //   Logical Minimum (0)               68
+# 0x25, 0x01,                    //   Logical Maximum (1)               70
+# 0x09, 0x47,                    //   Usage (Confidence)                72
+# 0x09, 0x42,                    //   Usage (Tip Switch)                74
+# 0x95, 0x02,                    //   Report Count (2)                  76
+# 0x75, 0x01,                    //   Report Size (1)                   78
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              80
+# 0x95, 0x01,                    //   Report Count (1)                  82
+# 0x75, 0x03,                    //   Report Size (3)                   84
+# 0x25, 0x05,                    //   Logical Maximum (5)               86
+# 0x09, 0x51,                    //   Usage (Contact Id)                88
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              90
+# 0x75, 0x01,                    //   Report Size (1)                   92
+# 0x95, 0x03,                    //   Report Count (3)                  94
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              96
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      98
+# 0x15, 0x00,                    //   Logical Minimum (0)               100
+# 0x26, 0x00, 0x02,              //   Logical Maximum (512)             102
+# 0x75, 0x10,                    //   Report Size (16)                  105
+# 0x55, 0x0e,                    //   Unit Exponent (-2)                107
+# 0x65, 0x13,                    //   Unit (EnglishLinear: in)          109
+# 0x09, 0x30,                    //   Usage (X)                         111
+# 0x35, 0x00,                    //   Physical Minimum (0)              113
+# 0x46, 0x62, 0x00,              //   Physical Maximum (98)             115
+# 0x95, 0x01,                    //   Report Count (1)                  118
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              120
+# 0x46, 0x62, 0x00,              //   Physical Maximum (98)             122
+# 0x26, 0x00, 0x02,              //   Logical Maximum (512)             125
+# 0x09, 0x31,                    //   Usage (Y)                         128
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              130
+# 0xc0,                          //  End Collection                     132
+# 0x05, 0x0d,                    //  Usage Page (Digitizers)            133
+# 0x55, 0x0c,                    //  Unit Exponent (-4)                 135
+# 0x66, 0x01, 0x10,              //  Unit (SILinear: s)                 137
+# 0x47, 0xff, 0xff, 0x00, 0x00,  //  Physical Maximum (65535)           140
+# 0x27, 0xff, 0xff, 0x00, 0x00,  //  Logical Maximum (65535)            145
+# 0x75, 0x10,                    //  Report Size (16)                   150
+# 0x95, 0x01,                    //  Report Count (1)                   152
+# 0x09, 0x56,                    //  Usage (Scan Time)                  154
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               156
+# 0x09, 0x54,                    //  Usage (Contact Count)              158
+# 0x25, 0x7f,                    //  Logical Maximum (127)              160
+# 0x95, 0x01,                    //  Report Count (1)                   162
+# 0x75, 0x08,                    //  Report Size (8)                    164
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               166
+# 0x05, 0x09,                    //  Usage Page (Button)                168
+# 0x09, 0x01,                    //  Usage (Vendor Usage 0x01)          170
+# 0x09, 0x02,                    //  Usage (Vendor Usage 0x02)          172
+# 0x09, 0x03,                    //  Usage (Vendor Usage 0x03)          174
+# 0x25, 0x01,                    //  Logical Maximum (1)                176
+# 0x75, 0x01,                    //  Report Size (1)                    178
+# 0x95, 0x03,                    //  Report Count (3)                   180
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               182
+# 0x95, 0x05,                    //  Report Count (5)                   184
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               186
+# 0x05, 0x0d,                    //  Usage Page (Digitizers)            188
+# 0x85, 0x02,                    //  Report ID (2)                      190
+# 0x09, 0x55,                    //  Usage (Contact Max)                192
+# 0x09, 0x59,                    //  Usage (Button Type)                194
+# 0x75, 0x04,                    //  Report Size (4)                    196
+# 0x95, 0x02,                    //  Report Count (2)                   198
+# 0x25, 0x0f,                    //  Logical Maximum (15)               200
+# 0xb1, 0x02,                    //  Feature (Data,Var,Abs)             202
+# 0x05, 0x0d,                    //  Usage Page (Digitizers)            204
+# 0x85, 0x07,                    //  Report ID (7)                      206
+# 0x09, 0x60,                    //  Usage (Vendor Usage 0x60)          208
+# 0x75, 0x01,                    //  Report Size (1)                    210
+# 0x95, 0x01,                    //  Report Count (1)                   212
+# 0x15, 0x00,                    //  Logical Minimum (0)                214
+# 0x25, 0x01,                    //  Logical Maximum (1)                216
+# 0xb1, 0x02,                    //  Feature (Data,Var,Abs)             218
+# 0x95, 0x07,                    //  Report Count (7)                   220
+# 0xb1, 0x03,                    //  Feature (Cnst,Var,Abs)             222
+# 0x85, 0x06,                    //  Report ID (6)                      224
+# 0x06, 0x00, 0xff,              //  Usage Page (Vendor Defined Page 1) 226
+# 0x09, 0xc5,                    //  Usage (Vendor Usage 0xc5)          229
+# 0x15, 0x00,                    //  Logical Minimum (0)                231
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              233
+# 0x75, 0x08,                    //  Report Size (8)                    236
+# 0x96, 0x00, 0x01,              //  Report Count (256)                 238
+# 0xb1, 0x02,                    //  Feature (Data,Var,Abs)             241
+# 0xc0,                          // End Collection                      243
+# 0x05, 0x0d,                    // Usage Page (Digitizers)             244
+# 0x09, 0x0e,                    // Usage (Device Configuration)        246
+# 0xa1, 0x01,                    // Collection (Application)            248
+# 0x85, 0x03,                    //  Report ID (3)                      250
+# 0x09, 0x22,                    //  Usage (Finger)                     252
+# 0xa1, 0x02,                    //  Collection (Logical)               254
+# 0x09, 0x52,                    //   Usage (Inputmode)                 256
+# 0x15, 0x00,                    //   Logical Minimum (0)               258
+# 0x25, 0x0a,                    //   Logical Maximum (10)              260
+# 0x75, 0x08,                    //   Report Size (8)                   262
+# 0x95, 0x01,                    //   Report Count (1)                  264
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            266
+# 0xc0,                          //  End Collection                     268
+# 0x09, 0x22,                    //  Usage (Finger)                     269
+# 0xa1, 0x00,                    //  Collection (Physical)              271
+# 0x85, 0x05,                    //   Report ID (5)                     273
+# 0x09, 0x57,                    //   Usage (Surface Switch)            275
+# 0x09, 0x58,                    //   Usage (Button Switch)             277
+# 0x75, 0x01,                    //   Report Size (1)                   279
+# 0x95, 0x02,                    //   Report Count (2)                  281
+# 0x25, 0x01,                    //   Logical Maximum (1)               283
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            285
+# 0x95, 0x06,                    //   Report Count (6)                  287
+# 0xb1, 0x03,                    //   Feature (Cnst,Var,Abs)            289
+# 0xc0,                          //  End Collection                     291
+# 0xc0,                          // End Collection                      292
+# 
+R: 293 05 01 09 02 a1 01 85 01 09 01 a1 00 05 09 19 01 29 03 15 00 25 01 95 03 75 01 81 02 95 01 75 05 81 03 05 01 09 30 09 31 09 38 15 81 25 7f 75 08 95 03 81 06 c0 c0 05 0d 09 05 a1 01 85 04 05 0d 09 22 a1 02 15 00 25 01 09 47 09 42 95 02 75 01 81 02 95 01 75 03 25 05 09 51 81 02 75 01 95 03 81 03 05 01 15 00 26 00 02 75 10 55 0e 65 13 09 30 35 00 46 62 00 95 01 81 02 46 62 00 26 00 02 09 31 81 02 c0 05 0d 55 0c 66 01 10 47 ff ff 00 00 27 ff ff 00 00 75 10 95 01 09 56 81 02 09 54 25 7f 95 01 75 08 81 02 05 09 09 01 09 02 09 03 25 01 75 01 95 03 81 02 95 05 81 03 05 0d 85 02 09 55 09 59 75 04 95 02 25 0f b1 02 05 0d 85 07 09 60 75 01 95 01 15 00 25 01 b1 02 95 07 b1 03 85 06 06 00 ff 09 c5 15 00 26 ff 00 75 08 96 00 01 b1 02 c0 05 0d 09 0e a1 01 85 03 09 22 a1 02 09 52 15 00 25 0a 75 08 95 01 b1 02 c0 09 22 a1 00 85 05 09 57 09 58 75 01 95 02 25 01 b1 02 95 06 b1 03 c0 c0
+N: OPI0002:00 0911:5288
+I: 18 0911 5288
+# ReportID: 4 / Confidence: 1 | Tip Switch: 0 | Contact Id:  0 | # | X:      0 | Y:      0 | Scan Time:   6665 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.000000 10 04 01 00 00 00 00 09 1a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     21 | Y:     40 | Scan Time:   6752 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.008393 10 04 03 15 00 28 00 60 1a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     21 | Y:     40 | Scan Time:   6839 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.016710 10 04 03 15 00 28 00 b7 1a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     21 | Y:     40 | Scan Time:   6926 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.025149 10 04 03 15 00 28 00 0e 1b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     23 | Y:     40 | Scan Time:   7013 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.033495 10 04 03 17 00 28 00 65 1b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     25 | Y:     40 | Scan Time:   7100 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.041923 10 04 03 19 00 28 00 bc 1b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     27 | Y:     40 | Scan Time:   7187 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.050310 10 04 03 1b 00 28 00 13 1c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     34 | Y:     40 | Scan Time:   7274 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.058682 10 04 03 22 00 28 00 6a 1c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     42 | Y:     40 | Scan Time:   7361 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.067116 10 04 03 2a 00 28 00 c1 1c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     52 | Y:     40 | Scan Time:   7448 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.075530 10 04 03 34 00 28 00 18 1d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     71 | Y:     40 | Scan Time:   7535 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.083902 10 04 03 47 00 28 00 6f 1d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     81 | Y:     40 | Scan Time:   7622 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.092227 10 04 03 51 00 28 00 c6 1d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    101 | Y:     40 | Scan Time:   7709 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.100506 10 04 03 65 00 28 00 1d 1e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    111 | Y:     40 | Scan Time:   7796 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.108875 10 04 03 6f 00 28 00 74 1e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    121 | Y:     40 | Scan Time:   7883 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.117265 10 04 03 79 00 28 00 cb 1e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    132 | Y:     40 | Scan Time:   7970 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.125576 10 04 03 84 00 28 00 22 1f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    153 | Y:     41 | Scan Time:   8057 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.133905 10 04 03 99 00 29 00 79 1f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    163 | Y:     41 | Scan Time:   8144 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.142214 10 04 03 a3 00 29 00 d0 1f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    173 | Y:     41 | Scan Time:   8231 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.150695 10 04 03 ad 00 29 00 27 20 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    193 | Y:     42 | Scan Time:   8318 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.159038 10 04 03 c1 00 2a 00 7e 20 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    203 | Y:     42 | Scan Time:   8405 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.167435 10 04 03 cb 00 2a 00 d5 20 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    213 | Y:     42 | Scan Time:   8492 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.175853 10 04 03 d5 00 2a 00 2c 21 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    232 | Y:     42 | Scan Time:   8579 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.184198 10 04 03 e8 00 2a 00 83 21 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    241 | Y:     42 | Scan Time:   8666 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.192590 10 04 03 f1 00 2a 00 da 21 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    251 | Y:     42 | Scan Time:   8753 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.200977 10 04 03 fb 00 2a 00 31 22 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    260 | Y:     42 | Scan Time:   8840 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.209353 10 04 03 04 01 2a 00 88 22 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    269 | Y:     42 | Scan Time:   8927 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.217822 10 04 03 0d 01 2a 00 df 22 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    279 | Y:     42 | Scan Time:   9014 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.226198 10 04 03 17 01 2a 00 36 23 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    288 | Y:     42 | Scan Time:   9101 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.234580 10 04 03 20 01 2a 00 8d 23 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    298 | Y:     43 | Scan Time:   9188 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.242916 10 04 03 2a 01 2b 00 e4 23 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    307 | Y:     43 | Scan Time:   9275 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.251248 10 04 03 33 01 2b 00 3b 24 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    316 | Y:     43 | Scan Time:   9362 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.259536 10 04 03 3c 01 2b 00 92 24 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    326 | Y:     44 | Scan Time:   9449 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.267916 10 04 03 46 01 2c 00 e9 24 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    335 | Y:     45 | Scan Time:   9536 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.276288 10 04 03 4f 01 2d 00 40 25 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    343 | Y:     45 | Scan Time:   9623 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.284660 10 04 03 57 01 2d 00 97 25 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    351 | Y:     45 | Scan Time:   9710 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.293040 10 04 03 5f 01 2d 00 ee 25 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    359 | Y:     46 | Scan Time:   9797 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.301445 10 04 03 67 01 2e 00 45 26 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    367 | Y:     47 | Scan Time:   9884 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.309782 10 04 03 6f 01 2f 00 9c 26 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    370 | Y:     47 | Scan Time:   9971 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.318121 10 04 03 72 01 2f 00 f3 26 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    373 | Y:     47 | Scan Time:  10058 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.326542 10 04 03 75 01 2f 00 4a 27 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    381 | Y:     48 | Scan Time:  10145 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.334870 10 04 03 7d 01 30 00 a1 27 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    384 | Y:     48 | Scan Time:  10232 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.343248 10 04 03 80 01 30 00 f8 27 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    391 | Y:     48 | Scan Time:  10319 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.351558 10 04 03 87 01 30 00 4f 28 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    394 | Y:     48 | Scan Time:  10406 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.359916 10 04 03 8a 01 30 00 a6 28 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    397 | Y:     48 | Scan Time:  10493 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.368265 10 04 03 8d 01 30 00 fd 28 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    405 | Y:     49 | Scan Time:  10580 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.376694 10 04 03 95 01 31 00 54 29 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    408 | Y:     49 | Scan Time:  10667 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.385055 10 04 03 98 01 31 00 ab 29 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    411 | Y:     49 | Scan Time:  10754 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.393463 10 04 03 9b 01 31 00 02 2a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    414 | Y:     49 | Scan Time:  10841 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.401890 10 04 03 9e 01 31 00 59 2a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    417 | Y:     49 | Scan Time:  10928 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.410212 10 04 03 a1 01 31 00 b0 2a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    420 | Y:     49 | Scan Time:  11015 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.418587 10 04 03 a4 01 31 00 07 2b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    423 | Y:     49 | Scan Time:  11102 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.426995 10 04 03 a7 01 31 00 5e 2b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    426 | Y:     49 | Scan Time:  11189 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.435476 10 04 03 aa 01 31 00 b5 2b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    429 | Y:     49 | Scan Time:  11276 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.443842 10 04 03 ad 01 31 00 0c 2c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    432 | Y:     49 | Scan Time:  11363 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.452159 10 04 03 b0 01 31 00 63 2c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    440 | Y:     50 | Scan Time:  11450 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.460472 10 04 03 b8 01 32 00 ba 2c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    443 | Y:     50 | Scan Time:  11537 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.468602 10 04 03 bb 01 32 00 11 2d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    446 | Y:     50 | Scan Time:  11624 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.476975 10 04 03 be 01 32 00 68 2d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    450 | Y:     51 | Scan Time:  11711 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.485499 10 04 03 c2 01 33 00 bf 2d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    453 | Y:     51 | Scan Time:  11798 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.493665 10 04 03 c5 01 33 00 16 2e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    456 | Y:     51 | Scan Time:  11885 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.501930 10 04 03 c8 01 33 00 6d 2e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    459 | Y:     51 | Scan Time:  11972 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.510202 10 04 03 cb 01 33 00 c4 2e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    462 | Y:     51 | Scan Time:  12059 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.518596 10 04 03 ce 01 33 00 1b 2f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    466 | Y:     52 | Scan Time:  12146 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.526975 10 04 03 d2 01 34 00 72 2f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    469 | Y:     52 | Scan Time:  12233 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.535296 10 04 03 d5 01 34 00 c9 2f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    472 | Y:     52 | Scan Time:  12320 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.543670 10 04 03 d8 01 34 00 20 30 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    474 | Y:     52 | Scan Time:  12407 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.551935 10 04 03 da 01 34 00 77 30 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    476 | Y:     52 | Scan Time:  12494 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.560244 10 04 03 dc 01 34 00 ce 30 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    478 | Y:     52 | Scan Time:  12581 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.568651 10 04 03 de 01 34 00 25 31 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    480 | Y:     52 | Scan Time:  12668 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.577053 10 04 03 e0 01 34 00 7c 31 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    482 | Y:     52 | Scan Time:  12755 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.585382 10 04 03 e2 01 34 00 d3 31 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    484 | Y:     52 | Scan Time:  12842 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.593897 10 04 03 e4 01 34 00 2a 32 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    486 | Y:     52 | Scan Time:  12929 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.602226 10 04 03 e6 01 34 00 81 32 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    487 | Y:     52 | Scan Time:  13016 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.610513 10 04 03 e7 01 34 00 d8 32 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    488 | Y:     52 | Scan Time:  13103 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.618604 10 04 03 e8 01 34 00 2f 33 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    489 | Y:     52 | Scan Time:  13190 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.626851 10 04 03 e9 01 34 00 86 33 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    490 | Y:     52 | Scan Time:  13277 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.635123 10 04 03 ea 01 34 00 dd 33 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    491 | Y:     52 | Scan Time:  13364 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.643263 10 04 03 eb 01 34 00 34 34 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:     52 | Scan Time:  13451 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.651521 10 04 03 ec 01 34 00 8b 34 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:     52 | Scan Time:  13538 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.659759 10 04 03 ec 01 34 00 e2 34 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:     52 | Scan Time:  13625 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.668015 10 04 03 ec 01 34 00 39 35 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:     52 | Scan Time:  13712 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.676247 10 04 03 ec 01 34 00 90 35 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:     52 | Scan Time:  13799 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.684543 10 04 03 ec 01 34 00 e7 35 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:     52 | Scan Time:  13886 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.692804 10 04 03 ec 01 34 00 3e 36 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:     52 | Scan Time:  13973 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.701113 10 04 03 ec 01 34 00 95 36 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:     52 | Scan Time:  14060 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.709364 10 04 03 ec 01 34 00 ec 36 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:     52 | Scan Time:  14147 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.717605 10 04 03 ec 01 34 00 43 37 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    493 | Y:     52 | Scan Time:  14234 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.725891 10 04 03 ed 01 34 00 9a 37 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    494 | Y:     52 | Scan Time:  14321 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.734172 10 04 03 ee 01 34 00 f1 37 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    496 | Y:     53 | Scan Time:  14408 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.742484 10 04 03 f0 01 35 00 48 38 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    496 | Y:     53 | Scan Time:  14495 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.750817 10 04 03 f0 01 35 00 9f 38 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    497 | Y:     54 | Scan Time:  14582 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.759030 10 04 03 f1 01 36 00 f6 38 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    498 | Y:     56 | Scan Time:  14669 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.767366 10 04 03 f2 01 38 00 4d 39 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    499 | Y:     58 | Scan Time:  14756 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.775713 10 04 03 f3 01 3a 00 a4 39 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    500 | Y:     60 | Scan Time:  14843 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.784131 10 04 03 f4 01 3c 00 fb 39 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    500 | Y:     62 | Scan Time:  14930 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.792431 10 04 03 f4 01 3e 00 52 3a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    500 | Y:     64 | Scan Time:  15017 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.800745 10 04 03 f4 01 40 00 a9 3a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    499 | Y:     67 | Scan Time:  15104 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.809101 10 04 03 f3 01 43 00 00 3b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    498 | Y:     70 | Scan Time:  15191 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.817465 10 04 03 f2 01 46 00 57 3b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    496 | Y:     73 | Scan Time:  15278 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.825849 10 04 03 f0 01 49 00 ae 3b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:     79 | Scan Time:  15365 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.834242 10 04 03 ec 01 4f 00 05 3c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    487 | Y:     85 | Scan Time:  15452 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.842535 10 04 03 e7 01 55 00 5c 3c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    481 | Y:     91 | Scan Time:  15539 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.850928 10 04 03 e1 01 5b 00 b3 3c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    474 | Y:     96 | Scan Time:  15626 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.859394 10 04 03 da 01 60 00 0a 3d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    465 | Y:    101 | Scan Time:  15713 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.867715 10 04 03 d1 01 65 00 61 3d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    455 | Y:    105 | Scan Time:  15800 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.876095 10 04 03 c7 01 69 00 b8 3d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    435 | Y:    112 | Scan Time:  15887 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.884470 10 04 03 b3 01 70 00 0f 3e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    415 | Y:    117 | Scan Time:  15974 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.892887 10 04 03 9f 01 75 00 66 3e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    395 | Y:    122 | Scan Time:  16061 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.901209 10 04 03 8b 01 7a 00 bd 3e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    373 | Y:    126 | Scan Time:  16148 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.909513 10 04 03 75 01 7e 00 14 3f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    350 | Y:    129 | Scan Time:  16235 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.917827 10 04 03 5e 01 81 00 6b 3f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    327 | Y:    132 | Scan Time:  16322 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.926117 10 04 03 47 01 84 00 c2 3f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    305 | Y:    134 | Scan Time:  16409 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.934542 10 04 03 31 01 86 00 19 40 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    293 | Y:    135 | Scan Time:  16496 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.942944 10 04 03 25 01 87 00 70 40 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    271 | Y:    136 | Scan Time:  16583 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.951332 10 04 03 0f 01 88 00 c7 40 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    249 | Y:    137 | Scan Time:  16670 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.959729 10 04 03 f9 00 89 00 1e 41 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    228 | Y:    138 | Scan Time:  16757 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.968139 10 04 03 e4 00 8a 00 75 41 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    208 | Y:    138 | Scan Time:  16844 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.976552 10 04 03 d0 00 8a 00 cc 41 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    188 | Y:    138 | Scan Time:  16931 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.984842 10 04 03 bc 00 8a 00 23 42 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    177 | Y:    138 | Scan Time:  17018 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000000.993237 10 04 03 b1 00 8a 00 7a 42 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    156 | Y:    139 | Scan Time:  17105 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.001638 10 04 03 9c 00 8b 00 d1 42 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    145 | Y:    139 | Scan Time:  17192 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.009985 10 04 03 91 00 8b 00 28 43 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    124 | Y:    140 | Scan Time:  17279 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.018412 10 04 03 7c 00 8c 00 7f 43 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    114 | Y:    140 | Scan Time:  17366 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.026719 10 04 03 72 00 8c 00 d6 43 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    104 | Y:    140 | Scan Time:  17453 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.035056 10 04 03 68 00 8c 00 2d 44 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     94 | Y:    140 | Scan Time:  17540 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.043373 10 04 03 5e 00 8c 00 84 44 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     84 | Y:    140 | Scan Time:  17627 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.051761 10 04 03 54 00 8c 00 db 44 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     74 | Y:    141 | Scan Time:  17714 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.060071 10 04 03 4a 00 8d 00 32 45 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     65 | Y:    141 | Scan Time:  17801 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.068367 10 04 03 41 00 8d 00 89 45 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     56 | Y:    141 | Scan Time:  17888 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.076685 10 04 03 38 00 8d 00 e0 45 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     47 | Y:    142 | Scan Time:  17975 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.085085 10 04 03 2f 00 8e 00 37 46 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     39 | Y:    142 | Scan Time:  18062 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.093431 10 04 03 27 00 8e 00 8e 46 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     35 | Y:    142 | Scan Time:  18149 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.101819 10 04 03 23 00 8e 00 e5 46 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     32 | Y:    142 | Scan Time:  18236 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.110200 10 04 03 20 00 8e 00 3c 47 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     28 | Y:    143 | Scan Time:  18323 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.118598 10 04 03 1c 00 8f 00 93 47 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     24 | Y:    144 | Scan Time:  18410 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.126937 10 04 03 18 00 90 00 ea 47 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     21 | Y:    146 | Scan Time:  18497 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.135410 10 04 03 15 00 92 00 41 48 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     16 | Y:    152 | Scan Time:  18584 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.143738 10 04 03 10 00 98 00 98 48 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     14 | Y:    155 | Scan Time:  18671 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.152183 10 04 03 0e 00 9b 00 ef 48 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     12 | Y:    157 | Scan Time:  18758 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.160580 10 04 03 0c 00 9d 00 46 49 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 0 | Contact Id:  0 | # | X:     12 | Y:    157 | Scan Time:  18845 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.168860 10 04 01 0c 00 9d 00 9d 49 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 0 | Contact Id:  0 | # | X:      0 | Y:      0 | Scan Time:  19976 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.270068 10 04 01 00 00 00 00 08 4e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:      0 | Y:    232 | Scan Time:  20063 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.278529 10 04 03 00 00 e8 00 5f 4e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:      0 | Y:    232 | Scan Time:  20150 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.286818 10 04 03 00 00 e8 00 b6 4e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:      0 | Y:    232 | Scan Time:  20237 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.295136 10 04 03 00 00 e8 00 0d 4f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:      2 | Y:    233 | Scan Time:  20324 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.303471 10 04 03 02 00 e9 00 64 4f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:      5 | Y:    234 | Scan Time:  20411 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.311855 10 04 03 05 00 ea 00 bb 4f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     12 | Y:    236 | Scan Time:  20498 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.320252 10 04 03 0c 00 ec 00 12 50 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     20 | Y:    238 | Scan Time:  20585 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.328600 10 04 03 14 00 ee 00 69 50 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     30 | Y:    240 | Scan Time:  20672 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.336911 10 04 03 1e 00 f0 00 c0 50 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     41 | Y:    242 | Scan Time:  20759 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.345230 10 04 03 29 00 f2 00 17 51 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     64 | Y:    245 | Scan Time:  20846 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.353790 10 04 03 40 00 f5 00 6e 51 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     87 | Y:    247 | Scan Time:  20933 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.362234 10 04 03 57 00 f7 00 c5 51 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    109 | Y:    249 | Scan Time:  21020 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.370551 10 04 03 6d 00 f9 00 1c 52 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    133 | Y:    250 | Scan Time:  21107 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.378890 10 04 03 85 00 fa 00 73 52 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    158 | Y:    251 | Scan Time:  21194 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.387258 10 04 03 9e 00 fb 00 ca 52 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    182 | Y:    252 | Scan Time:  21281 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.395619 10 04 03 b6 00 fc 00 21 53 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    205 | Y:    253 | Scan Time:  21368 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.404026 10 04 03 cd 00 fd 00 78 53 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    227 | Y:    254 | Scan Time:  21455 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.412375 10 04 03 e3 00 fe 00 cf 53 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    248 | Y:    255 | Scan Time:  21542 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.420743 10 04 03 f8 00 ff 00 26 54 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    270 | Y:    256 | Scan Time:  21629 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.429069 10 04 03 0e 01 00 01 7d 54 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    292 | Y:    257 | Scan Time:  21716 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.437400 10 04 03 24 01 01 01 d4 54 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    313 | Y:    258 | Scan Time:  21803 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.445819 10 04 03 39 01 02 01 2b 55 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    325 | Y:    259 | Scan Time:  21890 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.454142 10 04 03 45 01 03 01 82 55 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    346 | Y:    260 | Scan Time:  21977 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.462527 10 04 03 5a 01 04 01 d9 55 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    357 | Y:    261 | Scan Time:  22064 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.470904 10 04 03 65 01 05 01 30 56 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    368 | Y:    262 | Scan Time:  22151 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.479231 10 04 03 70 01 06 01 87 56 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    379 | Y:    263 | Scan Time:  22238 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.487603 10 04 03 7b 01 07 01 de 56 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    390 | Y:    264 | Scan Time:  22325 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.496025 10 04 03 86 01 08 01 35 57 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    401 | Y:    265 | Scan Time:  22412 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.504594 10 04 03 91 01 09 01 8c 57 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    411 | Y:    266 | Scan Time:  22499 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.512915 10 04 03 9b 01 0a 01 e3 57 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    420 | Y:    267 | Scan Time:  22586 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.521323 10 04 03 a4 01 0b 01 3a 58 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    429 | Y:    269 | Scan Time:  22673 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.529700 10 04 03 ad 01 0d 01 91 58 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    437 | Y:    271 | Scan Time:  22760 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.538081 10 04 03 b5 01 0f 01 e8 58 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    441 | Y:    272 | Scan Time:  22847 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.546451 10 04 03 b9 01 10 01 3f 59 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    445 | Y:    273 | Scan Time:  22934 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.554835 10 04 03 bd 01 11 01 96 59 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    449 | Y:    274 | Scan Time:  23021 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.563178 10 04 03 c1 01 12 01 ed 59 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    453 | Y:    275 | Scan Time:  23108 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.571538 10 04 03 c5 01 13 01 44 5a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    456 | Y:    276 | Scan Time:  23195 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.579839 10 04 03 c8 01 14 01 9b 5a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    459 | Y:    277 | Scan Time:  23282 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.588194 10 04 03 cb 01 15 01 f2 5a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    462 | Y:    278 | Scan Time:  23369 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.596559 10 04 03 ce 01 16 01 49 5b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    465 | Y:    280 | Scan Time:  23456 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.604984 10 04 03 d1 01 18 01 a0 5b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    468 | Y:    282 | Scan Time:  23543 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.613300 10 04 03 d4 01 1a 01 f7 5b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    470 | Y:    283 | Scan Time:  23630 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.621728 10 04 03 d6 01 1b 01 4e 5c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    472 | Y:    285 | Scan Time:  23717 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.630047 10 04 03 d8 01 1d 01 a5 5c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    474 | Y:    287 | Scan Time:  23804 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.638411 10 04 03 da 01 1f 01 fc 5c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    476 | Y:    289 | Scan Time:  23891 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.646799 10 04 03 dc 01 21 01 53 5d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    477 | Y:    291 | Scan Time:  23978 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.655156 10 04 03 dd 01 23 01 aa 5d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    478 | Y:    292 | Scan Time:  24065 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.663496 10 04 03 de 01 24 01 01 5e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    479 | Y:    294 | Scan Time:  24152 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.671918 10 04 03 df 01 26 01 58 5e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    479 | Y:    294 | Scan Time:  24239 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.680267 10 04 03 df 01 26 01 af 5e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    479 | Y:    295 | Scan Time:  24326 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.688578 10 04 03 df 01 27 01 06 5f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    478 | Y:    297 | Scan Time:  24413 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.696923 10 04 03 de 01 29 01 5d 5f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    476 | Y:    299 | Scan Time:  24500 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.705287 10 04 03 dc 01 2b 01 b4 5f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    474 | Y:    301 | Scan Time:  24587 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.713700 10 04 03 da 01 2d 01 0b 60 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    470 | Y:    303 | Scan Time:  24674 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.722067 10 04 03 d6 01 2f 01 62 60 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    461 | Y:    306 | Scan Time:  24761 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.730387 10 04 03 cd 01 32 01 b9 60 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    441 | Y:    311 | Scan Time:  24848 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.738724 10 04 03 b9 01 37 01 10 61 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    419 | Y:    315 | Scan Time:  24935 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.747063 10 04 03 a3 01 3b 01 67 61 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    393 | Y:    319 | Scan Time:  25022 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.755389 10 04 03 89 01 3f 01 be 61 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    363 | Y:    323 | Scan Time:  25109 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.763711 10 04 03 6b 01 43 01 15 62 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    330 | Y:    327 | Scan Time:  25196 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.772060 10 04 03 4a 01 47 01 6c 62 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    298 | Y:    331 | Scan Time:  25283 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.780436 10 04 03 2a 01 4b 01 c3 62 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    265 | Y:    335 | Scan Time:  25370 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.788725 10 04 03 09 01 4f 01 1a 63 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    230 | Y:    339 | Scan Time:  25457 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.797097 10 04 03 e6 00 53 01 71 63 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    195 | Y:    343 | Scan Time:  25544 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.805391 10 04 03 c3 00 57 01 c8 63 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    163 | Y:    348 | Scan Time:  25631 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.813709 10 04 03 a3 00 5c 01 1f 64 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    134 | Y:    353 | Scan Time:  25718 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.822064 10 04 03 86 00 61 01 76 64 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    108 | Y:    358 | Scan Time:  25805 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.830412 10 04 03 6c 00 66 01 cd 64 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     87 | Y:    363 | Scan Time:  25892 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.838715 10 04 03 57 00 6b 01 24 65 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     76 | Y:    365 | Scan Time:  25979 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.847117 10 04 03 4c 00 6d 01 7b 65 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     65 | Y:    367 | Scan Time:  26066 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.855463 10 04 03 41 00 6f 01 d2 65 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     54 | Y:    370 | Scan Time:  26153 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.863714 10 04 03 36 00 72 01 29 66 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     44 | Y:    373 | Scan Time:  26240 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.872084 10 04 03 2c 00 75 01 80 66 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     35 | Y:    377 | Scan Time:  26327 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.880426 10 04 03 23 00 79 01 d7 66 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     28 | Y:    381 | Scan Time:  26414 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.888758 10 04 03 1c 00 7d 01 2e 67 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     22 | Y:    386 | Scan Time:  26501 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.897116 10 04 03 16 00 82 01 85 67 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     17 | Y:    393 | Scan Time:  26588 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.905465 10 04 03 11 00 89 01 dc 67 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     15 | Y:    396 | Scan Time:  26675 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.913777 10 04 03 0f 00 8c 01 33 68 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     13 | Y:    399 | Scan Time:  26762 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.922177 10 04 03 0d 00 8f 01 8a 68 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     11 | Y:    401 | Scan Time:  26849 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.930553 10 04 03 0b 00 91 01 e1 68 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 0 | Contact Id:  0 | # | X:     11 | Y:    401 | Scan Time:  26936 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.938807 10 04 01 0b 00 91 01 38 69 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 0 | Contact Id:  0 | # | X:      0 | Y:      0 | Scan Time:  27545 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000001.993253 10 04 01 00 00 00 00 99 6b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:      0 | Y:    436 | Scan Time:  27632 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.001636 10 04 03 00 00 b4 01 f0 6b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:      0 | Y:    436 | Scan Time:  27719 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.010016 10 04 03 00 00 b4 01 47 6c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:      0 | Y:    436 | Scan Time:  27806 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.018430 10 04 03 00 00 b4 01 9e 6c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:      1 | Y:    434 | Scan Time:  27893 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.026914 10 04 03 01 00 b2 01 f5 6c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:      4 | Y:    432 | Scan Time:  27980 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.035223 10 04 03 04 00 b0 01 4c 6d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     12 | Y:    429 | Scan Time:  28067 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.043679 10 04 03 0c 00 ad 01 a3 6d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     21 | Y:    426 | Scan Time:  28154 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.051983 10 04 03 15 00 aa 01 fa 6d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     41 | Y:    422 | Scan Time:  28241 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.060320 10 04 03 29 00 a6 01 51 6e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     64 | Y:    419 | Scan Time:  28328 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.068671 10 04 03 40 00 a3 01 a8 6e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     89 | Y:    417 | Scan Time:  28415 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.076994 10 04 03 59 00 a1 01 ff 6e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    118 | Y:    415 | Scan Time:  28502 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.085368 10 04 03 76 00 9f 01 56 6f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    151 | Y:    414 | Scan Time:  28589 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.093698 10 04 03 97 00 9e 01 ad 6f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    185 | Y:    413 | Scan Time:  28676 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.102115 10 04 03 b9 00 9d 01 04 70 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    217 | Y:    412 | Scan Time:  28763 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.110541 10 04 03 d9 00 9c 01 5b 70 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    251 | Y:    412 | Scan Time:  28850 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.118942 10 04 03 fb 00 9c 01 b2 70 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    287 | Y:    412 | Scan Time:  28937 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.127295 10 04 03 1f 01 9c 01 09 71 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    321 | Y:    412 | Scan Time:  29024 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.135714 10 04 03 41 01 9c 01 60 71 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    353 | Y:    413 | Scan Time:  29111 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.144159 10 04 03 61 01 9d 01 b7 71 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    381 | Y:    414 | Scan Time:  29198 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.152536 10 04 03 7d 01 9e 01 0e 72 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    405 | Y:    415 | Scan Time:  29285 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.160880 10 04 03 95 01 9f 01 65 72 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    417 | Y:    416 | Scan Time:  29372 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.169204 10 04 03 a1 01 a0 01 bc 72 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    428 | Y:    418 | Scan Time:  29459 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.177555 10 04 03 ac 01 a2 01 13 73 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    438 | Y:    420 | Scan Time:  29546 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.185873 10 04 03 b6 01 a4 01 6a 73 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    448 | Y:    422 | Scan Time:  29633 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.194190 10 04 03 c0 01 a6 01 c1 73 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    457 | Y:    425 | Scan Time:  29720 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.202544 10 04 03 c9 01 a9 01 18 74 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    465 | Y:    428 | Scan Time:  29807 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.210840 10 04 03 d1 01 ac 01 6f 74 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    472 | Y:    431 | Scan Time:  29894 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.219240 10 04 03 d8 01 af 01 c6 74 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    475 | Y:    432 | Scan Time:  29981 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.227589 10 04 03 db 01 b0 01 1d 75 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    478 | Y:    433 | Scan Time:  30068 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.235832 10 04 03 de 01 b1 01 74 75 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    481 | Y:    434 | Scan Time:  30155 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.244163 10 04 03 e1 01 b2 01 cb 75 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    484 | Y:    435 | Scan Time:  30242 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.252516 10 04 03 e4 01 b3 01 22 76 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    486 | Y:    436 | Scan Time:  30329 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.260874 10 04 03 e6 01 b4 01 79 76 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    488 | Y:    438 | Scan Time:  30416 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.269229 10 04 03 e8 01 b6 01 d0 76 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    490 | Y:    440 | Scan Time:  30503 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.277511 10 04 03 ea 01 b8 01 27 77 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:    441 | Scan Time:  30590 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.285774 10 04 03 ec 01 b9 01 7e 77 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    493 | Y:    442 | Scan Time:  30677 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.294090 10 04 03 ed 01 ba 01 d5 77 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    494 | Y:    443 | Scan Time:  30764 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.302391 10 04 03 ee 01 bb 01 2c 78 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    494 | Y:    444 | Scan Time:  30851 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.310691 10 04 03 ee 01 bc 01 83 78 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    494 | Y:    444 | Scan Time:  30938 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.319094 10 04 03 ee 01 bc 01 da 78 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    493 | Y:    446 | Scan Time:  31025 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.327491 10 04 03 ed 01 be 01 31 79 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    492 | Y:    447 | Scan Time:  31112 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.335849 10 04 03 ec 01 bf 01 88 79 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    490 | Y:    449 | Scan Time:  31199 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.344268 10 04 03 ea 01 c1 01 df 79 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    487 | Y:    450 | Scan Time:  31286 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.352600 10 04 03 e7 01 c2 01 36 7a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    484 | Y:    452 | Scan Time:  31373 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.360948 10 04 03 e4 01 c4 01 8d 7a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    480 | Y:    454 | Scan Time:  31460 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.369234 10 04 03 e0 01 c6 01 e4 7a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    476 | Y:    456 | Scan Time:  31547 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.377614 10 04 03 dc 01 c8 01 3b 7b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    465 | Y:    459 | Scan Time:  31634 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.386064 10 04 03 d1 01 cb 01 92 7b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    443 | Y:    464 | Scan Time:  31721 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.394445 10 04 03 bb 01 d0 01 e9 7b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    420 | Y:    468 | Scan Time:  31808 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.402976 10 04 03 a4 01 d4 01 40 7c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    394 | Y:    472 | Scan Time:  31895 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.411195 10 04 03 8a 01 d8 01 97 7c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    366 | Y:    475 | Scan Time:  31982 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.419640 10 04 03 6e 01 db 01 ee 7c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    336 | Y:    478 | Scan Time:  32069 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.428006 10 04 03 50 01 de 01 45 7d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    303 | Y:    481 | Scan Time:  32156 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.436408 10 04 03 2f 01 e1 01 9c 7d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    270 | Y:    484 | Scan Time:  32243 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.444951 10 04 03 0e 01 e4 01 f3 7d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    240 | Y:    486 | Scan Time:  32330 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.453265 10 04 03 f0 00 e6 01 4a 7e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    208 | Y:    488 | Scan Time:  32417 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.461639 10 04 03 d0 00 e8 01 a1 7e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    176 | Y:    490 | Scan Time:  32504 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.470192 10 04 03 b0 00 ea 01 f8 7e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    145 | Y:    492 | Scan Time:  32591 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.478424 10 04 03 91 00 ec 01 4f 7f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    119 | Y:    494 | Scan Time:  32678 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.486756 10 04 03 77 00 ee 01 a6 7f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    107 | Y:    495 | Scan Time:  32765 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.495128 10 04 03 6b 00 ef 01 fd 7f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     96 | Y:    496 | Scan Time:  32852 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.503649 10 04 03 60 00 f0 01 54 80 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     85 | Y:    497 | Scan Time:  32939 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.511970 10 04 03 55 00 f1 01 ab 80 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     75 | Y:    498 | Scan Time:  33026 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.520238 10 04 03 4b 00 f2 01 02 81 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     65 | Y:    499 | Scan Time:  33113 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.528637 10 04 03 41 00 f3 01 59 81 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     56 | Y:    500 | Scan Time:  33200 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.536901 10 04 03 38 00 f4 01 b0 81 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     47 | Y:    502 | Scan Time:  33287 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.545259 10 04 03 2f 00 f6 01 07 82 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     38 | Y:    503 | Scan Time:  33374 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.553414 10 04 03 26 00 f7 01 5e 82 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     34 | Y:    503 | Scan Time:  33461 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.561748 10 04 03 22 00 f7 01 b5 82 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     31 | Y:    503 | Scan Time:  33548 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.569940 10 04 03 1f 00 f7 01 0c 83 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     28 | Y:    503 | Scan Time:  33635 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.578252 10 04 03 1c 00 f7 01 63 83 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     25 | Y:    503 | Scan Time:  33722 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.586560 10 04 03 19 00 f7 01 ba 83 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     23 | Y:    503 | Scan Time:  33809 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.594790 10 04 03 17 00 f7 01 11 84 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     21 | Y:    503 | Scan Time:  33896 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.603065 10 04 03 15 00 f7 01 68 84 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     19 | Y:    503 | Scan Time:  33983 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.611250 10 04 03 13 00 f7 01 bf 84 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     17 | Y:    503 | Scan Time:  34070 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.619509 10 04 03 11 00 f7 01 16 85 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     17 | Y:    503 | Scan Time:  34157 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.627764 10 04 03 11 00 f7 01 6d 85 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     17 | Y:    503 | Scan Time:  34244 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.636085 10 04 03 11 00 f7 01 c4 85 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     17 | Y:    503 | Scan Time:  34331 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.644483 10 04 03 11 00 f7 01 1b 86 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     17 | Y:    503 | Scan Time:  34418 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.652832 10 04 03 11 00 f7 01 72 86 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     18 | Y:    503 | Scan Time:  34505 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.661177 10 04 03 12 00 f7 01 c9 86 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     20 | Y:    503 | Scan Time:  34592 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.669571 10 04 03 14 00 f7 01 20 87 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     23 | Y:    503 | Scan Time:  34679 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.677866 10 04 03 17 00 f7 01 77 87 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     31 | Y:    503 | Scan Time:  34766 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.686190 10 04 03 1f 00 f7 01 ce 87 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     39 | Y:    503 | Scan Time:  34853 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.694764 10 04 03 27 00 f7 01 25 88 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     58 | Y:    503 | Scan Time:  34940 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.703086 10 04 03 3a 00 f7 01 7c 88 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:     80 | Y:    503 | Scan Time:  35027 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.711409 10 04 03 50 00 f7 01 d3 88 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    104 | Y:    503 | Scan Time:  35114 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.719804 10 04 03 68 00 f7 01 2a 89 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    127 | Y:    503 | Scan Time:  35201 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.728029 10 04 03 7f 00 f7 01 81 89 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    146 | Y:    503 | Scan Time:  35288 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.736393 10 04 03 92 00 f7 01 d8 89 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    156 | Y:    503 | Scan Time:  35375 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.744729 10 04 03 9c 00 f7 01 2f 8a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    179 | Y:    503 | Scan Time:  35462 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.753075 10 04 03 b3 00 f7 01 86 8a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    204 | Y:    503 | Scan Time:  35549 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.761459 10 04 03 cc 00 f7 01 dd 8a 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    231 | Y:    503 | Scan Time:  35636 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.769866 10 04 03 e7 00 f7 01 34 8b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    258 | Y:    503 | Scan Time:  35723 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.778228 10 04 03 02 01 f7 01 8b 8b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    280 | Y:    503 | Scan Time:  35810 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.786580 10 04 03 18 01 f7 01 e2 8b 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    303 | Y:    503 | Scan Time:  35897 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.794945 10 04 03 2f 01 f7 01 39 8c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    327 | Y:    503 | Scan Time:  35984 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.803133 10 04 03 47 01 f7 01 90 8c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    350 | Y:    503 | Scan Time:  36071 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.811559 10 04 03 5e 01 f7 01 e7 8c 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    372 | Y:    503 | Scan Time:  36158 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.819866 10 04 03 74 01 f7 01 3e 8d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    393 | Y:    503 | Scan Time:  36245 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.828145 10 04 03 89 01 f7 01 95 8d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    402 | Y:    503 | Scan Time:  36332 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.836406 10 04 03 92 01 f7 01 ec 8d 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    410 | Y:    503 | Scan Time:  36419 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.844652 10 04 03 9a 01 f7 01 43 8e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    418 | Y:    503 | Scan Time:  36506 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.852957 10 04 03 a2 01 f7 01 9a 8e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    425 | Y:    503 | Scan Time:  36593 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.861300 10 04 03 a9 01 f7 01 f1 8e 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    432 | Y:    503 | Scan Time:  36680 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.869709 10 04 03 b0 01 f7 01 48 8f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    435 | Y:    503 | Scan Time:  36767 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.877930 10 04 03 b3 01 f7 01 9f 8f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    438 | Y:    503 | Scan Time:  36854 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.886380 10 04 03 b6 01 f7 01 f6 8f 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    441 | Y:    503 | Scan Time:  36941 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.894517 10 04 03 b9 01 f7 01 4d 90 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    448 | Y:    503 | Scan Time:  37028 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.902872 10 04 03 c0 01 f7 01 a4 90 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    451 | Y:    503 | Scan Time:  37115 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.911101 10 04 03 c3 01 f7 01 fb 90 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    454 | Y:    503 | Scan Time:  37202 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.919403 10 04 03 c6 01 f7 01 52 91 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    457 | Y:    503 | Scan Time:  37289 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.927735 10 04 03 c9 01 f7 01 a9 91 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    460 | Y:    503 | Scan Time:  37376 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.936039 10 04 03 cc 01 f7 01 00 92 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    463 | Y:    503 | Scan Time:  37463 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.944300 10 04 03 cf 01 f7 01 57 92 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    465 | Y:    503 | Scan Time:  37550 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.952529 10 04 03 d1 01 f7 01 ae 92 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    467 | Y:    503 | Scan Time:  37637 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.960859 10 04 03 d3 01 f7 01 05 93 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    469 | Y:    503 | Scan Time:  37724 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.969287 10 04 03 d5 01 f7 01 5c 93 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    471 | Y:    503 | Scan Time:  37811 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.977497 10 04 03 d7 01 f7 01 b3 93 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    473 | Y:    503 | Scan Time:  37898 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.985843 10 04 03 d9 01 f7 01 0a 94 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    474 | Y:    503 | Scan Time:  37985 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000002.994175 10 04 03 da 01 f7 01 61 94 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    475 | Y:    503 | Scan Time:  38072 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.002476 10 04 03 db 01 f7 01 b8 94 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    476 | Y:    503 | Scan Time:  38159 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.010837 10 04 03 dc 01 f7 01 0f 95 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    477 | Y:    503 | Scan Time:  38246 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.019103 10 04 03 dd 01 f7 01 66 95 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    477 | Y:    503 | Scan Time:  38333 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.027392 10 04 03 dd 01 f7 01 bd 95 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    477 | Y:    503 | Scan Time:  38420 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.035725 10 04 03 dd 01 f7 01 14 96 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    477 | Y:    503 | Scan Time:  38507 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.044113 10 04 03 dd 01 f7 01 6b 96 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    478 | Y:    503 | Scan Time:  38594 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.052414 10 04 03 de 01 f7 01 c2 96 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    479 | Y:    503 | Scan Time:  38681 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.060863 10 04 03 df 01 f7 01 19 97 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    480 | Y:    503 | Scan Time:  38768 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.069084 10 04 03 e0 01 f7 01 70 97 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 1 | Contact Id:  0 | # | X:    482 | Y:    503 | Scan Time:  38855 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.077329 10 04 03 e2 01 f7 01 c7 97 01 00
+# ReportID: 4 / Confidence: 1 | Tip Switch: 0 | Contact Id:  0 | # | X:    482 | Y:    503 | Scan Time:  38942 | Contact Count:    1 | Button: 0  0  0 | # 
+E: 000003.085561 10 04 01 e2 01 f7 01 1e 98 01 00
