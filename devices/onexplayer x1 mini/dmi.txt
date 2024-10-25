@@ -1,0 +1,46 @@
+/sys/class/dmi/id/bios_date:
+08/29/2024
+/sys/class/dmi/id/bios_release:
+1.5
+/sys/class/dmi/id/bios_vendor:
+ONE-NETBOOK
+/sys/class/dmi/id/bios_version:
+1.05
+/sys/class/dmi/id/board_asset_tag:
+Default string
+/sys/class/dmi/id/board_name:
+ONEXPLAYER X1 mini
+/sys/class/dmi/id/board_vendor:
+ONE-NETBOOK
+/sys/class/dmi/id/board_version:
+Ver.1.0
+/sys/class/dmi/id/chassis_asset_tag:
+Default string
+/sys/class/dmi/id/chassis_serial:
+Default string
+/sys/class/dmi/id/chassis_type:
+10
+/sys/class/dmi/id/chassis_vendor:
+SU
+/sys/class/dmi/id/chassis_version:
+Default string
+/sys/class/dmi/id/ec_firmware_release:
+1.5
+/sys/class/dmi/id/modalias:
+dmi:bvnONE-NETBOOK:bvr1.05:bd08/29/2024:br1.5:efr1.5:svnONE-NETBOOK:pnONEXPLAYERX1mini:pvrVer.1.0:rvnONE-NETBOOK:rnONEXPLAYERX1mini:rvrVer.1.0:cvnSU:ct10:cvrDefaultstring:sku1:
+/sys/class/dmi/id/power:
+/sys/class/dmi/id/product_family:
+ONEXPLAYER
+/sys/class/dmi/id/product_name:
+ONEXPLAYER X1 mini
+/sys/class/dmi/id/product_serial:
+Default string
+/sys/class/dmi/id/product_sku:
+1
+/sys/class/dmi/id/product_version:
+Ver.1.0
+/sys/class/dmi/id/subsystem:
+/sys/class/dmi/id/sys_vendor:
+ONE-NETBOOK
+/sys/class/dmi/id/uevent:
+MODALIAS=dmi:bvnONE-NETBOOK:bvr1.05:bd08/29/2024:br1.5:efr1.5:svnONE-NETBOOK:pnONEXPLAYERX1mini:pvrVer.1.0:rvnONE-NETBOOK:rnONEXPLAYERX1mini:rvrVer.1.0:cvnSU:ct10:cvrDefaultstring:sku1:

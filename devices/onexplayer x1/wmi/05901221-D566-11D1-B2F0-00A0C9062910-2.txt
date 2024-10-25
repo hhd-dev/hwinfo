@@ -1,0 +1,15 @@
+#pragma namespace("\\\\.\\Root\\WMI")
+[abstract]
+class SuRwECReg {
+};
+
+#pragma namespace("\\\\.\\Root\\WMI")
+[WMI, Dynamic, Provider("WmiProv"), Description("EC register read and write"), guid("{43b5a593-ad62-4257-8546-91b0797bec1b}")]
+class SuRwECRegInterface : SuRwECReg {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(1), Implemented, read, write, Description("Read EC Register")] void ReadECReg([in] uint32 GroupOffset, [out] string uStringReturn);
+  [WmiMethodId(2), Implemented, read, write, Description("Write EC Register")] void WriteECReg([in] uint32 GroupOffsetValue, [out] string uStringReturn);
+  [WmiMethodId(3), Implemented, read, write, Description("Write single EC register and return multi-registers values")] void WriteReadECReg([in] uint32 GroupOffsetValue, [out] string uStringReturn);
+};

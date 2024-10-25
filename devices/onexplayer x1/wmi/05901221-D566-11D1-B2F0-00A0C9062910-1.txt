@@ -1,0 +1,25 @@
+#pragma namespace("\\\\.\\Root\\WMI")
+[abstract]
+class PowerSwitchMode {
+};
+
+#pragma namespace("\\\\.\\Root\\WMI")
+[WMI, Dynamic, Provider("WmiProv"), Description("Ip3PowerSwitch"), guid("{99d89064-8d50-42bb-bea9-155b2e5d0fcd}")]
+class PowerSwitchInterface : PowerSwitchMode {
+  [key, read] string InstanceName;
+  [read] boolean Active;
+
+  [WmiMethodId(1), Implemented, read, write, Description("Set Power Mode")] void SetPowerMode([in] uint8 PowerMode, [out] uint8 ResultStatus);
+  [WmiMethodId(2), Implemented, read, write, Description("Get Power Mode")] void GetPowerMode([out] uint8 CurrentPowerMode);
+  [WmiMethodId(3), Implemented, read, write, Description("Set Fan Control")] void SetFanControl([in] uint8 FanNumber, [in] uint8 FanDuty, [out] uint8 ResultStatus);
+  [WmiMethodId(4), Implemented, read, write, Description("Get Fan Control")] void GetFanControl([in] uint8 FanNumber, [out] uint32 FanDuty);
+  [WmiMethodId(5), Implemented, read, write, Description("Set Keyboard Backlight Brightness")] void SetKbdBltBrightness([in] uint8 BrightnessMode, [out] uint8 ResultStatus);
+  [WmiMethodId(6), Implemented, read, write, Description("Get Keyboard Backlight Brightness")] void GetKbdBltBrightness([in] uint8 BrightnessMode, [out] uint8 ResultStatus);
+  [WmiMethodId(7), Implemented, read, write, Description("Set Keyboard Light Mode")] void SetKbdLightMode([in] uint8 KbdLightMode, [out] uint8 ResultStatus);
+  [WmiMethodId(8), Implemented, read, write, Description("Get Keyboard Light Mode")] void GetKbdLightMode([in] uint8 KbdLightMode, [out] uint8 ResultStatus);
+  [WmiMethodId(9), Implemented, read, write, Description("Set Keyboard Fn Control")] void SetKbdFnCtrl([in] uint8 KbdFnCtrl, [in] uint8 DeviceStatus, [out] uint8 ResultStatus);
+  [WmiMethodId(10), Implemented, read, write, Description("Get Keyboard Fn Control")] void GetKbdFnCtrl([in] uint8 KbdFnCtrl, [out] uint16 DeviceStatus);
+  [WmiMethodId(11), Implemented, read, write, Description("Get Hw Temperature")] void GetHwTemp([in] uint8 HwTempType, [out] uint32 Temp);
+  [WmiMethodId(12), Implemented, read, write, Description("Set Feature Value")] void SetFeatureValue([in] uint8 Reserved1, [in] uint8 Reserved2, [in] uint8 Reserved3, [in] uint8 Reserved4, [out] uint8 ResultStatus);
+  [WmiMethodId(13), Implemented, read, write, Description("Get Feature Value")] void GetFeatureValue([in] uint8 Reserved1, [in] uint8 Reserved2, [in] uint8 Reserved3, [in] uint8 Reserved4, [out] uint32 ResultStatus);
+};
