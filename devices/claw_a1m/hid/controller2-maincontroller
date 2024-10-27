@@ -1,0 +1,27 @@
+#   Xbox360 Controller for Windows
+# 0x06, 0xa0, 0xff,              // Usage Page (Vendor Usage Page 0xffa0) 0
+# 0x09, 0x01,                    // Usage (Vendor Usage 0x01)           3
+# 0xa1, 0x01,                    // Collection (Application)            5
+# 0x09, 0x03,                    //  Usage (Vendor Usage 0x03)          7
+# 0x85, 0x10,                    //  Report ID (16)                     9
+# 0x15, 0x80,                    //  Logical Minimum (-128)             11
+# 0x25, 0x7f,                    //  Logical Maximum (127)              13
+# 0x35, 0x00,                    //  Physical Minimum (0)               15
+# 0x45, 0xff,                    //  Physical Maximum (255)             17
+# 0x75, 0x08,                    //  Report Size (8)                    19
+# 0x95, 0x3f,                    //  Report Count (63)                  21
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               23
+# 0x09, 0x05,                    //  Usage (Vendor Usage 0x05)          25
+# 0x85, 0x0f,                    //  Report ID (15)                     27
+# 0x15, 0x80,                    //  Logical Minimum (-128)             29
+# 0x25, 0x7f,                    //  Logical Maximum (127)              31
+# 0x35, 0x00,                    //  Physical Minimum (0)               33
+# 0x45, 0xff,                    //  Physical Maximum (255)             35
+# 0x75, 0x08,                    //  Report Size (8)                    37
+# 0x95, 0x3f,                    //  Report Count (63)                  39
+# 0x91, 0x02,                    //  Output (Data,Var,Abs)              41
+# 0xc0,                          // End Collection                      43
+# 
+R: 44 06 a0 ff 09 01 a1 01 09 03 85 10 15 80 25 7f 35 00 45 ff 75 08 95 3f 81 02 09 05 85 0f 15 80 25 7f 35 00 45 ff 75 08 95 3f 91 02 c0
+N:   Xbox360 Controller for Windows
+I: 3 0db0 1901

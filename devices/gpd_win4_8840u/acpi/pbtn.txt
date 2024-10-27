@@ -1,0 +1,96 @@
+PM: noirq suspend of devices complete after 44.117 msecs
+ACPI: \_SB_.PCI0.GPP6: LPI: Constraint not met; min power state:D1 current power state:D0
+ACPI: \_SB_.PCI0.GP12.SWUS: LPI: Constraint not met; min power state:D3hot current power state:D0
+ACPI: \_SB_.PCI0.GP19.XHC2: LPI: Constraint not met; min power state:D3hot current power state:D0
+ACPI: \_SB_.PEP_: Successfully transitioned to state lps0 entry
+PM: suspend-to-idle
+amd_pmc: SMU idlemask s0i3: 0x3ffbbeb5
+Timekeeping suspended for 9.282 seconds
+PM: Triggering wakeup from IRQ 7
+ACPI: PM: Wakeup unrelated to ACPI SCI
+PM: resume from suspend-to-idle
+ACPI: \_SB_.PEP_: Successfully transitioned to state lps0 exit
+ACPI: EC: interrupt unblocked
+PM: Triggering wakeup from IRQ 9
+PM: noirq resume of devices complete after 162.734 msecs
+GPIO 0 is active: 0x381578e3
+PM: early resume of devices complete after 243.422 msecs
+[drm] PCIE GART of 512M enabled (table at 0x00000081FFD00000).
+amdgpu 0000:63:00.0: amdgpu: SMU is resuming...
+amdgpu 0000:63:00.0: amdgpu: SMU is resumed successfully!
+iwlwifi 0000:01:00.0: WRT: Invalid buffer destination
+GPIO 89 is active: 0x10841a00
+iwlwifi 0000:01:00.0: WFPM_UMAC_PD_NOTIFICATION: 0x20
+iwlwifi 0000:01:00.0: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+iwlwifi 0000:01:00.0: WFPM_AUTH_KEY_0: 0x90
+iwlwifi 0000:01:00.0: CNVI_SCU_SEQ_DATA_DW9: 0x0
+nvme nvme0: 16/0/0 default/read/poll queues
+GPIO 89 is active: 0x10041a00
+GPIO 89 is active: 0x10041a00
+GPIO 89 is active: 0x10041a00
+[drm] VCN decode and encode initialized successfully(under DPG Mode).
+amdgpu 0000:63:00.0: [drm:jpeg_v4_0_hw_init [amdgpu]] JPEG decode initialized successfully.
+amdgpu 0000:63:00.0: amdgpu: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+amdgpu 0000:63:00.0: amdgpu: ring comp_1.0.0 uses VM inv eng 1 on hub 0
+amdgpu 0000:63:00.0: amdgpu: ring comp_1.1.0 uses VM inv eng 4 on hub 0
+amdgpu 0000:63:00.0: amdgpu: ring comp_1.2.0 uses VM inv eng 6 on hub 0
+amdgpu 0000:63:00.0: amdgpu: ring comp_1.3.0 uses VM inv eng 7 on hub 0
+amdgpu 0000:63:00.0: amdgpu: ring comp_1.0.1 uses VM inv eng 8 on hub 0
+amdgpu 0000:63:00.0: amdgpu: ring comp_1.1.1 uses VM inv eng 9 on hub 0
+amdgpu 0000:63:00.0: amdgpu: ring comp_1.2.1 uses VM inv eng 10 on hub 0
+amdgpu 0000:63:00.0: amdgpu: ring comp_1.3.1 uses VM inv eng 11 on hub 0
+amdgpu 0000:63:00.0: amdgpu: ring sdma0 uses VM inv eng 12 on hub 0
+amdgpu 0000:63:00.0: amdgpu: ring vcn_unified_0 uses VM inv eng 0 on hub 8
+amdgpu 0000:63:00.0: amdgpu: ring jpeg_dec uses VM inv eng 1 on hub 8
+amdgpu 0000:63:00.0: amdgpu: ring mes_kiq_3.1.0 uses VM inv eng 13 on hub 0
+[drm] ring gfx_32785.1.1 was added
+[drm] ring compute_32785.2.2 was added
+[drm] ring sdma_32785.3.3 was added
+[drm] ring gfx_32785.1.1 ib test pass
+[drm] ring compute_32785.2.2 ib test pass
+[drm] ring sdma_32785.3.3 ib test pass
+PM: resume of devices complete after 401.188 msecs
+PM: resume devices took 0.403 seconds
+ACPI: \_SB_.PEP_: Successfully transitioned to state lps0 sleep exit
+OOM killer enabled.
+Restarting tasks ... done.
+random: crng reseeded on system resumption
+ACPI: \_SB_.PEP_: Successfully transitioned to state screen on
+PM: suspend exit
+usb 1-2: new full-speed USB device number 44 using xhci_hcd
+usb 1-2: New USB device found, idVendor=2808, idProduct=9338, bcdDevice= 1.00
+usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-2: Product: FT9201Fingerprint.̚
+usb 1-2: Manufacturer: Focal-systems.Corp
+usb 1-3: new high-speed USB device number 45 using xhci_hcd
+usb 1-3: New USB device found, idVendor=1a40, idProduct=0101, bcdDevice= 1.11
+usb 1-3: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+usb 1-3: Product: USB 2.0 Hub
+hub 1-3:1.0: USB hub found
+hub 1-3:1.0: 4 ports detected
+usb 1-2: USB disconnect, device number 44
+usb 1-3.1: new full-speed USB device number 46 using xhci_hcd
+usb 1-3.1: New USB device found, idVendor=045e, idProduct=028e, bcdDevice= 1.01
+usb 1-3.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 1-3.1: Product: Game for windows
+usb 1-3.1: Manufacturer:  
+usb 1-3.1: SerialNumber: 76736672
+input: Microsoft X-Box 360 pad as /devices/pci0000:00/0000:00:08.1/0000:63:00.3/usb1/1-3/1-3.1/1-3.1:1.0/input/input44
+○ Suspend count: 1
+○ Hardware sleep cycle count: 1
+○ GPIOs active: ['0', '89', '89', '89', '89']
+○ Wakeup triggered from IRQ 7: GPIO Controller
+○ Wakeup triggered from IRQ 9: ACPI SCI
+Used AMD uPEP GUID in LPS0 _DSM
+○ Woke up from IRQ 7: GPIO Controller
+○ gpe0B increased from 58 to 60
+ACPI Lid (/proc/acpi/button/lid/LID0/state): open
+❌ Userspace suspended for 0:00:12.579279 (< minimum expected 0:15:00)
+Kernel suspended for total of 0:00:09.282000 (73.79%)
+✅ In a hardware sleep state for 0:00:09.096832 (72.32%)
+BAT0 charge level is 2438000 µAh
+🔋 Battery BAT0 lost 1000 µAh (0.03%) [Average rate: 0.03A]
+Explanations for your system
+	🚦 AMDGPU ppfeaturemask changed
+	🚦 Kernel is tainted
+	🚦 Userspace wasn't asleep at least 0:16:40

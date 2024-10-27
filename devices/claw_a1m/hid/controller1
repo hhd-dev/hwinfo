@@ -1,0 +1,170 @@
+#   Xbox360 Controller for Windows
+# 0x05, 0x0d,                    // Usage Page (Digitizers)             0
+# 0x09, 0x05,                    // Usage (Touch Pad)                   2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x85, 0x01,                    //  Report ID (1)                      6
+# 0x09, 0x22,                    //  Usage (Finger)                     8
+# 0xa1, 0x02,                    //  Collection (Logical)               10
+# 0x15, 0x00,                    //   Logical Minimum (0)               12
+# 0x25, 0x01,                    //   Logical Maximum (1)               14
+# 0x09, 0x47,                    //   Usage (Confidence)                16
+# 0x09, 0x42,                    //   Usage (Tip Switch)                18
+# 0x95, 0x02,                    //   Report Count (2)                  20
+# 0x75, 0x01,                    //   Report Size (1)                   22
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              24
+# 0x95, 0x01,                    //   Report Count (1)                  26
+# 0x75, 0x03,                    //   Report Size (3)                   28
+# 0x25, 0x04,                    //   Logical Maximum (4)               30
+# 0x09, 0x51,                    //   Usage (Contact Id)                32
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              34
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              36
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      38
+# 0x15, 0x00,                    //   Logical Minimum (0)               40
+# 0x26, 0x00, 0x04,              //   Logical Maximum (1024)            42
+# 0x75, 0x10,                    //   Report Size (16)                  45
+# 0x55, 0x0e,                    //   Unit Exponent (-2)                47
+# 0x65, 0x13,                    //   Unit (EnglishLinear: in)          49
+# 0x09, 0x30,                    //   Usage (X)                         51
+# 0x35, 0x00,                    //   Physical Minimum (0)              53
+# 0x46, 0x70, 0x00,              //   Physical Maximum (112)            55
+# 0x95, 0x01,                    //   Report Count (1)                  58
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              60
+# 0x26, 0x00, 0x04,              //   Logical Maximum (1024)            62
+# 0x46, 0x70, 0x00,              //   Physical Maximum (112)            65
+# 0x09, 0x31,                    //   Usage (Y)                         68
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              70
+# 0xc0,                          //  End Collection                     72
+# 0x05, 0x0d,                    //  Usage Page (Digitizers)            73
+# 0x09, 0x22,                    //  Usage (Finger)                     75
+# 0xa1, 0x02,                    //  Collection (Logical)               77
+# 0x15, 0x00,                    //   Logical Minimum (0)               79
+# 0x25, 0x01,                    //   Logical Maximum (1)               81
+# 0x09, 0x47,                    //   Usage (Confidence)                83
+# 0x09, 0x42,                    //   Usage (Tip Switch)                85
+# 0x95, 0x02,                    //   Report Count (2)                  87
+# 0x75, 0x01,                    //   Report Size (1)                   89
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              91
+# 0x95, 0x01,                    //   Report Count (1)                  93
+# 0x75, 0x03,                    //   Report Size (3)                   95
+# 0x25, 0x04,                    //   Logical Maximum (4)               97
+# 0x09, 0x51,                    //   Usage (Contact Id)                99
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              101
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              103
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      105
+# 0x15, 0x00,                    //   Logical Minimum (0)               107
+# 0x26, 0x00, 0x04,              //   Logical Maximum (1024)            109
+# 0x75, 0x10,                    //   Report Size (16)                  112
+# 0x55, 0x0e,                    //   Unit Exponent (-2)                114
+# 0x65, 0x13,                    //   Unit (EnglishLinear: in)          116
+# 0x09, 0x30,                    //   Usage (X)                         118
+# 0x35, 0x00,                    //   Physical Minimum (0)              120
+# 0x46, 0x70, 0x00,              //   Physical Maximum (112)            122
+# 0x95, 0x01,                    //   Report Count (1)                  125
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              127
+# 0x26, 0x00, 0x04,              //   Logical Maximum (1024)            129
+# 0x46, 0x70, 0x00,              //   Physical Maximum (112)            132
+# 0x09, 0x31,                    //   Usage (Y)                         135
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              137
+# 0xc0,                          //  End Collection                     139
+# 0x05, 0x0d,                    //  Usage Page (Digitizers)            140
+# 0x09, 0x22,                    //  Usage (Finger)                     142
+# 0xa1, 0x02,                    //  Collection (Logical)               144
+# 0x15, 0x00,                    //   Logical Minimum (0)               146
+# 0x25, 0x01,                    //   Logical Maximum (1)               148
+# 0x09, 0x47,                    //   Usage (Confidence)                150
+# 0x09, 0x42,                    //   Usage (Tip Switch)                152
+# 0x95, 0x02,                    //   Report Count (2)                  154
+# 0x75, 0x01,                    //   Report Size (1)                   156
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              158
+# 0x95, 0x01,                    //   Report Count (1)                  160
+# 0x75, 0x03,                    //   Report Size (3)                   162
+# 0x25, 0x04,                    //   Logical Maximum (4)               164
+# 0x09, 0x51,                    //   Usage (Contact Id)                166
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              168
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              170
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      172
+# 0x15, 0x00,                    //   Logical Minimum (0)               174
+# 0x26, 0x00, 0x04,              //   Logical Maximum (1024)            176
+# 0x75, 0x10,                    //   Report Size (16)                  179
+# 0x55, 0x0e,                    //   Unit Exponent (-2)                181
+# 0x65, 0x13,                    //   Unit (EnglishLinear: in)          183
+# 0x09, 0x30,                    //   Usage (X)                         185
+# 0x35, 0x00,                    //   Physical Minimum (0)              187
+# 0x46, 0x70, 0x00,              //   Physical Maximum (112)            189
+# 0x95, 0x01,                    //   Report Count (1)                  192
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              194
+# 0x26, 0x00, 0x04,              //   Logical Maximum (1024)            196
+# 0x46, 0x70, 0x00,              //   Physical Maximum (112)            199
+# 0x09, 0x31,                    //   Usage (Y)                         202
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              204
+# 0xc0,                          //  End Collection                     206
+# 0x55, 0x0c,                    //  Unit Exponent (-4)                 207
+# 0x66, 0x01, 0x10,              //  Unit (SILinear: s)                 209
+# 0x47, 0xff, 0xff, 0x00, 0x00,  //  Physical Maximum (65535)           212
+# 0x27, 0xff, 0xff, 0x00, 0x00,  //  Logical Maximum (65535)            217
+# 0x75, 0x10,                    //  Report Size (16)                   222
+# 0x95, 0x01,                    //  Report Count (1)                   224
+# 0x05, 0x0d,                    //  Usage Page (Digitizers)            226
+# 0x09, 0x56,                    //  Usage (Scan Time)                  228
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               230
+# 0x05, 0x0d,                    //  Usage Page (Digitizers)            232
+# 0x09, 0x54,                    //  Usage (Contact Count)              234
+# 0x25, 0x7f,                    //  Logical Maximum (127)              236
+# 0x95, 0x01,                    //  Report Count (1)                   238
+# 0x75, 0x08,                    //  Report Size (8)                    240
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               242
+# 0x05, 0x09,                    //  Usage Page (Button)                244
+# 0x09, 0x01,                    //  Usage (Vendor Usage 0x01)          246
+# 0x25, 0x01,                    //  Logical Maximum (1)                248
+# 0x75, 0x01,                    //  Report Size (1)                    250
+# 0x95, 0x01,                    //  Report Count (1)                   252
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               254
+# 0x95, 0x07,                    //  Report Count (7)                   256
+# 0x81, 0x03,                    //  Input (Cnst,Var,Abs)               258
+# 0x05, 0x0d,                    //  Usage Page (Digitizers)            260
+# 0x85, 0x02,                    //  Report ID (2)                      262
+# 0x09, 0x55,                    //  Usage (Contact Max)                264
+# 0x09, 0x59,                    //  Usage (Button Type)                266
+# 0x75, 0x04,                    //  Report Size (4)                    268
+# 0x95, 0x02,                    //  Report Count (2)                   270
+# 0x25, 0x0f,                    //  Logical Maximum (15)               272
+# 0xb1, 0x02,                    //  Feature (Data,Var,Abs)             274
+# 0x06, 0x00, 0xff,              //  Usage Page (Vendor Defined Page 1) 276
+# 0x85, 0x03,                    //  Report ID (3)                      279
+# 0x09, 0xc5,                    //  Usage (Vendor Usage 0xc5)          281
+# 0x15, 0x00,                    //  Logical Minimum (0)                283
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              285
+# 0x75, 0x08,                    //  Report Size (8)                    288
+# 0x96, 0x00, 0x01,              //  Report Count (256)                 290
+# 0xb1, 0x02,                    //  Feature (Data,Var,Abs)             293
+# 0xc0,                          // End Collection                      295
+# 0x05, 0x0d,                    // Usage Page (Digitizers)             296
+# 0x09, 0x0e,                    // Usage (Device Configuration)        298
+# 0xa1, 0x01,                    // Collection (Application)            300
+# 0x85, 0x04,                    //  Report ID (4)                      302
+# 0x09, 0x22,                    //  Usage (Finger)                     304
+# 0xa1, 0x02,                    //  Collection (Logical)               306
+# 0x09, 0x52,                    //   Usage (Inputmode)                 308
+# 0x15, 0x00,                    //   Logical Minimum (0)               310
+# 0x25, 0x0a,                    //   Logical Maximum (10)              312
+# 0x75, 0x08,                    //   Report Size (8)                   314
+# 0x95, 0x01,                    //   Report Count (1)                  316
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            318
+# 0xc0,                          //  End Collection                     320
+# 0x09, 0x22,                    //  Usage (Finger)                     321
+# 0xa1, 0x00,                    //  Collection (Physical)              323
+# 0x85, 0x05,                    //   Report ID (5)                     325
+# 0x09, 0x57,                    //   Usage (Surface Switch)            327
+# 0x09, 0x58,                    //   Usage (Button Switch)             329
+# 0x75, 0x01,                    //   Report Size (1)                   331
+# 0x95, 0x02,                    //   Report Count (2)                  333
+# 0x25, 0x01,                    //   Logical Maximum (1)               335
+# 0xb1, 0x02,                    //   Feature (Data,Var,Abs)            337
+# 0x95, 0x06,                    //   Report Count (6)                  339
+# 0xb1, 0x03,                    //   Feature (Cnst,Var,Abs)            341
+# 0xc0,                          //  End Collection                     343
+# 0xc0,                          // End Collection                      344
+# 
+R: 345 05 0d 09 05 a1 01 85 01 09 22 a1 02 15 00 25 01 09 47 09 42 95 02 75 01 81 02 95 01 75 03 25 04 09 51 81 02 81 03 05 01 15 00 26 00 04 75 10 55 0e 65 13 09 30 35 00 46 70 00 95 01 81 02 26 00 04 46 70 00 09 31 81 02 c0 05 0d 09 22 a1 02 15 00 25 01 09 47 09 42 95 02 75 01 81 02 95 01 75 03 25 04 09 51 81 02 81 03 05 01 15 00 26 00 04 75 10 55 0e 65 13 09 30 35 00 46 70 00 95 01 81 02 26 00 04 46 70 00 09 31 81 02 c0 05 0d 09 22 a1 02 15 00 25 01 09 47 09 42 95 02 75 01 81 02 95 01 75 03 25 04 09 51 81 02 81 03 05 01 15 00 26 00 04 75 10 55 0e 65 13 09 30 35 00 46 70 00 95 01 81 02 26 00 04 46 70 00 09 31 81 02 c0 55 0c 66 01 10 47 ff ff 00 00 27 ff ff 00 00 75 10 95 01 05 0d 09 56 81 02 05 0d 09 54 25 7f 95 01 75 08 81 02 05 09 09 01 25 01 75 01 95 01 81 02 95 07 81 03 05 0d 85 02 09 55 09 59 75 04 95 02 25 0f b1 02 06 00 ff 85 03 09 c5 15 00 26 ff 00 75 08 96 00 01 b1 02 c0 05 0d 09 0e a1 01 85 04 09 22 a1 02 09 52 15 00 25 0a 75 08 95 01 b1 02 c0 09 22 a1 00 85 05 09 57 09 58 75 01 95 02 25 01 b1 02 95 06 b1 03 c0 c0
+N:   Xbox360 Controller for Windows
+I: 3 0db0 1901

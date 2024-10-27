@@ -1,0 +1,73 @@
+#   Xbox360 Controller for Windows
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        0
+# 0x09, 0x06,                    // Usage (Keyboard)                    2
+# 0xa1, 0x01,                    // Collection (Application)            4
+# 0x85, 0x03,                    //  Report ID (3)                      6
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              8
+# 0x19, 0xe0,                    //  Usage Minimum (224)                10
+# 0x29, 0xe7,                    //  Usage Maximum (231)                12
+# 0x15, 0x00,                    //  Logical Minimum (0)                14
+# 0x25, 0x01,                    //  Logical Maximum (1)                16
+# 0x75, 0x01,                    //  Report Size (1)                    18
+# 0x95, 0x08,                    //  Report Count (8)                   20
+# 0x81, 0x02,                    //  Input (Data,Var,Abs)               22
+# 0x75, 0x08,                    //  Report Size (8)                    24
+# 0x95, 0x01,                    //  Report Count (1)                   26
+# 0x81, 0x01,                    //  Input (Cnst,Arr,Abs)               28
+# 0x05, 0x07,                    //  Usage Page (Keyboard)              30
+# 0x19, 0x00,                    //  Usage Minimum (0)                  32
+# 0x2a, 0xff, 0x00,              //  Usage Maximum (255)                34
+# 0x15, 0x00,                    //  Logical Minimum (0)                37
+# 0x26, 0xff, 0x00,              //  Logical Maximum (255)              39
+# 0x75, 0x08,                    //  Report Size (8)                    42
+# 0x95, 0x06,                    //  Report Count (6)                   44
+# 0x81, 0x00,                    //  Input (Data,Arr,Abs)               46
+# 0x05, 0x08,                    //  Usage Page (LEDs)                  48
+# 0x19, 0x01,                    //  Usage Minimum (1)                  50
+# 0x29, 0x03,                    //  Usage Maximum (3)                  52
+# 0x25, 0x01,                    //  Logical Maximum (1)                54
+# 0x75, 0x01,                    //  Report Size (1)                    56
+# 0x95, 0x03,                    //  Report Count (3)                   58
+# 0x91, 0x02,                    //  Output (Data,Var,Abs)              60
+# 0x95, 0x05,                    //  Report Count (5)                   62
+# 0x91, 0x01,                    //  Output (Cnst,Arr,Abs)              64
+# 0xc0,                          // End Collection                      66
+# 0x05, 0x01,                    // Usage Page (Generic Desktop)        67
+# 0x09, 0x02,                    // Usage (Mouse)                       69
+# 0xa1, 0x01,                    // Collection (Application)            71
+# 0x85, 0x09,                    //  Report ID (9)                      73
+# 0x09, 0x01,                    //  Usage (Pointer)                    75
+# 0xa1, 0x00,                    //  Collection (Physical)              77
+# 0x05, 0x09,                    //   Usage Page (Button)               79
+# 0x19, 0x01,                    //   Usage Minimum (1)                 81
+# 0x29, 0x05,                    //   Usage Maximum (5)                 83
+# 0x15, 0x00,                    //   Logical Minimum (0)               85
+# 0x25, 0x01,                    //   Logical Maximum (1)               87
+# 0x95, 0x05,                    //   Report Count (5)                  89
+# 0x75, 0x01,                    //   Report Size (1)                   91
+# 0x81, 0x02,                    //   Input (Data,Var,Abs)              93
+# 0x95, 0x01,                    //   Report Count (1)                  95
+# 0x75, 0x03,                    //   Report Size (3)                   97
+# 0x81, 0x01,                    //   Input (Cnst,Arr,Abs)              99
+# 0x05, 0x01,                    //   Usage Page (Generic Desktop)      101
+# 0x09, 0x30,                    //   Usage (X)                         103
+# 0x09, 0x31,                    //   Usage (Y)                         105
+# 0x16, 0x01, 0x80,              //   Logical Minimum (-32767)          107
+# 0x26, 0xff, 0x7f,              //   Logical Maximum (32767)           110
+# 0x75, 0x10,                    //   Report Size (16)                  113
+# 0x95, 0x02,                    //   Report Count (2)                  115
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              117
+# 0x09, 0x38,                    //   Usage (Wheel)                     119
+# 0x15, 0x81,                    //   Logical Minimum (-127)            121
+# 0x25, 0x7f,                    //   Logical Maximum (127)             123
+# 0x75, 0x08,                    //   Report Size (8)                   125
+# 0x95, 0x01,                    //   Report Count (1)                  127
+# 0x81, 0x06,                    //   Input (Data,Var,Rel)              129
+# 0x95, 0x01,                    //   Report Count (1)                  131
+# 0x81, 0x03,                    //   Input (Cnst,Var,Abs)              133
+# 0xc0,                          //  End Collection                     135
+# 0xc0,                          // End Collection                      136
+# 
+R: 137 05 01 09 06 a1 01 85 03 05 07 19 e0 29 e7 15 00 25 01 75 01 95 08 81 02 75 08 95 01 81 01 05 07 19 00 2a ff 00 15 00 26 ff 00 75 08 95 06 81 00 05 08 19 01 29 03 25 01 75 01 95 03 91 02 95 05 91 01 c0 05 01 09 02 a1 01 85 09 09 01 a1 00 05 09 19 01 29 05 15 00 25 01 95 05 75 01 81 02 95 01 75 03 81 01 05 01 09 30 09 31 16 01 80 26 ff 7f 75 10 95 02 81 06 09 38 15 81 25 7f 75 08 95 01 81 06 95 01 81 03 c0 c0
+N:   Xbox360 Controller for Windows
+I: 3 0db0 1901
