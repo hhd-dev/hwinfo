@@ -11,7 +11,7 @@ curl -L https://raw.githubusercontent.com/hhd-dev/hwinfo/master/firmware/bazzite
 Copyright owners can contact `me at antheas dot dev` or open an issue (if the email fails) to have their firmware removed from this repository. The repository history will be rewritten and the files purged within 5 business days.
 
 ## Awinic
-Awinic is a mobile audio IC company. They produce amplifiers for predominantly phones and tablets. They have a Windows driver, and an out-of-tree linux driver for mobile phones that also works in mainline Linux. This driver was submitted to the kernel in 2022, but did not get merged.
+Awinic is a mobile audio IC company. They produce amplifiers for predominantly phones and tablets. They have a Windows driver, and an out-of-tree linux driver for mobile phones that also works in mainline Linux. This driver was submitted to the kernel in 2022, but did not get merged. Awinic has been chosen by Ayaneo for their audio amplifiers in certain devices, and from Ayn in Loki MiniPro.
 
 However, both their Windows and Linux drivers have a big flaw: they use the same name for all firmware files, making it impossible to store firmware files for multiple devices at a time.
 
