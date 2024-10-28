@@ -36,4 +36,4 @@ d29703932b73a6588c131ea20d0f2d2cf76221018aa179984a758da2982dab15  awinic/aw87xxx
 7db2c6eaca3135d732c2e635388e87cb49fc998b3f9a859c2a891ee78797eba3  awinic/aw87xxx_acf_orangepi.bin
 ```
 
-Find the file in the Windows driver pack of your device and place `/usr/lib/firmware` (no subdir) and you should be good to go. Bazzite has a read-only `/usr/lib/firmware` dir but contains symlinks, so place the files in `/usr/local/` instead. If your device is not in the list above, `aw87xxx_acf.bin` is provided as a fallback name.
+Find the file in the Windows driver pack of your device and place `/usr/lib/firmware` (no subdir) and you should be good to go. Bazzite has a read-only `/usr/lib/firmware` dir but contains symlinks, so place the files in `/usr/local/firmware` instead (you need to make that directory `sudo mkdir -p /usr/lib/firmware`). If your device is not in the list above, `aw87xxx_acf.bin` is provided as a fallback name.
