@@ -4,7 +4,7 @@ In this directory, we curate linux firmware bins that for one reason or another 
 ### Bazzite installation
 While its recommended you should retrieve the files yourself, you can use this convenience script to install them in Bazzite by running the following command:
 ```bash
-curl -L https://raw.githubusercontent.com/hhd-dev/hwinfo/master/firmware/bazzite.sh | bash
+curl -L https://raw.githubusercontent.com/hhd-dev/hwinfo/master/firmware/bazzite.sh | sudo bash
 ```
 
 ### Copyright notice
