@@ -1,4 +1,4 @@
-# Forgotten Framework curation
+# Forgotten Firmware curation
 In this directory, we curate linux firmware bins that for one reason or another are not ready to submit to linux-firmware (e.g., copyright owners are missing, no upstream driver/naming convention is available, etc.).
 
 ### Bazzite installation
