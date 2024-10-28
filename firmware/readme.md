@@ -4,7 +4,7 @@ In this directory, we curate linux firmware bins that for one reason or another 
 ### Bazzite installation
 While its recommended you should retrieve the files yourself, you can use this convenience script to install them in Bazzite by running the following command:
 ```bash
-curl -L https://raw.githubusercontent.com/hhd-dev/hwinfo/master/firmware/bazzite.sh | sudo bash
+curl -L https://raw.githubusercontent.com/hhd-dev/hwinfo/master/firmware/bazzite-speaker.sh | sudo bash
 ```
 
 ### Copyright notice
@@ -21,7 +21,7 @@ In any case, the fork of the driver that is present in Bazzite performs DMI chec
 
 The currently known firmware files and their hashes are the following:
 ```bash
-❯ sha256sum awinic/*
+$ sha256sum awinic/*
 # Ayn Loki MiniPro
 d29703932b73a6588c131ea20d0f2d2cf76221018aa179984a758da2982dab15  awinic/aw87xxx_acf_minipro.bin
 # Ayaneo Air 1S (symlink to MiniPro; download that and rename)
