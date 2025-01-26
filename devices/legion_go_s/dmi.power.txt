@@ -1,0 +1,17 @@
+/sys/class/dmi/id/power/async:
+disabled
+/sys/class/dmi/id/power/autosuspend_delay_ms:
+/sys/class/dmi/id/power/control:
+auto
+/sys/class/dmi/id/power/runtime_active_kids:
+0
+/sys/class/dmi/id/power/runtime_active_time:
+0
+/sys/class/dmi/id/power/runtime_enabled:
+disabled
+/sys/class/dmi/id/power/runtime_status:
+unsupported
+/sys/class/dmi/id/power/runtime_suspended_time:
+0
+/sys/class/dmi/id/power/runtime_usage:
+0

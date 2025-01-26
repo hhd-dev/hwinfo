@@ -1,0 +1,1 @@
+/sys/class/dmi/id/subsystem/id:

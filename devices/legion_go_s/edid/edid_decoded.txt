@@ -1,0 +1,79 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 77 00 08 00 00 00 00
+00 22 01 04 a5 11 0b 78 03 b2 41 a5 54 4c 9e 24
+0d 4e 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 7b 80 a0 70 b0 40 40 30 20
+66 0c ac 6b 00 00 00 18 9f 3d 80 a0 70 b0 40 40
+30 20 66 0c ac 6b 00 00 00 18 00 00 00 fd 00 30
+78 98 98 20 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4e 38 30 30 37 51 42 31 2d 31 0a 20 01 f1
+
+70 20 79 02 00 81 00 14 74 1a 00 00 03 01 30 78
+00 00 00 00 00 00 78 00 00 00 00 80 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 9e 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSW
+    Model: 2048
+    Made in: 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 17 cm x 11 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6464, 0.3310
+    Green: 0.2968, 0.6191
+    Blue : 0.1416, 0.0507
+    White: 0.3046, 0.3251
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200  120.002 Hz   8:5   151.683 kHz 315.500 MHz (172 mm x 107 mm)
+      Modeline "1920x1200_120.00" 315.500  1920 1968 2000 2080  1200 1254 1260 1264  -HSync -VSync
+    DTD 2:  1920x1200   60.001 Hz   8:5    75.841 kHz 157.750 MHz (172 mm x 107 mm)
+      Modeline "1920x1200_60.00" 157.750  1920 1968 2000 2080  1200 1254 1260 1264  -HSync -VSync
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 48-120 Hz V, 152-152 kHz H, max dotclock 320 MHz
+    Display Product Name: 'PN8007QB1-1'
+  Extension blocks: 1
+Checksum: 0xf1
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  CTA-861 DisplayID Data Block (0x81):
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    03 01 30 78 00 00 00 00 00 00 78 00 00 00 00 80 '..0x......x.....'
+    00                                              '.'
+  Checksum: 0x9e
+Checksum: 0x90
+
+----------------
+
+Preferred Video Timing if only Block 0 is parsed:
+  DTD   1:  1920x1200  120.002 Hz   8:5   151.683 kHz 315.500 MHz (172 mm x 107 mm)
+    Modeline "1920x1200_120.00" 315.500  1920 1968 2000 2080  1200 1254 1260 1264  -HSync -VSync
+
+----------------
+
+Preferred Video Timing if Block 0 and CTA-861 Blocks are parsed:
+  DTD   1:  1920x1200  120.002 Hz   8:5   151.683 kHz 315.500 MHz (172 mm x 107 mm)
+    Modeline "1920x1200_120.00" 315.500  1920 1968 2000 2080  1200 1254 1260 1264  -HSync -VSync
