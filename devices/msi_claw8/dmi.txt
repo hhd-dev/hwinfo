@@ -1,0 +1,48 @@
+/sys/class/dmi/id/bios_date:
+01/06/2025
+/sys/class/dmi/id/bios_release:
+1.11
+/sys/class/dmi/id/bios_vendor:
+American Megatrends International, LLC.
+/sys/class/dmi/id/bios_version:
+E1T52IMS.10B
+/sys/class/dmi/id/board_asset_tag:
+Default string
+/sys/class/dmi/id/board_name:
+MS-1T52
+/sys/class/dmi/id/board_serial:
+BSS-0123456789
+/sys/class/dmi/id/board_vendor:
+Micro-Star International Co., Ltd.
+/sys/class/dmi/id/board_version:
+REV:1.0
+/sys/class/dmi/id/chassis_asset_tag:
+No Asset Tag
+/sys/class/dmi/id/chassis_serial:
+25PN000103
+/sys/class/dmi/id/chassis_type:
+30
+/sys/class/dmi/id/chassis_vendor:
+Micro-Star International Co., Ltd.
+/sys/class/dmi/id/chassis_version:
+N/A
+/sys/class/dmi/id/modalias:
+dmi:bvnAmericanMegatrendsInternational,LLC.:bvrE1T52IMS.10B:bd01/06/2025:br1.11:svnMicro-StarInternationalCo.,Ltd.:pnClaw8AI+A2VM:pvrREV1.0:rvnMicro-StarInternationalCo.,Ltd.:rnMS-1T52:rvrREV1.0:cvnMicro-StarInternationalCo.,Ltd.:ct30:cvrN/A:sku1T52.1:
+/sys/class/dmi/id/power:
+/sys/class/dmi/id/product_family:
+Claw
+/sys/class/dmi/id/product_name:
+Claw 8 AI+ A2VM
+/sys/class/dmi/id/product_serial:
+9S71T5211027ZS1000039
+/sys/class/dmi/id/product_sku:
+1T52.1
+/sys/class/dmi/id/product_uuid:
+ec9b0353-7ecd-ef4a-9683-241198d46285
+/sys/class/dmi/id/product_version:
+REV:1.0
+/sys/class/dmi/id/subsystem:
+/sys/class/dmi/id/sys_vendor:
+Micro-Star International Co., Ltd.
+/sys/class/dmi/id/uevent:
+MODALIAS=dmi:bvnAmericanMegatrendsInternational,LLC.:bvrE1T52IMS.10B:bd01/06/2025:br1.11:svnMicro-StarInternationalCo.,Ltd.:pnClaw8AI+A2VM:pvrREV1.0:rvnMicro-StarInternationalCo.,Ltd.:rnMS-1T52:rvrREV1.0:cvnMicro-StarInternationalCo.,Ltd.:ct30:cvrN/A:sku1T52.1:
