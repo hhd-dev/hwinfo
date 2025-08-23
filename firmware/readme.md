@@ -40,3 +40,53 @@ Find the file in the Windows driver pack of your device and place `/usr/lib/firm
 
 ## Cirrus
 Cirrus is good at upstreaming firmware, so this is somewhat of a staging area. Place the files in `cirrus` under `/usr/lib/firmware/cirrus`.
+
+We said last year, but Cirrus guy slept on it. 10431fb3 is the ASUS ROG Z13 2025. 1f660105 is the Ayaneo 3.
+
+Here are some commands to find the files:
+```bash
+
+cp *_V01_A0.bin cs35l41-dsp1-spk-prot-${SUBL}-spkid1-l0.bin
+cp *_V01_A1.bin cs35l41-dsp1-spk-prot-${SUBL}-spkid1-r0.bin
+cp *_V01_A0_cal.bin cs35l41-dsp1-spk-cali-${SUBL}-spkid1-l0.bin
+cp *_V01_A1_cal.bin cs35l41-dsp1-spk-cali-${SUBL}-spkid1-r0.bin
+# or...
+cp *_V*_A01.bin cs35l41-dsp1-spk-prot-${SUBL}-spkid1.bin
+cp *_V*_A01_cal.bin cs35l41-dsp1-spk-cali-${SUBL}-spkid1.bin
+```
+A0 is left, A1 is right, A01 is both.
+
+```
+ln -s cs35l41/v6.61.1/halo_cspl_RAM_revB2_29.63.1.wmfw cs35l41-dsp1-spk-cali-${SUBL}.wmfw
+ln -s cs35l41/v6.61.1/halo_cspl_RAM_revB2_29.63.1.wmfw cs35l41-dsp1-spk-prot-${SUBL}.wmfw
+```
+
+To get SUBL:
+```bash
+echo 'file sound/pci/hda/* +p' | sudo tee /sys/kernel/debug/dynamic_debug/control
+```
+Then sleep resume to generate the logs in dmesg.
+```bash
+sudo dmesg | grep "Failed to request"
+```
+```
+[ 1059.313234] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.0: Failed to request 'cirrus/cs35l41-dsp1-spk-prot-1f660105-spkid1-l0.wmfw'
+[ 1059.313272] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.0: Failed to request 'cirrus/cs35l41-dsp1-spk-prot-1f660105-l0.wmfw'
+[ 1059.313310] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.0: Failed to request 'cirrus/cs35l41-dsp1-spk-prot-1f660105-spkid1.wmfw'
+
+[ 1059.313431] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.0: Failed to request 'cirrus/cs35l41-dsp1-spk-prot-1f660105-spkid1-l0.bin'
+[ 1059.313468] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.0: Failed to request 'cirrus/cs35l41-dsp1-spk-prot-1f660105-spkid1.bin'
+[ 1059.313556] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.0: Failed to request 'cirrus/cs35l41-dsp1-spk-prot.bincfg'
+
+[ 1059.313837] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.1: Failed to request 'cirrus/cs35l41-dsp1-spk-prot-1f660105-spkid1-r0.wmfw'
+[ 1059.313874] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.1: Failed to request 'cirrus/cs35l41-dsp1-spk-prot-1f660105-r0.wmfw'
+[ 1059.313909] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.1: Failed to request 'cirrus/cs35l41-dsp1-spk-prot-1f660105-spkid1.wmfw'
+
+[ 1059.313984] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.1: Failed to request 'cirrus/cs35l41-dsp1-spk-prot-1f660105-spkid1-r0.bin'
+[ 1059.314018] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.1: Failed to request 'cirrus/cs35l41-dsp1-spk-prot-1f660105-spkid1.bin'
+[ 1059.314101] cs35l41-hda i2c-CSC3551:00-cs35l41-hda.1: Failed to request 'cirrus/cs35l41-dsp1-spk-prot.bincfg'
+```
+
+The SUBL is `1f660105` in this case.
+
+Credit: https://asus-linux.org/guides/cirrus-amps/
