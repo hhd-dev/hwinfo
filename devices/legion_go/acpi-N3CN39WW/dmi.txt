@@ -1,0 +1,50 @@
+/sys/class/dmi/id/bios_date:
+06/13/2025
+/sys/class/dmi/id/bios_release:
+1.39
+/sys/class/dmi/id/bios_vendor:
+LENOVO
+/sys/class/dmi/id/bios_version:
+N3CN39WW
+/sys/class/dmi/id/board_asset_tag:
+NO Asset Tag
+/sys/class/dmi/id/board_name:
+LNVNB161216
+/sys/class/dmi/id/board_serial:
+YM1054B0
+/sys/class/dmi/id/board_vendor:
+LENOVO
+/sys/class/dmi/id/board_version:
+SDK0K17763 WIN
+/sys/class/dmi/id/chassis_asset_tag:
+NO Asset Tag
+/sys/class/dmi/id/chassis_serial:
+YM1054B0
+/sys/class/dmi/id/chassis_type:
+30
+/sys/class/dmi/id/chassis_vendor:
+LENOVO
+/sys/class/dmi/id/chassis_version:
+Legion Go 8APU1
+/sys/class/dmi/id/ec_firmware_release:
+1.39
+/sys/class/dmi/id/modalias:
+dmi:bvnLENOVO:bvrN3CN39WW:bd06/13/2025:br1.39:efr1.39:svnLENOVO:pn83E1:pvrLegionGo8APU1:rvnLENOVO:rnLNVNB161216:rvrSDK0K17763WIN:cvnLENOVO:ct30:cvrLegionGo8APU1:skuLENOVO_MT_83E1_BU_idea_FM_LegionGo8APU1:
+/sys/class/dmi/id/power:
+/sys/class/dmi/id/product_family:
+Legion Go 8APU1
+/sys/class/dmi/id/product_name:
+83E1
+/sys/class/dmi/id/product_serial:
+YM1054B0
+/sys/class/dmi/id/product_sku:
+LENOVO_MT_83E1_BU_idea_FM_Legion Go 8APU1
+/sys/class/dmi/id/product_uuid:
+586b2ce7-ae0a-11ee-0c2c-cb22342ff642
+/sys/class/dmi/id/product_version:
+Legion Go 8APU1
+/sys/class/dmi/id/subsystem:
+/sys/class/dmi/id/sys_vendor:
+LENOVO
+/sys/class/dmi/id/uevent:
+MODALIAS=dmi:bvnLENOVO:bvrN3CN39WW:bd06/13/2025:br1.39:efr1.39:svnLENOVO:pn83E1:pvrLegionGo8APU1:rvnLENOVO:rnLNVNB161216:rvrSDK0K17763WIN:cvnLENOVO:ct30:cvrLegionGo8APU1:skuLENOVO_MT_83E1_BU_idea_FM_LegionGo8APU1:

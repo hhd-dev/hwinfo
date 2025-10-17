@@ -458,7 +458,7 @@ Below are the set features in BIOS v28.
 
 ### Turn power led on off (WMAF)
 Legion go has the following interface for turning the power LED on/off:
-Brightness is ignored. Only on BIOS v28+. Power button is ID 0x03.
+Brightness is ignored. Only on BIOS v28+.
 
 ```c#
 [WMI, Dynamic, Provider("WmiProv"), Locale("MS\\0x409"), Description("LENOVO_LIGHTING_METHOD class"), guid("{8c5b9127-ecd4-4657-980f-851019f99ca5}")]
@@ -471,7 +471,13 @@ class LENOVO_LIGHTING_METHOD {
 };
 ```
 
-Here are the commands for it:
+
+#### For BIOS N3CN28WW ~ N3CN35WW (Older versions)
+Power button LED ID: `0x03`
+- Byte 0: Lighting_ID (0x03)
+- Byte 1: Current_State_Type (1=on, 0=off)
+- Byte 2: Current_Brightness_Level (ignored)
+
 ```bash
 # Get current mode
 echo '\_SB.GZFD.WMAF 0 0x01 0x03' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
@@ -480,4 +486,25 @@ echo '\_SB.GZFD.WMAF 0 0x01 0x03' | sudo tee /proc/acpi/call; sudo cat /proc/acp
 echo '\_SB.GZFD.WMAF 0 0x02 {0x03, 0x01, 0x00}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
 # Turn off
 echo '\_SB.GZFD.WMAF 0 0x02 {0x03, 0x00, 0x00}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+```
+
+#### For BIOS N3CN39WW+ (June 2025 and newer)
+Power button LED ID changed to: `0x04`
+- Byte 0: Lighting_ID (0x04)
+- Byte 1: Unused (always 0x00)
+- Byte 2: State (0x02=on, 0x01=off, 0x03=ignored)
+
+Changes from older BIOS:
+- Lighting_ID changed from `0x03` → `0x04`
+- State parameter moved from Byte 1 → Byte 2
+- State values changed: On `1` → `2`, Off `0` → `1`
+
+```bash
+# Get current mode
+echo '\_SB.GZFD.WMAF 0 0x01 0x04' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+
+# Turn on
+echo '\_SB.GZFD.WMAF 0 0x02 {0x04, 0x00, 0x02}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
+# Turn off
+echo '\_SB.GZFD.WMAF 0 0x02 {0x04, 0x00, 0x01}' | sudo tee /proc/acpi/call; sudo cat /proc/acpi/call
 ```
